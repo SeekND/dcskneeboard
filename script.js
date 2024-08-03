@@ -906,6 +906,36 @@ drawingArea.addEventListener("mousedown", startDrawing);
 drawingArea.addEventListener("mousemove", draw);
 drawingArea.addEventListener("mouseup", stopDrawing);
 drawingArea.addEventListener("mouseleave", stopDrawing);
+drawingArea.addEventListener("touchstart", handleTouchStart, false);
+drawingArea.addEventListener("touchmove", handleTouchMove, false);
+drawingArea.addEventListener("touchend", handleTouchEnd, false);
+
+function handleTouchStart(e) {
+    e.preventDefault(); // Prevent default touch behavior (e.g., scrolling)
+    const touch = e.touches[0]; // Get the first touch point
+    const mouseEvent = new MouseEvent("mousedown", {
+        clientX: touch.clientX,
+        clientY: touch.clientY
+    });
+    drawingArea.dispatchEvent(mouseEvent); // Trigger a mousedown event
+}
+
+function handleTouchMove(e) {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const mouseEvent = new MouseEvent("mousemove", {
+        clientX: touch.clientX,
+        clientY: touch.clientY
+    });
+    drawingArea.dispatchEvent(mouseEvent);
+}
+
+function handleTouchEnd(e) {
+    e.preventDefault();
+    const mouseEvent = new MouseEvent("mouseup", {});
+    drawingArea.dispatchEvent(mouseEvent);
+}
+
 
 function startDrawing(e) {
   isDrawing = true;

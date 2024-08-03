@@ -902,10 +902,10 @@ function clearnotepadDrawing() {
 }
 
 // Attach event listeners to the drawingArea
-drawingArea.addEventListener("mousedown", startDrawing);
-drawingArea.addEventListener("mousemove", draw);
-drawingArea.addEventListener("mouseup", stopDrawing);
-drawingArea.addEventListener("mouseleave", stopDrawing);
+//drawingArea.addEventListener("mousedown", startDrawing);
+//drawingArea.addEventListener("mousemove", draw);
+//drawingArea.addEventListener("mouseup", stopDrawing);
+//drawingArea.addEventListener("mouseleave", stopDrawing);
 drawingArea.addEventListener("touchstart", handleTouchStart, false);
 drawingArea.addEventListener("touchmove", handleTouchMove, false);
 drawingArea.addEventListener("touchend", handleTouchEnd, false);

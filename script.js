@@ -233,7 +233,7 @@ const ordnanceContent = `
 
 
 const aircraftData = {
-    a10: {
+    'a10': {
         checklist: {
             day: [
                 {
@@ -340,7 +340,7 @@ const aircraftData = {
     	reference: rwrThreatsContent + ordnanceContent, // or any other relevant reference data
     	notepad: "" // You might want to initialize this with some default text or keep it empty
     },
-		f16: {
+		'f-16c': {
   checklist: {
     day: [
       {

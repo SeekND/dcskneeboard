@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+input[type="checkbox"] {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    cursor: pointer; /* Optional: Show a pointer cursor on hover */
+}
+
 #tab-buttons {
     display: flex; /* Use flexbox for easy centering */
     justify-content: center; /* Center the buttons horizontally */

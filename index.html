@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>Checklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-page">
+        <div class="button-category">
+            <h2>JETS</h2>
+            <div class="button-wrapper">
+                <button class="image-button" style="background-image: url('aircraft/f16.jpg');" onclick="loadAircraft('f16')"></button><br>
+                <span class="button-label">F-16</span>
+            </div>
+            <div class="button-wrapper">
+                <button class="image-button" style="background-image: url('aircraft/a10.jpg');" onclick="loadAircraft('a10')"></button><br>
+                <span class="button-label">A-10</span>
+            </div>
+        </div>
+        <div class="button-category">
+            <h2>HELICOPTERS</h2>
+            <div class="button-wrapper">
+                <button class="image-button" style="background-image: url('aircraft/sharka50.jpg');" onclick="loadAircraft('sharka50')"></button><br>
+                <span class="button-label">Sharka 50</span>
+            </div>
+        </div>    
+    </div>
+
+    <div id="aircraft-content" style="display: none;">
+        <div id="tab-buttons"></div>
+        <div id="checklist" class="tab-content hidden"></div>
+        <div id="emergency" class="tab-content hidden"></div>
+        <div id="airfields" class="tab-content hidden">
+            <button onclick="showAirfield('georgia')">Georgia</button>
+            <button onclick="showAirfield('marianas')">Marianas</button>
+            <div id="airfield-details"></div> 
+        </div>
+        <div id="reference" class="tab-content hidden"></div>
+<div id="notepad" class="tab-content hidden">
+  <button onclick="clearnotepadText()">Clear Text</button> 
+  <button onclick="clearnotepadDrawing()">Clear Drawing</button> 
+
+  <div id="notepad-container">
+    <div id="text-area" contenteditable="true"></div> 
+    <div class="separator"></div> 
+    <div id="drawing-area"></div> 
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

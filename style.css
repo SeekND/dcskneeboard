@@ -1,0 +1,257 @@
+.no-data-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tab-buttons {
+    display: flex; /* Use flexbox for easy centering */
+    justify-content: center; /* Center the buttons horizontally */
+    position: fixed; /* Keep the tabs fixed at the top */
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 30px;
+    background-color: #fff; /* Or any background color you prefer */
+    z-index: 10; /* Ensure the tabs are on top of other content */
+    padding: 10px; /* Add some padding for spacing */
+    border-bottom: 1px solid #ccc; /* Add a subtle border at the bottom */
+}
+
+.aircraft-name-button {
+    /* Existing styles */
+    background-color: black;
+    color: green;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    float: left;
+    margin-left: 10px;
+
+    /* New styles to mimic the image */
+    font-family: monospace; /* Use a monospace font for the pixelated look */
+    text-shadow: 
+        0 0 1px #00FF00, /* Green glow */
+        0 0 5px #00FF00; 
+    border: 1px dashed red; /* Add a red dashed border */
+}
+
+#tab-buttons img {
+  position: absolute; /* Position the image absolutely within #tab-buttons */
+  left: 0;            /* Place it at the far left */
+  top: 0;             /* Align it to the top */
+}
+
+
+.image-button {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    border: none; 
+    cursor: pointer;
+}
+
+#reference img {  /* Target all images within the #reference div */
+  max-width: 200px; 
+  height: auto;     /* Maintain aspect ratio */
+}
+
+#reference table {
+  table-layout: fixed; /* Force equal column widths */
+  width: 100%;         /* Make the table take up full width */
+}
+
+#emergency .category h3 { /* Target the h3 headings within .category divs in the #emergency section */
+  text-align: center; 
+}
+
+#emergency button { /* Target all buttons within the #emergency section */
+  background-color: black;
+  color: green;
+  padding: 5px 10px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  font-size: 14px; 
+}
+
+
+body .tab-content { 
+    margin-top: 70px;
+}
+
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+li { 
+    margin-bottom: 5px; 
+} 
+
+.tab-content { 
+    display: none; 
+}
+
+.tab-content.active { 
+    display: block; 
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size:   
+ 15px;
+    margin-bottom: 10px; /* Add spacing between checklists */
+}
+
+.checklist-content {
+    padding-left: 20px; /* Indent checklist items */
+}
+
+.checklist-content li { /* Remove bullet points and add some spacing */
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.note-cell {
+  background-color: #f0f0f0; /* Light gray background */
+  font-style: italic; 
+}
+
+#checklist button {
+    border-radius: 10px;  
+    background-color: black; 
+    color: green;
+    padding: 8px 16px;   
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#checklist-options button {  /* Target buttons within #checklist-options */
+  background-color: black;
+  color: green;
+  padding: 5px 10px;
+  border: 1px dashed red;
+  cursor: pointer; 
+  font-size: 14px;
+  font-family: monospace;
+ // text-shadow:
+ //   0 0 5px #00FF00,
+ //   0 0 10px #00FF00;
+border-radius: 0;
+  margin: 0 5px; /* Add margin to create separation */
+}
+
+#notepad-container {
+  height: calc(100vh - 100px); /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+#text-area, #drawing-area {
+  flex: 1 0 0; /* Ensure both areas take up equal space and can shrink if needed */
+  /* ... other styles ... */
+}
+
+#text-area {
+  flex: 1; /* Take up the top half of the container */
+  border: 1px solid #ccc;
+  padding: 10px;
+  resize: vertical;
+  overflow-y: auto; /* Add scrollbar if text overflows */
+  border: 2px solid #ccc;
+}
+
+.separator {
+  border-bottom: 1px solid #ccc; /* Add a separator line */
+  margin: 5px 0; /* Add some spacing around the separator */
+}
+
+#drawing-area {
+  flex: 1; /* Take up the bottom half of the container */
+  position: relative;
+  border: 2px solid #ccc; /* Thicker border for the drawing area */
+}
+
+/* General Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    font-family: Arial, sans-serif;
+    /* table-layout: fixed; */  /* Comment out or remove this line */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Add a light border to each cell */
+    padding: 8px; /* Add padding to cells for better readability */
+    text-align: left; /* Align text to the left */
+    overflow: hidden; /* Hide overflow content (important for images) */
+    word-wrap: break-word; /* Allow long words to wrap */
+}
+
+th {
+    background-color: #f2f2f2; /* Add a light background color to header cells */
+}
+
+/* Image Styling */
+img {
+    max-width: 100%; /* Make the image fit the width of the cell */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+/* Table Headings Styling */
+.tab-content h2 { /* style the secondary table headings  e.g. GENERAL, INFRARED*/
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add padding above and below the text */
+    border-bottom: 1px solid #ddd; /* Add a light border below the text */
+}
+
+
+.airfield-btn { /* Add some button styling if needed */
+    background: none;
+    border: none;
+    padding: 0;
+    color: blue; /* Or your preferred color */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#airfield-details img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+    max-height: 50vh; 
+}
+
+#airfield-details td > img:not([style*="display: none"]) {
+    width: auto; /* Set the cell width to 50% of its content's width */
+}
+
+.main-page {
+    display: block;     /* Stack categories vertically */
+    text-align: center; /* Center content */
+}
+
+.button-wrapper {
+    display: inline-block; /* Allow buttons to be side by side */
+    margin: 10px;             /* Add some spacing between buttons */
+}
+
+.square-button button {
+    width: 150px;     /* Adjust size as needed */
+    height: 150px; 
+    /* ... (other button styles) */
+}

@@ -1,3 +1,18 @@
+.main-page {
+    display: block;     /* Stack categories vertically */
+    text-align: center; /* Center content */
+}
+
+.button-wrapper {
+    display: inline-block; /* Allow buttons to be side by side */
+    margin: 10px;             /* Add some spacing between buttons */
+}
+
+.square-button button {
+    width: 150px;     /* Adjust size as needed */
+    height: 150px; 
+}
+
 .no-data-message {
   display: flex;
   flex-direction: column;
@@ -31,7 +46,7 @@ input[type="checkbox"] {
     z-index: 10; /* Ensure the tabs are on top of other content */
     padding: 0px 10px; /* Add some padding for spacing */
     border-bottom: 1px solid #ccc; /* Add a subtle border at the bottom */
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
 .aircraft-name-button {
@@ -253,20 +268,4 @@ img {
 
 #airfield-details td > img:not([style*="display: none"]) {
     width: auto; /* Set the cell width to 50% of its content's width */
-}
-
-.main-page {
-    display: block;     /* Stack categories vertically */
-    text-align: center; /* Center content */
-}
-
-.button-wrapper {
-    display: inline-block; /* Allow buttons to be side by side */
-    margin: 10px;             /* Add some spacing between buttons */
-}
-
-.square-button button {
-    width: 150px;     /* Adjust size as needed */
-    height: 150px; 
-    /* ... (other button styles) */
 }

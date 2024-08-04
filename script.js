@@ -170,9 +170,14 @@ function loadReferenceContent() {
 function loadReferenceCategory(category) {
     const referenceTab = document.getElementById("reference");
 
-    fetch(`reference/${category}/${category}.json`) // Load JSON file for the category
-        .then(response => response.json())
-        .then(categoryData => {
+  fetch(`reference/<span class="math-inline">\{category\}/</span>{category}.json`)
+    .then(response => {
+      if (!response.ok) { 
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(categoryData => {
             // Create the collapsible header
             const collapsible = document.createElement('div');
             collapsible.className = "collapsible";
@@ -192,8 +197,14 @@ function loadReferenceCategory(category) {
 
             referenceTab.appendChild(collapsible);
             referenceTab.appendChild(content);
-        })
-        .catch(error => console.error(`Error loading data for category ${category}:`, error));
+       })
+    .catch(error => {
+      console.error(`Error loading data for category ${category}:`, error); 
+      // Display an error message to the user
+      const errorMessage = document.createElement('p');
+      errorMessage.textContent = `Error loading data for category ${category}. Please check the file path, filename, and format.`;
+      referenceTab.appendChild(errorMessage);
+    });
 }
 
 function createReferenceTable(categoryData) {

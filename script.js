@@ -168,76 +168,87 @@ function loadReferenceContent() {
 }
 
 function loadReferenceCategory(category) {
-    const referenceTab = document.getElementById("reference");
+  const referenceTab = document.getElementById("reference");
 
   fetch(`reference/${category}/${category}.json`)
     .then(response => {
-      if (!response.ok) { 
+      if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       return response.json();
     })
     .then(categoryData => {
-            // Create the collapsible header
-            const collapsible = document.createElement('div');
-            collapsible.className = "collapsible";
-            collapsible.textContent = category; 
+      if (!Array.isArray(categoryData) || categoryData.length === 0) {
+        console.error(`Error: Invalid or empty data for category ${category}`);
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = `No data available for category ${category}.`;
+        referenceTab.appendChild(errorMessage);
+        return;
+      }
 
-            const content = document.createElement('div');
-            content.className = "checklist-content";
-            content.style.display = "none";
+      // Create the collapsible header
+      const collapsible = document.createElement('div');
+      collapsible.className = "collapsible";
+      collapsible.textContent = category;
 
-            // Create the table dynamically based on the categoryData structure
-            const table = createReferenceTable(categoryData);
+      const content = document.createElement('div');
+      content.className = "checklist-content";
+      content.style.display = "none";
 
-            content.appendChild(table);
-            collapsible.addEventListener('click', () => {
-                content.style.display = (content.style.display === "none") ? "block" : "none";
-            });
+      const table = createReferenceTable(categoryData);
+      content.appendChild(table);
 
-            referenceTab.appendChild(collapsible);
-            referenceTab.appendChild(content);
-       })
+      collapsible.addEventListener('click', () => {
+        content.style.display = (content.style.display === "none") ? "block" : "none";
+      });
+
+      referenceTab.appendChild(collapsible);
+      referenceTab.appendChild(content);
+    })
     .catch(error => {
-      console.error(`Error loading data for category ${category}:`, error); 
-      // Display an error message to the user
+      console.error(error);
       const errorMessage = document.createElement('p');
       errorMessage.textContent = `Error loading data for category ${category}. Please check the file path, filename, and format.`;
       referenceTab.appendChild(errorMessage);
     });
 }
 
+
 function createReferenceTable(categoryData) {
-    const table = document.createElement('table');
+  const table = document.createElement('table');
 
-    // Determine table headers based on the first item in the categoryData
-    const headers = Object.keys(categoryData[0]); 
-    const headerRow = table.insertRow();
+  // Check if categoryData is an array and has at least one item
+  if (!Array.isArray(categoryData) || categoryData.length === 0) {
+    console.error("Error: Invalid or empty category data.");
+    return table; // Return an empty table to avoid further errors
+  }
+
+  // Determine table headers based on the first item in the categoryData
+  const headers = Object.keys(categoryData[0]); 
+  const headerRow = table.insertRow();
+  headers.forEach(header => {
+    const th = document.createElement('th');
+    th.textContent = header.replace(/_/g, ' '); // Replace underscores with spaces in header text
+    headerRow.appendChild(th);
+  });
+
+  // Populate the table rows
+  categoryData.forEach(item => {
+    const row = table.insertRow();
     headers.forEach(header => {
-        const th = document.createElement('th');
-        th.textContent = header;
-        headerRow.appendChild(th);   
-
+      const cell = row.insertCell();
+      if (header === 'image') {
+        const img = document.createElement('img');
+        img.src = item[header];
+        img.alt = header; 
+        cell.appendChild(img);
+      } else {
+        cell.textContent = item[header] || "";
+      }
     });
+  });
 
-    // Populate  the table rows
-    categoryData.forEach(item => {
-        const row = table.insertRow();
-        headers.forEach(header => {
-            const cell = row.insertCell();
-            if (header === 'image') {
-                // If it's an image, create an image element
-                const img = document.createElement('img');
-                img.src = item[header];
-                img.alt = header; 
-                cell.appendChild(img);
-            } else {
-                cell.textContent = item[header] || "";
-            }
-        });
-    });
-
-    return table;
+  return table;
 }
 
 

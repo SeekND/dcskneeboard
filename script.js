@@ -142,94 +142,96 @@ function loadEmergencyProcedures(emergencyProceduresData) {
 
 
 
+// START REFERENCE CATEGORY FETCH /////////////////////////////////
 
 
 
+function getReferenceCategories() {
+  return fetch('reference/reference_categories.json') // Replace with your actual file name
+    .then(response => response.json())
+    .then(data => {
+      return data.categories; // Extract the categories array from the JSON object
+    })
+    .catch(error => console.error('Error fetching reference categories:', error));
+}
+
+function loadReferenceContent() {
+    const referenceTab = document.getElementById("reference");
+    referenceTab.innerHTML = ""; // Clear previous content
+
+    getReferenceCategories()
+        .then(categories => {
+            categories.forEach(category => {
+                loadReferenceCategory(category); 
+            });
+        });
+}
+
+function loadReferenceCategory(category) {
+    const referenceTab = document.getElementById("reference");
+
+    fetch(`reference/${category}/${category}.json`) // Load JSON file for the category
+        .then(response => response.json())
+        .then(categoryData => {
+            // Create the collapsible header
+            const collapsible = document.createElement('div');
+            collapsible.className = "collapsible";
+            collapsible.textContent = category; 
+
+            const content = document.createElement('div');
+            content.className = "checklist-content";
+            content.style.display = "none";
+
+            // Create the table dynamically based on the categoryData structure
+            const table = createReferenceTable(categoryData);
+
+            content.appendChild(table);
+            collapsible.addEventListener('click', () => {
+                content.style.display = (content.style.display === "none") ? "block" : "none";
+            });
+
+            referenceTab.appendChild(collapsible);
+            referenceTab.appendChild(content);
+        })
+        .catch(error => console.error(`Error loading data for category ${category}:`, error));
+}
+
+function createReferenceTable(categoryData) {
+    const table = document.createElement('table');
+
+    // Determine table headers based on the first item in the categoryData
+    const headers = Object.keys(categoryData[0]); 
+    const headerRow = table.insertRow();
+    headers.forEach(header => {
+        const th = document.createElement('th');
+        th.textContent = header;
+        headerRow.appendChild(th);   
+
+    });
+
+    // Populate  the table rows
+    categoryData.forEach(item => {
+        const row = table.insertRow();
+        headers.forEach(header => {
+            const cell = row.insertCell();
+            if (header === 'image') {
+                // If it's an image, create an image element
+                const img = document.createElement('img');
+                img.src = item[header];
+                img.alt = header; 
+                cell.appendChild(img);
+            } else {
+                cell.textContent = item[header] || "";
+            }
+        });
+    });
+
+    return table;
+}
 
 
+// END REFERENCE CATEGORY FETCH /////////////////////////////////
 
-const rwrThreatsContent = `
-<div class="collapsible" onclick="toggleChecklist(this)">RWR Threats</div>
-            <div class="checklist-content" style="display: none;">
-
-    <table>
-        <tr><th>GENERAL</th></tr>
-        <tr><th>RWR</th><th></th> <th>NAME</th><th>CODE</th><th>MAX<br>RANGE</th> <th>MAX ALT</th> <th>ECM</th> <th>TYPE</th></tr>
-        <tr><td>3</td><td><img src="reference/rwr/neva.jpg" alt="Neva"></td><td>Neva</td><td>SA-3</td><td>19 nm</td><td>59'000 ft</td><td>SAM 1</td><td></td></tr>
-        <tr><td>6</td><td><img src="reference/rwr/kub.jpg" alt="Kub"></td><td>Kub</td><td>SA-6</td><td>13 nm</td><td>46'000 ft</td><td>SAM 1</td><td></td></tr>
-        <tr><td>8</td><td><img src="reference/rwr/osa.jpg" alt="Osa"></td><td>Osa</td><td>SA-8</td><td>5.4 nm</td><td>16'400 ft</td><td>SAM 1</td><td></td></tr>
-        <tr><td>10</td><td><img src="reference/rwr/s-300.jpg" alt="S-300"></td><td>S-300</td><td>SA-10</td><td>25 nm</td><td>98'425 ft</td><td>SAM 2</td><td></td></tr>
-        <tr><td>11</td><td><img src="reference/rwr/buk.jpg" alt="Buk"></td><td>Buk</td><td>SA-11/17</td><td>17.3 nm</td><td>72'178 ft</td><td>SAM 2</td><td></td></tr>
-        <tr><td>15</td><td><img src="reference/rwr/tor.jpg" alt="Tor"></td><td>Tor</td><td>SA-15</td><td>6.5 nm</td><td>19'685 ft</td><td>SAM 2</td><td></td></tr>
-        <tr><td>S6</td><td><img src="reference/rwr/tunguska.jpg" alt="Tunguska"></td><td>Tunguska</td><td>SA-19</td><td>4.32 nm</td><td>19'685 ft</td><td>SAM 2</td><td></td></tr>
-        <tr><td>A</td><td><img src="reference/rwr/shilka.jpg" alt="Shilka"></td><td>Shilka</td><td></td><td>1.35 nm</td><td>8'200 ft</td><td>AAA</td><td></td></tr>
-        <tr><td>SD</td><td><img src="reference/rwr/buk_tar.jpg" alt="Buk TAR"></td><td>Buk TAR</td><td>SA-11/17</td><td>46 nm</td><td></td><td></td><td>SAM 2<br>Target Acquisition Radar</td></tr>
-        <tr><td>DE</td><td><img src="reference/rwr/sborka.jpg" alt="Sborka"></td><td>Sborka</td><td></td><td>19 nm</td><td></td><td></td><td>Radar Command Centre</td></tr>
-        <tr><td>10</td><td><img src="reference/rwr/s-300tel.jpg" alt="S-300"></td><td>S-300</td><td>SA-10</td><td>162 nm</td><td></td><td></td><td>SAM 2<br>Tracking Radar</td></tr>
-        <tr><td>BB</td><td><img src="reference/rwr/s-300er.jpg" alt="S-300"></td><td>S-300</td><td>SA-10</td><td>162 nm</td><td></td><td></td><td>SAM 2<br>Surveillance Radar</td></tr>
-        <tr><td>CS</td><td><img src="reference/rwr/s-300laar.jpg" alt="S-300"></td><td>S-300</td><td>SA-10</td><td>65 nm</td><td></td><td></td><td>SAM 2<br>Search Radar</td></tr>
-        <tr><td>EW</td><td><img src="reference/rwr/nebo.jpg" alt="Nebo"></td><td>Nebo</td><td>SA-10</td><td>178 nm</td><td></td><td></td><td>SAM 2<br>Target Acquisition Radar</td></tr>
-    </table>
-
-    <table>
-        <tr><th>INFRARED</th></tr>
-        <tr><th>RWR</th><th></th> <th>TYPE</th><th>CODE</th><th>MAX RANGE</th><th>MAX ALT</th><th>ECM</th><th>TYPE</th></tr>
-        <tr><td>9</td><td><img src="reference/rwr/strela-1.jpg" alt="Strela-1"></td><td>Strela-1</td><td>SA-9</td><td>2.3 nm</td><td>11'500 ft</td><td></td><td></td></tr>
-        <tr><td>13</td><td><img src="reference/rwr/strela-10.jpg" alt="Strela-10"></td><td>Strela-10</td><td>SA-13</td><td>2.7 nm</td><td>11'500 ft</td><td></td><td></td></tr>
-        <tr><td></td><td><img src="reference/rwr/igla.jpg" alt="Igla"></td><td>Igla</td><td>SA-18</td><td>2.8 nm</td><td>11'000 ft</td><td></td><td></td></tr>
-    </table>
-
-    <table>
-        <tr><th>ANTI AIRCRAFT ARTILLERY</th></tr>
-        <tr><th>RWR</th><th></th> <th>TYPE</th><th>CODE</th><th>MAX RANGE</th><th>MAX ALT</th><th>ECM</th><th>TYPE</th></tr>
-        <tr><td></td><td><img src="reference/rwr/zu-23.jpg" alt="zu-23"></td><td>Zu-23</td><td></td><td>1.35 nm</td><td>6'561 ft</td><td></td><td></td></tr>
-    </table>
-</div> 
-`; 
-
-// Ordnance Content (new table)
-const ordnanceContent = `
-<div class="collapsible" onclick="toggleChecklist(this)">Ordnance</div>
-            <div class="checklist-content" style="display: none;">
-    <table>
-        <tr>
-            <th>Air to Air</th>
-            <th>Weight</th>
-            <th>Speed</th>
-            <th>Guidance</th>
-            <th>Aspect</th>
-            <th>Range</th>
-            <th>Warhead</th>
-        </tr>
-        <tr> <td>AIM-9B</td> <td>75 kg</td> <td>Ma 2</td> <td>Infrared</td> <td>Rear-Aspect</td> <td>11 km</td> <td>11 kg</td> </tr>
-        <tr> <td>AIM-9L</td> <td>85 kg</td> <td>Ma 2</td> <td>Infrared</td> <td>All-Aspect</td> <td>11 km</td> <td>9.4 kg</td> </tr>
-        <tr> <td>AIM-9M</td> <td>85.5 kg</td> <td>Ma 2.5</td> <td>Infrared</td> <td>All-Aspect</td> <td>18 km</td> <td>11 kg</td> </tr>
-        <tr> <td>AIM-9P</td> <td>85.5 kg</td> <td>Ma 2</td> <td>Infrared</td> <td>Rear-Aspect</td> <td>11 km</td> <td>11 kg</td> </tr>
-        <tr> <td>AIM-9P5</td> <td>85.5 kg</td> <td>Ma 2</td> <td>Infrared</td> <td>All-Aspect</td> <td>11 km</td> <td>11 kg</td> </tr>
-        <tr> <td>AIM-9X</td> <td>85 kg</td> <td>Ma 2.5</td> <td>Infrared with Imaging</td> <td>HOBS</td> <td>18 km</td> <td>9.4 kg</td> </tr>
-    </table>
-
-    <table>
-        <tr>
-            <th>Air to Ground</th>
-            <th>Weight</th>
-            <th>Speed</th>
-            <th>Guidance</th>
-            <th>Aspect</th>
-            <th>Range</th>
-            <th>Warhead</th>
-        </tr>
-        <tr> <td>AGM-65B</td> <td>220 kg</td> <td>Max Mach 0.85</td> <td>Electro-Optical TV</td> <td>N/A</td> <td>km: 27, effective 8-16</td> <td>57 kg Shaped Charge</td> </tr>
-        <tr> <td>AGM-65D</td> <td>220 kg</td> <td>Max Mach 0.85</td> <td>Infrared Imaging</td> <td>N/A</td> <td>km: 27, effective 8-16</td> <td>57 kg Shaped Charge</td> </tr>
-        <tr> <td>AGM-65E</td> <td>293 kg</td> <td>Max Mach 0.85</td> <td>Semi-Active Laser</td> <td>N/A</td> <td>km: 27, effective 8-16</td> <td>136 kg Penetrating Blast Fragmentation</td> </tr>
-        <tr> <td>AGM-65F</td> <td>306 kg</td> <td>Max Mach 0.85</td> <td>Infrared Imaging</td> <td>N/A</td> <td>km: 25, effective 9</td> <td>136 kg Penetrating Blast Fragmentation</td> </tr>
-        <tr> <td>AGM-65G</td> <td>304 kg</td> <td>Max Mach 0.85</td> <td>Infrared Imaging</td> <td>N/A</td> <td>km: 27, effective 5-12</td> <td>136 kg Penetrating Blast Fragmentation</td> </tr>
-        <tr> <td>AGM-65H</td> <td>304 kg</td> <td>Max Mach 0.85</td> <td>Electro-Optical TV</td> <td>N/A</td> <td>km: 27, effective 5-12</td> <td>56 kg Shaped Charge</td> </tr>
-        <tr> <td>AGM-65K</td> <td>210 kg</td> <td>Max Mach 0.85</td> <td>Electro-Optical TV</td> <td>N/A</td> <td>km: 27, effective 5-10</td> <td>57 kg Shaped Charge</td> </tr>
-    </table>
-
-</div>
-`;
 
 
 const aircraftData = {
@@ -337,7 +339,7 @@ const aircraftData = {
             // ... Add more emergency procedure categories as needed
         ],
         airfields: [], // (Add airfield data if available)
-    	reference: rwrThreatsContent + ordnanceContent, // or any other relevant reference data
+    	reference: [], // or any other relevant reference data
     	notepad: "" // You might want to initialize this with some default text or keep it empty
     },
 		'f-16c': {
@@ -551,7 +553,7 @@ const aircraftData = {
         },
         emergency: [], // (Your existing emergency procedures)
         airfields: [], // (Add airfield data if available)
-    	reference: rwrThreatsContent + ordnanceContent, // or any other relevant reference data
+    	reference: [], // or any other relevant reference data
     	notepad: [], // You might want to initialize this with some default text or keep it empty
     },
 };
@@ -648,13 +650,6 @@ function toggleChecklist(header) {
     if (content) {
         content.style.display = (content.style.display === "none") ? "block" : "none";
     }
-}
-
-
-
-function loadReferenceContent() {
-    const emergencyTab = document.getElementById("reference");
-    emergencyTab.innerHTML = rwrThreatsContent + ordnanceContent;
 }
 
 

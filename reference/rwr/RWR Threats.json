@@ -1,0 +1,188 @@
+{
+  "GENERAL": [
+    {
+      "RWR": "3",
+      "image": "neva.jpg",
+      "NAME": "Neva",
+      "CODE": "SA-3",
+      "MAX_RANGE": "19 nm",
+      "MAX_ALT": "59'000 ft",
+      "ECM": "SAM 1",
+      "TYPE": ""
+    },
+    {
+      "RWR": "6",
+      "image": "kub.jpg",
+      "NAME": "Kub",
+      "CODE": "SA-6",
+      "MAX_RANGE": "13 nm",
+      "MAX_ALT": "46'000 ft",
+      "ECM": "SAM 1",
+      "TYPE": ""
+    },
+    {
+      "RWR": "8",
+      "image": "osa.jpg",
+      "NAME": "Osa",
+      "CODE": "SA-8",
+      "MAX_RANGE": "5.4 nm",
+      "MAX_ALT": "16'400 ft",
+      "ECM": "SAM 1",
+      "TYPE": ""
+    },
+    {
+      "RWR": "10",
+      "image": "s-300.jpg",
+      "NAME": "S-300",
+      "CODE": "SA-10",
+      "MAX_RANGE": "25 nm",
+      "MAX_ALT": "98'425 ft",
+      "ECM": "SAM 2",
+      "TYPE": ""
+    },
+    {
+      "RWR": "11",
+      "image": "buk.jpg",
+      "NAME": "Buk",
+      "CODE": "SA-11/17",
+      "MAX_RANGE": "17.3 nm",
+      "MAX_ALT": "72'178 ft",
+      "ECM": "SAM 2",
+      "TYPE": ""
+    },
+    {
+      "RWR": "15",
+      "image": "tor.jpg",
+      "NAME": "Tor",
+      "CODE": "SA-15",
+      "MAX_RANGE": "6.5 nm",
+      "MAX_ALT": "19'685 ft",
+      "ECM": "SAM 2",
+      "TYPE": ""
+    },
+    {
+      "RWR": "S6",
+      "image": "tunguska.jpg",
+      "NAME": "Tunguska",
+      "CODE": "SA-19",
+      "MAX_RANGE": "4.32 nm",
+      "MAX_ALT": "19'685 ft",
+      "ECM": "SAM 2",
+      "TYPE": ""
+    },
+    {
+      "RWR": "A",
+      "image": "shilka.jpg",
+      "NAME": "Shilka",
+      "CODE": "",
+      "MAX_RANGE": "1.35 nm",
+      "MAX_ALT": "8'200 ft",
+      "ECM": "AAA",
+      "TYPE": ""
+    },
+    {
+      "RWR": "SD",
+      "image": "buk_tar.jpg",
+      "NAME": "Buk TAR",
+      "CODE": "SA-11/17",
+      "MAX_RANGE": "46 nm",
+      "MAX_ALT": "",
+      "ECM": "",
+      "TYPE": "SAM 2 Target Acquisition Radar"
+    },
+    {
+      "RWR": "DE",
+      "image": "sborka.jpg",
+      "NAME": "Sborka",
+      "CODE": "",
+      "MAX_RANGE": "19 nm",
+      "MAX_ALT": "",
+      "ECM": "",
+      "TYPE": "Radar Command Centre"
+    },
+    {
+      "RWR": "10",
+      "image": "s-300.jpg",
+      "NAME": "S-300",
+      "CODE": "SA-10",
+      "MAX_RANGE": "162 nm",
+      "MAX_ALT": "",
+      "ECM": "",
+      "TYPE": "SAM 2 Tracking Radar"
+    },
+    {
+      "RWR": "BB",
+      "image": "s-300.jpg",
+      "NAME": "S-300",
+      "CODE": "SA-10",
+      "MAX_RANGE": "162 nm",
+      "MAX_ALT": "",
+      "ECM": "",
+      "TYPE": "SAM 2 Surveillance Radar"
+    },
+    {
+      "RWR": "CS",
+      "image": "s-300.jpg",
+      "NAME": "S-300",
+      "CODE": "SA-10",
+      "MAX_RANGE": "65 nm",
+      "MAX_ALT": "",
+      "ECM": "",
+      "TYPE": "SAM 2 Search Radar"
+    },
+    {
+      "RWR": "EW",
+      "image": "nebo.jpg",
+      "NAME": "Nebo",
+      "CODE": "SA-10",
+      "MAX_RANGE": "178 nm",
+      "MAX_ALT": "",
+      "ECM": "",
+      "TYPE": "SAM 2 Target Acquisition Radar"
+    }
+  ],
+  "INFRARED": [
+    {
+      "RWR": "9",
+      "image": "strela-1.jpg",
+      "TYPE": "Strela-1",
+      "CODE": "SA-9",
+      "MAX_RANGE": "2.3 nm",
+      "MAX_ALT": "11'500 ft",
+      "ECM": "",
+      "TYPE": ""
+    },
+    {
+      "RWR": "13",
+      "image": "strela-10.jpg",
+      "TYPE": "Strela-10",
+      "CODE": "SA-13",
+      "MAX_RANGE": "2.7 nm",
+      "MAX_ALT": "11'500 ft",
+      "ECM": "",
+      "TYPE": ""
+    },
+    {
+      "RWR": "",
+      "image": "igla.jpg",
+      "TYPE": "Igla",
+      "CODE": "SA-18",
+      "MAX_RANGE": "2.8 nm",
+      "MAX_ALT": "11'000 ft",
+      "ECM": "",
+      "TYPE": ""
+    }
+  ],
+  "ANTI AIRCRAFT ARTILLERY": [
+    {
+      "RWR": "",
+      "image": "zu-23.jpg",
+      "TYPE": "Zu-23",
+      "CODE": "",
+      "MAX_RANGE": "1.35 nm",
+      "MAX_ALT": "6'561 ft",
+      "ECM": "",
+      "TYPE": ""
+    }
+  ]
+}

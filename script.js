@@ -170,7 +170,7 @@ function loadReferenceContent() {
 function loadReferenceCategory(category) {
     const referenceTab = document.getElementById("reference");
 
-  fetch(`reference/<span class="math-inline">\{category\}/</span>{category}.json`)
+  fetch(`reference/${category}/${category}.json`)
     .then(response => {
       if (!response.ok) { 
         throw new Error(`HTTP error! status: ${response.status}`);

@@ -1,3 +1,40 @@
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0;             /* Light text */
+}
+
+body.dark-mode #tab-buttons {
+  background-color: #222; 
+}
+
+body.dark-mode .collapsible {
+  background-color: #555;
+  color: #e0e0e0;
+}
+
+body.dark-mode .collapsible.subcategory { 
+  background-color: #666; 
+}
+
+body.dark-mode .note-cell {
+  background-color: #333; 
+}
+
+body.dark-mode table th {
+  background-color: #444;
+}
+
+body.dark-mode .aircraft-name-button, 
+body.dark-mode #checklist-options button, 
+body.dark-mode #emergency button {
+  background-color: #333;
+  color: #0f0; /* Darker green text */
+  text-shadow:
+      0 0 3px #00FF00, /* Reduced green glow */
+      0 0 6px #00FF00;
+}
+
 .main-page {
     display: block;     /* Stack categories vertically */
     text-align: center; /* Center content */

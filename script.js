@@ -1,3 +1,10 @@
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');   
+
+});
+
 function loadAircraft(aircraftId) {
 
     // 1. Hide the main page and show the aircraft content section

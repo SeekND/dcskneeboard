@@ -69,11 +69,11 @@ input[type="checkbox"] {
 }
 
 #tab-buttons img {
-  position: absolute; /* Position the image absolutely within #tab-buttons */
-  left: 0;            /* Place it at the far left */
-  top: 0;             /* Align it to the top */
+ // position: absolute; /* Position the image absolutely within #tab-buttons */
+ // left: 0;            /* Place it at the far left */
+ // top: 0;             /* Align it to the top */
+padding: 0px 0px;
 }
-
 
 .image-button {
     background-size: cover; 
@@ -92,6 +92,25 @@ input[type="checkbox"] {
 #reference table {
   table-layout: fixed; /* Force equal column widths */
   width: 100%;         /* Make the table take up full width */
+}
+
+#reference .checklist-content td > * { /* Target any direct child element within the cells */
+    padding: 18px; /* Or adjust the padding value as needed */
+}
+
+.category-container.subcategory { /* Target subcategory containers */
+  padding-left: 20px; /* Add padding to indent the entire row */
+}
+
+/* Remove left padding/margin from the first cell to align with subcategory indentation */
+#reference .checklist-content td:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Add padding to all cells (except the first one) to maintain readability */
+#reference .checklist-content td:not(:first-child) {
+  padding: 18px; /* Or adjust the padding value as needed */
 }
 
 #emergency .category h3 { /* Target the h3 headings within .category divs in the #emergency section */
@@ -139,19 +158,15 @@ li {
     border: none;
     text-align: left;
     outline: none;
-    font-size:   
- 15px;
+    font-size: 15px;
     margin-bottom: 10px; /* Add spacing between checklists */
 }
+
 
 .checklist-content {
     padding-left: 20px; /* Indent checklist items */
 }
 
-.checklist-content li { /* Remove bullet points and add some spacing */
-    list-style: none;
-    margin-bottom: 5px;
-}
 
 .note-cell {
   background-color: #f0f0f0; /* Light gray background */

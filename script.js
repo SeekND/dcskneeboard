@@ -1,64 +1,184 @@
 function loadAircraft(aircraftId) {
-  // 1. Hide the main page and show the aircraft content section
-  document.querySelector('.main-page').style.display = 'none';
-  const aircraftContent = document.getElementById('aircraft-content');
-  aircraftContent.style.display = 'block';
 
-  // 2. Check if aircraft data exists
-  if (!aircraftData[aircraftId]) {
-    // Display "no data" message
-  aircraftContent.innerHTML = `
-    <div class="no-data-message"> 
-      <p>No data available for this aircraft.</p> 
-      <button onclick="location.reload()">Refresh to return to main menu</button>
-    </div>
-  `;
-    return; // Stop further execution
-  }
+    // 1. Hide the main page and show the aircraft content section
+    document.querySelector('.main-page').style.display = 'none';
+    document.getElementById('aircraft-content').style.display = 'block';
 
-  // 3. Dynamically generate tab buttons (only if data exists)
-  const tabButtons = document.getElementById("tab-buttons");
-  tabButtons.innerHTML = ""; 
+    // 2. Dynamically generate tab buttons
+    const tabButtons = document.getElementById("tab-buttons");
+    tabButtons.innerHTML = ""; 
 
+    Object.keys(aircraftData[aircraftId]).forEach(tabId => {
+        const button = document.createElement('button');
+        button.textContent = tabId.charAt(0).toUpperCase() + tabId.slice(1);
+        button.onclick = () => changeTab(tabId, aircraftId);
+        tabButtons.appendChild(button);
+    });
 
-  const imagePath = `aircraft/${aircraftId}.jpg`;
+    // 3. Construct the image path based on the aircraftId
+    const imagePath = `aircraft/${aircraftId}.jpg`;
 
-  // 4. Create and display the aircraft image next to the checklist
- const img = document.createElement('img');
+    // 4. Create and display the aircraft image within the tab-buttons div
+    const img = document.createElement('img');
     img.src = imagePath;
-    img.alt = aircraftId; 
+    img.alt = aircraftId;
     img.style.width = '50px';
     img.style.height = '50px';
-    img.style.float = 'left'; 
-    img.style.marginRight = '10px'; 
-    img.title = aircraftId; 
-
-  const aircraftNameButton = document.createElement('button');
-  aircraftNameButton.textContent = aircraftId.toUpperCase(); // Convert to uppercase
-  aircraftNameButton.classList.add('aircraft-name-button'); 
-
-  // Append the image and the name button to tabButtons
-  tabButtons.appendChild(img); 
-  tabButtons.appendChild(aircraftNameButton);
-
-  const spacer = document.createElement('div');
-  spacer.style.width = '5px'; // Adjust the width as needed
-  spacer.style.display = 'inline-block'; // Make it an inline-block element
-  tabButtons.appendChild(spacer);
-
-  Object.keys(aircraftData[aircraftId]).forEach(tabId => {
-    const button = document.createElement('button');
-    button.textContent = tabId.charAt(0).toUpperCase() + tabId.slice(1);
-    button.onclick = () => changeTab(tabId, aircraftId); 
-    tabButtons.appendChild(button);
-  });
-
-  // 3. Construct the image path based on the aircraftId
 
 
-  // 5. Trigger the loading of the initial tab content (e.g., 'checklist')
-  //changeTab('checklist', aircraftId); 
+    // Create a button to hold the aircraft name
+    const aircraftNameButton = document.createElement('button');
+    aircraftNameButton.textContent = aircraftId.toUpperCase();
+    aircraftNameButton.classList.add('aircraft-name-button');
+
+    // Append the image and the name button to tabButtons
+
+    tabButtons.appendChild(aircraftNameButton);    
+    tabButtons.appendChild(img);
+
+    // Add a spacer element
+    const spacer = document.createElement('div');
+    spacer.style.width = '20px';
+    spacer.style.display = 'inline-block';
+    tabButtons.appendChild(spacer);
+
+    // 5. Load all content for the selected aircraft upfront
+    loadAllContent(aircraftId);
+    
 }
+
+
+function loadAllContent(aircraftId) {
+
+    changeTab('checklist', aircraftId); 
+    loadChecklistTypes(aircraftId);
+    loadEmergencyProcedures(aircraftData[aircraftId].emergency); 
+    loadReferenceContent();
+}
+
+
+// START LOAD CHECKLIST ///////////////////////////////////////////////////
+
+function loadChecklistTypes(aircraftId) {
+    const checklistOptionsDiv = document.getElementById('checklist-options');
+    //checklistOptionsDiv.innerHTML = ''; // Clear any previous buttons
+
+    fetch(`checklist/${aircraftId}.json`)
+        .then(response => response.json())
+        .then(data => {
+            const checklistTypes = data.checklists;
+
+            checklistTypes.forEach(type => {
+                const button = document.createElement('button');
+                button.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+                button.onclick = () => loadChecklistType(type, aircraftId);
+                checklistOptionsDiv.appendChild(button);
+            });
+        })
+        .catch(error => console.error(`Error loading checklist data for ${aircraftId}:`, error));
+}
+
+function loadChecklistType(type, aircraftId) {
+    fetch(`checklist/${aircraftId}/${type}.json`)
+        .then(response => response.json())
+        .then(checklistData => {
+            const checklistContentDiv = document.getElementById("checklist-content");
+            checklistContentDiv.innerHTML = ""; // Clear previous checklist content
+
+            // Iterate over all categories in the checklistData object
+            for (const categoryName in checklistData) {
+                const itemsData = checklistData[categoryName];
+
+                // Check if itemsData is valid
+                if (!itemsData || itemsData.length === 0) {
+                    console.error(`Error: Invalid or empty data for category ${categoryName}`);
+                    continue;
+                }
+
+                // Create a collapsible section for each category
+                const collapsible = document.createElement('div');
+                collapsible.className = "collapsible";
+                collapsible.textContent = categoryName;
+
+                const content = document.createElement('div');
+                content.className = "checklist-content";
+                content.style.display = "none";
+
+                const table = document.createElement('table');
+
+                // Find the first "item" type item to determine headers
+                const firstItem = itemsData.find(item => item.type === 'item');
+                const headers = firstItem
+                    ? Object.keys(firstItem).filter(header => header !== 'type' && header !== 'locationText')
+                    : [];
+
+                // Create table header row
+                const headerRow = table.insertRow();
+                // Add an empty header for the checkbox if it's not already present
+                if (!headers.includes("")) {
+                    headers.unshift("");
+                }
+                headers.forEach(header => {
+                    const th = document.createElement('th');
+                    th.textContent = header === "" ? "" : header.replace(/_/g, ' ');
+                    headerRow.appendChild(th);
+                });
+
+                // Populate the table rows
+                itemsData.forEach(item => {
+                    if (item.type === 'item') {
+                        // Handle regular checklist item 
+                        const row = table.insertRow();
+                        const checkboxCell = row.insertCell();
+                        checkboxCell.innerHTML = '<input type="checkbox">';
+
+                        // Add event listener to the checkbox
+                        const checkbox = checkboxCell.querySelector('input[type="checkbox"]');
+                        checkbox.addEventListener('change', () => {
+                            checkCategoryCompletion(collapsible);
+                        });
+
+                        row.insertCell().textContent = item.requirement;
+                        row.insertCell().textContent = item.action;
+
+                        const locationCell = row.insertCell();
+                        if (item.locationImage) {
+                            const locationBtn = document.createElement('button');
+                            locationBtn.className = "location-btn";
+                            locationBtn.dataset.img = `checklist/${aircraftId}/${item.locationImage}`;
+                            locationBtn.textContent = item.locationText || "";
+                            locationCell.appendChild(locationBtn);
+                        } else {
+                            locationCell.textContent = "";
+                        }
+                    } else if (item.type === 'note') {
+                        // Handle note item - create a new row
+                        const noteRow = table.insertRow();
+                        const noteCell = noteRow.insertCell();
+                        noteCell.colSpan = 4; // Span across all 4 columns
+                        noteCell.textContent = item.text;
+                        noteCell.classList.add('note-cell');
+                    }
+                });
+
+                content.appendChild(table);
+                collapsible.addEventListener('click', () => {
+                    content.style.display = (content.style.display === "none") ? "block" : "none";
+                });
+
+                checklistContentDiv.appendChild(collapsible);
+                checklistContentDiv.appendChild(content);
+
+                // Check category completion initially (after the table is populated)
+                checkCategoryCompletion(collapsible);
+            }
+        })
+        .catch(error => console.error(`Error loading checklist type ${type} for ${aircraftId}:`, error));
+}
+
+
+
+// END LOAD CHECKLIST ///////////////////////////////////////////////////
 
 
 
@@ -83,7 +203,7 @@ function loadEmergencyProcedures(emergencyProceduresData) {
       collapsible.textContent = category.title;
 
       const content = document.createElement('div');
-      content.className = "checklist-content";
+      content.className = "checklistcontent";
       content.style.display = "none";
 
       const table = document.createElement('table');
@@ -145,59 +265,54 @@ function loadEmergencyProcedures(emergencyProceduresData) {
 // START REFERENCE CATEGORY FETCH /////////////////////////////////
 
 
+function loadReferenceContent() {
+  const referenceTab = document.getElementById("reference");
+  referenceTab.innerHTML = ""; 
 
-function getReferenceCategories() {
-  return fetch('reference/reference_categories.json') // Replace with your actual file name
-    .then(response => response.json())
-    .then(data => {
-      return data.categories; // Extract the categories array from the JSON object
+  getReferenceCategories() 
+    .then(categories => { 
+      if (Array.isArray(categories)) {
+        categories.forEach(category => {
+          loadReferenceCategory(category);
+        });
+      } else {
+        console.error('Error: getReferenceCategories did not return an array.');
+        // Handle the error gracefully, perhaps display a message to the user
+      }
     })
     .catch(error => console.error('Error fetching reference categories:', error));
 }
 
-function loadReferenceContent() {
-    const referenceTab = document.getElementById("reference");
-    referenceTab.innerHTML = ""; // Clear previous content
-
-    getReferenceCategories()
-        .then(categories => {
-            categories.forEach(category => {
-                loadReferenceCategory(category); 
-            });
-        });
+function getReferenceCategories() {
+  return fetch('reference/reference_categories.json') 
+    .then(response => response.json())
+    .then(data => {
+      return data.categories; 
+    })
+    .catch(error => console.error('Error fetching reference categories:', error));
 }
 
+
+// Function to load data for a specific reference category
 function loadReferenceCategory(category) {
   const referenceTab = document.getElementById("reference");
 
   fetch(`reference/${category}/${category}.json`)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.json();
-    })
+    .then(response => response.json())
     .then(categoryData => {
-      if (!Array.isArray(categoryData) || categoryData.length === 0) {
-        console.error(`Error: Invalid or empty data for category ${category}`);
-        const errorMessage = document.createElement('p');
-        errorMessage.textContent = `No data available for category ${category}.`;
-        referenceTab.appendChild(errorMessage);
-        return;
-      }
-
       // Create the collapsible header
       const collapsible = document.createElement('div');
       collapsible.className = "collapsible";
       collapsible.textContent = category;
 
       const content = document.createElement('div');
-      content.className = "checklist-content";
+      content.className = "checklistcontent";
       content.style.display = "none";
 
-      const table = createReferenceTable(categoryData);
-      content.appendChild(table);
+      // Create the table dynamically based on the categoryData structure
+      const table = createReferenceTable(categoryData , category);
 
+      content.appendChild(table);
       collapsible.addEventListener('click', () => {
         content.style.display = (content.style.display === "none") ? "block" : "none";
       });
@@ -205,374 +320,106 @@ function loadReferenceCategory(category) {
       referenceTab.appendChild(collapsible);
       referenceTab.appendChild(content);
     })
-    .catch(error => {
-      console.error(error);
-      const errorMessage = document.createElement('p');
-      errorMessage.textContent = `Error loading data for category ${category}. Please check the file path, filename, and format.`;
-      referenceTab.appendChild(errorMessage);
-    });
+    .catch(error => console.error(`Error loading data for category ${category}:`, error));
 }
 
+// Function to create the reference table dynamically
+function createReferenceTable(categoryData, categoryName) {
+  const tableContainer = document.createElement('div'); 
 
-function createReferenceTable(categoryData) {
-  const table = document.createElement('table');
+  for (const category in categoryData) {
+    const itemsData = categoryData[category];
 
-  // Check if categoryData is an array and has at least one item
-  if (!Array.isArray(categoryData) || categoryData.length === 0) {
-    console.error("Error: Invalid or empty category data.");
-    return table; // Return an empty table to avoid further errors
+    // Check if itemsData is valid
+    if (!itemsData || itemsData.length === 0) {
+      console.error(`Error: Invalid or empty data for category ${category}`);
+      continue;
+    }
+
+    // Create a collapsible section for each category
+    const collapsible = document.createElement('div');
+    collapsible.className = "collapsible";
+
+    // Check if it's a main category or a subcategory
+    if (category === categoryName) {
+      // Main category - no indentation
+      collapsible.textContent = category;
+    } else {
+      // Subcategory - add indentation and lighter background
+      const indentedTitle = document.createElement('span');
+      indentedTitle.textContent = category;
+      indentedTitle.style.marginLeft = '20px'; 
+      collapsible.appendChild(indentedTitle);
+      collapsible.style.backgroundColor = '#999'; 
+      collapsible.classList.add('subcategory'); 
+    }
+
+    const content = document.createElement('div');
+    content.className = "checklist-content";
+    content.style.display = "none";
+
+    const table = document.createElement('table');
+
+    // Find the first item to determine headers (no need to check for 'note' type)
+    const firstItem = itemsData[0];
+    const headers = Object.keys(firstItem).filter(header => header !== 'type' && header !== 'locationText');
+
+    // Create table header row
+    const headerRow = table.insertRow();
+    headers.forEach(header => {
+      const th = document.createElement('th');
+      th.textContent = header.replace(/_/g, ' ');
+      headerRow.appendChild(th);
+    });
+
+    // Populate the table rows
+    itemsData.forEach(item => {
+      const row = table.insertRow();
+      headers.forEach(header => {
+        const cell = row.insertCell();
+
+        // Create a content wrapper div within the cell
+        const contentWrapper = document.createElement('div');
+        contentWrapper.classList.add('cell-content'); 
+
+        if (header === 'image') {
+          const img = document.createElement('img');
+          img.src = `reference/${categoryName}/${item[header]}`;
+          img.alt = header;
+          contentWrapper.appendChild(img);
+        } else {
+          contentWrapper.textContent = item[header] || "";
+        }
+
+        cell.appendChild(contentWrapper); 
+      });
+    });
+
+    content.appendChild(table);
+    collapsible.addEventListener('click', () => {
+      content.style.display = (content.style.display === "none") ? "block" : "none";
+    });
+
+    tableContainer.appendChild(collapsible);
+    tableContainer.appendChild(content);
   }
 
-  // Determine table headers based on the first item in the categoryData
-  const headers = Object.keys(categoryData[0]); 
-  const headerRow = table.insertRow();
-  headers.forEach(header => {
-    const th = document.createElement('th');
-    th.textContent = header.replace(/_/g, ' '); // Replace underscores with spaces in header text
-    headerRow.appendChild(th);
-  });
-
-  // Populate the table rows
-  categoryData.forEach(item => {
-    const row = table.insertRow();
-    headers.forEach(header => {
-      const cell = row.insertCell();
-      if (header === 'image') {
-        const img = document.createElement('img');
-        img.src = item[header];
-        img.alt = header; 
-        cell.appendChild(img);
-      } else {
-        cell.textContent = item[header] || "";
-      }
-    });
-  });
-
-  return table;
+  return tableContainer;
 }
 
 
 // END REFERENCE CATEGORY FETCH /////////////////////////////////
 
 
-
 const aircraftData = {
     'a10': {
-        checklist: {
-            day: [
-                {
-                    title: "Launch Cockpit Setup",
-                    items: [
-                        { type: "item", requirement: "Armament safety override switch", action: "SAFE (Guard down)", locationImage: "la.png", locationText: "LA1" },
-                        { type: "item", requirement: "Utility light", action: "Stowed", locationImage: "la.png", locationText: "LA2" },
-                        { type: "item", requirement: "Intercom controls", action: "Set", locationImage: "la.png", locationText: "LA3" },
-                        { type: "item", requirement: "Oxygen regulator", action: "NORMAL", locationImage: "la.png", locationText: "LA4" },
-                        { type: "item", requirement: "Anti-G suit", action: "Connected and adjusted", locationImage: "la.png", locationText: "LA5" },
-                        { type: "item", requirement: "Seat and harness", action: "Adjusted, locked", locationImage: "la.png", locationText: "LA6" },
-			{ type: "note", text: "NOTE: Normal brakes will be available if the engine is started first." },
-                        { type: "item", requirement: "Canopy", action: "Closed and locked", locationImage: "la.png", locationText: "LA7" },
-                        { type: "item", requirement: "Ejection seat safety pin", action: "Installed", locationImage: "la.png", locationText: "LA8" }
-                    ]
-                },
-                {
-                    title: "Prior to Engine Start",
-                    items: [
-                        { type: "item", requirement: "Battery Switch", action: "PWR", locationImage: "lb.png", locationText: "LB5" },
-                        { type: "item", requirement: "UHF controls", action: "ON/set", locationImage: "lb.png", locationText: "LB6" },
-                        { type: "item", requirement: "Inverter Switch", action: "STBY", locationImage: "lb.png", locationText: "LB6" },
-                        { type: "item", requirement: "Air source knob", action: "NORM", locationImage: "lb.png", locationText: "LB7" },
-                        { type: "item", requirement: "Emergency jettison", action: "As required", locationImage: "lb.png", locationText: "LB8" },
-                        { type: "item", requirement: "Speed brake", action: "DOWN", locationImage: "lb.png", locationText: "LB9" },
-                        { type: "item", requirement: "Landing gear control handle", action: "DN", locationImage: "lb.png", locationText: "LB10" },
-                        { type: "item", requirement: "Parking brake", action: "SET", locationImage: "lb.png", locationText: "LB11" }
-                    ]
-                },
-                {
-                    title: "Engine Start",
-                    items: [
-                        { type: "item", requirement: "Throttle", action: "OFF/IDLE", locationImage: "lc.png", locationText: "LC1" },
-                        { type: "item", requirement: "Fuel shutoff lever", action: "OPEN", locationImage: "lc.png", locationText: "LC2" },
-                        { type: "item", requirement: "Engine ignition switch", action: "BOTH", locationImage: "lc.png", locationText: "LC3" },
-                        { type: "item", requirement: "Wait for N2 to indicate 10%", action: "Monitor", locationImage: "lc.png", locationText: "LC4" },
-                        { type: "item", requirement: "Fuel boost pump", action: "ON", locationImage: "lc.png", locationText: "LC5" }
-                    ]
-                },
-                {
-                    title: "After Engine Start",
-                    items: [
-                       
-                        { type: "item", requirement: "Generator switch", action: "ON", locationImage: "ld.png", locationText: "LD2" },
-                        { type: "item", requirement: "Inverter switch", action: "ON", locationImage: "ld.png", locationText: "LD3" },
-                        { type: "item", requirement: "Hydro pressure", action: "Check", locationImage: "ld.png", locationText: "LD4" },
-                        { type: "item", requirement: "Bleed air switch", action: "ON", locationImage: "ld.png", locationText: "LD5" },
-                        { type: "item", requirement: "Engine anti-ice", action: "As required", locationImage: "ld.png", locationText: "LD6" },
-                        { type: "item", requirement: "Pitot heat", action: "ON", locationImage: "ld.png", locationText: "LD7" },
-                        { type: "item", requirement: "Landing/Taxi lights", action: "As required", locationImage: "ld.png", locationText: "LD8" },
-                        { type: "item", requirement: "Exterior lights", action: "As required", locationImage: "ld.png", locationText: "LD9" },
-                        { type: "item", requirement: "Stabilator", action: "Check movement", locationImage: "ld.png", locationText: "LD10" },
-                        { type: "item", requirement: "Flight controls", action: "Check", locationImage: "ld.png", locationText: "LD11" },
-                        { type: "item", requirement: "Autopilot", action: "OFF", locationImage: "ld.png", locationText: "LD12" },
-                        { type: "item", requirement: "Navigation", action: "Set", locationImage: "ld.png", locationText: "LD13" }
-                    ]
-                },
-                {
-                    title: "Taxi",
-                    items: [
-                        { type: "item", requirement: "Parking brake", action: "Release", locationImage: "le.png", locationText: "LE1" },
-                        { type: "item", requirement: "Canopy defrost", action: "ON/AUTO", locationImage: "le.png", locationText: "LE2" },
-                        { type: "item", requirement: "Nosewheel steering", action: "As required", locationImage: "le.png", locationText: "LE3" },
-                        { type: "item", requirement: "Flight controls", action: "Check", locationImage: "le.png", locationText: "LE4" }
-                        // ... (Add more taxi items)
-                    ]
-                },
-                // ... (Add more checklist categories like Before Takeoff, Takeoff, Climb, etc.)
-            ],
-            night: [
-                // ... (Add night checklist items similar to the day checklists)
-            ]
-        },
-
-       emergency: [
-            {
-                type: "category", // Main category item
-                title: "GENERAL"
-            },
-            {
-                title: "APU FIRE",
-                items: [
-                    { type: "item", condition: "If the APU is operating", action: "Set the APU to OFF", locationImage: "ra1.img", locationText: "RA1" },
-                    { type: "item", condition: "If the fire persists", action: "Pull the fire T-handle of the APU", locationImage: "ra2.img", locationText: "RA2" },
-                    { type: "item", condition: "If the fire persists", action: "Press the fire discharge agent", locationImage: "ra3.img", locationText: "RA3" },
-                    { type: "item", condition: "If the fire persists", action: "Land as soon as possible", locationImage: "ra3.img", locationText: "RA3" },
-                ]
-            },
-            {
-                type: "category", // Main category item
-                title: "FLIGHT AND FLIGHT CONTROL EMERGENCIES"
-            },
-            {
-                title: "Flap Asymmetry",
-                items: [
-                    { type: "item", condition: "If the flaps fail", action: "Re-select the flap position", locationImage: "ra1.img", locationText: "RA1" },
-                    { type: "item", condition: "If the flaps fail", action: "Set flaps to MVR", locationImage: "", locationText: "" },
-                    { type: "item", condition: "If the flaps fail", action: "Enable the FLAP EMER RETR", locationImage: "", locationText: "" },
-                ]
-            }
-            // ... Add more emergency procedure categories as needed
-        ],
+        checklist: [],
         airfields: [], // (Add airfield data if available)
     	reference: [], // or any other relevant reference data
     	notepad: "" // You might want to initialize this with some default text or keep it empty
     },
-		'f-16c': {
-  checklist: {
-    day: [
-      {
-        title: "BEFORE START CHECKLIST",
-        items: [
-          { type: "item", requirement: "MAIN PWR", action: "BAT", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "FLCS PWR TEST SW", action: "TEST/OFF", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "MAIN PWR", action: "MAIN PWR", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "EPU GEN/LGTS", action: "OFF", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "CANOPY", action: "CLOSE/LOCK", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "PARKING BRAKE", action: "SET", locationImage: "la.jpg", locationText: "" }
-        ]
-      },
-      {
-        title: "START CHECKLIST",
-        items: [
-          { type: "item", requirement: "JFS SW", action: "START 2", locationImage: "la.jpg", locationText: "" },
-          { type: "note", text: "NOTE: WHEN ENG 20% & SEC OFF" },
-          { type: "item", requirement: "THROTTLE", action: "IDLE", locationImage: "la.jpg", locationText: "" },
-          { type: "note", text: "NOTE: MONITOR ENGINE PARAMETERS" }
-        ]
-      },
-      {
-        title: "AFTER START CHECKLIST",
-        items: [
-          { type: "item", requirement: "JFS SW", action: "CHECK OFF", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "OXYGEN", action: "NORMAL/NORM/ON-TRIM", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "PROBE HEAT SW", action: "PROBE HEAT", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "PROBE HEAT SW", action: "TEST", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "PROBE HEAT SW", action: "OFF", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "FIRE/OVERHEAT", action: "TEST", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "MALF & IND LGTS", action: "TEST", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "AVIONICS SWs", action: "ALL 6 ON", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "MIDS LVT", action: "ON", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "EGI/INS", action: "ALIGN", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "C&I KNOB", action: "UFC", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "LDG GEAR", action: "DONW/3 GREEN", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "SPEEDBRAKES", action: "CHECK", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "ADI (SAI)", action: "UNCAGE", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "LEFT HDPT SW", action: "AS REQ.", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "RIGHT HDPT SW", action: "AS REQ.", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "FCR SW", action: "FCR", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "RDR ALT SW", action: "RDR ALT", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "ENG SEC CTRL", action: "CHECK(SEC/PRI)", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "FLCS", action: "CYCLE/CHECK", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "FLCS BIT", action: "BIT/OFF", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "FUEL QTY", action: "TEST/NORM", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "DIGITAL BKUP SW", action: "BACKUP/OFF", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "TRIM/AP DISC", action: "DISC", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "TRIM HAT SW", action: "TEST/NO MOTION", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "TRIM/AP DISC", action: "NORM", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "TRIM HAT SW", action: "TEST/MOTION", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "MPO", action: "TEST", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "EPU", action: "TEST", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "EPU/GEN TEST SW", action: "ON & SET", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "EXT.LGTS", action: "AS REQ.", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "LSR CODE", action: "SET", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "EWI/RWR/JMR", action: "ON", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "CONFIG", action: "CAT I/CAT III", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "BINGO", action: "SET", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "TACAN/ILS", action: "ON & SET", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "ALTIMETER", action: "SET", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "EGI/INS", action: "NAV", locationImage: "la.jpg", locationText: "" },
-          { type: "item", requirement: "HYD/OIL PRESS OFF -NWS", action: "ON", locationImage: "la.jpg", locationText: "" }
-        ]
-      },
-{
-    title: "BEFORE TAKE OFF CHECKLIST",
-    items: [
-      { type: "item", requirement: "FLAPS", action: "NORMAL", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "TRIM NEEDLES", action: "CENTERED", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "ENGINE CTRL", action: "PRI", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "SPEEDBRAKE", action: "CLOSED", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "FUEL PANEL", action: "NORMAL", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "OXYGEN", action: "ON", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "EJECTION SEAT", action: "ARMED", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "PROBE HEAT", action: "ON", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "RADAR", action: "ON", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "THROTTLE", action: "90%", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "BRAKES", action: "RELEASE", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "THROTTLE", action: "MIL or A.B.", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: At 70KT" },
-      { type: "item", requirement: "NWS", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "note: AT VR-10KT (MILITARY PWR) OR VR-15KT (A.B. PWR)" },
-      { type: "item", requirement: "PITCH", action: "8° TO 12°", locationImage: "la.jpg", locationText: "" }
-    ]
-  },
-  {
-    title: "AFTER TAKE OFF CHECKLIST",
-    items: [
-      { type: "note", text: "BEFORE 300KT" },
-      { type: "item", requirement: "GEAR", action: "UP", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "LIGHTS", action: "AS REQ.", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "PITCH", action: "15°", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: CLIMB WITH 350KT TO 10.000FT" },
-      { type: "item", requirement: "RADAR", action: "ON & SET", locationImage: "la.jpg", locationText: "" }
-    ]
-  },
-  {
-    title: "ABOVE 10.000FT CHECKLIST",
-    items: [
-      { type: "item", requirement: "FUEL TRANSFER", action: "CHECK", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "SYSTEMS CHECK", action: "PERFORM", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "WEAPONS SYSTEMS", action: "SET", locationImage: "la.jpg", locationText: "" }
-    ]
-  },
-  {
-    title: "DESCEND/BEFORE LANDING CHECKLIST",
-    items: [
-      { type: "item", requirement: "FUEL", action: "CHECK", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "TACAN/ILS", action: "ON & SET", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "ALT./RAD.ALT", action: "CHECK & SET", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "MINIMUMS", action: "SET", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "ATT REFERENCES", action: "CHECK", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "EXT. LGTS", action: "AS REQ.", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "ANTI-ICE", action: "AS REQ.", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "TGP", action: "STOW", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "MASTER ARM", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "LASER", action: "OFF", locationImage: "la.jpg", locationText: "" }
-    ]
-  },
-{
-    title: "LANDING CHECKLIST",
-    items: [
-      { type: "note", text: "NOTE: PEEL OFF AT 1,500FT AGL/300KT" },
-      { type: "item", requirement: "THROTTLE", action: "80%", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "SPEEDBRAKE", action: "OPEN", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: BRAKE WITH 70° BANK AND 3-4G" },
-      { type: "note", text: "NOTE: DOWNWIND LEG" },
-      { type: "item", requirement: "SPEED", action: "200-220KT", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "LDG GEAR", action: "DOWN/3 GREEN", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "LDG/TAXI LGT", action: "LANDING", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "AOA", action: "11°", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: BASE TURN" },
-      { type: "item", requirement: "PITCH", action: "8° TO 10°", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "AOA", action: "11°", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: FINAL (ALWAYS FLY \"ON BRAKET\")" },
-      { type: "item", requirement: "FLT PATH MARKER", action: "-2.5° TO -3°", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "AOA", action: "11°", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: SHORT FINAL" },
-      { type: "item", requirement: "FLT PATH MKR", action: "AT 500FT RWY MARK", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "MAX PITCH", action: "13°", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: LANDING ROLL" },
-      { type: "item", requirement: "MAX PITCH", action: "13°", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "SPEEDBRAKE", action: "OPEN", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: USE AERODYNAMIC BRAKING DOWN TO 100KT" },
-      { type: "item", requirement: "BRAKES", action: "MOD-HVY", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: AT 30KT" },
-      { type: "item", requirement: "NWS", action: "ON", locationImage: "la.jpg", locationText: "" }
-    ]
-  },
-  {
-    title: "AFTER LANDING CHECKLIST",
-    items: [
-      { type: "item", requirement: "SPEEDBRAKE", action: "CLOSE", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "EJECTION SEAT", action: "SAFE", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "PROBE HEAT", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "ECM PWR", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "-EW/RWR/JMR", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "IFF MASTER", action: "STBY", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "LDG/TAXI LGT", action: "AS REQ.", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "ARMAMENT SWs", action: "OFF/SAFE or NORMAL", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "LH/RH HDPT, FCR, RAD. ALT", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "-AVIONICS", action: "ALL 6 OFF", locationImage: "la.jpg", locationText: "" }
-    ]
-  },
-  {
-    title: "SHUTDOWN CHECKLIST",
-    items: [
-      { type: "item", requirement: "LDG/TAXI LGT", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "PARKING BRAKE", action: "SET", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "HUD", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "ADI (SAI)", action: "CAGE", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "THROTTLE", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "-EPU GEN/PMG LGTS", action: "CHECK OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "MIDS LVT", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "EGI/INS", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "EGINS LVT", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "MAIN PWR", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "OXYGEN REG", action: "OFF & 100%", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "CANOPY", action: "OPEN", locationImage: "la.jpg", locationText: "" }
-    ]
-  },
-{
-    title: "REFUELING CHECKLIST",
-    items: [
-      { type: "item", requirement: "RADAR", action: "STBY", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "MASTER ARM", action: "OFF", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "LIGHTS", action: "STEADY BRT", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "VISOR", action: "DOWN", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "AIR REFUEL SW", action: "OPEN", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "RDY BLUE LGT", action: "CHECK", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: DURING REFUELING" },
-      { type: "item", requirement: "AR GREEN LGT", action: "GREEN", locationImage: "la.jpg", locationText: "" },
-      { type: "note", text: "NOTE: AFTER REFUELING" },
-      { type: "item", requirement: "AIR REFUEL SW", action: "CLOSE", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "LIGHTS", action: "AS REQUIRED", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "VISOR", action: "AS DESIRED", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "RADAR", action: "ON", locationImage: "la.jpg", locationText: "" },
-      { type: "item", requirement: "MASTER ARM", action: "AS REQUIRED", locationImage: "la.jpg", locationText: "" } 
-      ]
-                },
-                // ... (Add more checklist categories like Before Takeoff, Takeoff, Climb, etc.)
-            ],
-            night: [
-                // ... (Add night checklist items similar to the day checklists)
-            ]
-        },
+'f-16c': {
+	checklist: [],
         emergency: [], // (Your existing emergency procedures)
         airfields: [], // (Add airfield data if available)
     	reference: [], // or any other relevant reference data
@@ -600,55 +447,41 @@ function changeTab(tabId, aircraftId) {
     }
   }
 
-  // 4. Check if content has already been loaded for this tab and aircraft
-    if (!contentDiv.querySelector('#checklist-content') && tabId === 'checklist') { // Only for checklist tab
-    // Create the checklist-content div and day/night buttons if they don't exist
+  // 4. Check if checklist type buttons have been loaded, only for checklist tab
+  if (!contentDiv.querySelector('#checklist-options') && tabId === 'checklist') {
+    // Create the checklist-content div and day/night buttons 
     const checklistContentDiv = document.createElement('div');
     checklistContentDiv.id = 'checklist-content';
 
     const checklistOptions = document.createElement('div');
     checklistOptions.id = 'checklist-options';
 
-    const dayButton = document.createElement('button');
-    dayButton.textContent = 'Day Operations';
-    dayButton.onclick = () => changeChecklistType('day', aircraftId);
-    checklistOptions.appendChild(dayButton);
-
-    const nightButton = document.createElement('button');
-    nightButton.textContent = 'Night Operations';
-    nightButton.onclick = () => changeChecklistType('night', aircraftId);
-    checklistOptions.appendChild(nightButton);
+    // Call loadChecklistTypes here, after the checklistOptionsDiv is created
+    loadChecklistTypes(aircraftId);
 
     // Append buttons, line break, then the checklist content
     contentDiv.appendChild(checklistOptions);
     contentDiv.appendChild(document.createElement('br'));
     contentDiv.appendChild(checklistContentDiv);
-
-    loadChecklist(aircraftData[aircraftId].checklist);
-  } else { // Handle all other tabs, including notepad
-    // 5. Check if aircraft data exists for the specific tab (except for notepad)
-    if (tabId !== 'notepad' && (!aircraftData[aircraftId] || !aircraftData[aircraftId][tabId])) {
+  } else if (contentDiv.innerHTML === '' && tabId !== 'checklist' && tabId !== 'reference') { 
+    // 5. Check if aircraft data exists for the specific tab (except for notepad and reference)
+    if (!aircraftData[aircraftId] || !aircraftData[aircraftId][tabId]) {
       console.error(`Error: Data not found for aircraft ID: ${aircraftId} and tab: ${tabId}`);
       contentDiv.innerHTML = "Data not available for this aircraft and tab.";
       return;
     }
-  
-
-
 
     // 6. Load content dynamically based on the tab and aircraft
     switch (tabId) {
       case 'emergency':
-        loadEmergencyProcedures(aircraftData[aircraftId].emergency);
+        contentDiv.innerHTML = aircraftData[aircraftId].emergency;
         break;
       case 'airfields':
+        showAirfield('georgia'); 
         break;
-      case 'reference':
-        loadReferenceContent();
+      case 'notepad':
+        // ... (You might want to add logic here to handle the notepad content)
         break;
-        case 'notepad':
-            break;
-
     }
   }
 
@@ -666,7 +499,6 @@ function changeTab(tabId, aircraftId) {
 
 
 
-
 function toggleChecklist(header) {
     const content = header.nextElementSibling;
     if (content) {
@@ -675,95 +507,6 @@ function toggleChecklist(header) {
 }
 
 
-let currentChecklistType = 'day'; // Default to day operations
-
-function changeChecklistType(type, aircraftId) {
-    currentChecklistType = type;
-    loadChecklist(aircraftData[aircraftId].checklist); 
-}
-
-function loadChecklist(checklistsData) {
-    const checklistContentDiv = document.getElementById("checklist-content");
-
-    // Check if the element exists
-    if (!checklistContentDiv) {
-        console.error("Error: Element with ID 'checklist-content' not found.");
-        return; 
-    }
-
-    checklistContentDiv.innerHTML = ""; // Clear previous content within the checklistContentDiv
-
-    // Use the passed checklistsData to populate the checklists
-    checklistsData[currentChecklistType].forEach(checklist => { 
-        // Create the collapsible header element
-        const collapsible = document.createElement('div');
-        collapsible.className = "collapsible";
-        collapsible.textContent = checklist.title;
-
-        // Create the content div for the checklist items
-        const content = document.createElement('div');
-        content.className = "checklist-content";
-        content.style.display = "none"; // Start hidden
-
-        // Create the table to hold the checklist items
-        const table = document.createElement('table');
-
-        // Create table header row
-        const headerRow = table.insertRow();
-        ["", "Requirement", "Action", "Location"].forEach(header => {
-            const th = document.createElement('th');
-            th.textContent = header;
-            headerRow.appendChild(th);
-        });
-
-        // Populate the table with checklist items
-		checklist.items.forEach(item => {
-      const row = table.insertRow();
-
-      if (item.type === 'item') {
-        // Handle regular checklist item 
-        row.insertCell().innerHTML = '<input type="checkbox">';
-        row.insertCell().textContent = item.requirement;
-        row.insertCell().textContent = item.action;
-
-        const locationCell = row.insertCell();
-        if (item.locationImage && item.locationText) { // Check both locationImage and locationText
-		  const locationBtn = document.createElement('button');
- 		 locationBtn.className = "location-btn";
- 		 locationBtn.dataset.img = item.locationImage; 
-  		locationBtn.textContent = item.locationText;
-  		locationCell.appendChild(locationBtn);
-	} else {
-          locationCell.textContent = "";
-        }
-      } else if (item.type === 'note') {
-        // Handle note item
-        const noteCell = row.insertCell();
-        noteCell.colSpan = 4; // Span across all columns
-        noteCell.textContent = item.text;
-        noteCell.classList.add('note-cell'); 
-      }
-
-if (item.type === 'item') {
-        const checkbox = row.querySelector('input[type="checkbox"]');
-        checkbox.addEventListener('change', () => {
-          checkCategoryCompletion(collapsible); // Call the function to check category completion
-        });
-      }
-        });
-
-        content.appendChild(table);
-
-        // Add event listener to toggle the checklist content visibility on click
-        collapsible.addEventListener('click', () => {
-            content.style.display = (content.style.display === "none") ? "block" : "none";
-        });
-
-        // Append both collapsible header and the content
-        checklistContentDiv.appendChild(collapsible); 
-        checklistContentDiv.appendChild(content);
-    });
-}
 
 function checkCategoryCompletion(collapsibleHeader) {
     const checkboxes = collapsibleHeader.nextElementSibling.querySelectorAll('input[type="checkbox"]');

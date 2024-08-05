@@ -20,6 +20,10 @@
   align-items: center;
 }
 
+#tab-buttons button.active { 
+    background-color: #555; /* Darker background color for the active tab */
+}
+
 input[type="checkbox"] {
     width: 40px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */

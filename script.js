@@ -154,8 +154,10 @@ function loadChecklistTypes(aircraftId) {
                     button.onclick = () => loadChecklistType(type, aircraftId);
                     checklistOptionsDiv.appendChild(button);
                 }
+		
             });
-            checklistOptionsDiv.appendChild(document.createElement('br'));
+            checklistOptionsDiv.appendChild(document.createElement('p'));
+
         })
         .catch(error => console.error(`Error loading checklist data for ${aircraftId}:`, error));
 }

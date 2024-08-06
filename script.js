@@ -148,7 +148,6 @@ function loadChecklistTypes(aircraftId) {
                     button.onclick = () => loadExternalChecklist(type); 
                     checklistOptionsDiv.appendChild(button);
                 } else {
-		                console.log("running");
                     // Create a button for internal checklist types
                     const button = document.createElement('button');
                     button.textContent = type.toUpperCase() + " OPERATIONS";

@@ -75,7 +75,7 @@ function loadAircraft(aircraftId) {
     createTabButton('reference');
     createTabButton('notepad');
 
-            // Trigger the loading of the initial tab content (e.g., 'checklist')
+    // Trigger the loading of the initial tab content (e.g., 'checklist')
     changeTab('checklist', aircraftId);
 
 
@@ -148,9 +148,10 @@ function loadChecklistTypes(aircraftId) {
                     button.onclick = () => loadExternalChecklist(type); 
                     checklistOptionsDiv.appendChild(button);
                 } else {
+		                console.log("running");
                     // Create a button for internal checklist types
                     const button = document.createElement('button');
-                    button.textContent = aircraftId.toUpperCase();
+                    button.textContent = type.toUpperCase() + " OPERATIONS";
                     button.onclick = () => loadChecklistType(type, aircraftId);
                     checklistOptionsDiv.appendChild(button);
                 }
@@ -648,6 +649,7 @@ function changeTab(tabId, aircraftId) {
       break;
     }
   }
+/*
 
   // 4. Check if checklist type buttons have been loaded, only for checklist tab
   if (!contentDiv.querySelector('#checklist-options') && tabId === 'checklist') {
@@ -666,7 +668,7 @@ function changeTab(tabId, aircraftId) {
     contentDiv.appendChild(document.createElement('br'));
     contentDiv.appendChild(checklistContentDiv);
   } 
-
+*/
   // 7. Handle image display on buttons within the newly loaded content
   const locationButtons = contentDiv.querySelectorAll('.location-btn');
   locationButtons.forEach(button => {

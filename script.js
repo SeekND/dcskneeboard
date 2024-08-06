@@ -403,25 +403,25 @@ function loadEmergencyProceduresType(aircraftId) {
 
 function loadReferenceContent() {
   const referenceTab = document.getElementById("reference");
-  referenceTab.innerHTML = ""; 
+  referenceTab.innerHTML = "";
 
-  getReferenceCategories() 
-    .then(categories => { 
+  getReferenceCategories() // This returns a Promise
+    .then(categories => {
       if (Array.isArray(categories)) {
-        categories.forEach(category => {
-
+        categories.forEach(category => { // Iterate only after the Promise resolves
           loadReferenceCategory(category);
         });
       } else {
-        console.error('Error: getReferenceCategories did not return an array.');
+        console.error("Error: getReferenceCategories did not return an array.");
         // Handle the error gracefully, perhaps display a message to the user
       }
     })
-    .catch(error => console.error('Error fetching reference categories:', error));
+    .catch(error => console.error("Error fetching reference categories:", error));
 }
 
+
 function getReferenceCategories() {
-  return fetch('reference/reference_categories.json') 
+  return fetch('reference/reference_categories.json?t=${Date.now()}') 
     .then(response => response.json())
     .then(data => {
       console.log(data.categories);
@@ -435,7 +435,7 @@ function getReferenceCategories() {
 function loadReferenceCategory(category) {
   const referenceTab = document.getElementById("reference");
 
-  fetch(`reference/${category}/${category}.json`)
+  fetch(`reference/${category}/${category}.json?t=${Date.now()}`)
     .then(response => response.json())
     .then(categoryData => {
       // Create the collapsible header

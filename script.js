@@ -424,7 +424,6 @@ function getReferenceCategories() {
   return fetch('reference/reference_categories.json?t=${Date.now()}') 
     .then(response => response.json())
     .then(data => {
-      console.log(data.categories);
       return data.categories; 
     })
     .catch(error => console.error('Error fetching reference categories:', error));

@@ -409,6 +409,7 @@ function loadReferenceContent() {
     .then(categories => { 
       if (Array.isArray(categories)) {
         categories.forEach(category => {
+
           loadReferenceCategory(category);
         });
       } else {
@@ -420,9 +421,10 @@ function loadReferenceContent() {
 }
 
 function getReferenceCategories() {
-  return fetch(`reference/reference_categories.json`) 
+  return fetch('reference/reference_categories.json') 
     .then(response => response.json())
     .then(data => {
+      console.log(data.categories);
       return data.categories; 
     })
     .catch(error => console.error('Error fetching reference categories:', error));

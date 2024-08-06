@@ -1,0 +1,694 @@
+{
+  "BEFORE START-UP": [
+    {
+      "type": "note",
+      "text": "To open or close service hatches use “LCTRL+W” binding"
+    },
+    {
+      "type": "note",
+      "text": "Contact ground crew to re-arm and refuel as required by the mission. Via the ground crew interface, you can also select either the HMS (Helmet Mounted Sight) or NVG (Night Vision Goggles) loadout by pressing « \\ », then pressing F8 (Ground Crew), and either F1 (HMS) or F2 (NVG)."
+    },
+    {
+      "type": "note",
+      "text": "For day operations, the Helmet-Mounted Sight is recommended."
+    },
+    {
+      "type": "item",
+      "requirement": "Side door",
+      "action": "CLOSE",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Battery switches 1 & 2",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Set cover UP, set switch UP, then set cover DOWN"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Inverter switch",
+      "action": "AUTO (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Intercom switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set R-828 VHF-1 Radio Power switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set R-800 VHF-2 Radio Power switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set DL (Datalink) Power switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set VHF-TLK switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set SA-TLF switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Fuel Quantity switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set EKRAN-HYDRO switch",
+      "action": "ON (DOWN)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Set cover UP, set switch DOWN, then set cover DOWN"
+    },
+    {
+      "type": "note",
+      "text": "This switch  provides power to EKRAN Warning System, hydraulics, and transmission group control sensors"
+    },
+    {
+      "type": "note",
+      "text": "We will perform an Accelerated Alignment of INU (Inertial Navigation Unit) and K-041 targeting system, which should take approx. 3 to 4 minutes."
+    },
+    {
+      "type": "item",
+      "requirement": "PVI-800 NAV MODE selector",
+      "action": "Set to OPER",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set INU (Inertial Navigation Unit) switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set INU (Inertial Navigation Unit) Heat Switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set PVI-800 NAV SYSTEM switch",
+      "action": "ON",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set SAI (Standby Attitude Indicator) switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Turn it the warning OFF",
+      "action": "Press Master Caution light",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set ABRIS (AMMS, Advanced Moving Map System) Power switch",
+      "action": "ON (UP)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Start-up sequence takes about 120 seconds"
+    },
+    {
+      "type": "item",
+      "requirement": "Set K-041 Targeting System switch",
+      "action": "ON (FWD)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set HMS (Helmet-Mounted system) switch",
+      "action": "ON (FWD)",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "While navigation systems, the Heads-Up Display (HUD) and targeting systems are powering up, the HUD will display the symbol “ИКВ/УВ” and the overhead panel will display the “HUD NO READY” caution."
+    },
+    {
+      "type": "note",
+      "text": "After approx. 3 minutes, the accelerated INU (Inertial Navigation Unit) alignment process should be completed."
+    },
+    {
+      "type": "note",
+      "text": "The “ИКВ/УВ” (INU/AA) symbol will disappear from the HUD and the INU will switch to operational mode."
+    },
+    {
+      "type": "note",
+      "text": "The flashing indicator lights on the Flight Mode Control Panel labelled К, Т,Нwill switch off"
+    },
+    {
+      "type": "note",
+      "text": "The alarm flag labelled КС will disappear from the HSI, which will then display the heading values taken from the onboard computer"
+    },
+    {
+      "type": "note",
+      "text": "The alarm flag labelled АГ will disappear from the INU, which will then display the aircraft’s parking roll and pitch values."
+    },
+    {
+      "type": "item",
+      "requirement": "Set Fire Extinguisher switch",
+      "action": "OPER",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Set cover UP, set switch to OPER, then set cover DOWN"
+    },
+    {
+      "type": "item",
+      "requirement": "Arm Ejecting System Power switches",
+      "action": "UP",
+      "location": "before_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Flip cover UP, set three switches UP, flip cover DOWN"
+    }
+  ],
+  "APU START": [
+    {
+      "type": "item",
+      "requirement": "Disengage rotor brake",
+      "action": "DOWN position",
+      "location": "apu_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set throttle to AUTO",
+      "action": "(UP, just prior to lifting the metal guard).",
+      "location": "apu_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Forward and Aft fuel pumps",
+      "action": "ON (UP)",
+      "location": "apu_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Left (Fwd), right (Aft) and APU fuel tank shutoff valves",
+      "action": "OPEN (UP)",
+      "location": "apu_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Set cover UP, set switch UP, then set cover DOWN"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Left and Right EEG (Electronic Engine Governor) switches",
+      "action": "ON (UP)",
+      "location": "apu_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Set cover UP, set switch to ON, then set cover DOWN"
+    },
+    {
+      "type": "item",
+      "requirement": "Startup/Crank/False Start switch",
+      "action": "START",
+      "location": "apu_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Turbo Gear/APU/Left Engine/Right Engine switch",
+      "action": "set to APU (cantered position)",
+      "location": "apu_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To start APU (Auxiliary Power Unit).",
+      "action": "Press START button for 2-3 sec",
+      "location": "apu_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once the APU is started, the air pressure generated by it will be used to drive the engine pneumatic starter."
+    },
+    {
+      "type": "note",
+      "text": "APU start is completed within about 20-30 seconds in normal temperature conditions, but can take up to 1 minute in very cold conditions."
+    },
+    {
+      "type": "note",
+      "text": "Once APU is running/operational APU EGT (Exhaust Gas Temperature) should stabilize to approx.600 deg C (no more than 720 deg C)"
+    },
+    {
+      "type": "note",
+      "text": "APU OIL P NORM indication should be illuminated"
+    },
+    {
+      "type": "note",
+      "text": "APU ON indication should be illuminated as well."
+    },
+    {
+      "type": "note",
+      "text": "APU warm up, with no air bleeding, should take one minute before using it for main engine starts."
+    }
+  ],
+  "ENGINE START": [
+    {
+      "type": "item",
+      "requirement": "Turbo Gear/APU/Left Engine/Right Engine switch",
+      "action": "set to LEFT engine",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To start LEFT engine.",
+      "action": "Press START button for 2-3 sec. START VLV light indicates the start valve is open.",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When Left Engine’s Gas Generator Speed reaches 20 % RPM",
+      "action": "open LEFT engine shutoff valve (left red lever UP)",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm EGT (Exhaust Gas Temperature), engine oil pressure and transmission gearbox oil pressure increase. Monitor oil temperature accordingly."
+    },
+    {
+      "type": "note",
+      "text": "Rotors motion should initiate at Gas Generator RPM of no more than 25% (visual confirmation by looking at the nearest blade)"
+    },
+    {
+      "type": "note",
+      "text": "Starter will disengage at Gas Generator RPM between 60 and65%. Monitor this with the START light going off."
+    },
+    {
+      "type": "note",
+      "text": "Confirm that hydraulic fluid pressure increases in all systems."
+    },
+    {
+      "type": "item",
+      "requirement": "Set TurboGear/APU/Left Engine/Right Engine switch",
+      "action": "set to RIGHT engine.",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To start RIGHT engine.",
+      "action": "Press START button for 2-3 sec. START VLV light indicates the start valve is open.",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When Right Engine’s Gas Generator Speed reaches 20 %RPM",
+      "action": "open RIGHT engine shutoff valve (right red lever UP)",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm EGT (Exhaust Gas Temperature), engine oil pressure increase. Monitor oil temperature accordingly."
+    },
+    {
+      "type": "note",
+      "text": "Starter will disengage at Gas Generator RPM between 60and 65%. Monitor this with the START light going off."
+    },
+    {
+      "type": "note",
+      "text": "Verify that Rotor Speed stabilizes around 95-100 % RPM."
+    },
+    {
+      "type": "item",
+      "requirement": "When Right Engine’s Gas Generator Speed stabilizes over 60 % RPM",
+      "action": "set Turbo Gear/APU/Left Engine/Right Engine switch to central position",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When both engines are at IDLE power or above",
+      "action": "Press APU SHUTOFF button",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set APU fuel tank shutoff valve",
+      "action": "CLOSED (DOWN)",
+      "location": "engine_start.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Set cover UP, set switch DOWN, then set cover DOWN"
+    }
+  ],
+  "AFTER START-UP": [
+    {
+      "type": "item",
+      "requirement": "Set LEFT and RIGHT AC Generators",
+      "action": "ON (UP).",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If Helmet-Mounted Sight (HMS) display appears and you want to stow it, press “H” toggle it."
+    },
+    {
+      "type": "item",
+      "requirement": "Set IFF (Identify-Friend-or-Foe) switch",
+      "action": "ON (UP)",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Uncage Standby ADI (Attitude Director Indicator)",
+      "action": "caging knob.",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Engine Dust Protection system switch",
+      "action": "ON (DOWN)",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Only if required since it decreases available engine power."
+    },
+    {
+      "type": "item",
+      "requirement": "Set UV-26 Countermeasures power switch",
+      "action": "ON (UP)",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set L-140 Laser Warning Receiver power switch",
+      "action": "ON (UP)",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set PVI-800 Operating Mode Selector",
+      "action": "As Desired (COM)",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Navigation Datalink Power switch",
+      "action": "ON (FWD)",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set PVI-800 Datalink Identification Number (ID)",
+      "action": "1.",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "BANK (K), PITCH (T) and HDG HOLD/YAW (H) stability augmentation channels",
+      "action": "Engage",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On the ABRIS",
+      "action": "Select NAV page",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Interior and Exterior Light Switches",
+      "action": "As desired",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Access the ODS (Onboard Defence System) Page on the ABRIS",
+      "action": "press the button next to NAV/ARC/HSI repeatedly until you access the ODS page.",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once the aircraft has been powered up and the generators are online, the power-up sequence of the ODS (Onboard Defence System) starts automatically."
+    },
+    {
+      "type": "note",
+      "text": "Whenever the ODS system is switched on, it must first undergo a 3-minute long built-in test prior to normal operation with the sign \"ODS NOT READY\" shown in upper-right corner of the ABRIS ODS page"
+    },
+    {
+      "type": "note",
+      "text": "After “ODS NOT READY” message, “MWS NOT READY” (Missile Warning System) is shown during MWS power-up sequence."
+    },
+    {
+      "type": "note",
+      "text": "Once ODS built-in test is complete, the Onboard Defence system goes in “ODSSTANDBY” since this is the Onboard Defence System Switch position by default."
+    },
+    {
+      "type": "note",
+      "text": "To access the NAV page.; Press the button next to MENU repeatedly"
+    },
+    {
+      "type": "item",
+      "requirement": "Select countermeasure operation mode",
+      "action": "ODS (Onboard Defence System) switch.",
+      "location": "after_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "ODS ON (ODS Switch UP): Countermeasure system will automatically deploy flares if a missile is heading your way."
+    },
+    {
+      "type": "note",
+      "text": "STANDBY (ODS Switch DOWN): Countermeasure system will not automatically deploy flares if a missile is heading your way."
+    }
+  ],
+  "TAXI": [
+    {
+      "type": "item",
+      "requirement": "Release parking brake",
+      "action": "tap the Wheel Brake lever.",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To start moving",
+      "action": "Gently tilt the cyclic forward while increasing the pitch of the main rotors with the collective.",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Once the aircraft is moving",
+      "action": "bring the collective back down.",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Steer the helicopter on the ground",
+      "action": "anti-torque pedals in the direction of turn.",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Keep taxi speed below 20 km/h",
+      "action": "inputs to the cyclic and the wheel brakes.",
+      "location": "taxi.png",
+      "locationText": ""
+    }
+  ],
+  "HOVER": [
+    {
+      "type": "note",
+      "text": "Reactive moments of a coaxial-rotor are compensated for by the counter-rotational forces cancelling out each other."
+    },
+    {
+      "type": "note",
+      "text": "The coaxial-rotors' reactive moments are compensated automatically throughout the flight, thus requiring little input compensation by the pilot."
+    },
+    {
+      "type": "item",
+      "requirement": "To stay cantered and avoid drifting",
+      "action": "Centre anti-torque pedals",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To remain straight and level",
+      "action": "Use cyclic (slightly forward input).",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To initiate a hover.",
+      "action": "Raise collective very gently",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Your stick can be trimmed to a hover position.",
+      "action": "Hold the “FORCE TRIM” button (on your cyclic).",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Anticipate the rotorcraft’s reaction when you trim. Keep in mind that trim works a bit differently from a plane’s trimming."
+    }
+  ],
+  "TAKEOFF": [
+    {
+      "type": "note",
+      "text": "Check that all your engine gauges (RPM, pressure &temperature) are within nominal parameters"
+    },
+    {
+      "type": "note",
+      "text": "Check to see if all your flight instruments all set up properly"
+    },
+    {
+      "type": "note",
+      "text": "Once you have performed a hover check and are lined up with the runway centreline, you are ready for takeoff"
+    },
+    {
+      "type": "item",
+      "requirement": "Settle the helicopter into a 5-10 meters hover",
+      "action": "Increase the collective and compensate with the cyclic.",
+      "location": "takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To start gaining horizontal speed",
+      "action": "Push nose slightly forward",
+      "location": "takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Keep accelerating and you will start generating more and more translational lift, naturally climbing."
+    },
+    {
+      "type": "note",
+      "text": "Try to maintain an airspeed of 100-120 km/h when climbing."
+    }
+  ],
+  "VISUAL LANDING": [
+    {
+      "type": "item",
+      "requirement": "Fly towards a reference point on the runway.",
+      "action": "Start descent from 400 m.",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Maintain 100-120 km/h for a descent rate between 3 and 5 m/s3."
+    },
+    {
+      "type": "item",
+      "requirement": "Prepare for landing",
+      "action": "Turn on the Dust Protection switch.",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "You should reach your reference point in a 10m hover",
+      "action": "Use your cyclic to come to a full stop",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Once you have come to a full stop in a 10m hover",
+      "action": "deploy landing gear and then you can slowly reduce collective to safely land on the ground",
+      "location": "visual_landing.png",
+      "locationText": ""
+    }
+  ]
+}

@@ -70,7 +70,7 @@ function generateChecklistJSON() {
                 if (parts.length >= 2 && currentCategory) { 
                     const requirement = parts[0].trim();
                     let action = parts[1].trim();
-                    let locationImage = "";
+                    let location = "";
                     let locationText = "";
 
                     if (parts.length === 3) { // If the third column is present
@@ -85,7 +85,7 @@ function generateChecklistJSON() {
                         type: "item",
                         requirement: requirement,
                         action: action,
-                        locationImage: locationImage, 
+                        location: locationImage, 
                         locationText: locationText 
                     });
                 } else {

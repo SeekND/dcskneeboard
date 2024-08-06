@@ -1,0 +1,782 @@
+{
+  "REARMING": [
+    {
+      "type": "item",
+      "requirement": "Intercom Mode Selector to INT (Intercom) on Audio Panel",
+      "action": "Set",
+      "location": "rearming.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Radio ICS (Intercom System) Trigger",
+      "action": "Press to communicate, contact Ground crew",
+      "location": "rearming.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Radio is powered by Battery power. Make sure it is available."
+    }
+  ],
+  "PRE-START-UP": [
+    {
+      "type": "note",
+      "text": "Perform Pre-Flight checks (define mission, loadout, power settings)"
+    },
+    {
+      "type": "note",
+      "text": "For night operations, put NVGs (night vision goggles) ON (RSHIFT + H)"
+    },
+    {
+      "type": "item",
+      "requirement": "Set all DC circuit breakers",
+      "action": "IN (overhead console and breaker panel next to your left foot)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Dome Lights",
+      "action": "As Required",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Pitot Heat Switch",
+      "action": "OFF",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set External Lights",
+      "action": "ON (FLASH or STEADY)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Anti-Collision Lights",
+      "action": "ON",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Position Lights",
+      "action": "As Required",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Cargo Release",
+      "action": "OFF (not functional)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Wipers",
+      "action": "OFF",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Cabin Heating",
+      "action": "OFF",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Cabin & Instrument Lighting",
+      "action": "As Required",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set AC Power Selector",
+      "action": "AC PHASE",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Inverter Switch",
+      "action": "OFF",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set DC Power MAIN GEN Selector",
+      "action": "ON (Flip Cover)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set VM (Voltmeter) Selector",
+      "action": "ESS-BUS",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set NON-ESS BUS (Non-Essential Bus) Switch",
+      "action": "NORMAL ON",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Starter Generator Switch",
+      "action": "GEN START",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Battery Switch",
+      "action": "ON",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Optional: Set GPU (Ground Power Unit) ON via Ground Crew commands"
+    },
+    {
+      "type": "item",
+      "requirement": "Press and hold Fire Warning Indicator TEST button and confirm that FIRE caution light illuminates",
+      "action": "Release button afterwards.",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Caution/Warning Lights Switch to TEST, then back to RESET. On the glareshield ,Master Caution light will extinguish",
+      "action": "LOW RPM light will remain illuminated.",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Governor Switch",
+      "action": "AUTO (FWD)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set De-Ice Switch",
+      "action": "OFF (AFT)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Main Fuel Switch",
+      "action": "ON (FWD)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Force Trim Switch",
+      "action": "ON (FWD)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set HYD CONT (Hydraulic Control) Switch",
+      "action": "ON (FWD)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Chip Detector Switch",
+      "action": "BOTH (FWD)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set IFF (Identify-Friend-or-Foe) Transponder Master Switch",
+      "action": "STBY (Right Click)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check Armament & Countermeasure (DISP) Weapons Arming Switch",
+      "action": "OFF",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check Armament & Countermeasure (DISP) Flare/Chaff Arming Switch",
+      "action": "SAFE",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check Armament & Countermeasure (DISP) Rocket Launcher Jettison Switch",
+      "action": "OFF & Covered",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check Armament & Countermeasure (DISP) Set FLARE",
+      "action": "quantity",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Adjust Altimeter Barometric Pressure Setting",
+      "action": "airfield elevation (QNH)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check Flight Control response",
+      "action": "Cyclic, Collective and Anti-Torque Pedal input.",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Close doors (RCTRL+C), check that rotors are cleared and un-tied",
+      "action": "check that surrounding area is clear for engine start",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    }
+  ],
+  "ENGINE START-UP": [
+    {
+      "type": "item",
+      "requirement": "Press “IDLE RELEASE” switch DOWN.",
+      "action": "Safety gate is off and you are not prevented from shutting down your engine.",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Throttle all the way",
+      "action": "FULLY OPEN position",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Throttle back",
+      "action": "“START” position.",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You will know you have reached this position when the “IDLE RELEASE” switch pops back up."
+    },
+    {
+      "type": "item",
+      "requirement": "“IDLE RELEASE” switch",
+      "action": "released (UP). Throttle safety gate now prevents you from shutting down your engine.",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Monitor DC Voltmeter for sufficient battery voltage. Battery starts can be made when voltages less than 24 volts are indicated, provided the voltage is not below 14 volts when cranking through 10% N1 speed."
+    },
+    {
+      "type": "item",
+      "requirement": "Lower collective",
+      "action": "FULLY DOWN",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Press and hold",
+      "action": "starter switch",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Wait until N1 (Gas Turbine Speed) RPM reaches 15 %."
+    },
+    {
+      "type": "note",
+      "text": "Check visually that the main rotor is turning as N1 reaches 15 percent."
+    },
+    {
+      "type": "note",
+      "text": "If the rotor is not turning, abort the start."
+    },
+    {
+      "type": "item",
+      "requirement": "At 15 % N1 RPM",
+      "action": "throttle up to IDLE-STOP (START) position.",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Engine light off occurs. Monitor EGT (Exhaust Gas Temperature) for any sign of a hot start."
+    },
+    {
+      "type": "note",
+      "text": "Wait until N1 RPM reaches 40 %."
+    },
+    {
+      "type": "item",
+      "requirement": "At 40 % N1 RPM",
+      "action": "release start switch (do not hold it for more than 1 minute).",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Wait until N1 RPM reaches 68-72 %. At 70 % N1 RPM",
+      "action": "slowly throttle to FULLY OPEN",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Inverter Switch",
+      "action": "MAIN ON",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Starter Generator Switch",
+      "action": "STBY GEN",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Wait until engine parameters stabilize",
+      "action": "verify correct engine operation",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "EXH/EGT (Exhaust Gas Temperature): 400 -610 deg C"
+    },
+    {
+      "type": "note",
+      "text": "Engine Oil Temperature: below 100 deg C"
+    },
+    {
+      "type": "note",
+      "text": "Engine Oil Pressure: 80-100 psi"
+    },
+    {
+      "type": "note",
+      "text": "Transmission Oil Temperature: below 110 deg C"
+    },
+    {
+      "type": "note",
+      "text": "Transmission Oil Pressure: 40 -60 psi"
+    },
+    {
+      "type": "note",
+      "text": "Engine RPM: 6600 RPM"
+    },
+    {
+      "type": "item",
+      "requirement": "LOW RPM indicator light",
+      "action": "Extinguished",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Disconnect GPU (Ground Power Unit)",
+      "action": "if used",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check for correct AC voltage",
+      "action": "(112-118 V)",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check for correct DC voltage",
+      "action": "(27-28.5 V",
+      "location": "engine_start-up.png",
+      "locationText": ""
+    }
+  ],
+  "POST-START / ENGINE RUNUP": [
+    {
+      "type": "item",
+      "requirement": "Radar Altimeter on Overhead Panel",
+      "action": "Turn on",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Radar Altimeter power switch",
+      "action": "Turn on",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Rotate left knob to activate radar altimeter. Click right knob test switch"
+    },
+    {
+      "type": "note",
+      "text": "Rotate left and right knobs to set the LOW and HIGH radar altimeter warnings with the flags."
+    },
+    {
+      "type": "item",
+      "requirement": "Set Pitot Heat Switch",
+      "action": "As Required (ON below 0 deg C)",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Adjust compass synchronization knob",
+      "action": "match the Radio Compass heading with the Magnetic Compass heading",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set LOW RPM Switch",
+      "action": "AUDIO/AFT",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Weapons Arming Switch",
+      "action": "ARMED",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flare/Chaff Arming Switch",
+      "action": "ARM",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set NAV Radio Mode",
+      "action": "PWR (Right Click)",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set VHF Radio Mode",
+      "action": "PWR (Right Click)",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set UHF Radio Mode",
+      "action": "T/R+G (Transmit/Receive + Guard)",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set FM Radio Mode",
+      "action": "T/R (Transmit/Receive)",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Set all radio frequencies as required for the mission."
+    },
+    {
+      "type": "item",
+      "requirement": "On Signal Distribution Panel",
+      "action": "Verify that all Receiver switches are ON (FWD)",
+      "location": "post-start_/.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On Signal Distribution Panel",
+      "action": "Set Transmit-Interphone Selector to INT (Intercom)",
+      "location": "post-start_/.png",
+      "locationText": ""
+    }
+  ],
+  "HOVER": [
+    {
+      "type": "item",
+      "requirement": "To stay cantered and avoid drifting",
+      "action": "Apply left rudder",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To remain straight and level",
+      "action": "Use cyclic (left & aft input).",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To initiate a hover",
+      "action": "Raise collective very gently",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Hovering is hard at first. Failure to predict the helicopter’s reaction after cyclic input will often result in you dancing the French Cancan for a looong long time. Think of it like doing plate-spinning: you need to put yourself in a position of equilibrium, so you always need to think one step ahead."
+    },
+    {
+      "type": "item",
+      "requirement": "Your stick can be trimmed to a hover position.",
+      "action": "Hold the “FORCE TRIM” button (on your cyclic).",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Anticipate the rotorcraft’s reaction when you trim. Keep in mind that trim works a bit differently from a plane’s trimming."
+    }
+  ],
+  "TAKING OFF": [
+    {
+      "type": "note",
+      "text": "There are many ways to take off in a Huey. The best way is generally a function of your loadout, weight and mission."
+    },
+    {
+      "type": "item",
+      "requirement": "engine and transmission gauges (pressure & temperature) are in the green.",
+      "action": "Check",
+      "location": "taking_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flight instruments all set up properly.",
+      "action": "Check",
+      "location": "taking_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Open gunner doors",
+      "action": "(LALT + 3, LALT+4)",
+      "location": "taking_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set gunners",
+      "action": "RETURN FIRE (LCTRL+3, LCTRL+4) or FIRE AT WILL (PRESS2 TIMES LCTRL+3, LCTRL+4).",
+      "location": "taking_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once you have performed a hover check and are maintaining a 5 ft hover, you can taxi to the runway."
+    },
+    {
+      "type": "item",
+      "requirement": "Move forward.",
+      "action": "Push your nose down slightly",
+      "location": "taking_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When lined up",
+      "action": "set RPM to 6600.",
+      "location": "taking_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Push nose slightly forward to start gaining horizontal speed",
+      "action": "No collective input should be required since you are already in a hover state.",
+      "location": "taking_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Keep accelerating and you will start generating more and more translational lift, naturally climbing."
+    },
+    {
+      "type": "note",
+      "text": "Try to maintain an airspeed of 60 kts when climbing"
+    }
+  ],
+  "VISUAL LANDING": [
+    {
+      "type": "note",
+      "text": "Your approach and landing type will depend on the type of LZ (landing zone) and the type of mission you are doing."
+    },
+    {
+      "type": "item",
+      "requirement": "Fly towards a reference point on the runway.",
+      "action": "Start descent from 500 ft",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Use collective and cyclic input to maintain 80 kts for a descent rate between 300-500 ft/min",
+      "action": "From 500 to 300 ft",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Use collective and cyclic input to maintain 60 kts for a descent rate between 300-500 ft/min",
+      "action": "From 450 to 50 ft",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Reduce speed to 30 kts when you are 50 ft",
+      "action": "Adjust collective to keep a straight trajectory towards your reference point while reducing airspeed.",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Reach your reference point in a 5 ft hover.",
+      "action": "Use your cyclic to come to a full stop.",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Raise your collective to “cushion” the sudden drop caused by the loss of translational lift (which is caused by the loss of airspeed)."
+    },
+    {
+      "type": "item",
+      "requirement": "Come to a full stop in a 5 ft hover",
+      "action": "Slowly reduce collective to safely land on the ground.",
+      "location": "visual_landing.png",
+      "locationText": ""
+    }
+  ],
+  "SHUTDOWN": [
+    {
+      "type": "item",
+      "requirement": "Set throttle",
+      "action": "IDLE-STOP",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "let engine spool down for 2 minutes"
+    },
+    {
+      "type": "item",
+      "requirement": "Force Trim",
+      "action": "ON",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Pitot Heater",
+      "action": "OFF",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "INVERTER",
+      "action": "OFF, then SPARE",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "AC",
+      "action": "CHECK",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Main GEN",
+      "action": "OFF, Check DC voltmeter",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Main GEN",
+      "action": "ON",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Starter GEN",
+      "action": "START",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set throttle",
+      "action": "OFF",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "make sure IDLE RELEASE switch on collective is pressed ENGAGED/PUSHED"
+    },
+    {
+      "type": "item",
+      "requirement": "Central Pedestal switches",
+      "action": "OFF (Fuel switch, Hydro, Force Trim, Armament & Countermeasure Panel)",
+      "location": "shutdown.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Overhead panel switches",
+      "action": "OFF (Battery, Lights)",
+      "location": "shutdown.png",
+      "locationText": ""
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+    "FIRE": [
+        {
+            "type": "note",
+            "text": "Check for the illumination of the yellow light “1” on the wall panel. A “1”indicates that an automatic discharge of the first extinguishing sequence has been selected if the Fire Extinguisher Activation Mode Switch is set to AUTO."
+        },
+        {
+            "type": "item",
+            "requirement": "If the automatic system hasn’t worked",
+            "action": "engage it manually by pressing the corresponding button underneath the “ПОЖАР ЛЕВ ДВИГ” (Left engine fire), “ПОЖАР ВСУ” (APU fire),“ПОЖАР ПРАВ ДВИГ” (Right engine fire), or “ПОЖАР ВЕНТИЛ” (Oil cooling fan fire) warning light",
+            "location": "fire.png",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "If the fire elimination is unsuccessful",
+            "action": "attempt an emergency landing.",
+            "location": "fire.png",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "If an emergency landing is not possible",
+            "action": "eject",
+            "location": "fire.png",
+            "locationText": ""
+        }
+    ],
+    "ENGINE FIRE": [
+        {
+            "type": "item",
+            "requirement": "If a fire is detected in any of the engine compartments",
+            "action": "shut down the engine in the compartment where the fire has been detected by closing the Engine Cut-Off Valve Levers (AFT) and the Fuel Shut-off valves (switch DOWN).",
+            "location": "engine_fire.png",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Continue the flight by operating on a single engine."
+        },
+        {
+            "type": "item",
+            "requirement": "If the fire elimination is unsuccessful",
+            "action": "attempt an emergency landing.",
+            "location": "engine_fire.png",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "If an emergency landing is not possible",
+            "action": "eject",
+            "location": "engine_fire.png",
+            "locationText": ""
+        }
+    ],
+    "APU FIRE": [
+        {
+            "type": "item",
+            "requirement": "In case of a fire in the APU compartment",
+            "action": "shut down the APU by pressing the“ОСТАНОВ ВСУ” (Stop APU) button and close the APU Shut-off valve (switch DOWN).",
+            "location": "apu_fire.png",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Confirm that the fire has been extinguished",
+            "action": "checking that the “ПОЖАР” (Fire) and Master Warning lights going out.",
+            "location": "apu_fire.png",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "If after the 1st automatic sequence discharge the “ПОЖАР” (Fire) light and the Master Warning light are still illuminated",
+            "action": "discharge the 2nd sequence by switching the Fire Extinguisher Activation Mode selector to MAN position and press the corresponding button under the light that is indicating a fire.",
+            "location": "apu_fire.png",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "A yellow “2”light will illuminate, indicating the discharge of the 2nd extinguisher."
+        },
+        {
+            "type": "note",
+            "text": "Use extreme caution when operating the cut-off and the shut-off valves to avoid shutting down the serviceable engine."
+        },
+        {
+            "type": "note",
+            "text": "After the fire has been eliminated, it is advised that you do not start an engine in whose compartment a fire has been detected."
+        },
+        {
+            "type": "item",
+            "requirement": "If the fire elimination is unsuccessful",
+            "action": "attempt an emergency landing.",
+            "location": "apu_fire.png",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "If an emergency landing is not possible",
+            "action": "eject",
+            "location": "apu_fire.png",
+            "locationText": ""
+        }
+    ]
+}

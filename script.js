@@ -150,7 +150,7 @@ function loadChecklistTypes(aircraftId) {
                 } else {
                     // Create a button for internal checklist types
                     const button = document.createElement('button');
-                    button.textContent = type.toUpperCase() + " OPERATIONS";
+                    button.textContent = type.toUpperCase();
                     button.onclick = () => loadChecklistType(type, aircraftId);
                     checklistOptionsDiv.appendChild(button);
                 }
@@ -312,6 +312,7 @@ function loadEmergencyProceduresType(aircraftId) {
           console.error(`Error: Invalid or empty data for category ${categoryName}`);
           continue;
         }
+        
 
         // Create a collapsible section for each category
         const collapsible = document.createElement('div');
@@ -395,7 +396,6 @@ function loadEmergencyProceduresType(aircraftId) {
 }
 
 // END EMERGENCY CATEGORY FETCH /////////////////////////////////
-
 
 
 // START REFERENCE CATEGORY FETCH /////////////////////////////////

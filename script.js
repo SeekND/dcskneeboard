@@ -6,7 +6,7 @@ darkModeToggle.addEventListener('click', () => {
 });
 
 function loadAircraftData() {
-  fetch('aircraft/aircraft_data.json')
+  fetch(`aircraft/aircraft_data.json`)
     .then(response => response.json())
     .then(aircraftData => {
       const mainPage = document.querySelector('.main-page');
@@ -134,7 +134,7 @@ function loadChecklistTypes(aircraftId) {
     const checklistOptionsDiv = document.getElementById('checklist-options');
     checklistOptionsDiv.innerHTML = ''; 
 
-    fetch(`aircraft/${aircraftId}/checklist/${aircraftId}.json`)
+    fetch(`aircraft/${aircraftId}/checklist/checklist.json`)
         .then(response => response.json())
         .then(data => {
             const checklistTypes = data.checklists;
@@ -420,7 +420,7 @@ function loadReferenceContent() {
 }
 
 function getReferenceCategories() {
-  return fetch('reference/reference_categories.json') 
+  return fetch(`reference/reference_categories.json`) 
     .then(response => response.json())
     .then(data => {
       return data.categories; 
@@ -552,7 +552,7 @@ function loadAirfieldButtons() {
   const airfieldsDiv = document.getElementById("airfields");
   airfieldsDiv.innerHTML = ''; 
 
-  fetch('terrain/airfields.json')
+  fetch(`terrain/airfields.json`)
     .then(response => response.json())
     .then(data => {
       const airfieldNames = data.airfields;

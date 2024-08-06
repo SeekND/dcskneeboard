@@ -4,6 +4,10 @@ body.dark-mode {
   color: #e0e0e0;             /* Light text */
 }
 
+.main-page .image-button { /* Target image buttons within the main page */
+  border-radius: 25%; /* Make the buttons circular */
+}
+
 body.dark-mode #tab-buttons {
   background-color: #222; 
 }
@@ -31,8 +35,8 @@ body.dark-mode #emergency button {
   background-color: #333;
   color: #0f0; /* Darker green text */
   text-shadow:
-      0 0 3px #00FF00, /* Reduced green glow */
-      0 0 6px #00FF00;
+      0 0 1px #00FF00, /* Reduced green glow */
+      0 0 2px #00FF00;
 }
 
 .main-page {

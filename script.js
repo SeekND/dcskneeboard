@@ -5,6 +5,58 @@ darkModeToggle.addEventListener('click', () => {
 
 });
 
+function loadAircraftData() {
+  fetch('aircraft/aircraft_data.json')
+    .then(response => response.json())
+    .then(aircraftData => {
+      const mainPage = document.querySelector('.main-page');
+
+      // Group aircraft by type
+      const aircraftByType = {};
+      aircraftData.forEach(aircraft => {
+        if (!aircraftByType[aircraft.type]) {
+          aircraftByType[aircraft.type] = [];
+        }
+        aircraftByType[aircraft.type].push(aircraft);
+      });
+
+      // Create button categories for each type
+      for (const type in aircraftByType) {
+        const buttonCategory = document.createElement('div');
+        buttonCategory.classList.add('button-category');
+
+        const categoryHeader = document.createElement('h2');
+        categoryHeader.textContent = type.toUpperCase();
+        buttonCategory.appendChild(categoryHeader);
+
+        // Create buttons for each aircraft within the category
+        aircraftByType[type].forEach(aircraft => {
+          const buttonWrapper = document.createElement('div');
+          buttonWrapper.classList.add('button-wrapper');
+
+          const button = document.createElement('button');
+          button.classList.add('image-button');   
+
+          button.style.backgroundImage = `url('aircraft/${aircraft.name}/${aircraft.name}.jpg')`;
+          button.onclick = () => loadAircraft(aircraft.name);
+          buttonWrapper.appendChild(button);
+ 	  buttonWrapper.appendChild(document.createElement('br'));
+          const buttonLabel = document.createElement('span');
+          buttonLabel.classList.add('button-label');
+          buttonLabel.textContent = aircraft.name.toUpperCase();
+          buttonWrapper.appendChild(buttonLabel);
+
+          buttonCategory.appendChild(buttonWrapper);
+        });
+
+        mainPage.appendChild(buttonCategory);
+      }
+    })
+    .catch(error => console.error('Error loading aircraft data:', error));
+}
+
+document.addEventListener('DOMContentLoaded', loadAircraftData);
+
 function loadAircraft(aircraftId) {
 
     // 1. Hide the main page and show the aircraft content section
@@ -15,15 +67,20 @@ function loadAircraft(aircraftId) {
     const tabButtons = document.getElementById("tab-buttons");
     tabButtons.innerHTML = ""; 
 
-    Object.keys(aircraftData[aircraftId]).forEach(tabId => {
-        const button = document.createElement('button');
-        button.textContent = tabId.charAt(0).toUpperCase() + tabId.slice(1);
-        button.onclick = () => changeTab(tabId, aircraftId);
-        tabButtons.appendChild(button);
-    });
+
+
+    createTabButton('checklist', aircraftId);
+    createTabButton('emergency', aircraftId);
+    createTabButton('airfields');
+    createTabButton('reference');
+    createTabButton('notepad');
+
+            // Trigger the loading of the initial tab content (e.g., 'checklist')
+    changeTab('checklist', aircraftId);
+
 
     // 3. Construct the image path based on the aircraftId
-    const imagePath = `aircraft/${aircraftId}.jpg`;
+    const imagePath = `aircraft/${aircraftId}/${aircraftId}.jpg`;
 
     // 4. Create and display the aircraft image within the tab-buttons div
     const img = document.createElement('img');
@@ -51,16 +108,23 @@ function loadAircraft(aircraftId) {
 
     // 5. Load all content for the selected aircraft upfront
     loadAllContent(aircraftId);
-    
+}
+
+function createTabButton(tabId, aircraftId = null) { // aircraftId is optional for non-aircraft-specific tabs
+    const tabButtons = document.getElementById("tab-buttons");
+    const button = document.createElement('button');
+    button.textContent = tabId.charAt(0).toUpperCase() + tabId.slice(1);
+    button.onclick = () => changeTab(tabId, aircraftId); 
+    tabButtons.appendChild(button);
 }
 
 
 function loadAllContent(aircraftId) {
 
-    changeTab('checklist', aircraftId); 
     loadChecklistTypes(aircraftId);
-    loadEmergencyProcedures(aircraftData[aircraftId].emergency); 
+    loadEmergencyProceduresType(aircraftId); 
     loadReferenceContent();
+    loadAirfieldButtons();
 }
 
 
@@ -68,29 +132,69 @@ function loadAllContent(aircraftId) {
 
 function loadChecklistTypes(aircraftId) {
     const checklistOptionsDiv = document.getElementById('checklist-options');
-    //checklistOptionsDiv.innerHTML = ''; // Clear any previous buttons
+    checklistOptionsDiv.innerHTML = ''; 
 
-    fetch(`checklist/${aircraftId}.json`)
+    fetch(`aircraft/${aircraftId}/checklist/${aircraftId}.json`)
         .then(response => response.json())
         .then(data => {
             const checklistTypes = data.checklists;
 
             checklistTypes.forEach(type => {
-                const button = document.createElement('button');
-                button.textContent = type.charAt(0).toUpperCase() + type.slice(1);
-                button.onclick = () => loadChecklistType(type, aircraftId);
-                checklistOptionsDiv.appendChild(button);
+                if (type.startsWith("http")) { // Check if it's a URL
+                    // Create a button to load the external checklist in an iframe
+                    const button = document.createElement('button');
+                    button.textContent = "External Information (toggle)"; // Or any other suitable label
+                    button.classList.add('external-checklist-button'); 
+                    button.onclick = () => loadExternalChecklist(type); 
+                    checklistOptionsDiv.appendChild(button);
+                } else {
+                    // Create a button for internal checklist types
+                    const button = document.createElement('button');
+                    button.textContent = aircraftId.toUpperCase();
+                    button.onclick = () => loadChecklistType(type, aircraftId);
+                    checklistOptionsDiv.appendChild(button);
+                }
             });
+            checklistOptionsDiv.appendChild(document.createElement('br'));
         })
         .catch(error => console.error(`Error loading checklist data for ${aircraftId}:`, error));
 }
 
+function loadExternalChecklist(url) {
+  const checklistContentDiv = document.getElementById("checklist-content");
+  const pdfContainer = document.getElementById("pdf-container");
+
+  // Toggle the visibility of the PDF container
+  if (pdfContainer.style.display === 'none') {
+    pdfContainer.style.display = 'block';
+    checklistContentDiv.style.display = 'none'; // Hide the checklist content
+
+    // Create the iframe only if it doesn't already exist
+    if (!pdfContainer.querySelector('iframe')) {
+      const iframe = document.createElement('iframe');
+      iframe.src = url;
+      iframe.width = '100%';
+      iframe.height = '800px'; 
+      pdfContainer.appendChild(iframe);
+    }
+  } else {
+    pdfContainer.style.display = 'none';
+    checklistContentDiv.style.display = 'block'; // Show the checklist content
+  }
+}
+
 function loadChecklistType(type, aircraftId) {
-    fetch(`checklist/${aircraftId}/${type}.json`)
+
+    fetch(`aircraft/${aircraftId}/checklist/${type}.json`)
         .then(response => response.json())
         .then(checklistData => {
-            const checklistContentDiv = document.getElementById("checklist-content");
-            checklistContentDiv.innerHTML = ""; // Clear previous checklist content
+    const checklistContentDiv = document.getElementById("checklist-content");
+    const pdfContainer = document.getElementById("pdf-container");
+
+    checklistContentDiv.innerHTML = ""; // Clear previous checklist content
+    pdfContainer.innerHTML = ""; // Clear the PDF container
+    pdfContainer.style.display = 'none'; // Hide the PDF container
+    checklistContentDiv.style.display = 'block'; // Show the checklist content div
 
             // Iterate over all categories in the checklistData object
             for (const categoryName in checklistData) {
@@ -149,10 +253,10 @@ function loadChecklistType(type, aircraftId) {
                         row.insertCell().textContent = item.action;
 
                         const locationCell = row.insertCell();
-                        if (item.locationImage) {
+                        if (item.locationText) {
                             const locationBtn = document.createElement('button');
                             locationBtn.className = "location-btn";
-                            locationBtn.dataset.img = `checklist/${aircraftId}/${item.locationImage}`;
+                            locationBtn.dataset.img = `aircraft/${aircraftId}/checklist/images${item.locationImage}`;
                             locationBtn.textContent = item.locationText || "";
                             locationCell.appendChild(locationBtn);
                         } else {
@@ -188,84 +292,107 @@ function loadChecklistType(type, aircraftId) {
 // END LOAD CHECKLIST ///////////////////////////////////////////////////
 
 
+// START EMERGENCY CATEGORY FETCH /////////////////////////////////
 
-function loadEmergencyProcedures(emergencyProceduresData) {
-  const emergencyDiv = document.getElementById("emergency");
-  emergencyDiv.innerHTML = ""; // Clear previous content
+function loadEmergencyProceduresType(aircraftId) {
+  fetch(`aircraft/${aircraftId}/emergency/emergency.json`)
+    .then(response => response.json())
+    .then(emergencyProceduresData => {
+      const emergencyContentDiv = document.getElementById("emergency");
+      emergencyContentDiv.innerHTML = ""; // Clear previous emergency procedures content
 
-  emergencyProceduresData.forEach(category => {
+      // Iterate over all categories in the emergencyProceduresData object
+      for (const categoryName in emergencyProceduresData) {
+        const itemsData = emergencyProceduresData[categoryName];
 
-
-
-    if (category.type === 'category') {
-      // Create a main category header (always visible) and center it
-      const categoryHeader = document.createElement('h3');
-      categoryHeader.textContent = category.title;
-      categoryHeader.style.textAlign = 'center'; // Center the text using JavaScript
-      emergencyDiv.appendChild(categoryHeader);
-    } else {
-      // Create a collapsible section for emergency procedures
-      const collapsible = document.createElement('div');
-      collapsible.className = "collapsible";
-      collapsible.textContent = category.title;
-
-      const content = document.createElement('div');
-      content.className = "checklistcontent";
-      content.style.display = "none";
-
-      const table = document.createElement('table');
-      const headerRow = table.insertRow();
-      ["", "Condition", "Action", "Location"].forEach(header => {
-        const th = document.createElement('th');
-        th.textContent = header;
-        headerRow.appendChild(th);
-      });
-
-      // Declare itemData outside the loop
-      let itemData; 
-
-      category.items.forEach(item => {
-        // Parse the item data within the loop
-        itemData = JSON.parse(JSON.stringify(item)); // Create a deep copy
-
-        const row = table.insertRow();
-
-        if (itemData.type === 'item') {
-          // Add a checkbox cell
-          row.insertCell().innerHTML = '<input type="checkbox">';
-
-          row.insertCell().textContent = itemData.condition;
-          row.insertCell().textContent = itemData.action;
-
-          const locationCell = row.insertCell();
-          if (itemData.locationImage) {
-            const locationBtn = document.createElement('button');
-            locationBtn.className = "location-btn";
-            locationBtn.dataset.img = itemData.locationImage;
-            locationBtn.textContent = itemData.locationText || "";
-            locationCell.appendChild(locationBtn);
-          } else {
-            locationCell.textContent = "";
-          }
-        } else if (itemData.type === 'note') {
-          const noteCell = row.insertCell();
-          noteCell.colSpan = 4; 
-          noteCell.textContent = itemData.text;
-          noteCell.classList.add('note-cell'); 
+        // Check if itemsData is valid
+        if (!itemsData || itemsData.length === 0) {
+          console.error(`Error: Invalid or empty data for category ${categoryName}`);
+          continue;
         }
-      });
 
-      content.appendChild(table);
+        // Create a collapsible section for each category
+        const collapsible = document.createElement('div');
+        collapsible.className = "collapsible";
+        collapsible.textContent = categoryName;
 
-      collapsible.addEventListener('click', () => {
-        content.style.display = (content.style.display === "none") ? "block" : "none";
-      });
+        const content = document.createElement('div');
+        content.className = "checklist-content";
+        content.style.display = "none";
 
-      emergencyDiv.appendChild(collapsible);
-      emergencyDiv.appendChild(content);
-    }
-  });
+        const table = document.createElement('table');
+
+        // Find the first "item" type item to determine headers
+        const firstItem = itemsData.find(item => item.type === 'item');
+        const headers = firstItem
+          ? Object.keys(firstItem).filter(header => header !== 'type' && header !== 'locationText')
+          : [];
+
+        // Create table header row
+        const headerRow = table.insertRow();
+        // Add an empty header for the checkbox if it's not already present
+        if (!headers.includes("")) {
+          headers.unshift("");
+        }
+        headers.forEach(header => {
+          const th = document.createElement('th');
+          th.textContent = header === "" ? "" : header.replace(/_/g, ' ');
+          headerRow.appendChild(th);
+        });
+
+        // Populate the table rows
+        itemsData.forEach(item => {
+          if (item.type === 'item') {
+            // Handle regular emergency procedure item 
+            const row = table.insertRow();
+            const checkboxCell = row.insertCell();
+            checkboxCell.innerHTML = '<input type="checkbox">';
+
+            // Add event listener to the checkbox
+            const checkbox = checkboxCell.querySelector('input[type="checkbox"]');
+            checkbox.addEventListener('change', () => {
+              checkEmergency(collapsible);
+            });
+
+            row.insertCell().textContent = item.requirement || "";
+            row.insertCell().textContent = item.action || "";
+
+            const locationCell = row.insertCell();
+            if (item.locationText) {
+              const locationBtn = document.createElement('button');
+              locationBtn.className = "location-btn";
+              locationBtn.dataset.img = `aircraft/${aircraftId}/emergency/images/${item.locationImage}`;
+              locationBtn.textContent = item.locationText || "";
+              locationCell.appendChild(locationBtn);
+            } else {
+              locationCell.textContent = "";
+            }
+          } else if (item.type === 'note') {
+            // Handle note item - create a new row
+            const noteRow = table.insertRow();
+            const noteCell = noteRow.insertCell();
+            noteCell.colSpan = 4; 
+            noteCell.textContent = item.text;
+            noteCell.classList.add('note-cell');
+          }
+        });
+
+        content.appendChild(table);
+        collapsible.addEventListener('click', () => {
+          content.style.display = (content.style.display === "none") ? "block" : "none";
+        });
+
+        emergencyContentDiv.appendChild(collapsible);
+        emergencyContentDiv.appendChild(content);
+
+        // Check category completion initially (after the table is populated)
+        checkCategoryCompletion(collapsible);
+      }
+    })
+    .catch(error => console.error(`Error loading emergency procedures for ${aircraftId}:`, error));
 }
+
+// END EMERGENCY CATEGORY FETCH /////////////////////////////////
 
 
 
@@ -417,22 +544,90 @@ function createReferenceTable(categoryData, categoryName) {
 
 // END REFERENCE CATEGORY FETCH /////////////////////////////////
 
+// START AIRFIELD CATEGORY FETCH /////////////////////////////////
 
-const aircraftData = {
-    'a10': {
-        checklist: [],
-        airfields: [], // (Add airfield data if available)
-    	reference: [], // or any other relevant reference data
-    	notepad: "" // You might want to initialize this with some default text or keep it empty
-    },
-'f-16c': {
-	checklist: [],
-        emergency: [], // (Your existing emergency procedures)
-        airfields: [], // (Add airfield data if available)
-    	reference: [], // or any other relevant reference data
-    	notepad: [], // You might want to initialize this with some default text or keep it empty
-    },
-};
+function loadAirfieldButtons() {
+  const airfieldsDiv = document.getElementById("airfields");
+  airfieldsDiv.innerHTML = ''; 
+
+  fetch('terrain/airfields.json')
+    .then(response => response.json())
+    .then(data => {
+      const airfieldNames = data.airfields;
+
+      airfieldNames.forEach(airfieldName => {
+                const button = document.createElement('button');
+                button.textContent = airfieldName.toUpperCase();
+                button.onclick = () => showAirfield(airfieldName);
+                airfieldsDiv.appendChild(button);
+            });
+      const airfieldDetailsDiv = document.createElement('div');
+      airfieldDetailsDiv.id = 'airfield-details';
+      airfieldsDiv.appendChild(airfieldDetailsDiv);
+    })
+    .catch(error => console.error('Error loading airfield data:', error));
+ 
+}
+
+function showAirfield(terrainId) {
+  const airfieldDetails = document.getElementById("airfield-details");
+  airfieldDetails.innerHTML = ""; // Clear previous content
+
+  // Load terrain image 
+  const terrainImagePath = `terrain/${terrainId}/airfieldmap.png`; 
+
+  const terrainImage = document.createElement('img');
+  terrainImage.src = terrainImagePath;
+  terrainImage.alt = terrainId;
+  terrainImage.style.maxWidth = '100%';
+  terrainImage.style.height = 'auto';
+  airfieldDetails.appendChild(terrainImage);
+
+  // Fetch airfield data for the selected terrain
+  fetch(`terrain/${terrainId}/${terrainId}.json`) 
+    .then(response => response.json())
+    .then(data => {
+        // Create the table dynamically
+ 	 const table = document.createElement('table');
+ 	 const headerRow = table.insertRow();
+ 	 ["AIRFIELD", "ICAO", "REFERENCE", "TOWER", "ILS (runway, freq)", "TACAN"].forEach(header => {
+  	  const th = document.createElement('th');
+  	  th.textContent = header;
+  	  headerRow.appendChild(th);
+ 	 });
+
+        data.forEach(airfield => {
+          const row = table.insertRow();
+	  
+          // Airfield Name (with image button if available)
+          const airfieldNameCell = row.insertCell();
+          if (airfield.image) {
+            const airfieldBtn = document.createElement('button');
+            airfieldBtn.className = "airfield-btn";
+            airfieldBtn.dataset.img = `terrain/${terrainId}/airfields/${airfield.image}`;
+            airfieldBtn.textContent = airfield.AIRFIELD;
+            airfieldNameCell.appendChild(airfieldBtn);
+          } else {
+            airfieldNameCell.textContent = airfield.AIRFIELD;
+          }
+
+          // Other Airfield Data
+          row.insertCell().textContent = airfield.ICAO || "";
+          row.insertCell().textContent = airfield.REFERENCE || "";
+          row.insertCell().textContent = airfield.TOWER || "";
+          row.insertCell().textContent = airfield.ILS || "";
+          row.insertCell().textContent = airfield.TACAN || "";
+        });
+    
+
+      airfieldDetails.appendChild(table);
+    })
+    .catch(error => console.error(`Error loading data for terrain ${terrainId}:`, error));
+}
+
+
+// END AIRFIELD CATEGORY FETCH //////////////////////////////////
+
 
 
 function changeTab(tabId, aircraftId) {
@@ -470,27 +665,7 @@ function changeTab(tabId, aircraftId) {
     contentDiv.appendChild(checklistOptions);
     contentDiv.appendChild(document.createElement('br'));
     contentDiv.appendChild(checklistContentDiv);
-  } else if (contentDiv.innerHTML === '' && tabId !== 'checklist' && tabId !== 'reference') { 
-    // 5. Check if aircraft data exists for the specific tab (except for notepad and reference)
-    if (!aircraftData[aircraftId] || !aircraftData[aircraftId][tabId]) {
-      console.error(`Error: Data not found for aircraft ID: ${aircraftId} and tab: ${tabId}`);
-      contentDiv.innerHTML = "Data not available for this aircraft and tab.";
-      return;
-    }
-
-    // 6. Load content dynamically based on the tab and aircraft
-    switch (tabId) {
-      case 'emergency':
-        contentDiv.innerHTML = aircraftData[aircraftId].emergency;
-        break;
-      case 'airfields':
-        showAirfield('georgia'); 
-        break;
-      case 'notepad':
-        // ... (You might want to add logic here to handle the notepad content)
-        break;
-    }
-  }
+  } 
 
   // 7. Handle image display on buttons within the newly loaded content
   const locationButtons = contentDiv.querySelectorAll('.location-btn');
@@ -498,10 +673,6 @@ function changeTab(tabId, aircraftId) {
     button.addEventListener('click', () => showImage(button));
   });
 
-  const airfieldButtons = contentDiv.querySelectorAll('.airfield-btn');
-  airfieldButtons.forEach(button => {
-    button.addEventListener('click', () => showImage(button));
-  });
 }
 
 
@@ -516,18 +687,39 @@ function toggleChecklist(header) {
 
 
 function checkCategoryCompletion(collapsibleHeader) {
-    const checkboxes = collapsibleHeader.nextElementSibling.querySelectorAll('input[type="checkbox"]');
-    const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+  const checkboxes = collapsibleHeader.nextElementSibling.querySelectorAll('input[type="checkbox"]');
+  const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
 
-    if (allChecked)   
+  if (allChecked)   
  {
-        collapsibleHeader.style.backgroundColor = '#4C784C '; // dark green
+    collapsibleHeader.style.backgroundColor = '#4C784C';
+    collapsibleHeader.nextElementSibling.style.display = 'none'; // Collapse the current category
+
+    // Find and open the next collapsible category
+    let nextCollapsible = collapsibleHeader.nextElementSibling.nextElementSibling; // Skip the content div
+    while (nextCollapsible && !nextCollapsible.classList.contains('collapsible')) {
+      nextCollapsible = nextCollapsible.nextElementSibling;
+    }
+    if (nextCollapsible) {
+      nextCollapsible.nextElementSibling.style.display = 'block'; // Open the next category's content
+    }
+  } else {
+    collapsibleHeader.style.backgroundColor = '#777';
+  }
+}
+
+function checkEmergency(collapsibleHeader) {
+    const checkboxes = collapsibleHeader.nextElementSibling.querySelectorAll('input[type="checkbox"]');
+    const anyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked); // Check if any are checked
+
+    if (anyChecked) {
+        collapsibleHeader.style.backgroundColor = 'darkred'; // Dark red
     } else {
         collapsibleHeader.style.backgroundColor = '#777'; // Reset to default color
     }
 }
 
-function showAirfield(terrainId) {
+function showAirfieldaaaaa(terrainId) {
   const airfieldDetails = document.getElementById("airfield-details");
   airfieldDetails.innerHTML = ""; 
 

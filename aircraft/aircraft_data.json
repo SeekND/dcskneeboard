@@ -1,0 +1,26 @@
+[
+    {
+        "type": "jet",
+        "name": "f-16c"
+    },
+    {
+        "type": "jet",
+        "name": "a-10c"
+    },
+    {
+        "type": "jet",
+        "name": "f-14b"
+    },
+    {
+        "type": "helicopter",
+        "name": "ka-50"
+    },
+    {
+        "type": "helicopter",
+        "name": "ah-64d"
+    },
+    {
+        "type": "helicopter",
+        "name": "uh-1h"
+    }
+]

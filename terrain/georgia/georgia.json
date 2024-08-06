@@ -1,0 +1,156 @@
+[
+    {
+        "AIRFIELD": "Anapa",
+        "ICAO": "URKA",
+        "REFERENCE": "44°59′36″N, 37°20′19″E",
+        "TOWER": "121.0MHz",
+        "image": "anapa.png"
+    },
+    {
+        "AIRFIELD": "Batumi",
+        "ICAO": "UGSB",
+        "REFERENCE": "41°36′58″N, 41°35′31″E",
+        "TOWER": "131.0MHz",
+        "ILS": "13, 110.3MHz",
+        "TACAN": "16XBTM"
+    },
+    {
+        "AIRFIELD": "Beslan",
+        "ICAO": "URMO",
+        "REFERENCE": "43°12′26″N, 44°35′19″E",
+        "TOWER": "141.0MHz"
+    },
+    {
+        "AIRFIELD": "Gelendzhik",
+        "ICAO": "URKG",
+        "REFERENCE": "44°33′54″N, 38°00′25″E",
+        "TOWER": "126.0MHz"
+    },
+    {
+        "AIRFIELD": "Gudauta",
+        "ICAO": "UG23",
+        "REFERENCE": "43°06′09″N, 40°34′01″E",
+        "TOWER": "130.0MHz",
+        "image": "gudauta.png"
+    },
+    {
+        "AIRFIELD": "Kobuleti",
+        "ICAO": "UG5X",
+        "REFERENCE": "41°55′36″N, 41°51′05″E",
+        "TOWER": "133.0MHz",
+        "ILS": "07, 111.5MHz",
+        "TACAN": "67XKBL"
+    },
+    {
+        "AIRFIELD": "Kopitnari-Kutaisi",
+        "ICAO": "UGKO",
+        "REFERENCE": "42°10′30″N, 42°28′05″E",
+        "TOWER": "134.0MHz",
+        "ILS": "08, 109.75MHz",
+        "TACAN": "44XKTS"
+    },
+    {
+        "AIRFIELD": "Krasnodar Center",
+        "ICAO": "URKI",
+        "REFERENCE": "45°05′03″N, 38°57′34″E",
+        "TOWER": "122.0MHz"
+    },
+    {
+        "AIRFIELD": "Krasnodar-Pashkovskty",
+        "ICAO": "URKK",
+        "REFERENCE": "45°01′52″N, 39°08′38″E",
+        "TOWER": "128.0MHz"
+    },
+    {
+        "AIRFIELD": "Krymsk",
+        "ICAO": "URKW",
+        "REFERENCE": "44°58′27″N, 38°00′37″E",
+        "TOWER": "124.0MHz"
+    },
+    {
+        "AIRFIELD": "Maykop-Khanskaya",
+        "ICAO": "URKH",
+        "REFERENCE": "44°41′22″N, 40°03′08″E",
+        "TOWER": "125.0MHz"
+    },
+    {
+        "AIRFIELD": "Mineralnye Vody",
+        "ICAO": "URMM",
+        "REFERENCE": "44°12′58″N, 43°06′13″E",
+        "TOWER": "135.0MHz",
+        "ILS": "12, 111.7MHz<br>30, 109.3MHz"
+    },
+    {
+        "AIRFIELD": "Mozdok",
+        "ICAO": "XRMF",
+        "REFERENCE": "43°47′26″N, 44°34′44″E",
+        "TOWER": "137.0MHz"
+    },
+    {
+        "AIRFIELD": "Nalchik",
+        "ICAO": "URMN",
+        "REFERENCE": "43°30′29″N, 43°37′30″E",
+        "TOWER": "136.0MHz",
+        "ILS": "24, 110.5MHz"
+    },
+    {
+        "AIRFIELD": "Novorossiysk",
+        "ICAO": "URKN",
+        "REFERENCE": "44°39′36″N, 37°46′25″E",
+        "TOWER": "123.0MHz"
+    },
+    {
+        "AIRFIELD": "Senaki-Tskhakaya",
+        "ICAO": "UGKS",
+        "REFERENCE": "42°14′31″N, 42°02′08″E",
+        "TOWER": "132.0MHz",
+        "ILS": "09, 108.90MHz",
+        "TACAN": "31XTSK"
+    },
+    {
+        "AIRFIELD": "Sochi-Adler",
+        "ICAO": "URSS",
+        "REFERENCE": "43°06′17″N, 40°35′26″E",
+        "TOWER": "127.0MHz",
+        "ILS": "06, 111.1MHz"
+    },
+    {
+        "AIRFIELD": "Soganlug",
+        "ICAO": "UG24",
+        "REFERENCE": "41°39′26″N, 44°55′48″E",
+        "TOWER": "139.0MHz"
+    },
+    {
+        "AIRFIELD": "Sukhumi",
+        "ICAO": "UGSS",
+        "REFERENCE": "42°51′21″N, 41°09′17″E",
+        "TOWER": "129.0MHz"
+    },
+    {
+        "AIRFIELD": "Tbilisi",
+        "ICAO": "UGTB",
+        "REFERENCE": "41°40′37″N, 44°56′37″E",
+        "TOWER": "138.0MHz",
+        "ILS": "13, 110.3MHz<br>31, 108.9MHz"
+    },
+    {
+        "AIRFIELD": "Vaziani",
+        "ICAO": "UG27",
+        "REFERENCE": "41°37′09″N, 45°02′10″E",
+        "TOWER": "140.0MHz",
+        "ILS": "14, 108.75MHz",
+        "TACAN": "22XVAS"
+    },
+    {
+        "AIRFIELD": "Banodzha",
+        "REFERENCE": "42°15′54″N, 42°39′24″E"
+    },
+    {
+        "AIRFIELD": "Kvitiri",
+        "REFERENCE": "42°14′53″N, 42°37′50″E"
+    },
+    {
+        "AIRFIELD": "Ochkhamuri",
+        "REFERENCE": "41°50′17″N, 41°48′02″E"
+    }
+]

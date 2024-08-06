@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Entry</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+
+    <h1>Data Entry</h1>
+
+    <form id="data-entry-form">
+        <div id="data-entry-mode-buttons">
+            <button type="button" onclick="showLargeDataEntry()">Big Data</button>
+            <button type="button" onclick="showItemByItemEntry()">Item by Item</button>
+        </div>
+<br>
+        <div id="large-data-entry" style="display: none;">
+            <textarea id="large-data-textarea" placeholder=""></textarea><br>
+            <button type="submit" id="generate-json-large">Generate JSON (Big Data)</button>
+        </div>
+
+        <div id="item-by-item-entry" style="display: none;">
+            <div id="item-entry-area"></div>
+            <br>
+            <button type="button" onclick="addItem()">Add Category/Item/Note</button><br><br>
+            <button type="submit" id="generate-json-item">Generate JSON (Item by Item)</button>
+        </div>
+<br><br>
+            <div id="output-area">
+                <textarea id="json-output" readonly placeholder="This is the output area. 
+Copy paste this into the name of the aircraft you are creating the checklist for eg:'f-16c.json' 
+For emergency proceedures name it as 'emergency.json'
+
+Follow the data framework below for big data or item by item entry: 
+[Category Name]
+REQUIREMENT; ACTION ; IMAGE (optional)
+NOTE:"></textarea><br>
+                <button type="button" onclick="copyToClipboard()">Copy to Clipboard</button>
+            </div>
+    </form>
+
+    <script src="submit.js"></script>
+</body>
+</html>

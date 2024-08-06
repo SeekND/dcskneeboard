@@ -8,38 +8,27 @@
 <body>
 
     <div class="main-page">
+<button id="dark-mode-toggle">Dark Mode</button>
         <div class="button-category">
-            <h2>JETS</h2>
-            <div class="button-wrapper">
-                <button class="image-button" style="background-image: url('aircraft/f-16c.jpg');" onclick="loadAircraft('f-16c')"></button><br>
-                <span class="button-label">F-16C</span>
-            </div>
-            <div class="button-wrapper">
-                <button class="image-button" style="background-image: url('aircraft/a10.jpg');" onclick="loadAircraft('a10')"></button><br>
-                <span class="button-label">A-10</span>
-            </div>
+
         </div>
         <div class="button-category">
-            <h2>HELICOPTERS</h2>
-            <div class="button-wrapper">
-                <button class="image-button" style="background-image: url('aircraft/sharka50.jpg');" onclick="loadAircraft('sharka50')"></button><br>
-                <span class="button-label">Sharka 50</span>
-            </div>
         </div>    
     </div>
-<button id="dark-mode-toggle">Dark Mode</button>
+
 
     <div id="aircraft-content" style="display: none;">
         <div id="tab-buttons"></div>
 
   
 
-        <div id="checklist" class="tab-content hidden"></div>
+        <div id="checklist" class="tab-content hidden">
+  <div id="checklist-options"></div> 
+  <div id="checklist-content"></div>
+  <div id="pdf-container" style="display: none;"></div> <br> </div>
         <div id="emergency" class="tab-content hidden"></div>
         <div id="airfields" class="tab-content hidden">
-            <button onclick="showAirfield('georgia')">Georgia</button>
-            <button onclick="showAirfield('marianas')">Marianas</button>
-            <div id="airfield-details"></div> 
+           <div id="airfield-details"></div> 
         </div>
         <div id="reference" class="tab-content hidden"></div>
 <div id="notepad" class="tab-content hidden">

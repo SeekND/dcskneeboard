@@ -1,0 +1,356 @@
+{
+  "MAIN GENERATOR FAILURE (GROUND)": [
+    {
+      "type": "note",
+      "text": "If main generator failure is indicated:"
+    },
+    {
+      "type": "item",
+      "requirement": "1. Stop the aircraft",
+      "action": "apply brakes",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "2. PARKING BRAKE",
+      "action": "SET",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "3. OXYGEN",
+      "action": "100%",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "4. EPU switch",
+      "action": "OFF",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If further taxi is required:"
+    },
+    {
+      "type": "item",
+      "requirement": "5. ELEC CAUTION RESET",
+      "action": "Depress",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    }
+  ],
+  "MAIN GENERATOR FAILURE (IN FLIGHT)": [
+    {
+      "type": "note",
+      "text": "If MAIN GEN light illuminates:"
+    },
+    {
+      "type": "item",
+      "requirement": "1. AOA",
+      "action": "12° max (200Kts min)",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "2. EPU",
+      "action": "switch ON (If EPU RUN light is off)",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "3. ELEC CAUTION RESET",
+      "action": "Depress",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If MAIN GEN goes OFF:"
+    },
+    {
+      "type": "item",
+      "requirement": "4. EPU switch",
+      "action": "OFF then NORM",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "5. ADI",
+      "action": "check for OFF and/or AUX flags",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "6. Land",
+      "action": "as soon as practical",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If MAIN GEN remains ON:"
+    },
+    {
+      "type": "item",
+      "requirement": "4. ADI",
+      "action": "check for OFF and/or AUX flags",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "5. Land",
+      "action": "as soon as possible",
+      "locationImage": "main_generator.png",
+      "locationText": ""
+    }
+  ],
+  "PARTIAL ELECTRICAL POWER LOSS": [
+    {
+      "type": "item",
+      "requirement": "1. ELEC CAUTION RESET button",
+      "action": "DEPRESS",
+      "locationImage": "partial_electrical.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If power is restored:"
+    },
+    {
+      "type": "item",
+      "requirement": "2. land",
+      "action": "as soon as practical",
+      "locationImage": "partial_electrical.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If power is not restored:"
+    },
+    {
+      "type": "item",
+      "requirement": "3. Determine the power status",
+      "action": "electrical buses",
+      "locationImage": "partial_electrical.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If one or both emergency AC buses are not powered:"
+    },
+    {
+      "type": "item",
+      "requirement": "4. EPU switch",
+      "action": "ON",
+      "locationImage": "partial_electrical.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If the battery buses and emergency dc bus No2 are not powered:"
+    },
+    {
+      "type": "item",
+      "requirement": "5. Consider a gear up landing",
+      "action": "refer to LANDING WITH LG UNSAFE/UP p E-5",
+      "locationImage": "partial_electrical.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "6. Refer to EMERGENCY POWER DISTRIBUTION",
+      "action": "BMS-Dash1",
+      "locationImage": "partial_electrical.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "7. Land",
+      "action": "as soon as possible",
+      "locationImage": "partial_electrical.png",
+      "locationText": ""
+    }
+  ],
+  "AIRCRAFT BATTERY FAILURE": [
+    {
+      "type": "item",
+      "requirement": "1. EPU switch",
+      "action": "ON",
+      "locationImage": "aircraft_battery.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "2. Land",
+      "action": "as soon as practical",
+      "locationImage": "aircraft_battery.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If EPU runs abnormally:"
+    },
+    {
+      "type": "item",
+      "requirement": "3. EPU switch",
+      "action": "OFF, then NORM",
+      "locationImage": "aircraft_battery.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "4. Land",
+      "action": "as soon as practical.",
+      "locationImage": "aircraft_battery.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If FLCS PMG light illuminates:"
+    },
+    {
+      "type": "item",
+      "requirement": "1. Land",
+      "action": "as soon as possible",
+      "locationImage": "aircraft_battery.png",
+      "locationText": ""
+    }
+  ],
+  "FLCS BATTERY DISCHARGE": [
+    {
+      "type": "note",
+      "text": "If one FLCS BATT light comes on in flight:"
+    },
+    {
+      "type": "item",
+      "requirement": "1. Land",
+      "action": "as soon as practical",
+      "locationImage": "flcs_battery.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If more than one FLCS BATT light comes on in flight:"
+    },
+    {
+      "type": "item",
+      "requirement": "1. EPU switch",
+      "action": "ON",
+      "locationImage": "flcs_battery.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If FLCS BATT light go OFF:"
+    },
+    {
+      "type": "item",
+      "requirement": "2. Land",
+      "action": "as soon as practical",
+      "locationImage": "flcs_battery.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If FLCS BATT light remain ON:"
+    },
+    {
+      "type": "item",
+      "requirement": "2. Airspeed 200-250 kts",
+      "action": "6-8° AOA and climb",
+      "locationImage": "flcs_battery.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "At the first indication of uncommanded or degraded flight control response:"
+    },
+    {
+      "type": "item",
+      "requirement": "3. EJECT",
+      "action": "EMERGENCY",
+      "locationImage": "flcs_battery.png",
+      "locationText": ""
+    }
+  ],
+  "EPU MALFUNCTION": [
+    {
+      "type": "note",
+      "text": "Un-commanded EPU operation:"
+    },
+    {
+      "type": "item",
+      "requirement": "1. Throttle",
+      "action": "Min practical thrust",
+      "locationImage": "epu_malfunction.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "2. Stores",
+      "action": "Jettison (if required)",
+      "locationImage": "epu_malfunction.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "3. Land",
+      "action": "as soon as possible",
+      "locationImage": "epu_malfunction.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If EPU is running with normal indications:"
+    },
+    {
+      "type": "item",
+      "requirement": "4. EPU",
+      "action": "Leave running",
+      "locationImage": "epu_malfunction.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "5. Land",
+      "action": "as soon as possible",
+      "locationImage": "epu_malfunction.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Abnormal EPU operation:"
+    },
+    {
+      "type": "item",
+      "requirement": "1. Throttle",
+      "action": "As required (75 – 80% RPM)",
+      "locationImage": "epu_malfunction.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "2. EPU Fuel quantity",
+      "action": "Monitor",
+      "locationImage": "epu_malfunction.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "3. Land",
+      "action": "as soon as possible",
+      "locationImage": "epu_malfunction.png",
+      "locationText": ""
+    }
+  ]
+}

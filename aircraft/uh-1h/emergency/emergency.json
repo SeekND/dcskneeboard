@@ -1,2 +1,52 @@
 {
+  "ENGINE OPERATION LIMITS": [
+    {
+      "type": "item",
+      "requirement": "Max Continuous (green arc)",
+      "action": "400 to 610 deg C",
+      "location": "engine_operation.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Takeoff Power (max 30 min)",
+      "action": "610 to 625 deg C, Risk of engine fire after 30 min",
+      "location": "engine_operation.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "10-second power limit (max 10 sec)(Engine Hot Start)",
+      "action": "625 to 675 deg C, Only for engine start and acceleration",
+      "location": "engine_operation.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "5-second power limit (max 5 sec)(Engine Hot Start)",
+      "action": "675 to 760 deg C, Only for engine start and acceleration",
+      "location": "engine_operation.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "EGT Redline (Maximum Allowable EGT)",
+      "action": "760 deg C If exceeded in flight, high risk of engine fire",
+      "location": "engine_operation.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Use 625 deg C as your maximum EGT during flight. Any exceedance of this parameter may lead to engine fire, engine damage or engine seizure"
+    }
+  ],
+  "FIRE": [
+    {
+      "type": "item",
+      "requirement": "There is nofire suppression system",
+      "action": "Land immediately and exit craft",
+      "location": "fire.png",
+      "locationText": ""
+    }
+  ]
 }

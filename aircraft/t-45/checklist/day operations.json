@@ -1,0 +1,541 @@
+{
+  "STARTING ENGINE": [
+    {
+      "type": "item",
+      "requirement": "Parking Brake",
+      "action": "SET",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Battery 1 & 2 Switches",
+      "action": "ON",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Gen Switch",
+      "action": "ON",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Anti-Coll / Strobe Switch",
+      "action": "ON",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Exterior Light Panel",
+      "action": "SET",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Left MFD",
+      "action": "ON (ENG Page)",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Engine Switch",
+      "action": "ON",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ext. Light Master Switch",
+      "action": "ON",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Gas Turbine Starter",
+      "action": "ON / Verify GTS Light ON",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Engine Switch",
+      "action": "Start (HOLD)",
+      "location": "starting_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Throttle",
+      "action": "IDLE @ 20% RPM",
+      "location": "starting_engine.png",
+      "locationText": ""
+    }
+  ],
+  "ENGINE CHECK AT IDLE": [
+    {
+      "type": "item",
+      "requirement": "N1 RPM",
+      "action": "100%",
+      "location": "engine_check.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Fuel Flow",
+      "action": "500 - 600 pph",
+      "location": "engine_check.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "N2 RPM",
+      "action": "55%",
+      "location": "engine_check.png",
+      "locationText": ""
+    }
+  ],
+  "AFTER ENGINE START": [
+    {
+      "type": "item",
+      "requirement": "HYD Reset Button",
+      "action": "PRESS (Verify HYD 2 show’s 3k psi )",
+      "location": "after_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "HUD Switch",
+      "action": "ON",
+      "location": "after_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right MFD",
+      "action": "ON",
+      "location": "after_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "ADI",
+      "action": "UNCAGED",
+      "location": "after_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Altimeter",
+      "action": "Set",
+      "location": "after_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Radios 1 & 2",
+      "action": "SET",
+      "location": "after_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "TACAN",
+      "action": "SET",
+      "location": "after_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "BNGO",
+      "action": "SET",
+      "location": "after_engine.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "LAW",
+      "action": "SET",
+      "location": "after_engine.png",
+      "locationText": ""
+    }
+  ],
+  "TAXI": [
+    {
+      "type": "item",
+      "requirement": "Flaps",
+      "action": "per SOP",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Trim",
+      "action": "3° NOSE UP",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Warnings & Cautions",
+      "action": "NONE",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Parking Brake",
+      "action": "OFF",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Brakes",
+      "action": "TEST",
+      "location": "taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Taxi Speed",
+      "action": "15-20 kts",
+      "location": "taxi.png",
+      "locationText": ""
+    }
+  ],
+  "BEFORE TAKEOFF": [
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "Closed & Secured",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps",
+      "action": "per SOP",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Speedbrakes",
+      "action": "Closed",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Warnings & Cautions",
+      "action": "NONENORMAL TAKE-OFF",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Wheel Brakes",
+      "action": "HOLD",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Throttle",
+      "action": "100% N2",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Warnings & Cautions",
+      "action": "NONE",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Brakes",
+      "action": "RELEASE",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Rotate",
+      "action": "125 kts / 10° nose high attitude",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Positive Rate of Climb",
+      "action": "Verified",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Gear & Flaps",
+      "action": "UP",
+      "location": "before_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "VSO - 90 kts"
+    },
+    {
+      "type": "note",
+      "text": "VS1 - 130 kts"
+    },
+    {
+      "type": "note",
+      "text": "VR - 120 kts"
+    },
+    {
+      "type": "note",
+      "text": "VFE - 180 kts"
+    },
+    {
+      "type": "note",
+      "text": "VLO - 200 kts"
+    }
+  ],
+  "DESCENT": [
+    {
+      "type": "item",
+      "requirement": "Master ARM",
+      "action": "SAFE",
+      "location": "descent.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Altimeter",
+      "action": "Set & Check (transition ALT)",
+      "location": "descent.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Approach plates",
+      "action": "Reviewed",
+      "location": "descent.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "HSI course and bearings",
+      "action": "Set according to approach plate",
+      "location": "descent.png",
+      "locationText": ""
+    }
+  ],
+  "APPROACH": [
+    {
+      "type": "item",
+      "requirement": "Comms",
+      "action": "Call Inbound",
+      "location": "approach.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Fuel",
+      "action": "Check Quantity/Transfer/Balance",
+      "location": "approach.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Exterior Lights",
+      "action": "per SOP",
+      "location": "approach.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Altitude",
+      "action": "1,500ft AGL (Field) / 800ft AGL (CV)",
+      "location": "approach.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Speed",
+      "action": "pre SOP",
+      "location": "approach.png",
+      "locationText": ""
+    }
+  ],
+  "BEFORE LANDING": [
+    {
+      "type": "item",
+      "requirement": "Speed",
+      "action": "On Speed / On AoA",
+      "location": "before_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Gear",
+      "action": "DOWN (<180kts)",
+      "location": "before_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Gear Indicator Lights",
+      "action": "3 Green",
+      "location": "before_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Speed brake",
+      "action": "As needed",
+      "location": "before_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps",
+      "action": "FULL",
+      "location": "before_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "HOOK",
+      "action": "pre SOP",
+      "location": "before_landing.png",
+      "locationText": ""
+    }
+  ],
+  "FINAL APPROACH": [
+    {
+      "type": "item",
+      "requirement": "Speed brake",
+      "action": "As needed",
+      "location": "final_approach.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Gear",
+      "action": "Verify - Down / 3 green",
+      "location": "final_approach.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Speed",
+      "action": "On Speed / On AoA",
+      "location": "final_approach.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "AoA",
+      "action": "Green : 11°",
+      "location": "final_approach.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Touchdown",
+      "action": "11 to 13° AOA",
+      "location": "final_approach.png",
+      "locationText": ""
+    }
+  ],
+  "AFTER LANDING": [
+    {
+      "type": "item",
+      "requirement": "Speed Brake",
+      "action": "Retracted",
+      "location": "after_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps",
+      "action": "UP",
+      "location": "after_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Hook",
+      "action": "UP",
+      "location": "after_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "NWS",
+      "action": "ON",
+      "location": "after_landing.png",
+      "locationText": ""
+    }
+  ],
+  "ENGINE SHUT DOWN": [
+    {
+      "type": "item",
+      "requirement": "Parking Brake",
+      "action": "SET",
+      "location": "engine_shut.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Throttle",
+      "action": "CUTOFF",
+      "location": "engine_shut.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Strobe Light",
+      "action": "OFF",
+      "location": "engine_shut.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Rotating Beacon",
+      "action": "OFF",
+      "location": "engine_shut.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "EGI Knob",
+      "action": "OFF",
+      "location": "engine_shut.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Master Avionics Switch",
+      "action": "OFF",
+      "location": "engine_shut.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Battery",
+      "action": "OFF",
+      "location": "engine_shut.png",
+      "locationText": ""
+    }
+  ]
+}

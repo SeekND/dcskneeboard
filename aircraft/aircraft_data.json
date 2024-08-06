@@ -12,6 +12,10 @@
         "name": "f-14b"
     },
     {
+        "type": "jet",
+        "name": "t-45"
+    },
+    {
         "type": "helicopter",
         "name": "ka-50"
     },
@@ -23,4 +27,5 @@
         "type": "helicopter",
         "name": "uh-1h"
     }
+
 ]

@@ -1,0 +1,88 @@
+{
+    "GENERAL": [
+  {
+    "Term": "ARIZONA",
+    "Definition": "NO HARM MISSILES REMAINING"
+  },
+  {
+    "Term": "BANDIT",
+    "Definition": "CONFIRMED ENEMY AIRCRAFT"
+  },
+  {
+    "Term": "BINGO FUEL",
+    "Definition": "MINIMUM FUEL REQUIRED TO RECOVER"
+  },
+  {
+    "Term": "BOGEY",
+    "Definition": "UNKNOWN RADAR CONTACT"
+  },
+  {
+    "Term": "BRAA",
+    "Definition": "BEARING/RANGE/ALTITUDE/ASPECT"
+  },
+  {
+    "Term": "BUDDY SPIKE (w/type & direction)",
+    "Definition": "FRIENDLY LOCKING ON TO YOU"
+  },
+  {
+    "Term": "BUG OUT (w/direction)",
+    "Definition": "DIRECTION OF INTENDED EGRESS"
+  },
+  {
+    "Term": "BULLSEYE",
+    "Definition": "ESTABLISHED REFERENCE POINT FOR CONTACTS"
+  },
+  {
+    "Term": "FOX 1",
+    "Definition": "LAUNCH OF SARH MISSILE"
+  },
+  {
+    "Term": "FOX 2",
+    "Definition": "LAUNCH OF IR MISSILE"
+  },
+  {
+    "Term": "FOX 3",
+    "Definition": "LAUNCH OF ARH MISSILE"
+  },
+  {
+    "Term": "GATE (w/direction)",
+    "Definition": "FLY IN SPECIFIC DIRECTION AT MAX POWER"
+  },
+  {
+    "Term": "JOKER FUEL",
+    "Definition": "AGREED FUEL STATE ABOVE BINGO"
+  },
+  {
+    "Term": "MAGNUM",
+    "Definition": "LAUNCH OF HARM MISSILES"
+  },
+  {
+    "Term": "MUD (w/type & direction)",
+    "Definition": "RWR GROUND THREAT DETECTED"
+  },
+  {
+    "Term": "NAILS (w/direction)",
+    "Definition": "RWR AIR THREAT DETECTED"
+  },
+  {
+    "Term": "NO JOY",
+    "Definition": "NO VISUAL CONTACT OF BOGIE/BANDIT"
+  },
+  {
+    "Term": "RAYGUN",
+    "Definition": "LOCKING UP SUSPECTED FRIENDLY TYPICALLY MEANT TO BE RESPONDED W/BUDDY SPIKE"
+  },
+  {
+    "Term": "RIFLE",
+    "Definition": "LAUNCH OF AGM"
+  },
+  {
+    "Term": "SPIKE (w/direction & type)",
+    "Definition": "RWR INDICATION OF AIR LAUNCH"
+  },
+  {
+    "Term": "WINCHESTER",
+    "Definition": "NO ORDNANCE REMAINING"
+  }
+    ]
+}

@@ -1,3 +1,10 @@
+body {
+  font-family: 'B612', monospace; /* Use B612, fallback to monospace if B612 is not available */
+}
+button {
+  font-family: 'B612', monospace; /* Use B612, fallback to monospace if B612 is not available */
+}
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #121212; /* Dark background */
@@ -27,6 +34,16 @@ body.dark-mode .note-cell {
 
 body.dark-mode table th {
   background-color: #444;
+}
+
+body.dark-mode #reference .collapsible.subcategory {
+    color: white; /* Change text color to white in dark mode */
+}
+
+#reference .collapsible.subcategory {
+  background-color: transparent; /* Make the background transparent */
+  color: black;              /* Set text color to light gray */
+  font-weight: bold;             /* Make the text bold */
 }
 
 body.dark-mode .aircraft-name-button, 
@@ -106,7 +123,7 @@ input[type="checkbox"] {
     margin-left: 10px;
 
     /* New styles to mimic the image */
-    font-family: monospace; /* Use a monospace font for the pixelated look */
+    //font-family: monospace; /* Use a monospace font for the pixelated look */
     text-shadow: 
         0 0 1px #00FF00, /* Green glow */
         0 0 5px #00FF00; 
@@ -169,6 +186,37 @@ padding: 0px 0px;
   border: none;
   cursor: pointer;
   font-size: 14px; 
+}
+
+#airfields button {
+  display: block; /* Make the buttons block-level elements */
+  margin: 10px auto; /* Center them horizontally with auto margins */
+  padding: 8px 15px; /* Add some padding */
+  border: none; 
+  background-color: #4CAF50; /* Green background */
+  color: white; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Style the airfield buttons within the table */
+#airfield-details .airfield-btn {
+  background-color: transparent; /* Transparent background */
+  border: none;
+  padding: 0;
+  color: #007bff; /* Blue color */
+  //text-decoration: underline;
+  cursor: pointer;
+
+  /* Add hover effect */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+#airfield-details .airfield-btn:hover {
+  color: #0056b3; /* Darker blue on hover */
 }
 
 
@@ -235,7 +283,7 @@ li {
   border: 1px dashed red;
   cursor: pointer; 
   font-size: 14px;
-  font-family: monospace;
+ // font-family: monospace;
  // text-shadow:
  //   0 0 5px #00FF00,
  //   0 0 10px #00FF00;
@@ -279,7 +327,7 @@ table {
     width: 100%;
     border-collapse: collapse; 
     margin-bottom: 20px; 
-    font-family: Arial, sans-serif;
+    // font-family: Arial, sans-serif;
     /* table-layout: fixed; */  /* Comment out or remove this line */
 }
 

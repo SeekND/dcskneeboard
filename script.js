@@ -460,9 +460,8 @@ function loadReferenceCategory(category) {
     .catch(error => console.error(`Error loading data for category ${category}:`, error));
 }
 
-// Function to create the reference table dynamically
 function createReferenceTable(categoryData, categoryName) {
-  const tableContainer = document.createElement('div'); 
+  const tableContainer = document.createElement('div');
 
   for (const category in categoryData) {
     const itemsData = categoryData[category];
@@ -477,32 +476,41 @@ function createReferenceTable(categoryData, categoryName) {
     const collapsible = document.createElement('div');
     collapsible.className = "collapsible";
 
+    const content = document.createElement('div');
+    content.className = "checklist-content";
+    content.style.display = "none";
+
     // Check if it's a main category or a subcategory
     if (category === categoryName) {
       // Main category - no indentation
       collapsible.textContent = category;
     } else {
       // Subcategory - add indentation and lighter background
-      const indentedTitle = document.createElement('span');
+      
+      const table2 = document.createElement('table');
+      const headerRow2 = table2.insertRow();
+      
+      const indentedTitle = headerRow2.insertCell();
       indentedTitle.textContent = category;
-      indentedTitle.style.marginLeft = '20px'; 
+      indentedTitle.style.marginLeft = '10px'; 
       collapsible.appendChild(indentedTitle);
-      collapsible.style.backgroundColor = '#999'; 
+      collapsible.style.backgroundColor = 'transparent';
       collapsible.classList.add('subcategory'); 
+      content.style.display = "block";
     }
 
-    const content = document.createElement('div');
-    content.className = "checklist-content";
-    content.style.display = "none";
+
 
     const table = document.createElement('table');
 
-    // Find the first item to determine headers (no need to check for 'note' type)
+    // Find the first item to determine headers 
     const firstItem = itemsData[0];
     const headers = Object.keys(firstItem).filter(header => header !== 'type' && header !== 'locationText');
 
     // Create table header row
     const headerRow = table.insertRow();
+
+
     headers.forEach(header => {
       const th = document.createElement('th');
       th.textContent = header.replace(/_/g, ' ');
@@ -512,12 +520,13 @@ function createReferenceTable(categoryData, categoryName) {
     // Populate the table rows
     itemsData.forEach(item => {
       const row = table.insertRow();
+
       headers.forEach(header => {
         const cell = row.insertCell();
 
         // Create a content wrapper div within the cell
         const contentWrapper = document.createElement('div');
-        contentWrapper.classList.add('cell-content'); 
+        contentWrapper.classList.add('cell-content');
 
         if (header === 'image') {
           const img = document.createElement('img');
@@ -528,7 +537,7 @@ function createReferenceTable(categoryData, categoryName) {
           contentWrapper.textContent = item[header] || "";
         }
 
-        cell.appendChild(contentWrapper); 
+        cell.appendChild(contentWrapper);
       });
     });
 
@@ -593,7 +602,7 @@ function showAirfield(terrainId) {
         // Create the table dynamically
  	 const table = document.createElement('table');
  	 const headerRow = table.insertRow();
- 	 ["AIRFIELD", "ICAO", "REFERENCE", "TOWER", "ILS (runway, freq)", "TACAN"].forEach(header => {
+ 	 ["AIRFIELD", "ICAO","Type", "Location", "ARP", "TWR", "ILS", "TACAN" , "RWY"].forEach(header => {
   	  const th = document.createElement('th');
   	  th.textContent = header;
   	  headerRow.appendChild(th);
@@ -616,10 +625,14 @@ function showAirfield(terrainId) {
 
           // Other Airfield Data
           row.insertCell().textContent = airfield.ICAO || "";
-          row.insertCell().textContent = airfield.REFERENCE || "";
-          row.insertCell().textContent = airfield.TOWER || "";
+          row.insertCell().textContent = airfield.Type || "";
+          row.insertCell().textContent = airfield.Location || "";
+          //row.insertCell().textContent = airfield.ID || "";
+          row.insertCell().textContent = airfield.ARP || "";
+          row.insertCell().textContent = airfield.TWR || "";
           row.insertCell().textContent = airfield.ILS || "";
           row.insertCell().textContent = airfield.TACAN || "";
+          row.insertCell().textContent = airfield.RWY || "";
         });
     
 
@@ -917,6 +930,9 @@ function startDrawing(e) {
   currentPath.setAttribute("stroke",   
  "black");
   currentPath.setAttribute("stroke-width", "5");
+
+  const strokeColor = document.body.classList.contains('dark-mode') ? 'white' : 'black'; 
+  currentPath.setAttribute("stroke", strokeColor);
 
   let point = getPoint(e);
   currentPath.setAttribute("d", `M ${point.x} ${point.y}`);

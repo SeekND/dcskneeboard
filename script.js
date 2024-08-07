@@ -156,7 +156,7 @@ function loadChecklistTypes(aircraftId) {
                 }
 		
             });
-            checklistOptionsDiv.appendChild(document.createElement('p'));
+            checklistOptionsDiv.appendChild(document.createElement('br'));
 
         })
         .catch(error => console.error(`Error loading checklist data for ${aircraftId}:`, error));
@@ -176,9 +176,21 @@ function loadExternalChecklist(url) {
       const iframe = document.createElement('iframe');
       iframe.src = url;
       iframe.width = '100%';
-      iframe.height = '800px'; 
+
+      const checklistoptionsHeight = document.getElementById('checklist-options').offsetHeight;
+      const tabButtonsHeight = document.getElementById('tab-buttons').offsetHeight; // Get the height of the tab buttons
+      iframe.height = window.innerHeight - tabButtonsHeight - checklistoptionsHeight -15 + 'px'; // Subtract tab buttons height and some padding
+ 
       pdfContainer.appendChild(iframe);
     }
+    // Adjust iframe height on window resize
+    window.addEventListener('resize', () => {
+        const iframe = pdfContainer.querySelector('iframe');
+        if (iframe) {
+            const tabButtonsHeight = document.getElementById('tab-buttons').offsetHeight;
+            iframe.height = window.innerHeight - tabButtonsHeight - 10 + 'px';
+        }
+    });
   } else {
     pdfContainer.style.display = 'none';
     checklistContentDiv.style.display = 'block'; // Show the checklist content

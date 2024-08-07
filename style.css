@@ -41,10 +41,8 @@ body.dark-mode #reference .collapsible.subcategory {
     color: white; /* Change text color to white in dark mode */
 }
 
-#reference .collapsible.subcategory {
-  background-color: transparent; /* Make the background transparent */
-  color: black;              /* Set text color to light gray */
-  font-weight: bold;             /* Make the text bold */
+.tab-buttons-container { /* Replace with actual class/ID */
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 body.dark-mode .aircraft-name-button, 
@@ -107,7 +105,7 @@ input[type="checkbox"] {
     height: 50px;
     background-color: #fff; /* Or any background color you prefer */
     z-index: 10; /* Ensure the tabs are on top of other content */
-    padding: 0px 10px; /* Add some padding for spacing */
+    //padding: 0px 10px; /* Add some padding for spacing */
     border-bottom: 1px solid #ccc; /* Add a subtle border at the bottom */
     border-radius: 0px;
 }
@@ -146,6 +144,52 @@ padding: 0px 0px;
     border: none; 
     cursor: pointer;
 }
+
+#checklist-options {
+  position: sticky;
+  top: 50px; /* Adjust this value to match the height of your #tab-buttons + its padding */
+  background-color: #fff; /* Or any background color you prefer */
+  z-index: 9; /* Ensure it's below the main tab buttons but above other content */
+  padding: 15px 10px;
+
+  border-bottom: 1px solid #ccc; 
+}
+
+#checklist button {
+    border-radius: 10px;  
+    background-color: black; 
+    color: green;
+    padding: 8px 16px;   
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#checklist-options button {  /* Target buttons within #checklist-options */
+  background-color: black;
+  color: green;
+  //padding: 5px 10px;
+  border: 1px dashed red;
+  cursor: pointer; 
+  font-size: 14px;
+ // font-family: monospace;
+ // text-shadow:
+ //   0 0 5px #00FF00,
+ //   0 0 10px #00FF00;
+border-radius: 0;
+  margin: 0 5px; /* Add margin to create separation */
+}
+
+.checklist-content {
+    padding-left: 20px; /* Indent checklist items */
+}
+
+#reference .collapsible.subcategory {
+  background-color: transparent; /* Make the background transparent */
+  color: black;              /* Set text color to light gray */
+  font-weight: bold;             /* Make the text bold */
+}
+
 
 #reference img {  /* Target all images within the #reference div */
   max-width: 200px; 
@@ -261,7 +305,7 @@ body.dark-mode #notepad button:hover {
 
 
 body .tab-content { 
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 
@@ -287,7 +331,7 @@ li {
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 98%; /* Adjust the 20px value to control the right margin */
     border: none;
     text-align: left;
     outline: none;
@@ -295,41 +339,12 @@ li {
     margin-bottom: 10px; /* Add spacing between checklists */
 }
 
-
-.checklist-content {
-    padding-left: 20px; /* Indent checklist items */
-}
-
-
 .note-cell {
   background-color: #f0f0f0; /* Light gray background */
   font-style: italic; 
 }
 
-#checklist button {
-    border-radius: 10px;  
-    background-color: black; 
-    color: green;
-    padding: 8px 16px;   
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-}
 
-#checklist-options button {  /* Target buttons within #checklist-options */
-  background-color: black;
-  color: green;
-  padding: 5px 10px;
-  border: 1px dashed red;
-  cursor: pointer; 
-  font-size: 14px;
- // font-family: monospace;
- // text-shadow:
- //   0 0 5px #00FF00,
- //   0 0 10px #00FF00;
-border-radius: 0;
-  margin: 0 5px; /* Add margin to create separation */
-}
 
 #notepad-container {
   height: calc(100vh - 100px); /* Adjust height as needed */

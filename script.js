@@ -466,7 +466,7 @@ function createReferenceTable(categoryData, categoryName) {
   for (const category in categoryData) {
     const itemsData = categoryData[category];
 
-    // Check if itemsData is valid
+    // Error handling for invalid/empty data
     if (!itemsData || itemsData.length === 0) {
       console.error(`Error: Invalid or empty data for category ${category}`);
       continue;
@@ -482,7 +482,6 @@ function createReferenceTable(categoryData, categoryName) {
 
     // Check if it's a main category or a subcategory
     if (category === categoryName) {
-      // Main category - no indentation
       collapsible.textContent = category;
     } else {
       // Subcategory - add indentation and lighter background
@@ -500,31 +499,44 @@ function createReferenceTable(categoryData, categoryName) {
     }
 
 
-
     const table = document.createElement('table');
 
-    // Find the first item to determine headers 
+    // Find the first item to determine headers
     const firstItem = itemsData[0];
     const headers = Object.keys(firstItem).filter(header => header !== 'type' && header !== 'locationText');
 
-    // Create table header row
-    const headerRow = table.insertRow();
+    const thead = document.createElement('thead');
+    table.appendChild(thead);
 
-
-    headers.forEach(header => {
+    // Create table header row with sort buttons
+    const headerRow = thead.insertRow();
+    headers.forEach((header, index) => {
       const th = document.createElement('th');
       th.textContent = header.replace(/_/g, ' ');
+
+
+      // Add a sort button/icon
+      const sortButton = document.createElement('button');
+      sortButton.textContent = '▲'; // Or use an icon
+      sortButton.classList.add('sort-symbol');
+      sortButton.dataset.columnIndex = index; // Store the column index for sorting
+      sortButton.addEventListener('click', () => {
+        sortTable(table, index); 
+      });
+      th.appendChild(sortButton);
       headerRow.appendChild(th);
     });
 
+    // Create the table body (tbody) element
+      const tbody = document.createElement('tbody');
+      table.appendChild(tbody);
+
     // Populate the table rows
     itemsData.forEach(item => {
-      const row = table.insertRow();
-
+      const row = tbody.insertRow();
       headers.forEach(header => {
         const cell = row.insertCell();
 
-        // Create a content wrapper div within the cell
         const contentWrapper = document.createElement('div');
         contentWrapper.classList.add('cell-content');
 
@@ -582,34 +594,56 @@ function loadAirfieldButtons() {
 }
 
 function showAirfield(terrainId) {
-  const airfieldDetails = document.getElementById("airfield-details");
-  airfieldDetails.innerHTML = ""; // Clear previous content
+    const airfieldDetails = document.getElementById("airfield-details");
+    airfieldDetails.innerHTML = ""; // Clear previous content
 
-  // Load terrain image 
-  const terrainImagePath = `terrain/${terrainId}/airfieldmap.png`; 
+    // Load terrain image 
+    const terrainImagePath = `terrain/${terrainId}/airfieldmap.png`;
 
-  const terrainImage = document.createElement('img');
-  terrainImage.src = terrainImagePath;
-  terrainImage.alt = terrainId;
-  terrainImage.style.maxWidth = '100%';
-  terrainImage.style.height = 'auto';
-  airfieldDetails.appendChild(terrainImage);
+    const terrainImage = document.createElement('img');
+    terrainImage.src = terrainImagePath;
+    terrainImage.alt = terrainId;
+    terrainImage.style.maxWidth = '100%';
+    terrainImage.style.height = 'auto';
+    airfieldDetails.appendChild(terrainImage);
 
-  // Fetch airfield data for the selected terrain
-  fetch(`terrain/${terrainId}/${terrainId}.json`) 
-    .then(response => response.json())
-    .then(data => {
-        // Create the table dynamically
- 	 const table = document.createElement('table');
- 	 const headerRow = table.insertRow();
- 	 ["AIRFIELD", "ICAO","Type", "Location", "ARP", "TWR", "ILS", "TACAN" , "RWY"].forEach(header => {
-  	  const th = document.createElement('th');
-  	  th.textContent = header;
-  	  headerRow.appendChild(th);
- 	 });
+    // Fetch airfield data for the selected terrain
+    fetch(`terrain/${terrainId}/${terrainId}.json`)
+        .then(response => response.json())
+        .then(data => {
+       // Create the table dynamically
+      const table = document.createElement('table');
 
-        data.forEach(airfield => {
-          const row = table.insertRow();
+      // Create the table head (thead) element
+      const thead = document.createElement('thead');
+      table.appendChild(thead);
+
+      // Determine table headers and create header row with sort buttons
+      const headers = ["AIRFIELD", "ICAO", "Type", "Location", "ARP", "TWR", "ILS", "TACAN", "RWY"];
+      const headerRow = thead.insertRow(); // Insert the header row into the thead
+      headers.forEach((header, index) => {
+                const th = document.createElement('th');
+                th.textContent = header;
+
+                // Add a sort button/icon
+                const sortButton = document.createElement('button');
+                sortButton.textContent = '▲'; // Or use an icon
+	        sortButton.classList.add('sort-symbol');
+                sortButton.dataset.columnIndex = index; 
+                sortButton.addEventListener('click', () => {
+                    sortTable(table, index);
+                });
+                th.appendChild(sortButton);
+                headerRow.appendChild(th);
+           });
+
+      // Create the table body (tbody) element
+      const tbody = document.createElement('tbody');
+      table.appendChild(tbody);
+
+      // ... (Populate the table rows - use tbody.insertRow() now)
+      data.forEach(airfield => {
+        const row = tbody.insertRow();
 	  
           // Airfield Name (with image button if available)
           const airfieldNameCell = row.insertCell();
@@ -634,15 +668,50 @@ function showAirfield(terrainId) {
           row.insertCell().textContent = airfield.TACAN || "";
           row.insertCell().textContent = airfield.RWY || "";
         });
-    
 
       airfieldDetails.appendChild(table);
     })
     .catch(error => console.error(`Error loading data for terrain ${terrainId}:`, error));
 }
 
-
 // END AIRFIELD CATEGORY FETCH //////////////////////////////////
+
+function sortTable(table, columnIndex) {
+  // Get all the rows in the table body (excluding the header row)
+  const dataRows = Array.from(table.querySelectorAll('tbody tr'));
+
+  // Determine the sorting direction (toggle between ascending and descending)
+  let sortDirection = 'asc'; // Default to ascending
+  const currentSortButton = table.querySelector(`th:nth-child(${columnIndex + 1}) button`);
+  if (currentSortButton.textContent === '▲') {
+    sortDirection = 'desc';
+    currentSortButton.textContent = '▼';
+  } else {
+    currentSortButton.textContent = '▲';
+  }
+
+  // Sort the rows based on the data in the specified column
+  dataRows.sort((rowA, rowB) => {
+    const cellA = rowA.cells[columnIndex].textContent.trim();
+    const cellB = rowB.cells[columnIndex].textContent.trim();   
+
+
+    // Handle different data types (you might need to customize this based on your data)
+    if (!isNaN(cellA) && !isNaN(cellB)) { // If both are numbers, compare numerically
+      return sortDirection === 'asc' ? cellA - cellB : cellB - cellA;
+    } else { // Otherwise, compare as strings (case-insensitive)
+      return sortDirection === 'asc' 
+        ? cellA.localeCompare(cellB, undefined, { sensitivity: 'base' }) 
+        : cellB.localeCompare(cellA, undefined, { sensitivity: 'base' });
+    }
+  });
+
+  // Clear the table body 
+  const tbody = table.querySelector('tbody');
+
+  // Re-append the sorted DATA rows
+  dataRows.forEach(row => tbody.appendChild(row));
+}
 
 
 

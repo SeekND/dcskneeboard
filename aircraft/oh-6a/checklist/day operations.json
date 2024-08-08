@@ -1,0 +1,202 @@
+{
+  "ENGINE STARTUP": [
+    {
+      "type": "item",
+      "requirement": "Turn on the Battery",
+      "action": "Set to ON (midpanel)",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Open fuel valve",
+      "action": "Push down (midpanel)",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Govenor trim",
+      "action": "Decrease for 7 seconds",
+      "location": "collective",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "When N1 reaches 12 to 15%",
+      "action": "Turn throttle to idle (Default: Insert)",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Keep pressing starter button until N1 reaches 60%"
+    },
+    {
+      "type": "item",
+      "requirement": "Enable Generator",
+      "action": "Set to ON (midpanel)",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Enable Inverter",
+      "action": "Set to ON (midpanel)",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Gyro to Magnetic",
+      "action": "Set to ON (midpanel)",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Altimeter",
+      "action": "Adjust",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To increase N2",
+      "action": "Increase Throttle step by step (Default: Page Up)",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When Throttle is max and N2 is stable",
+      "action": "adjust N2 with the Govenor trim increase/decrease. (cyclic)",
+      "location": "engine_startup.png",
+      "locationText": ""
+    }
+  ],
+  "HOVER": [
+    {
+      "type": "item",
+      "requirement": "To stay cantered and avoid drifting",
+      "action": "Apply left rudder",
+      "location": "hover.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To remain straight and level",
+      "action": "Use cyclic (left & aft input)",
+      "location": "cyclic",
+      "locationText": "cyclic"
+    },
+    {
+      "type": "item",
+      "requirement": "To initiate a hover",
+      "action": "Raise collective very gently",
+      "location": "collective",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "Your stick can be trimmed to a hover position.",
+      "action": "Use cyclic trim",
+      "location": "cyclic",
+      "locationText": "cyclic"
+    }
+  ],
+  "TAKE OFF": [
+    {
+      "type": "item",
+      "requirement": "engine and transmission gauges (pressure & temperature) are in the green.",
+      "action": "Check",
+      "location": "take_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flight instruments all set up properly.",
+      "action": "Check",
+      "location": "take_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once you have performed a hover check and are maintaining a 5 ft hover, you can taxi to the runway."
+    },
+    {
+      "type": "item",
+      "requirement": "Move forward.",
+      "action": "Push your nose down slightly",
+      "location": "take_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Push nose slightly forward to start gaining horizontal speed",
+      "action": "No collective input should be required since you are already in a hover state.",
+      "location": "take_off.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Keep accelerating and you will start generating more and more translational lift, naturally climbing."
+    },
+    {
+      "type": "note",
+      "text": "Try to maintain an airspeed of 60 kts when climbing"
+    }
+  ],
+  "VISUAL LANDING": [
+    {
+      "type": "note",
+      "text": "Your approach and landing type will depend on the type of LZ (landing zone) and the type of mission you are doing."
+    },
+    {
+      "type": "item",
+      "requirement": "Fly towards a reference point on the runway.",
+      "action": "Start descent from 500 ft",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Use collective and cyclic input to maintain 80 kts for a descent rate between 300-500 ft/min",
+      "action": "From 500 to 300 ft",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Use collective and cyclic input to maintain 60 kts for a descent rate between 300-500 ft/min",
+      "action": "From 450 to 50 ft",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Reduce speed to 30 kts when you are 50 ft",
+      "action": "Adjust collective to keep a straight trajectory towards your reference point while reducing airspeed.",
+      "location": "visual_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Reach your reference point in a 5 ft hover.",
+      "action": "Use your cyclic to come to a full stop",
+      "location": "cyclic",
+      "locationText": "cyclic"
+    },
+    {
+      "type": "note",
+      "text": "Raise your collective to “cushion” the sudden drop caused by the loss of translational lift (which is caused by the loss of airspeed)."
+    },
+    {
+      "type": "item",
+      "requirement": "Come to a full stop in a 5 ft hover",
+      "action": "Slowly reduce collective to safely land on the ground",
+      "location": "collective",
+      "locationText": "collective"
+    }
+  ]
+}

@@ -156,7 +156,7 @@ function loadChecklistTypes(aircraftId) {
                 }
 		
             });
-            checklistOptionsDiv.appendChild(document.createElement('br'));
+            //checklistOptionsDiv.appendChild(document.createElement('br'));
 
         })
         .catch(error => console.error(`Error loading checklist data for ${aircraftId}:`, error));
@@ -270,9 +270,10 @@ function loadChecklistType(type, aircraftId) {
                         if (item.locationText) {
                             const locationBtn = document.createElement('button');
                             locationBtn.className = "location-btn";
-                            locationBtn.dataset.img = `aircraft/${aircraftId}/checklist/images${item.locationImage}`;
+                            locationBtn.dataset.img = `aircraft/${aircraftId}/checklist/images/${item.location}`;
                             locationBtn.textContent = item.locationText || "";
                             locationCell.appendChild(locationBtn);
+			    console.log(locationBtn.dataset.img);
                         } else {
                             locationCell.textContent = "";
                         }
@@ -817,93 +818,6 @@ function checkEmergency(collapsibleHeader) {
     }
 }
 
-function showAirfieldaaaaa(terrainId) {
-  const airfieldDetails = document.getElementById("airfield-details");
-  airfieldDetails.innerHTML = ""; 
-
-  // Load terrain image
-  const terrainImagePath = `terrain/${terrainId}/${terrainId}.png` 
-  const terrainImage = document.createElement('img');
-  terrainImage.src = terrainImagePath;
-  terrainImage.alt = terrainId;
-  terrainImage.style.maxWidth = '100%';
-  terrainImage.style.height = 'auto';
-  airfieldDetails.appendChild(terrainImage);
-
-  // Create the table dynamically
-  const table = document.createElement('table');
-  const headerRow = table.insertRow();
-  ["AIRFIELD", "ICAO", "REFERENCE", "TOWER", "ILS (runway, freq)", "TACAN"].forEach(header => {
-    const th = document.createElement('th');
-    th.textContent = header;
-    headerRow.appendChild(th);
-  });
-
-  // Load airfield data for the selected terrain (you'll need to define this)
-  const airfieldsData = getAirfieldsDataForTerrain(terrainId);
-
-  airfieldsData.forEach(airfield => {
-    const row = table.insertRow();
-    
-    // Airfield Name (with image button if available)
-    const airfieldNameCell = row.insertCell();
-    if (airfield.image) {
-      const airfieldBtn = document.createElement('button');
-      airfieldBtn.className = "airfield-btn";
-      airfieldBtn.dataset.img = `terrain/${terrainId}/airfields/${airfield.image}`;
-      airfieldBtn.textContent = airfield.name;
-      airfieldNameCell.appendChild(airfieldBtn);
-    } else {
-      airfieldNameCell.textContent = airfield.name;
-    }
-
-    // Other Airfield Data
-    row.insertCell().textContent = airfield.icao || "";
-    row.insertCell().textContent = airfield.reference || "";
-    row.insertCell().textContent = airfield.tower || "";
-    row.insertCell().textContent = airfield.ils || "";
-    row.insertCell().textContent = airfield.tacan || "";
-  });
-
-  airfieldDetails.appendChild(table);
-}
-
-function getAirfieldsDataForTerrain(terrainId) {
-  // Example data structure (replace with your actual data)
-  const airfieldsData = {
-    georgia: [
-      { name: "Anapa", icao: "URKA", reference: "44°59′36″N, 37°20′19″E", tower: "121.0MHz", image: "anapa.png" },
-      { name: "Batumi", icao: "UGSB", reference: "41°36′58″N, 41°35′31″E", tower: "131.0MHz", ils: "13, 110.3MHz", tacan: "16XBTM" },
-      { name: "Beslan", icao: "URMO", reference: "43°12′26″N, 44°35′19″E", tower: "141.0MHz" },
-      { name: "Gelendzhik", icao: "URKG", reference: "44°33′54″N, 38°00′25″E", tower: "126.0MHz" },
-      { name: "Gudauta", icao: "UG23", reference: "43°06′09″N, 40°34′01″E", tower: "130.0MHz", image: "gudauta.png" },
-      { name: "Kobuleti", icao: "UG5X", reference: "41°55′36″N, 41°51′05″E", tower: "133.0MHz", ils: "07, 111.5MHz", tacan: "67XKBL" },
-      { name: "Kopitnari-Kutaisi", icao: "UGKO", reference: "42°10′30″N, 42°28′05″E", tower: "134.0MHz", ils: "08, 109.75MHz", tacan: "44XKTS" },
-      { name: "Krasnodar Center", icao: "URKI", reference: "45°05′03″N, 38°57′34″E", tower: "122.0MHz" },
-      { name: "Krasnodar-Pashkovskty", icao: "URKK", reference: "45°01′52″N, 39°08′38″E", tower: "128.0MHz" },
-      { name: "Krymsk", icao: "URKW", reference: "44°58′27″N, 38°00′37″E", tower: "124.0MHz" },
-      { name: "Maykop-Khanskaya", icao: "URKH", reference: "44°41′22″N, 40°03′08″E", tower: "125.0MHz" },
-      { name: "Mineralnye Vody", icao: "URMM", reference: "44°12′58″N, 43°06′13″E", tower: "135.0MHz", ils: "12, 111.7MHz<br>30, 109.3MHz" },
-      { name: "Mozdok", icao: "XRMF", reference: "43°47′26″N, 44°34′44″E", tower: "137.0MHz" },
-      { name: "Nalchik", icao: "URMN", reference: "43°30′29″N, 43°37′30″E", tower: "136.0MHz", ils: "24, 110.5MHz" },
-      { name: "Novorossiysk", icao: "URKN", reference: "44°39′36″N, 37°46′25″E", tower: "123.0MHz" },
-      { name: "Senaki-Tskhakaya", icao: "UGKS", reference: "42°14′31″N, 42°02′08″E", tower: "132.0MHz", ils: "09, 108.90MHz", tacan: "31XTSK" },
-      { name: "Sochi-Adler", icao: "URSS", reference: "43°06′17″N, 40°35′26″E", tower: "127.0MHz", ils: "06, 111.1MHz" },
-      { name: "Soganlug", icao: "UG24", reference: "41°39′26″N, 44°55′48″E", tower: "139.0MHz" },
-      { name: "Sukhumi", icao: "UGSS", reference: "42°51′21″N, 41°09′17″E", tower: "129.0MHz" },
-      { name: "Tbilisi", icao: "UGTB", reference: "41°40′37″N, 44°56′37″E", tower: "138.0MHz", ils: "13, 110.3MHz<br>31, 108.9MHz" },
-      { name: "Vaziani", icao: "UG27", reference: "41°37′09″N, 45°02′10″E", tower: "140.0MHz", ils: "14, 108.75MHz", tacan: "22XVAS" },
-      { name: "Banodzha", reference: "42°15′54″N, 42°39′24″E" },
-      { name: "Kvitiri", reference: "42°14′53″N, 42°37′50″E" },
-      { name: "Ochkhamuri", reference: "41°50′17″N, 41°48′02″E" }
-    ],
-    marianas: [
-       { name: "Saipan INTL", icao: "PGSN" },
-    ]
-  };
-
-  return airfieldsData[terrainId] || []; // Return data for the terrain, or an empty array if not found
-}
 
 function showImage(button) {
   const imgId = button.dataset.img;

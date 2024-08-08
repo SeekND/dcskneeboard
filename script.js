@@ -611,7 +611,7 @@ function showAirfield(terrainId) {
     airfieldDetails.innerHTML = ""; // Clear previous content
 
     // Load terrain image 
-    const terrainImagePath = `terrain/${terrainId}/airfieldmap.png`;
+    const terrainImagePath = `terrain/${terrainId}/airfieldmapday.png`;
 
     const terrainImage = document.createElement('img');
     terrainImage.src = terrainImagePath;

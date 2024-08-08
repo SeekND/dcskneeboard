@@ -18,7 +18,7 @@
       "type": "item",
       "requirement": "Govenor trim",
       "action": "Decrease for 7 seconds",
-      "location": "collective",
+      "location": "collective.jpg",
       "locationText": "collective"
     },
     {
@@ -87,21 +87,21 @@
       "type": "item",
       "requirement": "To remain straight and level",
       "action": "Use cyclic (left & aft input)",
-      "location": "cyclic",
+      "location": "cyclic.jpg",
       "locationText": "cyclic"
     },
     {
       "type": "item",
       "requirement": "To initiate a hover",
       "action": "Raise collective very gently",
-      "location": "collective",
+      "location": "collective.jpg",
       "locationText": "collective"
     },
     {
       "type": "item",
       "requirement": "Your stick can be trimmed to a hover position.",
       "action": "Use cyclic trim",
-      "location": "cyclic",
+      "location": "cyclic.jpg",
       "locationText": "cyclic"
     }
   ],
@@ -184,7 +184,7 @@
       "type": "item",
       "requirement": "Reach your reference point in a 5 ft hover.",
       "action": "Use your cyclic to come to a full stop",
-      "location": "cyclic",
+      "location": "cyclic.jpg",
       "locationText": "cyclic"
     },
     {
@@ -195,7 +195,7 @@
       "type": "item",
       "requirement": "Come to a full stop in a 5 ft hover",
       "action": "Slowly reduce collective to safely land on the ground",
-      "location": "collective",
+      "location": "collective.jpg",
       "locationText": "collective"
     }
   ]

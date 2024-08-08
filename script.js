@@ -689,15 +689,23 @@ function showAirfield(terrainId) {
 
                 // ARP - create a hyperlink if ARP is not empty
                 const arpCell = row.insertCell();
-                if (airfield.ARP) {
-                    const arpLink = document.createElement('a');
-                    arpLink.href = `https://maps.google.com/?q=${encodeURIComponent(airfield.ARP)}`;
-                    arpLink.target = "_blank"; // Open in a new tab
-                    arpLink.textContent = airfield.ARP;
-                    arpCell.appendChild(arpLink);
-                } else {
-                    arpCell.textContent = ""; 
-                }
+    if (airfield.ARP) {
+      const convertedCoordinates = convertARPToDecimalDegrees(airfield.ARP);
+      if (convertedCoordinates) { // Check if conversion was successful
+        const arpLink = document.createElement('a');
+ 	const [latitude, longitude] = convertedCoordinates.split(',');
+        arpLink.href = `http://www.bing.com/maps/default.aspx?v=2&cp=${latitude}~${longitude}&lvl=15&style=a&sp=point.${latitude}_${longitude}_${encodeURIComponent(airfield.AIRFIELD)}`;         
+        //arpLink.href = `https://www.bing.com/maps?cp=${encodeURIComponent(convertedCoordinates)}&lvl=15&style=a`;
+        arpLink.target = "_blank";
+        arpLink.textContent = airfield.ARP;
+        arpCell.appendChild(arpLink);
+      } else {
+        arpCell.textContent = airfield.ARP; // Display the ARP as plain text if conversion fails
+      }
+    } else {
+      arpCell.textContent = ""; 
+    }
+
           row.insertCell().textContent = airfield.TWR || "";
           row.insertCell().textContent = airfield.ILS || "";
           row.insertCell().textContent = airfield.TACAN || "";
@@ -710,6 +718,35 @@ function showAirfield(terrainId) {
       sortTable(table, 0);
     })
     .catch(error => console.error(`Error loading data for terrain ${terrainId}:`, error));
+}
+
+function convertARPToDecimalDegrees(arp) {
+  const parts = arp.split(' ');
+
+  // Extract latitude parts, handling ' and " for minutes and seconds
+  const latParts = parts[0].split(/[°'′]/);
+  const lonParts = parts[1].split(/[°'′]/);
+
+  // Remove any non-numeric characters from the first element (degrees)
+  latParts[0] = latParts[0].replace(/[^0-9]/g, ''); 
+  lonParts[0] = lonParts[0].replace(/[^0-9]/g, '');
+
+  // Convert to numeric and handle potential NaN values
+  const latValues = latParts.map(part => parseFloat(part) || 0);
+  const lonValues = lonParts.map(part => parseFloat(part) || 0);
+
+  // Check if all values are valid numbers
+  if (latValues.some(isNaN) || lonValues.some(isNaN)) {
+    console.warn(`Invalid ARP format: ${arp}`);
+    return null; // Return null to indicate an error
+  }
+
+  const latDegrees = latValues[0] + (latValues[1] / 60) + (latValues[2] / 3600);
+  const lonDegrees = lonValues[0] + (lonValues[1] / 60) + (lonValues[2] / 3600);
+
+  const latitude = parts[0].startsWith('S') ? -latDegrees : latDegrees;
+  const longitude = parts[1].startsWith('W') ? -lonDegrees : lonDegrees;
+  return `${latitude},${longitude}`;
 }
 
 // END AIRFIELD CATEGORY FETCH //////////////////////////////////

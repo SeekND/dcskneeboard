@@ -140,7 +140,7 @@ function loadChecklistTypes(aircraftId) {
             const checklistTypes = data.checklists;
 
             checklistTypes.forEach(type => {
-                if (type.endsWith(".pdf")) { // Check if it's a PDF
+                if (type.endsWith(".pdf") || type.startsWith("http")) { // Check if it's a PDF
                     // Create a button to load the external checklist in an iframe
                     const button = document.createElement('button');
                     button.textContent = "External Information (toggle)"; // Or any other suitable label

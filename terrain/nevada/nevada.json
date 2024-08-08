@@ -10,7 +10,8 @@
         "TWR": "",
         "TACAN": "",
         "RWY": "14/32",
-        "ILS": ""
+        "ILS": "",
+	"image": ""
     },
     {
         "ID": "14",
@@ -23,7 +24,8 @@
         "TWR": "126.200 MHz",
         "TACAN": "61X",
         "RWY": "14L/32R, 14R/32L",
-        "ILS": "14L: 110.10 MHz"
+        "ILS": "14L: 110.10 MHz",
+	"image": "Tonopah_Test_Range_Airfield_p1.png"
     },
     {
         "ID": "15",
@@ -36,7 +38,8 @@
         "TWR": "118.500 MHz",
         "TACAN": "74X / 115.20 MHz",
         "RWY": "02/20, 13/31",
-        "ILS": "02: 110.30 MHz"
+        "ILS": "02: 110.30 MHz",
+	"image": "Tonopah_Airport_p1.png"
     },
     {
         "ID": "",
@@ -49,7 +52,8 @@
         "TWR": "",
         "TACAN": "",
         "RWY": "Unknown",
-        "ILS": ""
+        "ILS": "",
+	"image": ""
     },
     {
         "ID": "",
@@ -62,7 +66,8 @@
         "TWR": "",
         "TACAN": "",
         "RWY": "Unknown",
-        "ILS": ""
+        "ILS": "",
+	"image": ""
     },
     {
         "ID": "5",
@@ -75,7 +80,8 @@
         "TWR": "",
         "TACAN": "94X/114.70",
         "RWY": "16/34",
-        "ILS": ""
+        "ILS": "",
+	"image": "Beatty_Airport_p1.png"
     },
     {
         "ID": "6",
@@ -88,7 +94,8 @@
         "TWR": "118.05 3.925/250.10 38.75",
         "TACAN": "114X/116.70",
         "RWY": "09/27, 15/33",
-        "ILS": "13: 110.3MHz"
+        "ILS": "13: 110.3MHz",
+	"image": "BoulderCity_p1.png"
     },
     {
         "ID": "1",
@@ -101,7 +108,8 @@
         "TWR": "3.825/360.60 38.55",
         "TACAN": "87X/118.30",
         "RWY": "08/26, 13/31",
-        "ILS": "108.50/ILS INOP"
+        "ILS": "108.50/ILS INOP",
+	"image": ""
     },
     {
         "ID": "7",
@@ -114,7 +122,8 @@
         "TWR": "",
         "TACAN": "",
         "RWY": "06/24",
-        "ILS": ""
+        "ILS": "",
+	"image": "BoulderCity_p1.png"
     },
     {
         "ID": "2",
@@ -127,7 +136,8 @@
         "TWR": "3.850/250.05 38.60",
         "TACAN": "18X/118.00",
         "RWY": "14L/32R, 14R/32L",
-        "ILS": "A CLOSED RAA"
+        "ILS": "A CLOSED RAA",
+	"image": "Groom Lake AFB_p1.png"
     },
     {
         "ID": "8",
@@ -140,7 +150,8 @@
         "TWR": "3.950/250.15 38.80",
         "TACAN": " /125.10",
         "RWY": "17L/35R, 17R/35L",
-        "ILS": ""
+        "ILS": "",
+	"image": "Henderson_p1.png"
     },
     {
         "ID": "",
@@ -153,7 +164,8 @@
         "TWR": "",
         "TACAN": "",
         "RWY": "02L/20R, 02R/20L",
-        "ILS": ""
+        "ILS": "",
+	"image": ""
     },
     {
         "ID": "10",
@@ -166,7 +178,8 @@
         "TWR": "3.750/250.00 38.40",
         "TACAN": " /123.90",
         "RWY": "16/34",
-        "ILS": ""
+        "ILS": "",
+	"image": "Laughlin_Airport_p1.png"
     },
     {
         "ID": "11",
@@ -179,7 +192,8 @@
         "TWR": "",
         "TACAN": "",
         "RWY": "17/35",
-        "ILS": ""
+        "ILS": "",
+	"image": ""
     },
     {
         "ID": "3",
@@ -192,7 +206,8 @@
         "TWR": "119.90 3.875/257.80 38.65",
         "TACAN": "116X/116.90",
         "RWY": "01L/19R, 01R/19L, 07L/25R, 07R/25L",
-        "ILS": "01L: 109.90 MHz, 01R: 109.50 MHz, 25L: 110.90 MHz, 25R: 111.30 MHz"
+        "ILS": "01L: 109.90 MHz, 01R: 109.50 MHz, 25L: 110.90 MHz, 25R: 111.30 MHz",
+	"image": "McCarran_International_Airport_p1.png"
     },
     {
         "ID": "12",
@@ -205,7 +220,8 @@
         "TWR": "",
         "TACAN": "",
         "RWY": "03/31",
-        "ILS": ""
+        "ILS": "",
+	"image": "Mesquite_p2.png"
     },
     {
         "ID": "9",
@@ -218,7 +234,8 @@
         "TWR": "126.2 3.800/236.6 38.0",
         "TACAN": "33X/113.10",
         "RWY": "02L/21R, 021/03, 21/03R",
-        "ILS": "02L: 110.30 MHz, 21: 108.50 MHz"
+        "ILS": "02L: 110.30 MHz, 21: 108.50 MHz",
+	"image": "Nellis_AFB_p1.png"
     },
     {
         "ID": "4",
@@ -231,6 +248,7 @@
         "TWR": "120.50 3.900/257.80 38.20",
         "TACAN": " /114.10",
         "RWY": "01/19, 12/30",
-        "ILS": "01: 108.90 MHz, 12: 111.10 MHz"
+        "ILS": "01: 108.90 MHz, 12: 111.10 MHz",
+	"image": "North_Las_Vegas_p1.png"
     }
 ]

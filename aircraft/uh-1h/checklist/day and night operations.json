@@ -153,8 +153,15 @@
     },
     {
       "type": "item",
-      "requirement": "Press and hold Fire Warning Indicator TEST button and confirm that FIRE caution light illuminates",
-      "action": "Release button afterwards.",
+      "requirement": "Set LOW RPM Switch",
+      "action": "OFF/AFT (This will inhibit the LOW RPM aural cue)",
+      "location": "pre-start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Confirm that FIRE caution light illuminates",
+      "action": "Press and hold Fire Warning Indicator TEST button",
       "location": "pre-start-up.png",
       "locationText": ""
     },

@@ -691,7 +691,7 @@ function showAirfield(terrainId) {
                 const arpCell = row.insertCell();
                 if (airfield.ARP) {
                     const arpLink = document.createElement('a');
-                    arpLink.href = `https://www.google.com/maps/search/?&query=${encodeURIComponent(airfield.ARP)}`;
+                    arpLink.href = `https://maps.google.com/?q=${encodeURIComponent(airfield.ARP)}`;
                     arpLink.target = "_blank"; // Open in a new tab
                     arpLink.textContent = airfield.ARP;
                     arpCell.appendChild(arpLink);

@@ -587,23 +587,33 @@ function loadAirfieldButtons() {
   const airfieldsDiv = document.getElementById("airfields");
   airfieldsDiv.innerHTML = ''; 
 
-  fetch(`terrain/airfields.json`)
+  fetch('terrain/airfields.json')
     .then(response => response.json())
     .then(data => {
       const airfieldNames = data.airfields;
 
       airfieldNames.forEach(airfieldName => {
-                const button = document.createElement('button');
-                button.textContent = airfieldName.toUpperCase();
-                button.onclick = () => showAirfield(airfieldName);
-                airfieldsDiv.appendChild(button);
-            });
+        const button = document.createElement('button');
+        button.textContent = airfieldName.toUpperCase();
+        button.onclick = () => {
+          showAirfield(airfieldName);
+
+          // Remove 'active' class from all buttons
+          const allButtons = airfieldsDiv.querySelectorAll('button');
+          allButtons.forEach(btn => btn.classList.remove('active'));
+
+          // Add 'active' class to the clicked button
+          button.classList.add('active');
+        };
+
+        airfieldsDiv.appendChild(button);
+      });
       const airfieldDetailsDiv = document.createElement('div');
       airfieldDetailsDiv.id = 'airfield-details';
       airfieldsDiv.appendChild(airfieldDetailsDiv);
+      // ... (create airfield-details div)
     })
     .catch(error => console.error('Error loading airfield data:', error));
- 
 }
 
 function showAirfield(terrainId) {
@@ -676,11 +686,23 @@ function showAirfield(terrainId) {
           row.insertCell().textContent = airfield.Type || "";
           row.insertCell().textContent = airfield.Location || "";
           //row.insertCell().textContent = airfield.ID || "";
-          row.insertCell().textContent = airfield.ARP || "";
+
+                // ARP - create a hyperlink if ARP is not empty
+                const arpCell = row.insertCell();
+                if (airfield.ARP) {
+                    const arpLink = document.createElement('a');
+                    arpLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(airfield.ARP)}`;
+                    arpLink.target = "_blank"; // Open in a new tab
+                    arpLink.textContent = airfield.ARP;
+                    arpCell.appendChild(arpLink);
+                } else {
+                    arpCell.textContent = ""; 
+                }
           row.insertCell().textContent = airfield.TWR || "";
           row.insertCell().textContent = airfield.ILS || "";
           row.insertCell().textContent = airfield.TACAN || "";
           row.insertCell().textContent = airfield.RWY || "";
+
         });
 
       airfieldDetails.appendChild(table);

@@ -233,18 +233,22 @@ border-radius: 0;
   font-size: 14px; 
 }
 
+#airfields {
+  text-align: center; /* Center the button container */
+}
+
 #airfields > button {
-  display: block; /* Make the buttons block-level elements */
-  margin: 10px auto; /* Center them horizontally with auto margins */
-  padding: 8px 15px; /* Add some padding */
+  display: inline-block; /* Change to inline-block for horizontal arrangement */
+  margin: 10px;           /* Adjust margin for spacing between buttons */
+  padding: 8px 15px; 
   border: none; 
-  background-color: #4CAF50; /* Green background */
+  background-color: #4CAF50; 
   color: white; 
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px; /* Add rounded corners */
+  border-radius: 5px;   
 }
 
 /* Style the airfield buttons within the table */

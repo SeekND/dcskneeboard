@@ -643,12 +643,13 @@ function showAirfield(terrainId) {
                 sortButton.textContent = '▲'; // Or use an icon
 	        sortButton.classList.add('sort-symbol');
                 sortButton.dataset.columnIndex = index; 
+		
                 sortButton.addEventListener('click', () => {
                     sortTable(table, index);
                 });
                 th.appendChild(sortButton);
                 headerRow.appendChild(th);
-           });
+      });
 
       // Create the table body (tbody) element
       const tbody = document.createElement('tbody');
@@ -683,6 +684,8 @@ function showAirfield(terrainId) {
         });
 
       airfieldDetails.appendChild(table);
+      sortTable(table, 0);
+      sortTable(table, 0);
     })
     .catch(error => console.error(`Error loading data for terrain ${terrainId}:`, error));
 }

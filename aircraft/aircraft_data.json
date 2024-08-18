@@ -5,11 +5,11 @@
     },
     {
         "type": "jet",
-        "name": "a-29b"
+        "name": "a-10c"
     },
     {
         "type": "jet",
-        "name": "a-10c"
+        "name": "f-4e"
     },
     {
         "type": "jet",
@@ -18,6 +18,10 @@
     {
         "type": "jet",
         "name": "t-45"
+    },
+    {
+        "type": "jet",
+        "name": "a-29b"
     },
     {
         "type": "helicopter",

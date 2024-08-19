@@ -146,18 +146,21 @@ function loadChecklistTypes(aircraftId) {
                     button.textContent = "External Information (toggle)"; // Or any other suitable label
                     button.classList.add('external-checklist-button'); 
                     button.onclick = () => loadExternalChecklist(type); 
+                    checklistOptionsDiv.appendChild(button); 
+                } else if (type.endsWith(")")) { 
+                    // Create a button to toggle the external checklist iframe
+                    const button = document.createElement('button');
+                    button.textContent = "External Information (toggle)"; // Or any other suitable label
+                    button.onclick = () => loadChecklistImages(type, aircraftId); // Pass aircraftId
                     checklistOptionsDiv.appendChild(button);
-                } 
-		else if (type.endsWith(")")) { // Check if it's an image series
-       		 const button = document.createElement('button');
-       		 button.textContent = "External Information (toggle)"; // Or any other suitable label
-       		 button.onclick = () => loadChecklistImages(type, aircraftId);
-      		  checklistOptionsDiv.appendChild(button);
-     		}
-		else {
+
+                    // Load the image series only once (when the button is first created)
+                    loadChecklistImages(type, aircraftId); 
+		} else {
                     // Create a button for internal checklist types
                     const button = document.createElement('button');
                     button.textContent = type.toUpperCase();
+
                     button.onclick = () => loadChecklistType(type, aircraftId);
                     checklistOptionsDiv.appendChild(button);
                 }
@@ -174,32 +177,37 @@ function loadChecklistImages(checklistType, aircraftId) {
   const checklistContentDiv = document.getElementById("checklist-content");
   const pdfContainer = document.getElementById("pdf-container");
 
-  // Hide the checklistContentDiv and show the pdfContainer
-  checklistContentDiv.style.display = 'none';
-  pdfContainer.style.display = 'block';
+  // Toggle the visibility of the image series container
+  if (pdfContainer.style.display === 'none') {
+    pdfContainer.style.display = 'block';
+    checklistContentDiv.style.display = 'none';
 
-  // Extract folder name and number of images from checklistType
-  const match = checklistType.match(/^(.+)\((\d+)\)$/);
-  if (!match) {
-    console.error("Invalid checklist type format for image series:", checklistType);
-    return;
-  }
-  const folderName = match[1].trim();
-  const numImages = parseInt(match[2]);
+    // Extract folder name and number of images
+    const match = checklistType.match(/^(.+)\((\d+)\)$/);
+    if (!match) {
+      console.error("Invalid checklist type format for image series:", checklistType);
+      return;
+    }
+    const folderName = match[1].trim();
+    const numImages = parseInt(match[2]);
 
-  // Clear any previous content in the pdfContainer
-  pdfContainer.innerHTML = '';
-
-  // Load and append images
-  for (let i = 1; i <= numImages; i++) {
-    const img = document.createElement('img');
-    img.src = `aircraft/${aircraftId}/checklist/${folderName}/${folderName} (${i}).jpg`; // Construct image path
-    img.alt = `Checklist Image ${i}`;
-    img.style.maxWidth = '100%';
-    img.style.height = 'auto';
-    img.style.display = 'block'; // Ensure each image is on a new line
-    img.style.marginBottom = '10px'; // Add some spacing between images
-    pdfContainer.appendChild(img);
+    // Check if images are already loaded
+    if (pdfContainer.querySelectorAll('img').length === 0) { // If no images are present
+      // Load and append images
+      for (let i = 1; i <= numImages; i++) {
+        const img = document.createElement('img');
+        img.src = `aircraft/${aircraftId}/checklist/${folderName}/${folderName} (${i}).jpg`;
+        img.alt = `Checklist Image ${i}`;
+        img.style.maxWidth = '100%';
+        img.style.height = 'auto';
+        img.style.display = 'block';
+        img.style.marginBottom = '10px';
+        pdfContainer.appendChild(img);
+      }
+    }
+  } else {
+    pdfContainer.style.display = 'none';
+    checklistContentDiv.style.display = 'block';
   }
 }
 

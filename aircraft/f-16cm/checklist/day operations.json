@@ -1,0 +1,184 @@
+{
+  "BEFORE START CHECKLIST": [
+    { "type": "item", "requirement": "MAIN PWR", "action": "BAT", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "FLCS PWR TEST SW", "action": "TEST/OFF", "location": "", "locationText": "" },
+    { "type": "item", "requirement": "MAIN PWR", "action": "MAIN PWR", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "EPU GEN/LGTS", "action": "OFF", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "CANOPY", "action": "CLOSE/LOCK", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "PARKING BRAKE", "action": "SET", "location": "la.png", "locationText": "" }
+  ],
+
+  "START CHECKLIST": [
+    { "type": "item", "requirement": "JFS SW", "action": "START 2", "location": "la.png", "locationText": "" },
+    { "type": "note", "text": "NOTE: WHEN ENG 20% & SEC OFF" },
+    { "type": "item", "requirement": "THROTTLE", "action": "IDLE", "location": "la.png", "locationText": "" },
+    { "type": "note", "text": "NOTE: MONITOR ENGINE PARAMETERS" }
+  ],
+
+  "AFTER START CHECKLIST": [
+    { "type": "item", "requirement": "JFS SW", "action": "CHECK OFF", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "OXYGEN", "action": "NORMAL/NORM/ON-TRIM", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "PROBE HEAT SW", "action": "PROBE HEAT", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "PROBE HEAT SW", "action": "TEST", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "PROBE HEAT SW", "action": "OFF", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "FIRE/OVERHEAT", "action": "TEST", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "MALF & IND LGTS", "action": "TEST", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "AVIONICS SWs", "action": "ALL 6 ON", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "MIDS LVT", "action": "ON", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "EGI/INS", "action": "ALIGN", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "C&I KNOB", "action": "UFC", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "LDG GEAR", "action": "DONW/3 GREEN", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "SPEEDBRAKES", "action": "CHECK", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "ADI (SAI)", "action": "UNCAGE", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "LEFT HDPT SW", "action": "AS REQ.", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "RIGHT HDPT SW", "action": "AS REQ.", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "FCR SW", "action": "FCR", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "RDR ALT SW", "action": "RDR ALT", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "ENG SEC CTRL", "action": "CHECK(SEC/PRI)", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "FLCS", "action": "CYCLE/CHECK", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "FLCS BIT", "action": "BIT/OFF", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "FUEL QTY", "action": "TEST/NORM", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "DIGITAL BKUP SW", "action": "BACKUP/OFF", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "TRIM/AP DISC", "action": "DISC", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "TRIM HAT SW", "action": "TEST/NO MOTION", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "TRIM/AP DISC", "action": "NORM", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "TRIM HAT SW", "action": "TEST/MOTION", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "MPO", "action": "TEST", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "EPU", "action": "TEST", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "EPU/GEN TEST SW", "action": "ON & SET", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "EXT.LGTS", "action": "AS REQ.", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "LSR CODE", "action": "SET", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "EWI/RWR/JMR", "action": "ON", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "CONFIG", "action": "CAT I/CAT III", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "BINGO", "action": "SET", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "TACAN/ILS", "action": "ON & SET", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "ALTIMETER", "action": "SET", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "EGI/INS", "action": "NAV", "location": "la.png", "locationText": "" },
+    { "type": "item", "requirement": "HYD/OIL PRESS OFF -NWS", "action": "ON", "location": "la.png", "locationText": "" }
+  ],
+"BEFORE TAKE OFF CHECKLIST": [
+      { "type": "item", "requirement": "TRIM NEEDLES", "action": "CENTERED", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "ENGINE CTRL", "action": "PRI", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "SPEEDBRAKE", "action": "CLOSED", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "FUEL PANEL", "action": "NORMAL", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "OXYGEN", "action": "ON", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "EJECTION SEAT", "action": "ARMED", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "PROBE HEAT", "action": "ON", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "RADAR", "action": "ON", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "THROTTLE", "action": "90%", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "BRAKES", "action": "RELEASE", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "THROTTLE", "action": "MIL or A.B.", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: At 70KT" },
+      { "type": "item", "requirement": "NWS", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "note: AT VR-10KT (MILITARY PWR) OR VR-15KT (A.B. PWR)" },
+      { "type": "item", "requirement": "PITCH", "action": "8° TO 12°", "location": "la.png", "locationText": "" }
+  ],
+
+ "AFTER TAKE OFF CHECKLIST": [
+
+      { "type": "note", "text": "BEFORE 300KT" },
+      { "type": "item", "requirement": "GEAR", "action": "UP", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "LIGHTS", "action": "AS REQ.", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "PITCH", "action": "15°", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: CLIMB WITH 350KT TO 10.000FT" },
+      { "type": "item", "requirement": "RADAR", "action": "ON & SET", "location": "la.png", "locationText": "" }
+  ],
+
+ "ABOVE 10.000FT CHECKLIST": [
+
+      { "type": "item", "requirement": "FUEL TRANSFER", "action": "CHECK", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "SYSTEMS CHECK", "action": "PERFORM", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "WEAPONS SYSTEMS", "action": "SET", "location": "la.png", "locationText": "" }
+  ],
+
+ "DESCEND/BEFORE LANDING CHECKLIST": [
+
+      { "type": "item", "requirement": "FUEL", "action": "CHECK", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "TACAN/ILS", "action": "ON & SET", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "ALT./RAD.ALT", "action": "CHECK & SET", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "MINIMUMS", "action": "SET", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "ATT REFERENCES", "action": "CHECK", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "EXT. LGTS", "action": "AS REQ.", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "ANTI-ICE", "action": "AS REQ.", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "TGP", "action": "STOW", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "MASTER ARM", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "LASER", "action": "OFF", "location": "la.png", "locationText": "" }
+  ],
+
+ "LANDING CHECKLIST": [
+
+      { "type": "note", "text": "NOTE: PEEL OFF AT 1,500FT AGL/300KT" },
+      { "type": "item", "requirement": "THROTTLE", "action": "80%", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "SPEEDBRAKE", "action": "OPEN", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: BRAKE WITH 70° BANK AND 3-4G" },
+      { "type": "note", "text": "NOTE: DOWNWIND LEG" },
+      { "type": "item", "requirement": "SPEED", "action": "200-220KT", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "LDG GEAR", "action": "DOWN/3 GREEN", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "LDG/TAXI LGT", "action": "LANDING", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "AOA", "action": "11°", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: BASE TURN" },
+      { "type": "item", "requirement": "PITCH", "action": "8° TO 10°", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "AOA", "action": "11°", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: FINAL (ALWAYS FLY \"ON BRAKET\")" },
+      { "type": "item", "requirement": "FLT PATH MARKER", "action": "-2.5° TO -3°", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "AOA", "action": "11°", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: SHORT FINAL" },
+      { "type": "item", "requirement": "FLT PATH MKR", "action": "AT 500FT RWY MARK", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "MAX PITCH", "action": "13°", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: LANDING ROLL" },
+      { "type": "item", "requirement": "MAX PITCH", "action": "13°", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "SPEEDBRAKE", "action": "OPEN", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: USE AERODYNAMIC BRAKING DOWN TO 100KT" },
+      { "type": "item", "requirement": "BRAKES", "action": "MOD-HVY", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: AT 30KT" },
+      { "type": "item", "requirement": "NWS", "action": "ON", "location": "la.png", "locationText": "" }
+  ],
+
+ "AFTER LANDING CHECKLIST": [
+
+      { "type": "item", "requirement": "SPEEDBRAKE", "action": "CLOSE", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "EJECTION SEAT", "action": "SAFE", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "PROBE HEAT", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "ECM PWR", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "-EW/RWR/JMR", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "IFF MASTER", "action": "STBY", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "LDG/TAXI LGT", "action": "AS REQ.", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "ARMAMENT SWs", "action": "OFF/SAFE or NORMAL", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "LH/RH HDPT, FCR, RAD. ALT", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "-AVIONICS", "action": "ALL 6 OFF", "location": "la.png", "locationText": "" }
+  ],
+
+ "SHUTDOWN CHECKLIST": [
+
+      { "type": "item", "requirement": "LDG/TAXI LGT", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "PARKING BRAKE", "action": "SET", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "HUD", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "ADI (SAI)", "action": "CAGE", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "THROTTLE", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "-EPU GEN/PMG LGTS", "action": "CHECK OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "MIDS LVT", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "EGI/INS", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "EGINS LVT", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "MAIN PWR", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "OXYGEN REG", "action": "OFF & 100%", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "CANOPY", "action": "OPEN", "location": "la.png", "locationText": "" }
+  ],
+
+ "REFUELING CHECKLIST": [
+
+      { "type": "item", "requirement": "RADAR", "action": "STBY", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "MASTER ARM", "action": "OFF", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "LIGHTS", "action": "STEADY BRT", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "VISOR", "action": "DOWN", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "AIR REFUEL SW", "action": "OPEN", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "RDY BLUE LGT", "action": "CHECK", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: DURING REFUELING" },
+      { "type": "item", "requirement": "AR GREEN LGT", "action": "GREEN", "location": "la.png", "locationText": "" },
+      { "type": "note", "text": "NOTE: AFTER REFUELING" },
+      { "type": "item", "requirement": "AIR REFUEL SW", "action": "CLOSE", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "LIGHTS", "action": "AS REQUIRED", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "VISOR", "action": "AS DESIRED", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "RADAR", "action": "ON", "location": "la.png", "locationText": "" },
+      { "type": "item", "requirement": "MASTER ARM", "action": "AS REQUIRED", "location": "la.png", "locationText": "" } 
+    ]
+  }

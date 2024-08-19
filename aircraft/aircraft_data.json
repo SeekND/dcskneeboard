@@ -1,15 +1,11 @@
 [
     {
         "type": "jet",
-        "name": "f-16c"
+        "name": "f-16cm"
     },
     {
         "type": "jet",
-        "name": "a-10c"
-    },
-    {
-        "type": "jet",
-        "name": "f-4e"
+        "name": "fa-18c"
     },
     {
         "type": "jet",
@@ -18,6 +14,14 @@
     {
         "type": "jet",
         "name": "a-4ec"
+    },
+    {
+        "type": "jet",
+        "name": "f-4e"
+    },
+    {
+        "type": "jet",
+        "name": "a-10c"
     },
     {
         "type": "trainer",
@@ -37,11 +41,11 @@
     },
     {
         "type": "helicopter",
-        "name": "uh-1h"
+        "name": "oh-6a"
     },
     {
         "type": "helicopter",
-        "name": "oh-6a"
+        "name": "uh-1h"
     }
 
 ]

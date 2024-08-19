@@ -10,7 +10,9 @@
     {
       "type": "note",
       "text": "Ask Ground crew for electrical power"
-    },
+    }
+	],
+"Start up": [
     {
       "type": "item",
       "requirement": "Engine start button",

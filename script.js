@@ -140,14 +140,21 @@ function loadChecklistTypes(aircraftId) {
             const checklistTypes = data.checklists;
 
             checklistTypes.forEach(type => {
-                if (type.endsWith(".pdf") || type.startsWith("http")) { // Check if it's a PDF
+                if ( type.startsWith("http")) { // cannot load pdf's in mobile but sites load fine
                     // Create a button to load the external checklist in an iframe
                     const button = document.createElement('button');
                     button.textContent = "External Information (toggle)"; // Or any other suitable label
                     button.classList.add('external-checklist-button'); 
                     button.onclick = () => loadExternalChecklist(type); 
                     checklistOptionsDiv.appendChild(button);
-                } else {
+                } 
+		else if (type.endsWith(")")) { // Check if it's an image series
+       		 const button = document.createElement('button');
+       		 button.textContent = "External Information (toggle)"; // Or any other suitable label
+       		 button.onclick = () => loadChecklistImages(type, aircraftId);
+      		  checklistOptionsDiv.appendChild(button);
+     		}
+		else {
                     // Create a button for internal checklist types
                     const button = document.createElement('button');
                     button.textContent = type.toUpperCase();
@@ -160,6 +167,40 @@ function loadChecklistTypes(aircraftId) {
 
         })
         .catch(error => console.error(`Error loading checklist data for ${aircraftId}:`, error));
+}
+
+
+function loadChecklistImages(checklistType, aircraftId) {
+  const checklistContentDiv = document.getElementById("checklist-content");
+  const pdfContainer = document.getElementById("pdf-container");
+
+  // Hide the checklistContentDiv and show the pdfContainer
+  checklistContentDiv.style.display = 'none';
+  pdfContainer.style.display = 'block';
+
+  // Extract folder name and number of images from checklistType
+  const match = checklistType.match(/^(.+)\((\d+)\)$/);
+  if (!match) {
+    console.error("Invalid checklist type format for image series:", checklistType);
+    return;
+  }
+  const folderName = match[1].trim();
+  const numImages = parseInt(match[2]);
+
+  // Clear any previous content in the pdfContainer
+  pdfContainer.innerHTML = '';
+
+  // Load and append images
+  for (let i = 1; i <= numImages; i++) {
+    const img = document.createElement('img');
+    img.src = `aircraft/${aircraftId}/checklist/${folderName}/${folderName} (${i}).jpg`; // Construct image path
+    img.alt = `Checklist Image ${i}`;
+    img.style.maxWidth = '100%';
+    img.style.height = 'auto';
+    img.style.display = 'block'; // Ensure each image is on a new line
+    img.style.marginBottom = '10px'; // Add some spacing between images
+    pdfContainer.appendChild(img);
+  }
 }
 
 function loadExternalChecklist(url) {

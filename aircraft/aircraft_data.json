@@ -49,6 +49,10 @@
     },
     {
         "type": "helicopter",
+        "name": "uh-60l"
+    },
+    {
+        "type": "helicopter",
         "name": "ch-47f"
     }
 

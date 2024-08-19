@@ -17,10 +17,14 @@
     },
     {
         "type": "jet",
+        "name": "a-4ec"
+    },
+    {
+        "type": "trainer",
         "name": "t-45"
     },
     {
-        "type": "jet",
+        "type": "trainer",
         "name": "a-29b"
     },
     {

@@ -1,0 +1,139 @@
+{
+  "Before Start": [
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "Open",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Ask Ground crew for electrical power"
+    },
+    {
+      "type": "item",
+      "requirement": "Engine start button",
+      "action": "Press",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once RPM at 10% notch throttle to IGN position"
+    },
+    {
+      "type": "note",
+      "text": "Once RPM at 20% notch throttle to Idle position"
+    },
+    {
+      "type": "note",
+      "text": "Once RPM stabilizes near 60% ask Ground crew to remove electrical power"
+    },
+    {
+      "type": "item",
+      "requirement": "Oxygen",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "Closed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "AFCS Flight computer",
+      "action": "STBY",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Stability augmentation",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Radar",
+      "action": "STBY",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Drop tanks",
+      "action": "As needed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Spoiler",
+      "action": "ARMED",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Chaff",
+      "action": "As needed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Gunsight",
+      "action": "As needed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "RWR",
+      "action": "As needed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "BDHI",
+      "action": "Set to NAV computer or TACAN as needed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Radar altimeter",
+      "action": "As needed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Weapon settings",
+      "action": "As needed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "NAV computer",
+      "action": "Land or Sea",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Lights",
+      "action": "As needed",
+      "location": "",
+      "locationText": ""
+    }
+  ]
+}

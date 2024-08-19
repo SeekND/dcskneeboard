@@ -46,6 +46,10 @@
     {
         "type": "helicopter",
         "name": "uh-1h"
+    },
+    {
+        "type": "helicopter",
+        "name": "ch-47f"
     }
 
 ]

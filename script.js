@@ -143,14 +143,14 @@ function loadChecklistTypes(aircraftId) {
                 if ( type.startsWith("http")) { // cannot load pdf's in mobile but sites load fine
                     // Create a button to load the external checklist in an iframe
                     const button = document.createElement('button');
-                    button.textContent = "External Information (toggle)"; // Or any other suitable label
+                    button.textContent = "External Information [toggle]"; // Or any other suitable label
                     button.classList.add('external-checklist-button'); 
                     button.onclick = () => loadExternalChecklist(type); 
                     checklistOptionsDiv.appendChild(button); 
                 } else if (type.endsWith(")")) { 
                     // Create a button to toggle the external checklist iframe
                     const button = document.createElement('button');
-                    button.textContent = "External Information (toggle)"; // Or any other suitable label
+                    button.textContent = "External Information [toggle]"; // Or any other suitable label
                     button.onclick = () => loadChecklistImages(type, aircraftId); // Pass aircraftId
                     checklistOptionsDiv.appendChild(button);
 
@@ -159,9 +159,9 @@ function loadChecklistTypes(aircraftId) {
 		} else {
                     // Create a button for internal checklist types
                     const button = document.createElement('button');
-                    button.textContent = type.toUpperCase();
+                    button.textContent = type.toUpperCase() + ( "[select]");
 
-                    button.onclick = () => loadChecklistType(type, aircraftId);
+                    button.onclick = () => loadChecklistType(type, aircraftId, button);
                     checklistOptionsDiv.appendChild(button);
                 }
 		
@@ -205,6 +205,16 @@ function loadChecklistImages(checklistType, aircraftId) {
         pdfContainer.appendChild(img);
       }
     }
+
+    window.addEventListener('resize', () => {
+        const iframe = pdfContainer.querySelector('iframe');
+        if (iframe) {
+            const tabButtonsHeight = document.getElementById('tab-buttons').offsetHeight;
+            iframe.height = window.innerHeight - tabButtonsHeight - 10 + 'px';
+        }
+    });
+
+
   } else {
     pdfContainer.style.display = 'none';
     checklistContentDiv.style.display = 'block';
@@ -246,7 +256,7 @@ function loadExternalChecklist(url) {
   }
 }
 
-function loadChecklistType(type, aircraftId) {
+function loadChecklistType(type, aircraftId, button) {
 
     fetch(`aircraft/${aircraftId}/checklist/${type}.json`)
         .then(response => response.json())
@@ -258,7 +268,7 @@ function loadChecklistType(type, aircraftId) {
     pdfContainer.innerHTML = ""; // Clear the PDF container
     pdfContainer.style.display = 'none'; // Hide the PDF container
     checklistContentDiv.style.display = 'block'; // Show the checklist content div
-
+    button.textContent = type.toUpperCase() + ( "[reset]");
             // Iterate over all categories in the checklistData object
             for (const categoryName in checklistData) {
                 const itemsData = checklistData[categoryName];

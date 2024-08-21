@@ -297,6 +297,13 @@
     },
     {
       "type": "item",
+      "requirement": "IFF Master Knob",
+      "action": "Norm",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
       "requirement": "Lights",
       "action": "As required",
       "location": "pre-taxi.png",

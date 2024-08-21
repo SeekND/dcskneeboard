@@ -1,0 +1,327 @@
+{
+  "Before Startup": [
+    {
+      "type": "note",
+      "text": "Canopy is required to be open to speak to aircrew"
+    },
+    {
+      "type": "item",
+      "requirement": "Rearm, Refuel",
+      "action": "As necessary",
+      "location": "before_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Helmet",
+      "action": "On",
+      "location": "before_startup.png",
+      "locationText": ""
+    }
+  ],
+  "Engine Startup": [
+    {
+      "type": "item",
+      "requirement": "Ground Crew, Ground power",
+      "action": "Connect",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "LGen and RGen",
+      "action": "External",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ground Crew, Air source",
+      "action": "Connect Right engine and wait for connection",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ground Crew, Air source",
+      "action": "Start Airflow",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm right engine RPM at 20%"
+    },
+    {
+      "type": "item",
+      "requirement": "Engine Right Switch",
+      "action": "On",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right Throttle",
+      "action": "Idle",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right Engine Start",
+      "action": "Press",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Wait until engine RPM at 65%"
+    },
+    {
+      "type": "item",
+      "requirement": "Ground Crew, Air source",
+      "action": "Connect Left engine and wait for connection",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ground Crew, Air source",
+      "action": "Start Airflow",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm left engine RPM at 20%"
+    },
+    {
+      "type": "item",
+      "requirement": "Engine Left Switch",
+      "action": "On",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Left Throttle",
+      "action": "Idle",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Left Engine Start",
+      "action": "Press",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Wait until engine RPM at 65%"
+    },
+    {
+      "type": "item",
+      "requirement": "LGen and RGen",
+      "action": "On",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If requested alignment set accordingly"
+    },
+    {
+      "type": "item",
+      "requirement": "Ground Crew, Air source",
+      "action": "Disconnect and wait for disconnection",
+      "location": "engine_startup.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ground Crew, Ground power",
+      "action": "Disconnect and wait for disconnection",
+      "location": "engine_startup.png",
+      "locationText": ""
+    }
+  ],
+  "Pre-Taxi": [
+    {
+      "type": "note",
+      "text": "Wait until primary sync is completed by WSO"
+    },
+    {
+      "type": "item",
+      "requirement": "Yaw, Roll, Pitch Stab Aug",
+      "action": "Engaged",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Fuel system tanks",
+      "action": "Triangle as required",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "CADC",
+      "action": "Reset Corr",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Oxygen Supply",
+      "action": "On and Normal Oxygen",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Anti Skid",
+      "action": "On",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Pitch Trim",
+      "action": "-3 points",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps",
+      "action": "Full",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "External Taxi Lights",
+      "action": "Set",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Armament setup",
+      "action": "As necessary",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If carrying DT fused bombs, switch to Nose and Tail"
+    },
+    {
+      "type": "item",
+      "requirement": "Radar Altimeter",
+      "action": "Set as appropriate (recommended 1000)",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Reference System Selector Switch",
+      "action": "Primary",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Altimeter",
+      "action": "Set to 0 and hold reset to clear flag",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Standby Attitude Indicator",
+      "action": "Uncage",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Bearing/Distance Knob",
+      "action": "Nav Comp",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Mode Selector Knob",
+      "action": "Nav Comp",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Screen Source Switch",
+      "action": "As required (default Radar)",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Hub mode",
+      "action": "Cage",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Tacan",
+      "action": "Set to T/R",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Comm Chan",
+      "action": "Set to T/R G",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Pilot Heat",
+      "action": "On",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Lights",
+      "action": "As required",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Compass Mode Selector Knob",
+      "action": "Sync, then set to Slaved",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ground Crew, Wheel Chocks",
+      "action": "Off",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "Closed",
+      "location": "pre-taxi.png",
+      "locationText": ""
+    }
+  ]
+}

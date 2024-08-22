@@ -5,13 +5,6 @@ button {
   font-family: 'B612', monospace; /* Use B612, fallback to monospace if B612 is not available */
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0;             /* Light text */
-}
-
-
 .main-page .image-button { /* Target image buttons within the main page */
   border-radius: 25%; /* Make the buttons circular */
 }
@@ -41,8 +34,26 @@ body.dark-mode #reference .collapsible.subcategory {
     color: white; /* Change text color to white in dark mode */
 }
 
-.tab-buttons-container { /* Replace with actual class/ID */
-    margin-bottom: 0; /* Remove bottom margin */
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0;             /* Light text */
+}
+
+body.dark-mode #checklist-options { 
+  background-color: #121212; /* Or another suitable dark background color */
+}
+
+/* Make table borders less bright in dark mode */
+body.dark-mode table th,
+body.dark-mode table td {
+  border-color: #555; /* Darker border color */
+}
+
+/* Adjust hyperlink color for dark mode */
+body.dark-mode a {
+  color: #0099ff; /* Lighter blue or any other suitable color */
 }
 
 body.dark-mode .aircraft-name-button, 
@@ -53,6 +64,15 @@ body.dark-mode #emergency button {
   text-shadow:
       0 0 1px #00FF00, /* Reduced green glow */
       0 0 2px #00FF00;
+}
+
+.collapsible,
+body.dark-mode .collapsible { 
+    background-color: #555; 
+}
+
+.tab-buttons-container { /* Replace with actual class/ID */
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 .main-page {
@@ -336,7 +356,7 @@ li {
 }
 
 .collapsible {
-    background-color: #777;
+    background-color: #444;
     color: white;
     cursor: pointer;
     padding: 18px;

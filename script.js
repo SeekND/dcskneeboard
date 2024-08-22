@@ -50,6 +50,7 @@ function loadAircraftData() {
         });
 
         mainPage.appendChild(buttonCategory);
+
       }
     })
     .catch(error => console.error('Error loading aircraft data:', error));
@@ -325,17 +326,26 @@ function loadChecklistType(type, aircraftId, button) {
                         row.insertCell().textContent = item.requirement;
                         row.insertCell().textContent = item.action;
 
-                        const locationCell = row.insertCell();
-                        if (item.locationText) {
-                            const locationBtn = document.createElement('button');
-                            locationBtn.className = "location-btn";
-                            locationBtn.dataset.img = `aircraft/${aircraftId}/checklist/images/${item.location}`;
-                            locationBtn.textContent = item.locationText || "";
-                            locationCell.appendChild(locationBtn);
-			    console.log(locationBtn.dataset.img);
-                        } else {
-                            locationCell.textContent = "";
-                        }
+                            
+
+
+
+      const locationCell = row.insertCell();
+      if (item.location && item.locationText ) { // Check if location exists
+        const locationBtn = document.createElement('button');
+        locationBtn.className = "location-btn";
+        locationBtn.dataset.img = `aircraft/${aircraftId}/checklist/images/${item.location}`;
+        // If locationText exists, use it as button text, otherwise leave it empty
+        locationBtn.textContent = item.locationText || ""; 
+        locationCell.appendChild(locationBtn);
+      } else if (item.locationText) { // Check if locationText exists (and location doesn't)
+        locationCell.textContent = item.locationText; 
+      } else {
+        locationCell.textContent = ""; // Empty cell if neither exists
+      }
+
+
+
                     } else if (item.type === 'note') {
                         // Handle note item - create a new row
                         const noteRow = table.insertRow();
@@ -351,6 +361,17 @@ function loadChecklistType(type, aircraftId, button) {
                     content.style.display = (content.style.display === "none") ? "block" : "none";
                 });
 
+
+        // Add a checkmark at the far right of the collapsible header
+        const categoryCheckmark = document.createElement('input');
+        categoryCheckmark.type = 'checkbox';
+        categoryCheckmark.style.float = 'right'; // Align to the right
+        collapsible.appendChild(categoryCheckmark);
+
+        categoryCheckmark.addEventListener('change', () => {
+            toggleCategoryCheckmarks(collapsible, categoryCheckmark.checked);
+        });
+
                 checklistContentDiv.appendChild(collapsible);
                 checklistContentDiv.appendChild(content);
 
@@ -361,6 +382,14 @@ function loadChecklistType(type, aircraftId, button) {
         .catch(error => console.error(`Error loading checklist type ${type} for ${aircraftId}:`, error));
 }
 
+
+function toggleCategoryCheckmarks(collapsibleHeader, checkedState) {
+    const checkboxes = collapsibleHeader.nextElementSibling.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => checkbox.checked = checkedState);
+
+    // Update the category header color
+    checkCategoryCompletion(collapsibleHeader);
+}
 
 
 // END LOAD CHECKLIST ///////////////////////////////////////////////////
@@ -436,7 +465,7 @@ function loadEmergencyProceduresType(aircraftId) {
             if (item.locationText) {
               const locationBtn = document.createElement('button');
               locationBtn.className = "location-btn";
-              locationBtn.dataset.img = `aircraft/${aircraftId}/emergency/images/${item.locationImage}`;
+              locationBtn.dataset.img = `aircraft/${aircraftId}/emergency/images/${item.location}`;
               locationBtn.textContent = item.locationText || "";
               locationCell.appendChild(locationBtn);
             } else {

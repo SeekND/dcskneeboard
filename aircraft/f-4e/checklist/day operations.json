@@ -8,15 +8,15 @@
       "type": "item",
       "requirement": "Rearm, Refuel",
       "action": "As necessary",
-      "location": "before_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Intercom"
     },
     {
       "type": "item",
       "requirement": "Helmet",
       "action": "On",
-      "location": "before_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right canopy edge"
     }
   ],
   "Engine Startup": [
@@ -24,29 +24,29 @@
       "type": "item",
       "requirement": "Ground Crew, Ground power",
       "action": "Connect",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester Menu"
     },
     {
       "type": "item",
       "requirement": "LGen and RGen",
       "action": "External",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right panel"
     },
     {
       "type": "item",
       "requirement": "Ground Crew, Air source",
       "action": "Connect Right engine and wait for connection",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester Menu"
     },
     {
       "type": "item",
       "requirement": "Ground Crew, Air source",
       "action": "Start Airflow",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester Menu"
     },
     {
       "type": "note",
@@ -56,22 +56,22 @@
       "type": "item",
       "requirement": "Engine Right Switch",
       "action": "On",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester Menu"
     },
     {
       "type": "item",
       "requirement": "Right Throttle",
       "action": "Idle",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Throttle"
     },
     {
       "type": "item",
       "requirement": "Right Engine Start",
       "action": "Press",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "note",
@@ -81,15 +81,15 @@
       "type": "item",
       "requirement": "Ground Crew, Air source",
       "action": "Connect Left engine and wait for connection",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester Menu"
     },
     {
       "type": "item",
       "requirement": "Ground Crew, Air source",
       "action": "Start Airflow",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester Menu"
     },
     {
       "type": "note",
@@ -99,22 +99,22 @@
       "type": "item",
       "requirement": "Engine Left Switch",
       "action": "On",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "item",
       "requirement": "Left Throttle",
       "action": "Idle",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Throttle"
     },
     {
       "type": "item",
       "requirement": "Left Engine Start",
       "action": "Press",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "note",
@@ -124,8 +124,8 @@
       "type": "item",
       "requirement": "LGen and RGen",
       "action": "On",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right panel"
     },
     {
       "type": "note",
@@ -135,15 +135,15 @@
       "type": "item",
       "requirement": "Ground Crew, Air source",
       "action": "Disconnect and wait for disconnection",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester menu"
     },
     {
       "type": "item",
       "requirement": "Ground Crew, Ground power",
       "action": "Disconnect and wait for disconnection",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester menu"
     }
   ],
   "Pre-Taxi": [
@@ -155,64 +155,64 @@
       "type": "item",
       "requirement": "Yaw, Roll, Pitch Stab Aug",
       "action": "Engaged",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "item",
       "requirement": "Fuel system tanks",
       "action": "Triangle as required",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "item",
       "requirement": "CADC",
       "action": "Reset Corr",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "item",
       "requirement": "Oxygen Supply",
       "action": "On and Normal Oxygen",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "item",
       "requirement": "Anti Skid",
       "action": "On",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "item",
       "requirement": "Pitch Trim",
       "action": "-3 points",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Stick"
     },
     {
       "type": "item",
       "requirement": "Flaps",
       "action": "Full",
-      "location": "pre-taxi.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "External Taxi Lights",
       "action": "Set",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left panel"
     },
     {
       "type": "item",
       "requirement": "Armament setup",
       "action": "As necessary",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center lower left panel"
     },
     {
       "type": "note",
@@ -222,113 +222,113 @@
       "type": "item",
       "requirement": "Radar Altimeter",
       "action": "Set as appropriate (recommended 1000)",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center left panel"
     },
     {
       "type": "item",
       "requirement": "Reference System Selector Switch",
       "action": "Primary",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center panel"
     },
     {
       "type": "item",
       "requirement": "Altimeter",
       "action": "Set to 0 and hold reset to clear flag",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center panel"
     },
     {
       "type": "item",
       "requirement": "Standby Attitude Indicator",
       "action": "Uncage",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center right panel"
     },
     {
       "type": "item",
       "requirement": "Bearing/Distance Knob",
       "action": "Nav Comp",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center bottom panel"
     },
     {
       "type": "item",
       "requirement": "Mode Selector Knob",
       "action": "Nav Comp",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center bottom panel"
     },
     {
       "type": "item",
       "requirement": "Screen Source Switch",
       "action": "As required (default Radar)",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center bottom panel"
     },
     {
       "type": "item",
       "requirement": "Hub mode",
       "action": "Cage",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center top panel"
     },
     {
       "type": "item",
       "requirement": "Tacan",
       "action": "Set to T/R",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right panel"
     },
     {
       "type": "item",
       "requirement": "Comm Chan",
       "action": "Set to T/R G",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right panel"
     },
     {
       "type": "item",
       "requirement": "Pilot Heat",
       "action": "On",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right panel"
     },
     {
       "type": "item",
       "requirement": "IFF Master Knob",
       "action": "Norm",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right panel"
     },
     {
       "type": "item",
       "requirement": "Lights",
       "action": "As required",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right panel"
     },
     {
       "type": "item",
       "requirement": "Compass Mode Selector Knob",
       "action": "Sync, then set to Slaved",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right panel"
     },
     {
       "type": "item",
       "requirement": "Ground Crew, Wheel Chocks",
       "action": "Off",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Jester menu"
     },
     {
       "type": "item",
       "requirement": "Canopy",
       "action": "Closed",
-      "location": "pre-taxi.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Left canopy edge"
     }
   ]
 }

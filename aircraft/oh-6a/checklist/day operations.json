@@ -23,6 +23,13 @@
     },
     {
       "type": "item",
+      "requirement": "Starter buttom",
+      "action": "Press and keep pressed",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
       "requirement": "When N1 reaches 12 to 15%",
       "action": "Turn throttle to idle (Default: Insert)",
       "location": "engine_startup.png",
@@ -70,9 +77,9 @@
     {
       "type": "item",
       "requirement": "When Throttle is max and N2 is stable",
-      "action": "adjust N2 with the Govenor trim increase/decrease. (cyclic)",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "action": "adjust N2 with the Govenor trim increase/decrease.",
+      "location": "cyclic.jpg",
+      "locationText": "cyclic"
     }
   ],
   "HOVER": [

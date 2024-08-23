@@ -1,0 +1,1419 @@
+{
+  "PRE START-UP": [
+    {
+      "type": "item",
+      "requirement": "Set Ejection Seat Lever",
+      "action": "DOWN & ARMED",
+      "location": "pre_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Parking Brake Lever",
+      "action": "ENGAGED",
+      "location": "pre_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER ARM switch",
+      "action": "SAFE",
+      "location": "pre_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Battery Switch",
+      "action": "ON (Right Click)",
+      "location": "pre_start-up.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "This will power the engine igniters, canopy and IFEI (Integrated Fuel / Engine Indicator) panel."
+    },
+    {
+      "type": "note",
+      "text": "(Optional)  Right  click and  hold  Fire  &  Bleed  Air Test switch to the “Channel A” (Forward) position to start the Fire/Bleed Air Test for Detection Loop. Wait for the aural warnings sequence to finish  before  releasing  the  switch.  The switch will be sprung back to the middle position  on  release.  You  should  hear “Engine Fire Left, Engine Fire Left, Engine Fire  Right,  Engine  Fire  Right,  APU  Fire, APU  Fire,  Bleed  Air  Left,  Bleed  Air  Left, Bleed Air Right, Bleed Air Right!”. Left  and  right  engine  bleed  air  switches will  be  automatically  closed  during  and after  the  test.  We  will  have  to re-open them later on."
+    },
+    {
+      "type": "note",
+      "text": "(Optional) Cycle Battery switch to OFF (left click), then back to ON (right click) to rewind test audio tape.  Alternatively, you can wait  10  seconds  for the tape to rewind."
+    },
+    {
+      "type": "note",
+      "text": "(Optional)  Left  click and  hold  Fire  &  Bleed  Air Test  switch  to  the  “Channel  B” (Aft) position  to start the Fire/Bleed Air Test for Detection Loop B. Wait  for  the  aural  warnings  sequence  to  finish before  releasing  the  switch.  The  switch  will  be sprung back to the middle position."
+    }
+  ],
+  "START-UP PROCEDURE": [
+    {
+      "type": "item",
+      "requirement": "Parking brake",
+      "action": "Set",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "APU  ACC  (Auxiliary  Power  Unit  Accumulator) caution is visible",
+      "action": "Verify",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "APU switch",
+      "action": "ON (FWD)",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "APU  ACC  caution",
+      "action": "visible",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once APU green light illuminates, the APU is now running. The APU will provides air pressure for the F404 engines’ pneumatic ATS (Air Turbine Starter)."
+    },
+    {
+      "type": "item",
+      "requirement": "Right Engine  Crank  switch",
+      "action": "R (RIGHT)",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When Right Engine RPM reaches 25 %",
+      "action": "Right throttle to IDLE detent",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Verify  that  EGT  (Exhaust  Gas  Temperature)  does  not  exceed 750 deg C until engine stabilizes around 60-65 %  RPM."
+    },
+    {
+      "type": "item",
+      "requirement": "Confirm that right generator is running",
+      "action": "R GEN caution is extinguished.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "During  engine  start,  the  GPWS  (Ground  Proximity  Warning System)  and Flight Controls voice alert system will do a BIT (Built-In Test).  Don’t worry, that’s  normal.  You will hear “Roll Left, Roll Left! Flight Controls, Flight Controls!” and a “Deedle deedle” sound."
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER CAUTION",
+      "action": "push button to reset",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Power Left and Right DDIs",
+      "action": "DDI knob to DAY",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "AMPCD",
+      "action": "ON by setting  Brightness knob to the right",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Power Heads-Up Display",
+      "action": "HUD brightness control lever right",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Turn BLK LVL knob",
+      "action": "Right",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set ALT switch",
+      "action": "RDR",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set ATT switch",
+      "action": "AUTO26",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Bleed Air Switch",
+      "action": "360 degrees clockwise from NORMAL to NORMAL",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You should hear the ECS (Environmental Control System) kick in as engine bleed air valves open"
+    },
+    {
+      "type": "item",
+      "requirement": "CANOPY",
+      "action": "CLOSE",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "INS Alignment switch",
+      "action": "as required",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "On ground, set switch to GND (Ground) to start the INS alignment phase. On carrier select CN"
+    },
+    {
+      "type": "note",
+      "text": "If you wish to use a Stored Heading, on HSI, select STD HDG"
+    },
+    {
+      "type": "note",
+      "text": "Stored heading alignment last for approx. 90 seconds. Normal alignment will proceed last for 8 minutes"
+    },
+    {
+      "type": "note",
+      "text": "You  can  monitor  the  INS Ground Alignment progress on the AMPCD where GRND QUAL timer displays the time remaining in seconds."
+    },
+    {
+      "type": "item",
+      "requirement": "OK appears next to GRND QUAL",
+      "action": "INS alignment is complete.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "INS selector",
+      "action": "Set to IFA (In-Flight Alignment) if a GPS is available otherwise NAV",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Verify that there are no cautions for engine 2 (like HYD 2A, HYD 2B, R GEN)"
+    },
+    {
+      "type": "item",
+      "requirement": "Left DDI",
+      "action": "set to FCS (Flight Control System) page",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "TAC (Tactical) MENU option",
+      "action": "press to select the SUPT (Support) MENU",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "FCS option",
+      "action": "Press",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER CAUTION",
+      "action": "push button two times to re-stack the cautions and advisories together. The FCS page will then be more visible",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "The “X”s on the FCS page indicate a FCS system error. In our case, the errors are probably due to wing droop caused by the aircraft being parked for too long."
+    },
+    {
+      "type": "item",
+      "requirement": "FCS RESET button",
+      "action": "press to reset FCS faults. “X”s should disappear",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right DDI, the BIT FAILURES",
+      "action": "Press STOP to stop the indications from blinking",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Make sure cautions illuminate properly",
+      "action": "release the switch",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Left Engine Crank switch",
+      "action": "L (LEFT)",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Engine RPM will rise to approx. 25 % RPM."
+    },
+    {
+      "type": "item",
+      "requirement": "When Left Engine RPM reaches 25 %",
+      "action": "Throttle to IDLE detent",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Verify that EGT (Exhaust Gas Temperature) does not exceed 750 deg C until engine stabilizes around 60-65 % RPM."
+    },
+    {
+      "type": "item",
+      "requirement": "Confirm that left generator is running",
+      "action": "L GEN caution is extinguished",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Verify that there are no cautions for engine 1 (like HYD 1A, HYD 1B, L GEN)"
+    },
+    {
+      "type": "note",
+      "text": "Following the second engine start, the APU (Auxiliary Power Unit) will shutdown automatically approximately 1 minute after both engines are stabilized to IDLE"
+    },
+    {
+      "type": "item",
+      "requirement": "OBOGS (On-Board Oxygen Generating System) switch",
+      "action": "ON",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "HOOK BYPASS switch",
+      "action": "FIELD or CARRIER as required.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "FLAPS lever",
+      "action": "HALF",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "ANTI-SKID switch",
+      "action": "ON for ground airfield, OFF for carriers",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "RADAR switch",
+      "action": "OPERATE.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "While on the ground, radar operation is automatically inhibited"
+    },
+    {
+      "type": "item",
+      "requirement": "On  BIT FAILURES page",
+      "action": "select FCS-MC to enter the Flight Control System – Mission Computer Built-In Test page",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "MC1 and MC2 status should be GO. FCSA and FCSB status should be PBIT GO. This means the FCS BIT Test needs to be performed."
+    },
+    {
+      "type": "item",
+      "requirement": "FCS BIT switch to ON (UP) position",
+      "action": "Press and hold “Y” key binding",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "While FCS BIT switch is held",
+      "action": "select “FCS” to start the FCS BIT test.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "FCSA and FCSB status will be “IN TEST” for the duration of the test. Flight controls will move for the duration of the test."
+    },
+    {
+      "type": "note",
+      "text": "Test will be complete when the FCSA and FCSB status will be GO"
+    },
+    {
+      "type": "item",
+      "requirement": "Adjust AMPCD Gain, Contrast and Symbology brightness",
+      "action": "as required",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "For night operations, set AMPCD mode to NGT"
+    },
+    {
+      "type": "item",
+      "requirement": "On the AMPCD",
+      "action": "press the OSB next to the TIMEUFC",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On the UFC",
+      "action": "and press ZTOD to display ZULU time on the HUD once the aircraft wheels are OFF the ground.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set the aircraft trim for take off",
+      "action": "Press the T/O TRIM button",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set PITOT HEAT switch",
+      "action": "AUTO",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Left DDI",
+      "action": "Select MENU to enter the TAC page",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Left DDI",
+      "action": "Select HUD5",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right DDI",
+      "action": "Press MENU twice to enter the FCS page",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right DDI",
+      "action": "Press FCS",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "WINGS FOLD lever",
+      "action": "SPREAD position.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "WINGS FOLD lever",
+      "action": "Pushed in position",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "The WING UNLK caution should disappear on the HUD Repeater once wings are spread and locked. Keep your wings folded if on an aircraft carrier"
+    },
+    {
+      "type": "item",
+      "requirement": "Radar Altimeter warning index",
+      "action": "200 ft for shore or 80 ft forcarrier",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Standby Attitude Indicator",
+      "action": "Uncage",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "BINGO FUEL",
+      "action": "Set on the IFEI panel. (Usually 8000 lbs)",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Power the Radar Warning Receiver (RWR)",
+      "action": "Press the ALR-67 PWR button",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "ECM selector",
+      "action": "STBY",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "DISPENSER switch",
+      "action": "ON (middle)",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Power Up IFF",
+      "action": "press the IFF Button, then holding the ON button on the UFC for a few seconds.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "When « XP »is displayed, the IFF has been powered up correctly. Verify that Mode 4A is selected (« : » means selected). If4A is not selected, press OSB (Option Select Button) next to « 4A »."
+    },
+    {
+      "type": "item",
+      "requirement": "Power Up Link-16 Datalink system",
+      "action": "pressing the D/L Button a first time to display the Link-4 datalink options, then press the D/L Button a second time to display the Link-16 datalink options. Then, hold the ON button on the UFC for a few seconds.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "When « ON »is displayed, the Link-16 Datalink system has been powered up correctly"
+    },
+    {
+      "type": "item",
+      "requirement": "On UFC",
+      "action": "set Link 16 desired Datalink Frequency by entering it on the scratchpad, then pressing « ENT ».",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "127 is used by default, you can keep it"
+    },
+    {
+      "type": "item",
+      "requirement": "Adjust all volume knobs on the Audio Panel",
+      "action": "as required.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Take special care to check that the MIDS A and MIDS B volume knobs are turned up (Multifunctional  Information Distribution System)."
+    },
+    {
+      "type": "item",
+      "requirement": "Verify on MIDS SUPT page that Datalink information is correct",
+      "action": "Network, AIC, F/F, Voice frequencies",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To change between JHMCS helmet or NVGs",
+      "action": "contact ground crew",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS)",
+      "action": "Turn HMD brightness knob to BRT (Bright).",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS Test)",
+      "action": "Go in the SUPT (Support) page.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS Test)",
+      "action": "Press BIT (Built-In-Test).",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS Test)",
+      "action": "Press DISPLAYS (NOT RDY).",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS Test)",
+      "action": "Press HMD  to  start Helmet-Mounted Display Built-In Test.",
+      "location": "start-up_procedure.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "“PBIT GO” indicates that the test is ready to be run"
+    }
+  ],
+  "JHMCS Test]; Wait until the HMD test is finished": [
+    {
+      "type": "note",
+      "text": "The IN TEST indication will first blink on your helmet. While test symbology cycles on your helmet display, the BIT page will indicate “HMD IN TEST”. When test symbology starts showing the same pictures, the test can be considered complete."
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS Test)",
+      "action": "Stop  the  HMD  test  by  pressing “STOP”. The BIT page will then indicate “HMD GO”.",
+      "location": "jhmcs_test];.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS COARSE ALIGNMENT)",
+      "action": "Go in the SUPT (Support) page.",
+      "location": "jhmcs_test];.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS COARSE ALIGNMENT)",
+      "action": "Press HMD (Helmet-Mounted Display).",
+      "location": "jhmcs_test];.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS COARSE ALIGNMENT)",
+      "action": "Press ALIGN to start JHMCS alignment.",
+      "location": "jhmcs_test];.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "“READY” indication will then appear on your helmet cross."
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS COARSE ALIGNMENT)",
+      "action": "Move helmet cross on the alignment reference cross of the Heads-Up Display (HUD).",
+      "location": "jhmcs_test];.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS COARSE ALIGNMENT)",
+      "action": "When helmet cross and HUD cross are roughly aligned, press and hold the Cage/Uncage Button (“C” binding) for more than 2.5 sec while keeping both crosses aligned.",
+      "location": "jhmcs_test];.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "While  the  alignment  process  is  taking  place,  the  “ALIGNING” indication is visible. The  “ALIGN OK”  indication  appears  when  the  alignment  is complete."
+    }
+  ],
+  "JHMCS COARSE ALIGNMENT]; When alignment complete, release the Cage/Uncage button": [
+    {
+      "type": "note",
+      "text": "The  coarse  alignment  may  not  be  perfect  and may require a fine adjustment (FA) the  “FA DX/DY”  indication  means  that  an adjustment  is  needed  for  the  horizontal  and vertical axis."
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS FINE ALIGNMENT)",
+      "action": "",
+      "location": "Use  TDC  (Throttle  Designator  Controller) AFT/FWD/LEFT/RIGHT controls to align the upper small cross with the HUD reference cross.",
+      "locationText": "Use  TDC  (Throttle  Designator  Controller) AFT/FWD/LEFT/RIGHT controls to align the upper small cross with the HUD reference cross"
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS FINE ALIGNMENT)",
+      "action": "Press  the  Cage/Uncage  button to  select  the roll fine adjustment (FA ROLL).",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS FINE ALIGNMENT)",
+      "action": "Use  TDC  (Throttle  Designator Controller) LEFT/RIGHT controls  to  align  the lower small cross with the vertical line of the HUD reference cross.",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(JHMCS FINE ALIGNMENT)",
+      "action": "When  fine  alignment  is satisfactory, press ALIGN to unbox it. This will save the alignment.",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "STROBE switch",
+      "action": "ON",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "POSITION LIGHTS switch",
+      "action": "BRT",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "FORMATION LIGHTS",
+      "action": "BRT",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Turn on lights using the throttle Exterior Lights switch (“L”)",
+      "action": "as required",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "LANDING/TAXI light switch",
+      "action": "ON (UP)",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Parking Brake lever",
+      "action": "disengage (PUSHED = DISENGAGED)",
+      "location": "jhmcs_coarse.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Remove chocks if installed (default on aircraft carrier)"
+    },
+    {
+      "type": "note",
+      "text": "Make sure your canopy is open and communicate to the ground crew"
+    }
+  ],
+  "SHORE TAKEOFF": [
+    {
+      "type": "item",
+      "requirement": "Anti-Skid Switch",
+      "action": "set to ON (UP Position)",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps",
+      "action": "HALF (MIDDLE  position)",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Chocks",
+      "action": "removed",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Launch  Bar",
+      "action": "RETRACTED",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Rearm Refuel",
+      "action": "As required",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "Closed",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Parking Brake",
+      "action": "released",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Contact ATC",
+      "action": "Taxi to runway",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Steer Aircraft using Aircraft is steered using the nosewheel steering (NWS)"
+    },
+    {
+      "type": "note",
+      "text": "The default NWS LOW GAIN Mode allows +/-16 deg and is displayed as NWS on the HUD."
+    },
+    {
+      "type": "note",
+      "text": "The NWS HIGH GAIN Mode allows +/-75 deg steering, which is useful on aircraft carriers or small spaces."
+    },
+    {
+      "type": "note",
+      "text": "You can activate it by pressing and holding the «Undesignate/Nosewheel Steer Switch» (key binding: « S ») and it will be displayed in your HUD"
+    },
+    {
+      "type": "item",
+      "requirement": "Taxi finished",
+      "action": "Contact ATC for departure",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Once lined up on the runway",
+      "action": "hold brakes and throttle up to 80 % RPM",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To engage after burner",
+      "action": "Release brakes and set throttle fully forward.",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When reaching approx. 150 kts",
+      "action": "hold stick back to set an aircraft pitch of 7 degrees AoA7",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Once you have a positive climb",
+      "action": "raise landing gear up before reaching 240 kts",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps lever",
+      "action": "AUTO",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "ALTITUDE Switch",
+      "action": "BARO once reaching an altitude of 3000 ft to use Barometric Altitude as a reference for your HUD",
+      "location": "shore_takeoff.png",
+      "locationText": ""
+    }
+  ],
+  "CARRIER TAKEOFF": [
+    {
+      "type": "note",
+      "text": "Make sure the INS alignment was done with the INS Selector switch to CV. With CV mode, the alignment will take its positional data directly from the carrier via a SINS (Ship Inertial Navigation System) cable or a datalink radio frequency. Once alignment is finished, remember to verify that the INS Selector switch is set back to IFA (In-Flight Alignment) if a GPS is available (any mission set during 1986 or later should have it) or at NAV if no GPS is available."
+    },
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "Open",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Contact Ground Crew",
+      "action": "Remove chocks if installed",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Rearm Refuel",
+      "action": "As required",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "In a carrier environment, it is highly recommended to taxi with your wings folded to facilitate movement on the deck and minimize any risk of collision with obstacles or other aircraft."
+    },
+    {
+      "type": "item",
+      "requirement": "Anti-Skid Switch",
+      "action": "OFF (Down Position)",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Launch Bar",
+      "action": "RETRACT",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "HOOK BYPASS",
+      "action": "CARRIER",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "CLOSED",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps",
+      "action": "HALF (MIDDLE position)",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Contact ATC",
+      "action": "Taxi to cat",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Steer Aircraft using Aircraft is steered using the nosewheel steering (NWS)"
+    },
+    {
+      "type": "note",
+      "text": "The default NWS LOW GAIN Mode allows +/-16 deg and is displayed as NWS on the HUD."
+    },
+    {
+      "type": "note",
+      "text": "The NWS HIGH GAIN Mode allows +/-75 deg steering, which is useful on aircraft carriers or small spaces."
+    },
+    {
+      "type": "note",
+      "text": "You can activate it by pressing and holding the «Undesignate/Nosewheel Steer Switch» (key binding: « S ») and it will be displayed in your HUD"
+    },
+    {
+      "type": "note",
+      "text": "Verify  the  way  is  clear  to  the  catapult  first."
+    },
+    {
+      "type": "item",
+      "requirement": "Taxi",
+      "action": "approach the catapult from directly behind it. If an aircraft is occupying the catapult, wait behind the JBD (Jet Blast Deflector).",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If the Taxi Director (yellow shirt) is not present on the catapult, you can use the “Ground Crew” menu to request a launch."
+    },
+    {
+      "type": "item",
+      "requirement": "When CAT Clear",
+      "action": "advance on the retracted JBD and follow  the  Taxi  Director’s hand signals to align the aircraft on the catapult track",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(Taxi  Director",
+      "action": "Unfold Wings",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(Taxi  Director",
+      "action": "Launch bar down",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(Taxi  Director",
+      "action": "Wait for catapult hook up procedure",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If you don't have super carrier you can simply use U to attach launch bar"
+    },
+    {
+      "type": "item",
+      "requirement": "(Taxi  Director",
+      "action": "Throttle as required",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(Taxi  Director",
+      "action": "Launch bar up",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Aircraft being launched at gross weights of 43000 lbs and above should trim by 3 deg nose up if advised to expect 10 knots or less excess end speed."
+    },
+    {
+      "type": "note",
+      "text": "44000 lbs and below 16 deg"
+    },
+    {
+      "type": "note",
+      "text": "45000 –48000 lbs 17 deg"
+    },
+    {
+      "type": "note",
+      "text": "49000 lbs and above 19 deg"
+    },
+    {
+      "type": "item",
+      "requirement": "Speed Brake",
+      "action": "retracted (IN)",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Roll, Pitch, Rudder",
+      "action": "Wipeout",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(Shooter)",
+      "action": "« Engine Run Up » hand signal",
+      "location": "Engage afterburners",
+      "locationText": "Engage afterburners"
+    },
+    {
+      "type": "note",
+      "text": "Check the engine instruments and monitor the caution and warning lights."
+    },
+    {
+      "type": "item",
+      "requirement": "Salute the Shooter",
+      "action": "Press  “LCTRL+LSHIFT+S”",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Once you have a positive climb",
+      "action": "take back control of the flight stick",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Before reaching 240 kts",
+      "action": "Raise landing gear",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps lever",
+      "action": "AUTO",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "After take off",
+      "action": "perform Clearing Turn, which is 20 degree left and heading BRC (Base Recovery Course).",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "500 ft and 300 kts",
+      "action": "Maintain",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Cleared to climb more than 500 ft",
+      "action": "After away from carrier about 7 nm",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "ALTITUDE Switch",
+      "action": "BARO once reaching an altitude of 3000 ft",
+      "location": "carrier_takeoff.png",
+      "locationText": ""
+    }
+  ],
+  "Shore Landing VFR": [
+    {
+      "type": "item",
+      "requirement": "Anti-Skid Switch",
+      "action": "ON (UP Position)",
+      "location": "shore_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Landing Lights",
+      "action": "ON2",
+      "location": "shore_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "ALTITUDE Switch",
+      "action": "RDR to use your radar altimeter as a reference for your HUD",
+      "location": "shore_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "At approx. 350 kts at about 1000 ft altitude",
+      "action": "Enter upwind leg",
+      "location": "shore_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "When turning left from the upwind leg to the crosswind leg try to pull a number of Gs that is 1 % of your airspeed (i.e. 3.5 G turn if going at 350  kts) while maintaining your velocity vector on  the horizon  line."
+    },
+    {
+      "type": "note",
+      "text": "This should line up your downwind leg to about 1.2 nm  away from the runway."
+    },
+    {
+      "type": "item",
+      "requirement": "Slow down",
+      "action": "250 kts and fly at 600 ft",
+      "location": "shore_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Landing Gear Lever",
+      "action": "DOWN",
+      "location": "shore_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps Lever",
+      "action": "FULL (DOWN)",
+      "location": "shore_landing.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "As you enter downwind leg slow down to ON SPEED AOA by setting the velocity vector in the middle of the  “E” bracket on the HUD using elevator trim and throttle input."
+    },
+    {
+      "type": "note",
+      "text": "You should reach an airspeed of about 140-150 kts for an AoA (Angle of  Attack) to 8.1  deg  approx."
+    },
+    {
+      "type": "note",
+      "text": "Make sure  to maintain your 600 ft  altitude  by  keeping the velocity vector on the horizon line. The AoA Indexer will also give you a good reference if you have the correct Angle of Attack or not."
+    },
+    {
+      "type": "note",
+      "text": "When turning to base leg start a 30-degree bank  while maintaining the Velocity Vector and the E bracket just below the horizon line.  NOTE: NOTE: Maintaining the 600 ft altitude will require you to adjust the throttle constantly. When lined up with the runway; set velocity vector on the runway and keep it there."
+    },
+    {
+      "type": "note",
+      "text": "Keep your velocity vector pointed on the runway with your flight stick, and control your glide slope and angle of attack with your throttle. That’s called flying “pitch for speed, power for altitude”."
+    },
+    {
+      "type": "note",
+      "text": "Don’t check your speed, if you have a good AoA and velocity vector, you’ll be on speed. Once AoA Indexer shows that you are ON SPEED (orange donut) and that your velocity vector is on the runway touchdown on  the runway."
+    },
+    {
+      "type": "item",
+      "requirement": "Once nose gear is firmly on the ground",
+      "action": "use toe brakes to decelerate until coming to a full stop.",
+      "location": "shore_landing.png",
+      "locationText": ""
+    }
+  ],
+  "CARRIER LANDINGCASE I RECOVERY": [
+    {
+      "type": "note",
+      "text": "CASE I occurs when flights are anticipated to not encounter instrument conditions during daytime departure/recovery, and the ceiling and visibility around the carrier are no lower than 3000 ft and 5 nm"
+    },
+    {
+      "type": "note",
+      "text": "CASE II occurs when flights may encounter instrument conditions during day time departure/recovery, and the ceiling and visibility in the carrier control zone are no lower than 1000 ft and 5 nm."
+    },
+    {
+      "type": "note",
+      "text": "CASE III: occurs when flights are expected to encounter instrument conditions during a departure/recovery because the ceiling or visibility  around the carrier is lower than 1000 ft and 5 nm, or for night departures/recoveries."
+    },
+    {
+      "type": "item",
+      "requirement": "Contact Carrier",
+      "action": "turn on the lights",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Anti-Skid Switch",
+      "action": "OFF (Down Position)",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Hook Lever",
+      "action": "DOWN",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Hook Bypass Switch",
+      "action": "CARRIER",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Landing Lights",
+      "action": "ON",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "ALTITUDE Switch",
+      "action": "RDR to use your radar altimeter as a reference for your HUD",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Radar altimeter index",
+      "action": "Set to 370 ft or 320",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You use 370 ft to remind you that you need to make the ball call or 320 ft to make sure you have the proper altitude when 3/4 nm from the carrier."
+    },
+    {
+      "type": "item",
+      "requirement": "Enter upwind leg",
+      "action": "approx. 350 kts and 800 ft altitude",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "When turning left from the upwind leg to the crosswind leg, try to do  pull a number of Gs that is 1 % of your airspeed (i.e. 3.5 G turn if going at 350 kts) while maintaining your velocity vector on the horizon line. This should line up your downwind leg to about 1.2 nm  away from the runway."
+    },
+    {
+      "type": "note",
+      "text": "Slow down to 250 kts at fly at 600 ft"
+    },
+    {
+      "type": "item",
+      "requirement": "Landing Gear Lever",
+      "action": "DOWN",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps Lever",
+      "action": "FULL (DOWN)",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "As you enter downwind leg, slow down to ON SPEED AOA by setting the velocity vector in the middle of the  “E” bracket on the HUD using elevator trim (super important) and throttle input. I cannot stress it enough: make sure you are properly trimmed. You should reach an airspeed of about 140-150 kts for an AoA (Angle of Attack) to 8.1 deg approx. If you fail to trim to 8 degrees, your AoA will be off and you will be fighting the fly-by-wire system all the way to landing. Make sure to maintain your 600 ft altitude by keeping the velocity vector on the horizon line. The AoA Indexer will also give you a good reference if you have the correct Angle of Attack or not"
+    },
+    {
+      "type": "note",
+      "text": "When turning to base leg, start a 30-degree bank  while maintaining the Velocity Vector and the E bracket just below the horizon line. Maintaining the 600 ft altitude will require you to adjust the throttle constantly."
+    },
+    {
+      "type": "note",
+      "text": "Forget about your airspeed: just focus on maintaining altitude and bank angle"
+    },
+    {
+      "type": "note",
+      "text": "When lined up with the ship, you will be entering the “groove” (short final)."
+    },
+    {
+      "type": "note",
+      "text": "Once wings are level, you would normally “call the ball”. Example: “403, Hornet Ball, 3.0”. (Side number of your Hornet, Aircraft Type, “Ball”, Fuel State/Remaining in thousands of pounds). The LSO (Landing Signal Officer) would then respond with “Roger Ball” and then give you corrections to land properly."
+    },
+    {
+      "type": "note",
+      "text": "When entering the groove (final), if you set up your turn correctly the velocity vector should be lined up with the crotch of the ship. This is called “Spotting the Deck”, and you should NOT use this as a reference to land. Use the meatball, E bracket and the AoA Indexer instead as a reference, and control your glide slope and angle of attack with your throttle. That’s called flying “pitch for speed, power for altitude”."
+    },
+    {
+      "type": "note",
+      "text": "Don’t check your speed, if you have a good AoA, you’ll be on speed."
+    },
+    {
+      "type": "note",
+      "text": "Once AoA Indexer shows that you are ON SPEED (orange donut) and that your velocity vector is on the runway, just let yourself touchdown on  the carrier."
+    },
+    {
+      "type": "note",
+      "text": "DO NOT FLARE. Ever. It will feel like a controlled crash into the deck; that’s normal. Don’t use brakes either."
+    },
+    {
+      "type": "note",
+      "text": "The ball is the IFLOLS (Improved Fresnel Lens Optical Landing System). The color of the lights you see will depend on what your angle with the lights and will tell you your glide slope, or in other words  “if you need to add or reduce power”. The lights that will matter the most are the vertical center lights."
+    },
+    {
+      "type": "note",
+      "text": "If you see the bottom red lights (“Atomic Sunrise”), you’re about to hit the back of the ship. Throttle up and go around!"
+    },
+    {
+      "type": "note",
+      "text": "If you see a centered orange light, you’re on the ball and should catch a wire."
+    },
+    {
+      "type": "note",
+      "text": "If the ball is high, this means you should reduce power very slightly."
+    },
+    {
+      "type": "note",
+      "text": "If the ball is low, you need to add power"
+    },
+    {
+      "type": "note",
+      "text": "Avoid making large power corrections and stay lined up as much as possible."
+    },
+    {
+      "type": "note",
+      "text": "Overall, keep your eyes glued to your AoA Indexer and the “ball”. It will tell you what to do."
+    },
+    {
+      "type": "note",
+      "text": "You should aim for the third arrestor wire. First and second wires indicate a short landing, while the fourth wire indicates a long landing."
+    },
+    {
+      "type": "item",
+      "requirement": "Once you touch the deck",
+      "action": "throttle up to MIL power (just before afterburner detent).",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "This will make sure that you have enough power to go around if your hook misses an arrestor wire (this is what we call a “bolter”) or you catch a wire and it snaps."
+    },
+    {
+      "type": "item",
+      "requirement": "Once the aircraft has come to a full stop",
+      "action": "throttle down",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Arrestor hook",
+      "action": "Raised",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps",
+      "action": "UP",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Wings",
+      "action": "Folded",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Taxi",
+      "action": "to the nearest parking area.",
+      "location": "carrier_landingcase.png",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "The WING FOLD lever needs to be pulled first (scroll mousewheel), then rotated left to FOLD (left click)."
+    }
+  ]
+}

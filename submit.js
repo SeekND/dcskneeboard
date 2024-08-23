@@ -78,7 +78,7 @@ function generateChecklistJSON() {
                         locationText = locationImage.split('.')[0]; // Extract filename without extension
                     } else { // If the third column is missing
                         const categoryWords = currentCategory.split(' ').slice(0, 2); // Get the first two words of the category
-                        locationImage = categoryWords.join('_').toLowerCase() + '.png'; // Construct the image filename
+                        locationImage = ""; // categoryWords.join('_').toLowerCase() + '.png'; // Construct the image filename
                     }
 
                     checklistData[currentCategory].push({

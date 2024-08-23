@@ -4,28 +4,28 @@
       "type": "item",
       "requirement": "Set Ejection Seat Lever",
       "action": "DOWN & ARMED",
-      "location": "pre_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Parking Brake Lever",
       "action": "ENGAGED",
-      "location": "pre_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "MASTER ARM switch",
       "action": "SAFE",
-      "location": "pre_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Battery Switch",
       "action": "ON (Right Click)",
-      "location": "pre_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -50,28 +50,28 @@
       "type": "item",
       "requirement": "Parking brake",
       "action": "Set",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "APU  ACC  (Auxiliary  Power  Unit  Accumulator) caution is visible",
       "action": "Verify",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "APU switch",
       "action": "ON (FWD)",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "APU  ACC  caution",
       "action": "visible",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -82,14 +82,14 @@
       "type": "item",
       "requirement": "Right Engine  Crank  switch",
       "action": "R (RIGHT)",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "When Right Engine RPM reaches 25 %",
       "action": "Right throttle to IDLE detent",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -100,7 +100,7 @@
       "type": "item",
       "requirement": "Confirm that right generator is running",
       "action": "R GEN caution is extinguished.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -111,56 +111,56 @@
       "type": "item",
       "requirement": "MASTER CAUTION",
       "action": "push button to reset",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Power Left and Right DDIs",
       "action": "DDI knob to DAY",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "AMPCD",
       "action": "ON by setting  Brightness knob to the right",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Power Heads-Up Display",
       "action": "HUD brightness control lever right",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Turn BLK LVL knob",
       "action": "Right",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set ALT switch",
       "action": "RDR",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set ATT switch",
       "action": "AUTO26",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Bleed Air Switch",
       "action": "360 degrees clockwise from NORMAL to NORMAL",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -169,16 +169,23 @@
     },
     {
       "type": "item",
+      "requirement": "To change between JHMCS helmet or NVGs",
+      "action": "contact ground crew",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
       "requirement": "CANOPY",
       "action": "CLOSE",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "INS Alignment switch",
       "action": "as required",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -201,14 +208,14 @@
       "type": "item",
       "requirement": "OK appears next to GRND QUAL",
       "action": "INS alignment is complete.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "INS selector",
       "action": "Set to IFA (In-Flight Alignment) if a GPS is available otherwise NAV",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -219,28 +226,28 @@
       "type": "item",
       "requirement": "Left DDI",
       "action": "set to FCS (Flight Control System) page",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "TAC (Tactical) MENU option",
       "action": "press to select the SUPT (Support) MENU",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "FCS option",
       "action": "Press",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "MASTER CAUTION",
       "action": "push button two times to re-stack the cautions and advisories together. The FCS page will then be more visible",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -251,28 +258,28 @@
       "type": "item",
       "requirement": "FCS RESET button",
       "action": "press to reset FCS faults. “X”s should disappear",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Right DDI, the BIT FAILURES",
       "action": "Press STOP to stop the indications from blinking",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Make sure cautions illuminate properly",
       "action": "release the switch",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Left Engine Crank switch",
       "action": "L (LEFT)",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -283,7 +290,7 @@
       "type": "item",
       "requirement": "When Left Engine RPM reaches 25 %",
       "action": "Throttle to IDLE detent",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -294,7 +301,7 @@
       "type": "item",
       "requirement": "Confirm that left generator is running",
       "action": "L GEN caution is extinguished",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -309,35 +316,35 @@
       "type": "item",
       "requirement": "OBOGS (On-Board Oxygen Generating System) switch",
       "action": "ON",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "HOOK BYPASS switch",
       "action": "FIELD or CARRIER as required.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "FLAPS lever",
       "action": "HALF",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "ANTI-SKID switch",
       "action": "ON for ground airfield, OFF for carriers",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "RADAR switch",
       "action": "OPERATE.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -348,7 +355,7 @@
       "type": "item",
       "requirement": "On  BIT FAILURES page",
       "action": "select FCS-MC to enter the Flight Control System – Mission Computer Built-In Test page",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -359,14 +366,14 @@
       "type": "item",
       "requirement": "FCS BIT switch to ON (UP) position",
       "action": "Press and hold “Y” key binding",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "While FCS BIT switch is held",
       "action": "select “FCS” to start the FCS BIT test.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -381,7 +388,7 @@
       "type": "item",
       "requirement": "Adjust AMPCD Gain, Contrast and Symbology brightness",
       "action": "as required",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -392,70 +399,70 @@
       "type": "item",
       "requirement": "On the AMPCD",
       "action": "press the OSB next to the TIMEUFC",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "On the UFC",
       "action": "and press ZTOD to display ZULU time on the HUD once the aircraft wheels are OFF the ground.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set the aircraft trim for take off",
       "action": "Press the T/O TRIM button",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set PITOT HEAT switch",
       "action": "AUTO",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Left DDI",
       "action": "Select MENU to enter the TAC page",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Left DDI",
       "action": "Select HUD5",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Right DDI",
       "action": "Press MENU twice to enter the FCS page",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Right DDI",
       "action": "Press FCS",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "WINGS FOLD lever",
       "action": "SPREAD position.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "WINGS FOLD lever",
       "action": "Pushed in position",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -466,49 +473,49 @@
       "type": "item",
       "requirement": "Radar Altimeter warning index",
       "action": "200 ft for shore or 80 ft forcarrier",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Standby Attitude Indicator",
       "action": "Uncage",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "BINGO FUEL",
       "action": "Set on the IFEI panel. (Usually 8000 lbs)",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Power the Radar Warning Receiver (RWR)",
       "action": "Press the ALR-67 PWR button",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "ECM selector",
       "action": "STBY",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "DISPENSER switch",
       "action": "ON (middle)",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Power Up IFF",
       "action": "press the IFF Button, then holding the ON button on the UFC for a few seconds.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -519,7 +526,7 @@
       "type": "item",
       "requirement": "Power Up Link-16 Datalink system",
       "action": "pressing the D/L Button a first time to display the Link-4 datalink options, then press the D/L Button a second time to display the Link-16 datalink options. Then, hold the ON button on the UFC for a few seconds.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -530,7 +537,7 @@
       "type": "item",
       "requirement": "On UFC",
       "action": "set Link 16 desired Datalink Frequency by entering it on the scratchpad, then pressing « ENT ».",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -541,7 +548,7 @@
       "type": "item",
       "requirement": "Adjust all volume knobs on the Audio Panel",
       "action": "as required.",
-      "location": "start-up_procedure.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -552,185 +559,49 @@
       "type": "item",
       "requirement": "Verify on MIDS SUPT page that Datalink information is correct",
       "action": "Network, AIC, F/F, Voice frequencies",
-      "location": "start-up_procedure.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "To change between JHMCS helmet or NVGs",
-      "action": "contact ground crew",
-      "location": "start-up_procedure.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS)",
-      "action": "Turn HMD brightness knob to BRT (Bright).",
-      "location": "start-up_procedure.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS Test)",
-      "action": "Go in the SUPT (Support) page.",
-      "location": "start-up_procedure.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS Test)",
-      "action": "Press BIT (Built-In-Test).",
-      "location": "start-up_procedure.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS Test)",
-      "action": "Press DISPLAYS (NOT RDY).",
-      "location": "start-up_procedure.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS Test)",
-      "action": "Press HMD  to  start Helmet-Mounted Display Built-In Test.",
-      "location": "start-up_procedure.png",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "“PBIT GO” indicates that the test is ready to be run"
-    }
-  ],
-  "JHMCS Test]; Wait until the HMD test is finished": [
-    {
-      "type": "note",
-      "text": "The IN TEST indication will first blink on your helmet. While test symbology cycles on your helmet display, the BIT page will indicate “HMD IN TEST”. When test symbology starts showing the same pictures, the test can be considered complete."
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS Test)",
-      "action": "Stop  the  HMD  test  by  pressing “STOP”. The BIT page will then indicate “HMD GO”.",
-      "location": "jhmcs_test];.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS COARSE ALIGNMENT)",
-      "action": "Go in the SUPT (Support) page.",
-      "location": "jhmcs_test];.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS COARSE ALIGNMENT)",
-      "action": "Press HMD (Helmet-Mounted Display).",
-      "location": "jhmcs_test];.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS COARSE ALIGNMENT)",
-      "action": "Press ALIGN to start JHMCS alignment.",
-      "location": "jhmcs_test];.png",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "“READY” indication will then appear on your helmet cross."
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS COARSE ALIGNMENT)",
-      "action": "Move helmet cross on the alignment reference cross of the Heads-Up Display (HUD).",
-      "location": "jhmcs_test];.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS COARSE ALIGNMENT)",
-      "action": "When helmet cross and HUD cross are roughly aligned, press and hold the Cage/Uncage Button (“C” binding) for more than 2.5 sec while keeping both crosses aligned.",
-      "location": "jhmcs_test];.png",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "While  the  alignment  process  is  taking  place,  the  “ALIGNING” indication is visible. The  “ALIGN OK”  indication  appears  when  the  alignment  is complete."
-    }
-  ],
-  "JHMCS COARSE ALIGNMENT]; When alignment complete, release the Cage/Uncage button": [
-    {
-      "type": "note",
-      "text": "The  coarse  alignment  may  not  be  perfect  and may require a fine adjustment (FA) the  “FA DX/DY”  indication  means  that  an adjustment  is  needed  for  the  horizontal  and vertical axis."
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS FINE ALIGNMENT)",
-      "action": "",
-      "location": "Use  TDC  (Throttle  Designator  Controller) AFT/FWD/LEFT/RIGHT controls to align the upper small cross with the HUD reference cross.",
-      "locationText": "Use  TDC  (Throttle  Designator  Controller) AFT/FWD/LEFT/RIGHT controls to align the upper small cross with the HUD reference cross"
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS FINE ALIGNMENT)",
-      "action": "Press  the  Cage/Uncage  button to  select  the roll fine adjustment (FA ROLL).",
-      "location": "jhmcs_coarse.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS FINE ALIGNMENT)",
-      "action": "Use  TDC  (Throttle  Designator Controller) LEFT/RIGHT controls  to  align  the lower small cross with the vertical line of the HUD reference cross.",
-      "location": "jhmcs_coarse.png",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "(JHMCS FINE ALIGNMENT)",
-      "action": "When  fine  alignment  is satisfactory, press ALIGN to unbox it. This will save the alignment.",
-      "location": "jhmcs_coarse.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "STROBE switch",
       "action": "ON",
-      "location": "jhmcs_coarse.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "POSITION LIGHTS switch",
       "action": "BRT",
-      "location": "jhmcs_coarse.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "FORMATION LIGHTS",
       "action": "BRT",
-      "location": "jhmcs_coarse.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Turn on lights using the throttle Exterior Lights switch (“L”)",
       "action": "as required",
-      "location": "jhmcs_coarse.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "LANDING/TAXI light switch",
       "action": "ON (UP)",
-      "location": "jhmcs_coarse.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Parking Brake lever",
       "action": "disengage (PUSHED = DISENGAGED)",
-      "location": "jhmcs_coarse.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -742,61 +613,202 @@
       "text": "Make sure your canopy is open and communicate to the ground crew"
     }
   ],
+  "JHMCS": [
+    {
+      "type": "item",
+      "requirement": "Turn HMD on",
+      "action": "HMD brightness knob to BRT (Bright).",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS Test",
+      "action": "Go in the SUPT (Support) page.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS Test",
+      "action": "Press BIT (Built-In-Test).",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS Test",
+      "action": "Press DISPLAYS (NOT RDY).",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS Test",
+      "action": "Press HMD  to  start Helmet-Mounted Display Built-In Test.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "“PBIT GO” indicates that the test is ready to be run"
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS Test",
+      "action": "Wait until the HMD test is finished.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "The IN TEST indication will first blink on your helmet. While test symbology cycles on your helmet display, the BIT page will indicate “HMD IN TEST”. When test symbology starts showing the same pictures, the test can be considered complete."
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS Test",
+      "action": "Stop  the  HMD  test  by  pressing “STOP”. The BIT page will then indicate “HMD GO”.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS COARSE ALIGNMENT",
+      "action": "Go in the SUPT (Support) page.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS COARSE ALIGNMENT",
+      "action": "Press HMD (Helmet-Mounted Display).",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS COARSE ALIGNMENT",
+      "action": "Press ALIGN to start JHMCS alignment.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "“READY” indication will then appear on your helmet cross."
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS COARSE ALIGNMENT",
+      "action": "Move helmet cross on the alignment reference cross of the Heads-Up Display (HUD).",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS COARSE ALIGNMENT",
+      "action": "When helmet cross and HUD cross are roughly aligned, press and hold the Cage/Uncage Button (“C” binding) for more than 2.5 sec while keeping both crosses aligned.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "While  the  alignment  process  is  taking  place,  the  “ALIGNING” indication is visible. The  “ALIGN OK”  indication  appears  when  the  alignment  is complete."
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS COARSE ALIGNMENT",
+      "action": "When alignment complete, release the Cage/Uncage button.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "The  coarse  alignment  may  not  be  perfect  and may require a fine adjustment (FA) the  “FA DX/DY”  indication  means  that  an adjustment  is  needed  for  the  horizontal  and vertical axis."
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS FINE ALIGNMENT",
+      "action": "Use  TDC  (Throttle  Designator  Controller) AFT/FWD/LEFT/RIGHT controls to align the upper small cross with the HUD reference cross.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS FINE ALIGNMENT",
+      "action": "Press  the  Cage/Uncage  button to  select  the roll fine adjustment (FA ROLL).",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS FINE ALIGNMENT",
+      "action": "Use  TDC  (Throttle  Designator Controller) LEFT/RIGHT controls  to  align  the lower small cross with the vertical line of the HUD reference cross.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "JHMCS FINE ALIGNMENT",
+      "action": "When  fine  alignment  is satisfactory, press ALIGN to unbox it. This will save the alignment.",
+      "location": "",
+      "locationText": ""
+    }
+  ],
   "SHORE TAKEOFF": [
     {
       "type": "item",
       "requirement": "Anti-Skid Switch",
       "action": "set to ON (UP Position)",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Flaps",
       "action": "HALF (MIDDLE  position)",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Chocks",
       "action": "removed",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Launch  Bar",
       "action": "RETRACTED",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Rearm Refuel",
       "action": "As required",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Canopy",
       "action": "Closed",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Parking Brake",
       "action": "released",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Contact ATC",
       "action": "Taxi to runway",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -819,49 +831,49 @@
       "type": "item",
       "requirement": "Taxi finished",
       "action": "Contact ATC for departure",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Once lined up on the runway",
       "action": "hold brakes and throttle up to 80 % RPM",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To engage after burner",
       "action": "Release brakes and set throttle fully forward.",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "When reaching approx. 150 kts",
       "action": "hold stick back to set an aircraft pitch of 7 degrees AoA7",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Once you have a positive climb",
       "action": "raise landing gear up before reaching 240 kts",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Flaps lever",
       "action": "AUTO",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "ALTITUDE Switch",
       "action": "BARO once reaching an altitude of 3000 ft to use Barometric Altitude as a reference for your HUD",
-      "location": "shore_takeoff.png",
+      "location": "",
       "locationText": ""
     }
   ],
@@ -874,21 +886,21 @@
       "type": "item",
       "requirement": "Canopy",
       "action": "Open",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Contact Ground Crew",
       "action": "Remove chocks if installed",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Rearm Refuel",
       "action": "As required",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -899,42 +911,42 @@
       "type": "item",
       "requirement": "Anti-Skid Switch",
       "action": "OFF (Down Position)",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Launch Bar",
       "action": "RETRACT",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "HOOK BYPASS",
       "action": "CARRIER",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Canopy",
       "action": "CLOSED",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Flaps",
       "action": "HALF (MIDDLE position)",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Contact ATC",
       "action": "Taxi to cat",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -961,7 +973,7 @@
       "type": "item",
       "requirement": "Taxi",
       "action": "approach the catapult from directly behind it. If an aircraft is occupying the catapult, wait behind the JBD (Jet Blast Deflector).",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -972,28 +984,28 @@
       "type": "item",
       "requirement": "When CAT Clear",
       "action": "advance on the retracted JBD and follow  the  Taxi  Director’s hand signals to align the aircraft on the catapult track",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "(Taxi  Director",
+      "requirement": "Taxi  Director",
       "action": "Unfold Wings",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "(Taxi  Director",
+      "requirement": "Taxi  Director",
       "action": "Launch bar down",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "(Taxi  Director",
+      "requirement": "Taxi  Director",
       "action": "Wait for catapult hook up procedure",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -1002,16 +1014,16 @@
     },
     {
       "type": "item",
-      "requirement": "(Taxi  Director",
+      "requirement": "Taxi  Director",
       "action": "Throttle as required",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "(Taxi  Director",
+      "requirement": "Taxi  Director",
       "action": "Launch bar up",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -1034,20 +1046,20 @@
       "type": "item",
       "requirement": "Speed Brake",
       "action": "retracted (IN)",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Roll, Pitch, Rudder",
       "action": "Wipeout",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "(Shooter)",
-      "action": "« Engine Run Up » hand signal",
+      "requirement": "Shooter",
+      "action": "Engine Run Up hand signal",
       "location": "Engage afterburners",
       "locationText": "Engage afterburners"
     },
@@ -1059,56 +1071,56 @@
       "type": "item",
       "requirement": "Salute the Shooter",
       "action": "Press  “LCTRL+LSHIFT+S”",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Once you have a positive climb",
       "action": "take back control of the flight stick",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Before reaching 240 kts",
       "action": "Raise landing gear",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Flaps lever",
       "action": "AUTO",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "After take off",
       "action": "perform Clearing Turn, which is 20 degree left and heading BRC (Base Recovery Course).",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "500 ft and 300 kts",
       "action": "Maintain",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Cleared to climb more than 500 ft",
       "action": "After away from carrier about 7 nm",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "ALTITUDE Switch",
       "action": "BARO once reaching an altitude of 3000 ft",
-      "location": "carrier_takeoff.png",
+      "location": "",
       "locationText": ""
     }
   ],
@@ -1117,28 +1129,28 @@
       "type": "item",
       "requirement": "Anti-Skid Switch",
       "action": "ON (UP Position)",
-      "location": "shore_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Landing Lights",
       "action": "ON2",
-      "location": "shore_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "ALTITUDE Switch",
       "action": "RDR to use your radar altimeter as a reference for your HUD",
-      "location": "shore_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "At approx. 350 kts at about 1000 ft altitude",
       "action": "Enter upwind leg",
-      "location": "shore_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -1153,21 +1165,21 @@
       "type": "item",
       "requirement": "Slow down",
       "action": "250 kts and fly at 600 ft",
-      "location": "shore_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Landing Gear Lever",
       "action": "DOWN",
-      "location": "shore_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Flaps Lever",
       "action": "FULL (DOWN)",
-      "location": "shore_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -1198,7 +1210,7 @@
       "type": "item",
       "requirement": "Once nose gear is firmly on the ground",
       "action": "use toe brakes to decelerate until coming to a full stop.",
-      "location": "shore_landing.png",
+      "location": "",
       "locationText": ""
     }
   ],
@@ -1219,49 +1231,49 @@
       "type": "item",
       "requirement": "Contact Carrier",
       "action": "turn on the lights",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Anti-Skid Switch",
       "action": "OFF (Down Position)",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Hook Lever",
       "action": "DOWN",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Hook Bypass Switch",
       "action": "CARRIER",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Landing Lights",
       "action": "ON",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "ALTITUDE Switch",
       "action": "RDR to use your radar altimeter as a reference for your HUD",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Radar altimeter index",
       "action": "Set to 370 ft or 320",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -1272,7 +1284,7 @@
       "type": "item",
       "requirement": "Enter upwind leg",
       "action": "approx. 350 kts and 800 ft altitude",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -1287,14 +1299,14 @@
       "type": "item",
       "requirement": "Landing Gear Lever",
       "action": "DOWN",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Flaps Lever",
       "action": "FULL (DOWN)",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -1369,7 +1381,7 @@
       "type": "item",
       "requirement": "Once you touch the deck",
       "action": "throttle up to MIL power (just before afterburner detent).",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -1380,35 +1392,35 @@
       "type": "item",
       "requirement": "Once the aircraft has come to a full stop",
       "action": "throttle down",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Arrestor hook",
       "action": "Raised",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Flaps",
       "action": "UP",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Wings",
       "action": "Folded",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Taxi",
       "action": "to the nearest parking area.",
-      "location": "carrier_landingcase.png",
+      "location": "",
       "locationText": ""
     },
     {

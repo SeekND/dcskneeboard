@@ -1,5 +1,5 @@
 {
-  "Navigation": [
+  "TACAN/ILS Navigation": [
     {
       "type": "item",
       "requirement": "TACAN Navigation",
@@ -24,7 +24,9 @@
     {
       "type": "note",
       "text": "TACAN heading appear on the outside of your compass when you change mode to compass TCN mode"
-    },
+    }
+  ],
+  "Steerpoint Navigation": [
     {
       "type": "item",
       "requirement": "Create Steerpoints",
@@ -49,7 +51,9 @@
     {
       "type": "note",
       "text": "Use ICP up/down to change steerpoint. Heading will appear in your HUD and on the outside of your compass when compass mode is in NAV mode"
-    },
+    }
+  ],
+  "Overfly Markpoints": [
     {
       "type": "item",
       "requirement": "Create Overfly markpoints",
@@ -74,7 +78,9 @@
     {
       "type": "note",
       "text": "You can make markpoints your selected steerpoint with ICP M_SEL (0)"
-    },
+    }
+  ],
+  "HUD Markpoints": [
     {
       "type": "item",
       "requirement": "Create HUD markpoints",
@@ -92,7 +98,9 @@
     {
       "type": "note",
       "text": "You can make markpoints your selected steerpoint with ICP M_SEL (0)"
-    },
+    }
+  ],
+  "HMD Markpoints": [
     {
       "type": "item",
       "requirement": "Create HMD markpoints",

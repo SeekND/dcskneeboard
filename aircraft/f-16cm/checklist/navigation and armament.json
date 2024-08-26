@@ -17,7 +17,14 @@
     {
       "type": "item",
       "requirement": "TACAN Navigation",
-      "action": "ICP enter TACAN code, dobber down for X/Y",
+      "action": "ICP enter TACAN code",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "ILS Navigation",
+      "action": "Dobber down for ILS frequency and runway heading",
       "location": "",
       "locationText": ""
     },
@@ -80,6 +87,54 @@
       "text": "You can make markpoints your selected steerpoint with ICP M_SEL (0)"
     }
   ],
+  "TGP Markpoints": [
+    {
+      "type": "item",
+      "requirement": "Create Overfly markpoints",
+      "action": "Press ICP A-G",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Select an MFD",
+      "action": "set to TGP page",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Make MFD SOI",
+      "action": "short DMS down as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Select a Target",
+      "action": "TMS up",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Create TGP markpoints",
+      "action": "ICP RET followed by MARK (7)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Create TGP markpoints",
+      "action": "short TMS up twice to create markpoint",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You can make markpoints your selected steerpoint with ICP M_SEL (0)"
+    }
+  ],
   "HUD Markpoints": [
     {
       "type": "item",
@@ -111,7 +166,7 @@
     {
       "type": "item",
       "requirement": "Create HMD markpoints",
-      "action": "slew with rdr cursor long TMS up to cue HMD selection option",
+      "action": "long TMS up to cue HMD selection option",
       "location": "",
       "locationText": ""
     },
@@ -144,7 +199,7 @@
     },
     {
       "type": "note",
-      "text": "right mfd will change to sms page"
+      "text": "right mfd will change to sms page, if not select SMS page"
     },
     {
       "type": "note",
@@ -281,7 +336,7 @@
     {
       "type": "item",
       "requirement": "On right mfd",
-      "action": "use OSB 6 on to change missile type to AG65",
+      "action": "in SMS page use OSB 6 on to change missile type to AG65",
       "location": "",
       "locationText": ""
     },
@@ -353,10 +408,10 @@
       "locationText": ""
     }
   ],
-  "Armament A-G TGC": [
+  "Armament A-G MAV": [
     {
       "type": "note",
-      "text": "Recommended LITENING targeting pod on 5R pylon"
+      "text": "Recommended LITENING targeting pod on 5R pylon for cross queueing"
     },
     {
       "type": "item",
@@ -388,35 +443,39 @@
     },
     {
       "type": "item",
-      "requirement": "On right mfd",
-      "action": "use OSB 6 on to change missile type to AC88",
+      "requirement": "On left mfd",
+      "action": "move to SMS page and use OSB 6 on to change missile type to AC88",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "On right mfd",
+      "requirement": "On left mfd",
       "action": "use OSB 7 power on",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "On right mfd",
+      "requirement": "On left mfd",
       "action": "change to WPN page (warm up is required)",
       "location": "",
       "locationText": ""
     },
     {
+      "type": "note",
+      "text": "You can use the WPN page only if you DON'T have a LITENING targeting pod. If so, follow the slew instructions below while in WPN page"
+    },
+    {
       "type": "item",
-      "requirement": "On right mfd",
+      "requirement": "On left mfd",
       "action": "select blank spot (eg:OBS 12) and change to TGP page (warm up is required)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "note",
-      "text": "You should be able to change between WPN and TGP by using DMS right short"
+      "text": "You should be able to change between WPN and TGP by using DMS left short"
     },
     {
       "type": "item",
@@ -428,39 +487,39 @@
     {
       "type": "item",
       "requirement": "Maintain situation awareness",
-      "action": "left mfd to FCR or HSD page as required",
+      "action": "right mfd to FCR or HSD page as required",
       "location": "",
       "locationText": ""
     },
     {
       "type": "note",
-      "text": "If TGP in right MFD says STBY on OSB 1, press OSB 1 then A-G on OSB 6 to turn camera on"
+      "text": "If TGP in left MFD says STBY on OSB 1, press OSB 1 then A-G on OSB 6 to turn camera on"
     },
     {
       "type": "note",
-      "text": "You can cross cue targets from TGP to WPN by marking them. slew with rdr cursor and select with with short TMS fwd. on WPN page the new target should be selected"
+      "text": "You can cross cue targets on left MFD from TGP to WPN by marking them. slew with rdr cursor and select with with short TMS fwd. on WPN page the new target should be selected"
     },
     {
       "type": "note",
-      "text": "Missile targeting range is displayed only in WPN bottom right page shown as a carrot with distance in nautical miles"
+      "text": "On left MFD Missile targeting range is displayed only in WPN bottom right page shown as a carrot with distance in nautical miles"
     },
     {
       "type": "item",
-      "requirement": "On right MFD",
-      "action": "change to WPN with DMS right short",
+      "requirement": "On left MFD",
+      "action": "change to WPN with DMS left short",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "Make RIGHT mdf SOI",
+      "requirement": "Make LEFT mdf SOI",
       "action": "short DMS down as required",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "On right MFD lock target",
+      "requirement": "On left MFD lock target",
       "action": "short TMS forward",
       "location": "",
       "locationText": ""
@@ -489,6 +548,190 @@
       "text": "TGP can also acquire Mark points via ICP with SOI HUD: ICP RTN followed by Mark (7), slew with rdr cursor short TMS up twice to create markpoint, RTN, TMS down"
     }
   ],
+  "Armament A-G LASER": [
+    {
+      "type": "note",
+      "text": "Requires LITENING targeting pod on 5R pylon"
+    },
+    {
+      "type": "item",
+      "requirement": "Master arm",
+      "action": "on",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "A-G button in icp",
+      "action": "press",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Laser",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right HDTP switch",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "move to SMS page and use OSB 6 on to change missile type to GBU",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "select blank spot (eg:OBS 12) and change to TGP page (warm up is required)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On ICP",
+      "action": "Press RTN and select desired Steerpoint",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Maintain situation awareness",
+      "action": "right mfd to FCR or HSD page as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If TGP in left MFD says STBY on OSB 1, press OSB 1 then A-G on OSB 6 to turn camera on"
+    },
+    {
+      "type": "item",
+      "requirement": "Make LEFT mdf SOI",
+      "action": "short DMS down as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD lock target",
+      "action": "short TMS forward",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Once within range",
+      "action": "hold release weapons - RIFLE",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "TGP will maintain lock on targeted point, you can swap to it using short DMS down"
+    },
+    {
+      "type": "note",
+      "text": "TGP can acquire targets via (OBS 2) MAN (slew with rdr cursor), AUTO (Steerpoint selected)"
+    },
+    {
+      "type": "note",
+      "text": "TGP can also acquire Mark points via ICP with SOI TGP: ICP RTN followed by Mark (7), short TMS up to create markpoint, RTN, TMS down"
+    },
+    {
+      "type": "note",
+      "text": "TGP can also acquire Mark points via ICP with SOI HUD: ICP RTN followed by Mark (7), slew with rdr cursor short TMS up twice to create markpoint, RTN, TMS down"
+    }
+  ],
+  "Armament A-G GPS": [
+    {
+      "type": "note",
+      "text": "For easiest deployment use LITENING targeting pod on 5R pylon"
+    },
+    {
+      "type": "item",
+      "requirement": "Master arm",
+      "action": "on",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "A-G button in icp",
+      "action": "press",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "move to SMS page and use OSB 6 on to change missile type to GB",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mfd",
+      "action": "use OSB 7 power on",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mfd",
+      "action": "ensure PRE is selected in PB 7",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "PRE stands for PREPPLANED (using steerpoints), VIS stands for VISUAL where you will need to slow RDR cursor on target and designate with TMS up"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mfd",
+      "action": "use OSB 5 CNTL and set profile as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If using TGP change right MFD to TGP, slew and lock a target/point and the coordinates will be automatically transferred to the GPS missile."
+    },
+    {
+      "type": "note",
+      "text": "If not using TGP, select Steerpoint or Markpoint (with ICP M-SEL (0) )"
+    },
+    {
+      "type": "item",
+      "requirement": "Maintain situation awareness by moving right mfd to HSD",
+      "action": "DMS right short",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Maintain vertical release line",
+      "action": "center in hud",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When HUD carrot inside pen brackets",
+      "action": "release weapon",
+      "location": "",
+      "locationText": ""
+    }
+  ],
   "Armament A-G CCIP": [
     {
       "type": "item",
@@ -514,7 +757,7 @@
     {
       "type": "item",
       "requirement": "When near target",
-      "action": "Approach from side, dive left/right towards target, roll level at -30 degrees maintaining pip on target",
+      "action": "Approach at altitude from side, dive left/right towards target, roll level at -30 degrees maintaining pip on target",
       "location": "",
       "locationText": ""
     },

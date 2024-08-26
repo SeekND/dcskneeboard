@@ -1,4 +1,96 @@
 {
+  "Armament A-A": [
+    {
+      "type": "item",
+      "requirement": "Ensure Datalink is on",
+      "action": "in IFC press D/L followed by ON button, then press D/L again followed by ON button",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Datalink is used to obtain information from your assets on where everything is"
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD set IFF",
+      "action": "change to AZZEL page (pb1) and set AUTO (pb1)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "change to RDR ATTK page",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "change to TWS (pb20)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "TWS (track while scan), offers a better tracking mode for several targets then RWS (range while search) which is used for a single target"
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "change missile settings as necessary",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "For engagements at 40nm or more, set 40 nm with pb7, then set 4 bar scanning (4b in pb1), HI prf (PB16) and 40 degree scan (pb14) and move weapon to AMRAAM"
+    },
+    {
+      "type": "note",
+      "text": "For engagements at 20nm or less, set 10 nm with pb7, then set 6 bar scanning (4b in pb1), MED prf (PB16) and 20 degree scan (pb14) and move weapon to AIM9"
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "save settings with SET (pb8)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "adjust antenna elevation as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "change to MED/HIGH PRF as required by target range (pb16)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "High PRF is used for targets at high range but as soon as the target is close range change to MED PRF. Optionally you can leave it as auto for a less reliable tracking."
+    },
+    {
+      "type": "item",
+      "requirement": "Select target",
+      "action": "press nosewheel steering to quick select or use Throttle Designator Controller followed by Throttle Designator Controller depress to select target",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When in range",
+      "action": "press trigger",
+      "location": "",
+      "locationText": ""
+    }
+  ],
   "Armament A-G MAV": [
     {
       "type": "note",
@@ -62,6 +154,17 @@
       "text": "You can also designate the target with lower HSI mfd by selecting waypoint and pressing WPOSG (pb 14)"
     },
     {
+      "type": "note",
+      "text": "You can also designate the target using TGP or FLIR. Remember to SOI the MAV screen and use Sensor Control Switch to lock the target that the TPG/FLIR selected"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mfd",
+      "action": "Confirm MAV is ready to be launched (pb 6 should be uncrossed)",
+      "location": "",
+      "locationText": ""
+    },
+    {
       "type": "item",
       "requirement": "Once within range",
       "action": "hold release weapons - RIFLE",
@@ -88,14 +191,14 @@
       "type": "item",
       "requirement": "Laser",
       "action": "Arm",
-      "location": "",
+      "location": "right panel, middle",
       "locationText": "right panel, middle"
     },
     {
       "type": "item",
       "requirement": "FLIR",
       "action": "ON",
-      "location": "",
+      "location": "right panel, middle",
       "locationText": "right panel, middle"
     },
     {
@@ -328,7 +431,7 @@
     },
     {
       "type": "note",
-      "text": "You are now ready to fire. Climb towards target, put HARM vertical targetting line center in your hud. Range is around 37nm."
+      "text": "You are now ready to fire. Climb towards target, put HARM vertical line center in your hud. Range is around 37nm."
     },
     {
       "type": "item",

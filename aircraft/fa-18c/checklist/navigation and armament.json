@@ -21,14 +21,14 @@
     {
       "type": "item",
       "requirement": "In right MFD",
-      "action": "Select waypoint (new or existing)",
+      "action": "Select waypoint (new or existing - PB12/PB13)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "In right MFD",
-      "action": "Press Sequfc",
+      "action": "Press SEQUFC (PB1)",
       "location": "",
       "locationText": ""
     },
@@ -59,6 +59,92 @@
       "action": "as required",
       "location": "",
       "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "In UFC",
+      "action": "press ELEV",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Fill information",
+      "action": "as required",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "HMD Navigation": [
+    {
+      "type": "note",
+      "text": "Requires FLIR/LITENING"
+    },
+    {
+      "type": "item",
+      "requirement": "SOI HUD",
+      "action": "Sensor Control Switch up",
+      "location": "Stick",
+      "locationText": "Stick"
+    },
+    {
+      "type": "item",
+      "requirement": "Nose Steering button",
+      "action": "Press 3 times",
+      "location": "Stick",
+      "locationText": "Stick"
+    },
+    {
+      "type": "item",
+      "requirement": "Look at the target",
+      "action": "Throttle Designator Controller depress",
+      "location": "Throttle",
+      "locationText": "Throttle"
+    }
+  ],
+  "Markpoint Navigation": [
+    {
+      "type": "note",
+      "text": "Requires FLIR or LITENING"
+    },
+    {
+      "type": "item",
+      "requirement": "Set MFD with FLIR/LITENING as SOI",
+      "action": "Sensor control switch left/right",
+      "location": "Stick",
+      "locationText": "Stick"
+    },
+    {
+      "type": "item",
+      "requirement": "On MFD with FLIR/LITENING",
+      "action": "slew target with Throttle Designator Controller",
+      "location": "Throttle",
+      "locationText": "Throttle"
+    },
+    {
+      "type": "item",
+      "requirement": "On MFD with FLIR/LITENING",
+      "action": "lock target with same Sensor control switch as you used to SOI MFD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On bottom MFD",
+      "action": "Set to SA page (default)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On bottom MFD",
+      "action": "Press MK1 (pb8)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "To use the new MK point, decrease waypoint (pb13) until MK1 is shown"
     }
   ],
   "Armament A-A": [
@@ -77,8 +163,8 @@
       "type": "item",
       "requirement": "On bottom MFD",
       "action": "for a better SA, press Sensor control switch down twice",
-      "location": "",
-      "locationText": ""
+      "location": "stick",
+      "locationText": "stick"
     },
     {
       "type": "item",
@@ -149,15 +235,15 @@
       "type": "item",
       "requirement": "Select target",
       "action": "press nosewheel steering to quick select or use Throttle Designator Controller followed by Throttle Designator Controller depress to select target",
-      "location": "",
-      "locationText": ""
+      "location": "throttle",
+      "locationText": "throttle"
     },
     {
       "type": "item",
       "requirement": "When in range",
       "action": "press trigger",
-      "location": "",
-      "locationText": ""
+      "location": "stick",
+      "locationText": "stick"
     }
   ],
   "Armament A-G MAV": [
@@ -169,15 +255,15 @@
       "type": "item",
       "requirement": "Master arm",
       "action": "on",
-      "location": "",
-      "locationText": ""
+      "location": "center panel, far left",
+      "locationText": "center panel, far left"
     },
     {
       "type": "item",
       "requirement": "A-G button",
       "action": "press to highlight",
-      "location": "",
-      "locationText": ""
+      "location": "center panel, far left",
+      "locationText": "center panel, far left"
     },
     {
       "type": "item",
@@ -208,26 +294,26 @@
       "type": "item",
       "requirement": "SOI right MFD",
       "action": "Sensor control switch right",
-      "location": "",
-      "locationText": ""
+      "location": "stick",
+      "locationText": "stick"
     },
     {
       "type": "item",
       "requirement": "Uncage missile",
       "action": "Press Cage (c)",
-      "location": "",
-      "locationText": ""
+      "location": "throttle",
+      "locationText": "throttle"
     },
     {
       "type": "item",
       "requirement": "On right MFD slew the target",
-      "action": "Press and hold Throttle Designator Controller Depress and move Throttle Designator Controller axis or direction POV, target will auto lock",
+      "action": "Press and hold Throttle Designator Controller Depress and move Throttle Designator Controller, target will auto lock",
       "location": "",
       "locationText": ""
     },
     {
       "type": "note",
-      "text": "You can also designate the target with lower HSI MFD by selecting waypoint and pressing WPOSG (pb 14)"
+      "text": "You can also designate the target with lower HSI MFD by selecting waypoint and pressing WPDSG (pb 14)"
     },
     {
       "type": "note",
@@ -235,7 +321,7 @@
     },
     {
       "type": "note",
-      "text": "You can also designate the target using your HMD. Set HUD as SOI with Sensor Control Switch up. Look at the target and Throttle Designator Controller depress"
+      "text": "You can also designate the target using your HMD by setting HUD as SOI with Sensor Control Switch up. Look at the target and Throttle Designator Controller depress"
     },
     {
       "type": "item",
@@ -248,8 +334,8 @@
       "type": "item",
       "requirement": "Once within range",
       "action": "hold release weapons - RIFLE",
-      "location": "",
-      "locationText": ""
+      "location": "stick",
+      "locationText": "stick"
     }
   ],
   "Armament A-G LASER": [
@@ -257,22 +343,15 @@
       "type": "item",
       "requirement": "Master arm",
       "action": "on",
-      "location": "",
-      "locationText": ""
+      "location": "center panel, far left",
+      "locationText": "center panel, far left"
     },
     {
       "type": "item",
       "requirement": "A-G button",
       "action": "press to highlight",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Laser",
-      "action": "Arm",
-      "location": "right panel, middle",
-      "locationText": "right panel, middle"
+      "location": "center panel, far left",
+      "locationText": "center panel, far left"
     },
     {
       "type": "item",
@@ -305,16 +384,13 @@
     {
       "type": "item",
       "requirement": "On left MFD",
-      "action": "set mode to auto (pb5)",
+      "action": "set bomb options as required",
       "location": "",
       "locationText": ""
     },
     {
-      "type": "item",
-      "requirement": "On left MFD",
-      "action": "set efuz to instant (pb3)",
-      "location": "",
-      "locationText": ""
+      "type": "note",
+      "text": "Some bombs require specific options such as mode to auto (pb5) and EFUZ to instant (pb3) for GBU12"
     },
     {
       "type": "item",
@@ -346,21 +422,47 @@
     },
     {
       "type": "item",
-      "requirement": "On right MFD slew the target",
-      "action": "Press and hold Throttle Designator Controller Depress and move Throttle Designator Controller axis or direction POV, target will auto lock",
+      "requirement": "On right MFD",
+      "action": "confirm laser codes match the laser codes for your bombs",
       "location": "",
       "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "Press and hold Throttle Designator Controller Depress and move Throttle Designator Controller on top of target.",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Target will auto lock on center"
+    },
+    {
+      "type": "item",
+      "requirement": "Laser",
+      "action": "Arm",
+      "location": "right panel, middle",
+      "locationText": "right panel, middle"
     },
     {
       "type": "note",
       "text": "You can also designate the target with lower HSI MFD by selecting waypoint and pressing WPOSG (pb 14)"
     },
     {
+      "type": "note",
+      "text": "You can also designate the target using your HMD by setting HUD as SOI with Sensor Control Switch up. Look at the target and Throttle Designator Controller depress"
+    },
+    {
+      "type": "note",
+      "text": "IMPORTANT! For AGM LASER A-G missiles, you will need to first press weapons release once to activate the laser. With other GBU bombs the laser will turn on automatically after release."
+    },
+    {
       "type": "item",
       "requirement": "Once within range",
       "action": "hold release weapons - RIFLE",
-      "location": "",
-      "locationText": ""
+      "location": "stick",
+      "locationText": "stick"
     },
     {
       "type": "note",
@@ -372,22 +474,22 @@
       "type": "item",
       "requirement": "Master arm",
       "action": "on",
-      "location": "",
-      "locationText": ""
+      "location": "center panel, far left",
+      "locationText": "center panel, far left"
     },
     {
       "type": "item",
       "requirement": "A-G button",
       "action": "press to highlight",
-      "location": "",
-      "locationText": ""
+      "location": "center panel, far left",
+      "locationText": "center panel, far left"
     },
     {
       "type": "item",
       "requirement": "Self protection jammer",
       "action": "set to XMT",
-      "location": "",
-      "locationText": ""
+      "location": "center panel, middle lowest",
+      "locationText": "center panel, middle lowest"
     },
     {
       "type": "item",
@@ -405,24 +507,24 @@
     },
     {
       "type": "item",
-      "requirement": "Bottom MFD select waypoint",
-      "action": "as required",
+      "requirement": "Bottom MFD",
+      "action": "select waypoint as required",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "Bottom MFD select wpdgs",
-      "action": "press pb14",
+      "requirement": "Bottom MFD",
+      "action": "select WPDGS (pb14)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "Set hdg",
-      "action": "press hdg switch once",
-      "location": "",
-      "locationText": ""
+      "requirement": "Set Heading",
+      "action": "press HDG switch once",
+      "location": "center panel, middle low",
+      "locationText": "center panel, middle low"
     },
     {
       "type": "item",
@@ -487,45 +589,45 @@
     {
       "type": "item",
       "requirement": "On UFC",
-      "action": "enter 104 followed by ENT",
+      "action": "enter the RWR threat CODE followed by ENT",
       "location": "",
       "locationText": ""
     },
     {
       "type": "note",
-      "text": "now set the automatic counter measure disposal"
+      "text": "Now set the automatic counter measure disposal"
     },
     {
       "type": "item",
-      "requirement": "right MFD",
+      "requirement": "On right MFD",
       "action": "change to EW page to prepare counter measure",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "right MFD",
+      "requirement": "On right MFD",
       "action": "set ale-47 counter measures (pb12)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "right MFD",
+      "requirement": "On right MFD",
       "action": "set ale-47 mode to auto by pressing pb19",
       "location": "",
       "locationText": ""
     },
     {
       "type": "note",
-      "text": "You are now ready to fire. Climb towards target, put HARM vertical line center in your hud. Range is around 37nm."
+      "text": "You are now ready to fire. Climb towards target, put HARM vertical line center in your hud. HARM range is around 37nm."
     },
     {
       "type": "item",
       "requirement": "When in target range",
       "action": "press and hold weapons release",
-      "location": "",
-      "locationText": ""
+      "location": "stick",
+      "locationText": "stick"
     }
   ]
 }

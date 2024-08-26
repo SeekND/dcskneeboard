@@ -84,21 +84,21 @@
       "type": "item",
       "requirement": "SOI HUD",
       "action": "Sensor Control Switch up",
-      "location": "Stick",
+      "location": "stick.jpg",
       "locationText": "Stick"
     },
     {
       "type": "item",
       "requirement": "Nose Steering button",
       "action": "Press 3 times",
-      "location": "Stick",
+      "location": "stick.jpg",
       "locationText": "Stick"
     },
     {
       "type": "item",
       "requirement": "Look at the target",
       "action": "Throttle Designator Controller depress",
-      "location": "Throttle",
+      "location": "throttle.jpg",
       "locationText": "Throttle"
     }
   ],
@@ -111,14 +111,14 @@
       "type": "item",
       "requirement": "Set MFD with FLIR/LITENING as SOI",
       "action": "Sensor control switch left/right",
-      "location": "Stick",
+      "location": "stick.jpg",
       "locationText": "Stick"
     },
     {
       "type": "item",
       "requirement": "On MFD with FLIR/LITENING",
       "action": "slew target with Throttle Designator Controller",
-      "location": "Throttle",
+      "location": "throttle.jpg",
       "locationText": "Throttle"
     },
     {
@@ -163,7 +163,7 @@
       "type": "item",
       "requirement": "On bottom MFD",
       "action": "for a better SA, press Sensor control switch down twice",
-      "location": "stick",
+      "location": "stick.jpg",
       "locationText": "stick"
     },
     {
@@ -235,14 +235,14 @@
       "type": "item",
       "requirement": "Select target",
       "action": "press nosewheel steering to quick select or use Throttle Designator Controller followed by Throttle Designator Controller depress to select target",
-      "location": "throttle",
+      "location": "throttle.jpg",
       "locationText": "throttle"
     },
     {
       "type": "item",
       "requirement": "When in range",
       "action": "press trigger",
-      "location": "stick",
+      "location": "stick.jpg",
       "locationText": "stick"
     }
   ],
@@ -294,14 +294,14 @@
       "type": "item",
       "requirement": "SOI right MFD",
       "action": "Sensor control switch right",
-      "location": "stick",
+      "location": "stick.jpg",
       "locationText": "stick"
     },
     {
       "type": "item",
       "requirement": "Uncage missile",
       "action": "Press Cage (c)",
-      "location": "throttle",
+      "location": "throttle.jpg",
       "locationText": "throttle"
     },
     {
@@ -334,7 +334,7 @@
       "type": "item",
       "requirement": "Once within range",
       "action": "hold release weapons - RIFLE",
-      "location": "stick",
+      "location": "stick.jpg",
       "locationText": "stick"
     }
   ],
@@ -461,7 +461,7 @@
       "type": "item",
       "requirement": "Once within range",
       "action": "hold release weapons - RIFLE",
-      "location": "stick",
+      "location": "stick.jpg",
       "locationText": "stick"
     },
     {
@@ -626,7 +626,7 @@
       "type": "item",
       "requirement": "When in target range",
       "action": "press and hold weapons release",
-      "location": "stick",
+      "location": "stick.jpg",
       "locationText": "stick"
     }
   ]

@@ -2,7 +2,7 @@
   "Armament A-G MAV": [
     {
       "type": "note",
-      "text": "Required LITENING targeting pod on 5 pylon for LAS MAV"
+      "text": "Recommended LITENING targeting pod on 5 pylon"
     },
     {
       "type": "item",
@@ -52,15 +52,288 @@
     },
     {
       "type": "item",
-      "requirement": "Slew the target",
+      "requirement": "On right mfd slew the target",
       "action": "Press and hold Throttle Designator Controller Depress and move Throttle Designator Controller axis or direction POV, target will auto lock",
       "location": "",
       "locationText": ""
     },
     {
+      "type": "note",
+      "text": "You can also designate the target with lower HSI mfd by selecting waypoint and pressing WPOSG (pb 14)"
+    },
+    {
       "type": "item",
       "requirement": "Once within range",
       "action": "hold release weapons - RIFLE",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "Armament A-G LASER": [
+    {
+      "type": "item",
+      "requirement": "Master arm",
+      "action": "on",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "A-G button",
+      "action": "press to highlight",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Laser",
+      "action": "Arm",
+      "location": "",
+      "locationText": "right panel, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "FLIR",
+      "action": "ON",
+      "location": "",
+      "locationText": "right panel, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "select CODE (pb1)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On UCF",
+      "action": "enter desired 4 digit code and press enter",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "set mode to auto (pb5)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "set efuz to instant (pb3)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mfd",
+      "action": "set to FLIR page",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mfd",
+      "action": "select UFC (pb 14)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On UCF",
+      "action": "select LTDC and enter saem 4 digit code (or other laser code available) followed by enter",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "SOI right MFD",
+      "action": "Sensor control switch right",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mfd slew the target",
+      "action": "Press and hold Throttle Designator Controller Depress and move Throttle Designator Controller axis or direction POV, target will auto lock",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You can also designate the target with lower HSI mfd by selecting waypoint and pressing WPOSG (pb 14)"
+    },
+    {
+      "type": "item",
+      "requirement": "Once within range",
+      "action": "hold release weapons - RIFLE",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "IMPORTANT! You must re-arm the laser after every guided drop"
+    }
+  ],
+  "Armament A-G HARM": [
+    {
+      "type": "item",
+      "requirement": "Master arm",
+      "action": "on",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "A-G button",
+      "action": "press to highlight",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Self protection jammer",
+      "action": "set to XMT",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "lower hud",
+      "action": "set SA page (pb13 from main page)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "lower hud to see the flight path",
+      "action": "set SEQI (pb 15)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "lower hud select waypoint",
+      "action": "as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "lower hud select wpdgs",
+      "action": "press pb14",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "set hed",
+      "action": "press hdg switch once",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "on UCP",
+      "action": "enter heading and press enter",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "on ucp",
+      "action": "press A/P",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "on ucp",
+      "action": "press hsel and balt to maintain course and altitude",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "you will now need to configure the HARM to the RWR threat code"
+    },
+    {
+      "type": "item",
+      "requirement": "on left mfd",
+      "action": "in SMS page select harm (pb6)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "on left mfd",
+      "action": "select pb (pb3)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "on left mfd",
+      "action": "select hrm (pb1)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "on left mfd",
+      "action": "press ufc (pb 14)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "on ufc",
+      "action": "selec tgt",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "on ufc",
+      "action": "enter 104 followed by ent",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "now set the automatic counter measure disposal"
+    },
+    {
+      "type": "item",
+      "requirement": "right mfd",
+      "action": "change to EW page to prepare counter measure",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "right mfd",
+      "action": "set ale-47 counter measures (pb12)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "right mfd",
+      "action": "set ale-47 mode to auto by pressing pb19",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You are now ready to fire. Climb towards target, put HARM vertical targetting line center in your hud. Range is around 37nm."
+    },
+    {
+      "type": "item",
+      "requirement": "When in target range",
+      "action": "press and hold weapons release",
       "location": "",
       "locationText": ""
     }

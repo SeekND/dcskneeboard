@@ -1,4 +1,66 @@
 {
+  "Waypoint Navigation": [
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "change to HSI page",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "In right MFD",
+      "action": "select DATA (pb10)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You are now able to see all your waypoints"
+    },
+    {
+      "type": "item",
+      "requirement": "In right MFD",
+      "action": "Select waypoint (new or existing)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "In right MFD",
+      "action": "Press Sequfc",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "In UFC",
+      "action": "Press INS",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "In right MFD",
+      "action": "press UFC (pb5)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "In UFC",
+      "action": "press POS",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Fill information",
+      "action": "as required",
+      "location": "",
+      "locationText": ""
+    }
+  ],
   "Armament A-A": [
     {
       "type": "item",
@@ -10,6 +72,13 @@
     {
       "type": "note",
       "text": "Datalink is used to obtain information from your assets on where everything is"
+    },
+    {
+      "type": "item",
+      "requirement": "On bottom MFD",
+      "action": "for a better SA, press Sensor control switch down twice",
+      "location": "",
+      "locationText": ""
     },
     {
       "type": "item",
@@ -28,7 +97,7 @@
     {
       "type": "item",
       "requirement": "On right MFD",
-      "action": "change to TWS (pb20)",
+      "action": "change to TWS (pb5)",
       "location": "",
       "locationText": ""
     },
@@ -45,16 +114,16 @@
     },
     {
       "type": "note",
-      "text": "For engagements at 40nm or more, set 40 nm with pb7, then set 4 bar scanning (4b in pb1), HI prf (PB16) and 40 degree scan (pb14) and move weapon to AMRAAM"
+      "text": "For engagements at 40nm or more, set 40 nm with pb7, then set 4 bar scanning (4b in pb1), HI prf (PB6) and 40 degree scan (pb19) and move weapon to AMRAAM"
     },
     {
       "type": "note",
-      "text": "For engagements at 20nm or less, set 10 nm with pb7, then set 6 bar scanning (4b in pb1), MED prf (PB16) and 20 degree scan (pb14) and move weapon to AIM9"
+      "text": "For engagements at 20nm or less, set 10 nm with pb7, then set 6 bar scanning (4b in pb1), MED prf (PB6) and 20 degree scan (pb19) and move weapon to AIM9"
     },
     {
       "type": "item",
       "requirement": "On right MFD",
-      "action": "save settings with SET (pb8)",
+      "action": "save settings with SET (pb13)",
       "location": "",
       "locationText": ""
     },
@@ -68,7 +137,7 @@
     {
       "type": "item",
       "requirement": "On right MFD",
-      "action": "change to MED/HIGH PRF as required by target range (pb16)",
+      "action": "change to MED/HIGH PRF as required by target range (pb2)",
       "location": "",
       "locationText": ""
     },
@@ -112,14 +181,21 @@
     },
     {
       "type": "item",
-      "requirement": "On left mfd",
+      "requirement": "Bottom MFD",
+      "action": "set SEQI (pb 15) for situational awareness",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
       "action": "use top row to select missile type MAV (requires warmup)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "On right mfd",
+      "requirement": "On right MFD",
       "action": "select main page and MAV display (PB 10)",
       "location": "",
       "locationText": ""
@@ -144,22 +220,26 @@
     },
     {
       "type": "item",
-      "requirement": "On right mfd slew the target",
+      "requirement": "On right MFD slew the target",
       "action": "Press and hold Throttle Designator Controller Depress and move Throttle Designator Controller axis or direction POV, target will auto lock",
       "location": "",
       "locationText": ""
     },
     {
       "type": "note",
-      "text": "You can also designate the target with lower HSI mfd by selecting waypoint and pressing WPOSG (pb 14)"
+      "text": "You can also designate the target with lower HSI MFD by selecting waypoint and pressing WPOSG (pb 14)"
     },
     {
       "type": "note",
-      "text": "You can also designate the target using TGP or FLIR. Remember to SOI the MAV screen and use Sensor Control Switch to lock the target that the TPG/FLIR selected"
+      "text": "You can also designate the target using TGP or FLIR. Remember to SOI the MAV screen and use Sensor Control Switch to lock the target (twice for auto) that the TPG/FLIR selected"
+    },
+    {
+      "type": "note",
+      "text": "You can also designate the target using your HMD. Set HUD as SOI with Sensor Control Switch up. Look at the target and Throttle Designator Controller depress"
     },
     {
       "type": "item",
-      "requirement": "On right mfd",
+      "requirement": "On right MFD",
       "action": "Confirm MAV is ready to be launched (pb 6 should be uncrossed)",
       "location": "",
       "locationText": ""
@@ -203,7 +283,14 @@
     },
     {
       "type": "item",
-      "requirement": "On left mfd",
+      "requirement": "Bottom MFD",
+      "action": "set SEQI (pb 15) for situational awareness",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
       "action": "select CODE (pb1)",
       "location": "",
       "locationText": ""
@@ -217,28 +304,28 @@
     },
     {
       "type": "item",
-      "requirement": "On left mfd",
+      "requirement": "On left MFD",
       "action": "set mode to auto (pb5)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "On left mfd",
+      "requirement": "On left MFD",
       "action": "set efuz to instant (pb3)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "On right mfd",
+      "requirement": "On right MFD",
       "action": "set to FLIR page",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "On right mfd",
+      "requirement": "On right MFD",
       "action": "select UFC (pb 14)",
       "location": "",
       "locationText": ""
@@ -246,7 +333,7 @@
     {
       "type": "item",
       "requirement": "On UCF",
-      "action": "select LTDC and enter saem 4 digit code (or other laser code available) followed by enter",
+      "action": "select LTDC and enter same 4 digit code (or other laser code available) followed by enter",
       "location": "",
       "locationText": ""
     },
@@ -259,14 +346,14 @@
     },
     {
       "type": "item",
-      "requirement": "On right mfd slew the target",
+      "requirement": "On right MFD slew the target",
       "action": "Press and hold Throttle Designator Controller Depress and move Throttle Designator Controller axis or direction POV, target will auto lock",
       "location": "",
       "locationText": ""
     },
     {
       "type": "note",
-      "text": "You can also designate the target with lower HSI mfd by selecting waypoint and pressing WPOSG (pb 14)"
+      "text": "You can also designate the target with lower HSI MFD by selecting waypoint and pressing WPOSG (pb 14)"
     },
     {
       "type": "item",
@@ -304,57 +391,57 @@
     },
     {
       "type": "item",
-      "requirement": "lower hud",
+      "requirement": "Bottom MFD",
       "action": "set SA page (pb13 from main page)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "lower hud to see the flight path",
-      "action": "set SEQI (pb 15)",
+      "requirement": "Bottom MFD",
+      "action": "set SEQI (pb 15) for situational awareness",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "lower hud select waypoint",
+      "requirement": "Bottom MFD select waypoint",
       "action": "as required",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "lower hud select wpdgs",
+      "requirement": "Bottom MFD select wpdgs",
       "action": "press pb14",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "set hed",
+      "requirement": "Set hdg",
       "action": "press hdg switch once",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "on UCP",
+      "requirement": "On UFC",
       "action": "enter heading and press enter",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "on ucp",
+      "requirement": "On UFC",
       "action": "press A/P",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "on ucp",
-      "action": "press hsel and balt to maintain course and altitude",
+      "requirement": "On UFC",
+      "action": "press HSEL and BALT to maintain course and altitude",
       "location": "",
       "locationText": ""
     },
@@ -364,43 +451,43 @@
     },
     {
       "type": "item",
-      "requirement": "on left mfd",
+      "requirement": "On left MFD",
       "action": "in SMS page select harm (pb6)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "on left mfd",
+      "requirement": "On left MFD",
       "action": "select pb (pb3)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "on left mfd",
-      "action": "select hrm (pb1)",
+      "requirement": "On left MFD",
+      "action": "select HRM (pb1)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "on left mfd",
-      "action": "press ufc (pb 14)",
+      "requirement": "On left MFD",
+      "action": "press UFC (pb 14)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "on ufc",
-      "action": "selec tgt",
+      "requirement": "On UFC",
+      "action": "select TGT",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "on ufc",
-      "action": "enter 104 followed by ent",
+      "requirement": "On UFC",
+      "action": "enter 104 followed by ENT",
       "location": "",
       "locationText": ""
     },
@@ -410,21 +497,21 @@
     },
     {
       "type": "item",
-      "requirement": "right mfd",
+      "requirement": "right MFD",
       "action": "change to EW page to prepare counter measure",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "right mfd",
+      "requirement": "right MFD",
       "action": "set ale-47 counter measures (pb12)",
       "location": "",
       "locationText": ""
     },
     {
       "type": "item",
-      "requirement": "right mfd",
+      "requirement": "right MFD",
       "action": "set ale-47 mode to auto by pressing pb19",
       "location": "",
       "locationText": ""

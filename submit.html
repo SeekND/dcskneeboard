@@ -9,34 +9,85 @@
     <h1>Data Entry</h1>
 
     <form id="data-entry-form">
-        <div id="data-entry-mode-buttons">
-            <button type="button" onclick="showLargeDataEntry()">Big Data</button>
-            <button type="button" onclick="showItemByItemEntry()">Item by Item</button>
-        </div>
-<br>
-        <div id="large-data-entry" style="display: none;">
-            <textarea id="large-data-textarea" placeholder=""></textarea><br>
-            <button type="submit" id="generate-json-large">Generate JSON (Big Data)</button>
+        <div id="data-entry-category-buttons">
+            <button type="button" onclick="showCategory('checklist')">Checklist</button>
+            <button type="button" onclick="showCategory('airfields')">Airfields</button>
+            <button type="button" onclick="showCategory('custom')">Custom</button>
         </div>
 
-        <div id="item-by-item-entry" style="display: none;">
-            <div id="item-entry-area"></div>
-            <br>
-            <button type="button" onclick="addItem()">Add Category/Item/Note</button><br><br>
-            <button type="submit" id="generate-json-item">Generate JSON (Item by Item)</button>
-        </div>
-<br><br>
-            <div id="output-area">
-                <textarea id="json-output" readonly placeholder="This is the output area. 
-Copy paste this into the name of the aircraft you are creating the checklist for eg:'f-16c.json' 
-For emergency proceedures name it as 'emergency.json'
-
-Follow the data framework below for big data or item by item entry: 
-[Category Name]
-REQUIREMENT; ACTION ; IMAGE (optional)
-NOTE:"></textarea><br>
-                <button type="button" onclick="copyToClipboard()">Copy to Clipboard</button>
+        <div id="checklist-entry" style="display: none;"><br>Checklists
+            <div id="data-entry-mode-buttons">
+                <button type="button" onclick="showLargeDataEntry()">Big Data</button>
+                <button type="button" onclick="showItemByItemEntry()">Item by Item</button>
             </div>
+            <br>
+            <div id="large-data-entry" style="display: none;">
+                <textarea id="large-data-textarea" placeholder=""></textarea><br>
+                <button type="submit" id="generate-json-large">Generate JSON (Big Data)</button>
+            </div>
+
+            <div id="item-by-item-entry" style="display: none;">
+                <div id="item-entry-area"></div>
+                <br>
+                <button type="button" onclick="addItem()">Add Category/Item/Note</button><br><br>
+                <button type="submit" id="generate-json-item">Generate JSON (Item by Item)</button>
+            </div>
+        </div> 
+
+ 
+
+<div id="custom-entry" style="display: none;"><br>Custom
+    <div>
+        <label for="hasCategoryCheckbox">Has Category:</label>
+        <input type="checkbox" id="hasCategoryCheckbox">
+    </div>
+    <div id="itemComposition">
+        </div>
+    <button type="button" onclick="addItemType()">Add Item Type</button>
+    <br><br>
+
+    <div id="data-entry-mode-buttons">
+        <button type="button" onclick="showLargeDataEntryCustom()">Big Data</button>
+        <button type="button" onclick="showItemByItemEntryCustom()">Item by Item</button>
+    </div>
+    <br>
+    <div id="large-data-entry-custom" style="display: none;">
+        <textarea id="large-data-textarea-custom" placeholder=""></textarea><br>
+        <button type="submit" id="generate-json-large-custom">Generate JSON (Big Data)</button>
+    </div>
+
+    <div id="item-by-item-entry-custom" style="display: none;">
+        <div id="item-entry-area-custom"></div>
+        <br>
+        <button type="button" onclick="addItemCustom()">Add Item</button><br><br>
+        <button type="submit" id="generate-json-item-custom">Generate JSON (Item by Item)</button>
+    </div>
+</div>
+
+ <div id="airfields-entry" style="display: none;"> <br>Airfields
+    <div id="data-entry-mode-buttons-airfields">
+        <button type="button" onclick="showLargeDataEntryAirfields()">Big Data</button>
+        <button type="button" onclick="showItemByItemEntryAirfields()">Item by Item</button>
+    </div>
+    <br>
+    <div id="large-data-entry-airfields" style="display: none;">
+        <textarea id="large-data-textarea-airfields" placeholder=""></textarea><br>
+        <button type="submit" id="generate-json-large-airfields">Generate JSON (Big Data)</button>
+    </div>
+
+    <div id="item-by-item-entry-airfields" style="display: none;">
+        <div id="item-entry-area-airfields"></div>
+        <br>
+        <button type="button" onclick="addItemAirfields()">Add Airfield</button><br><br>
+        <button type="submit" id="generate-json-item-airfields">Generate JSON (Item by Item)</button>
+    </div>
+</div>
+
+
+        <div id="output-area" style="display: none;"> 
+            <textarea id="json-output" readonly placeholder="This is the output area."></textarea><br>
+            <button type="button" onclick="copyToClipboard()">Copy to Clipboard</button>
+        </div>
     </form>
 
     <script src="submit.js"></script>

@@ -237,7 +237,7 @@
     {
       "type": "item",
       "rwr": "NS",
-      "image": "",
+      "image": "nasams.jpg",
       "faction": "BLUEFOR",
       "name": "NASAMS",
       "nato": "",
@@ -250,7 +250,7 @@
     {
       "type": "item",
       "rwr": "PT",
-      "image": "",
+      "image": "patriot.jpg",
       "faction": "BLUEFOR",
       "name": "Patriot",
       "nato": "",
@@ -263,7 +263,7 @@
     {
       "type": "item",
       "rwr": "RO",
-      "image": "",
+      "image": "roland.jpg",
       "faction": "BLUEFOR",
       "name": "Roland",
       "nato": "",
@@ -276,7 +276,7 @@
     {
       "type": "item",
       "rwr": "RP/RT",
-      "image": "",
+      "image": "rapier.jpg",
       "faction": "BLUEFOR",
       "name": "Rapier",
       "nato": "",
@@ -317,7 +317,7 @@
     {
       "type": "item",
       "rwr": "7",
-      "image": "hq-7",
+      "image": "hq-7.jpg",
       "faction": "REDFOR",
       "name": "HQ-7",
       "nato": "Red Banner",

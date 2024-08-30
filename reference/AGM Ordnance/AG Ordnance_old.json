@@ -1,0 +1,67 @@
+{
+    "GENERAL": [
+        {
+            "Missile": "AGM-65B",
+            "Weight": "220 kg",
+            "Speed": "Max Mach 0.85",
+            "Guidance": "Electro-Optical TV",
+            "Aspect": "N/A",
+            "Range": "km: 27, effective 8-16",
+            "Warhead": "57 kg Shaped Charge"
+        },
+        {
+            "Missile": "AGM-65D",
+            "Weight": "220 kg",
+            "Speed": "Max Mach 0.85",
+            "Guidance": "Infrared Imaging",
+            "Aspect": "N/A",
+            "Range": "km: 27, effective 8-16",
+            "Warhead": "57 kg Shaped Charge"
+        },
+        {
+            "Missile": "AGM-65E",
+            "Weight": "293 kg",
+            "Speed": "Max Mach 0.85",
+            "Guidance": "Semi-Active Laser",
+            "Aspect": "N/A",
+            "Range": "km: 27, effective 8-16",
+            "Warhead": "136 kg Penetrating Blast Fragmentation"
+        },
+        {
+            "Missile": "AGM-65F",
+            "Weight": "306 kg",
+            "Speed": "Max Mach 0.85",
+            "Guidance": "Infrared Imaging",
+            "Aspect": "N/A",
+            "Range": "km: 25, effective 9",
+            "Warhead": "136 kg Penetrating Blast Fragmentation"
+        },
+        {
+            "Missile": "AGM-65G",
+            "Weight": "304 kg",
+            "Speed": "Max Mach 0.85",
+            "Guidance": "Infrared Imaging",
+            "Aspect": "N/A",
+            "Range": "km: 27, effective 5-12",
+            "Warhead": "136 kg Penetrating Blast Fragmentation"
+        },
+        {
+            "Missile": "AGM-65H",
+            "Weight": "304 kg",
+            "Speed": "Max Mach 0.85",
+            "Guidance": "Electro-Optical TV",
+            "Aspect": "N/A",
+            "Range": "km: 27, effective 5-12",
+            "Warhead": "56 kg Shaped Charge"
+        },
+        {
+            "Missile": "AGM-65K",
+            "Weight": "210 kg",
+            "Speed": "Max Mach 0.85",
+            "Guidance": "Electro-Optical TV",
+            "Aspect": "N/A",
+            "Range": "km: 27, effective 5-10",
+            "Warhead": "57 kg Shaped Charge"
+        }
+    ]
+}

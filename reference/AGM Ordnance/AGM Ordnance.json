@@ -1,0 +1,680 @@
+{
+  "9M114": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "RADIO GUIDED",
+      "name": "SHTURM",
+      "target": "ANTI-ARMOR",
+      "max range": "2.7 nm / 5 km",
+      "year": "1976",
+      "platform": "Mi-24P",
+      "info": "HEAT Charge, Armor penetrator."
+    }
+  ],
+  "9M120": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "RADIO GUIDED",
+      "name": "ATAKA",
+      "target": "ANTI-ARMOR",
+      "max range": "3.2 nm / 6 km",
+      "year": "1980",
+      "platform": "Mi-24P",
+      "info": "HEAT Tandem warhead."
+    },
+    {
+      "type": "item",
+      "version": "F",
+      "style": "RADIO GUIDED",
+      "name": "ATAKA",
+      "target": "SOFT TARGET",
+      "max range": "3.2 nm / 6 km",
+      "year": "1980",
+      "platform": "Mi-24P",
+      "info": "Thermobaric warhead."
+    }
+  ],
+  "9M121": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "LASER GUIDED",
+      "name": "VIKHR",
+      "target": "ANTI-ARMOR",
+      "max range": "6.5 nm / 12 km",
+      "year": "1990",
+      "platform": "Ka-50, Su-25T",
+      "info": "HEAT Charge, Armor penetrator. Proximity fuse can be used against air and groups."
+    }
+  ],
+  "ADM-141": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "DECOY",
+      "name": "TALD",
+      "target": "AIR DEFENCE",
+      "max range": "82 nm / 150 km",
+      "year": "1990",
+      "platform": "F14 A/B, F/A-18C",
+      "info": "Tactical Air Launched Decoy. Range shown at 45,000ft @ M 0.9"
+    }
+  ],
+  "AGM-12": [
+    {
+      "type": "item",
+      "version": "A/B",
+      "style": "SURFACE AIR TO SURFACE",
+      "name": "BULLPUP",
+      "target": "HARD TARGET",
+      "max range": "10 nm / 19 km",
+      "year": "",
+      "platform": "1970",
+      "info": "F-4E"
+    }
+  ],
+  "AGM-45": [
+    {
+      "type": "item",
+      "version": "A",
+      "style": "ANTI-RADIATION",
+      "name": "SHRIKE",
+      "target": "RADAR",
+      "max range": "16 nm / 8.6 km",
+      "year": "1965",
+      "platform": "A-4E, F-4E",
+      "info": "Passive radar homing, fragmentation warhead."
+    }
+  ],
+  "AGM-62": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "GLIDE BOMB",
+      "name": "WALLEYE II ER/DL",
+      "target": "HARD TARGET",
+      "max range": "30 nm / 55.6 km",
+      "year": "1972",
+      "platform": "F/A-18C, F-4E",
+      "info": "TV guided 2000 lb bomb."
+    }
+  ],
+  "AGM-65": [
+    {
+      "type": "item",
+      "version": "A/B",
+      "style": "AIR TO SURFACE",
+      "name": "MAVERICK",
+      "target": "ANTI-ARMOR",
+      "max range": "8 nm / 15 km",
+      "year": "1972",
+      "platform": "F-4E",
+      "info": "Electro-Optical TV. Shaped charge."
+    },
+    {
+      "type": "item",
+      "version": "D",
+      "style": "AIR TO SURFACE",
+      "name": "MAVERICK",
+      "target": "ANTI-ARMOR",
+      "max range": "8 nm / 15 km",
+      "year": "1975",
+      "platform": "A-10A, A-10C, A-10CII, F-4E, F-16",
+      "info": "Infrared Seeker. Shaped charge."
+    },
+    {
+      "type": "item",
+      "version": "E",
+      "style": "AIR TO SURFACE",
+      "name": "MAVERICK",
+      "target": "HARD TARGET, SHIP",
+      "max range": "8 nm / 15 km",
+      "year": "1975",
+      "platform": "AV-8B, F/A-18C",
+      "info": "Semi-active laser. Penetrating blast fragmentation."
+    },
+    {
+      "type": "item",
+      "version": "F",
+      "style": "AIR TO SURFACE",
+      "name": "MAVERICK",
+      "target": "HARD TARGET",
+      "max range": "8 nm / 15 km",
+      "year": "1975",
+      "platform": "AV-8B, F/A-18C",
+      "info": "Infrared Seeker. Penetrating blast fragmentation."
+    },
+    {
+      "type": "item",
+      "version": "G",
+      "style": "AIR TO SURFACE",
+      "name": "MAVERICK",
+      "target": "HARD TARGET",
+      "max range": "15 nm / 27 km",
+      "year": "1975",
+      "platform": "AV-8B, F/A-18C",
+      "info": "Infrared Seeker. Penetrating blast fragmentation."
+    },
+    {
+      "type": "item",
+      "version": "H",
+      "style": "AIR TO SURFACE",
+      "name": "MAVERICK",
+      "target": "ANTI-ARMOR",
+      "max range": "5 nm / 9 km",
+      "year": "1975",
+      "platform": "A-10A, A-10C, A-10CII, F-16",
+      "info": "Electro-Optical TV. Shaped charge."
+    },
+    {
+      "type": "item",
+      "version": "K",
+      "style": "AIR TO SURFACE",
+      "name": "MAVERICK",
+      "target": "HARD TARGET, SHIP",
+      "max range": "5 nm / 9 km",
+      "year": "1986",
+      "platform": "A-10A, A-10C, A-10CII, F-16",
+      "info": "Electro-Optical TV. Shaped charge."
+    },
+    {
+      "type": "item",
+      "version": "L",
+      "style": "AIR TO SURFACE",
+      "name": "MAVERICK",
+      "target": "HARD TARGET, SHIP",
+      "max range": "5 nm / 9 km",
+      "year": "1986",
+      "platform": "A10C-II, AV-8B",
+      "info": "Semi-active laser. Penetrating blast fragmentation."
+    }
+  ],
+  "AGM-84": [
+    {
+      "type": "item",
+      "version": "D",
+      "style": "ANTI-SHIP",
+      "name": "HARPOON",
+      "target": "SHIPS",
+      "max range": "50 - 70 nm / 92 - 130 km",
+      "year": "1977",
+      "platform": "F/A-18C",
+      "info": "Active radar homing."
+    },
+    {
+      "type": "item",
+      "version": "E",
+      "style": "ANTI-SHIP",
+      "name": "HARPOON",
+      "target": "STATIONARY TARGET, SHIP",
+      "max range": "50 - 70 nm / 92 - 130 km",
+      "year": "1990",
+      "platform": "F/A-18C",
+      "info": "SLAM. Standoff Land Attack Missile. Man-In-The-Loop (MITL) control"
+    },
+    {
+      "type": "item",
+      "version": "H",
+      "style": "ANTI-SHIP",
+      "name": "HARPOON",
+      "target": "STATIONARY TARGET, SHIP",
+      "max range": "120 - 155 nm / 222-287 km",
+      "year": "2000",
+      "platform": "F/A-18C",
+      "info": "SLAM-ER. Standoff Land Attack Missile-Expanded Response. Man-In-The-Loop (MITL) control. 222 - 287 km"
+    }
+  ],
+  "AGM-88": [
+    {
+      "type": "item",
+      "version": "C",
+      "style": "ANTI-RADIATION",
+      "name": "HARM",
+      "target": "RADAR",
+      "max range": "80 nm / 150 km",
+      "year": "1983",
+      "platform": "F-16, F/A-18C",
+      "info": "Can detect and home in on multiple radar antennas or transmitters."
+    }
+  ],
+  "AGM-114": [
+    {
+      "type": "item",
+      "version": "K",
+      "style": "LASER/RADAR GUIDED",
+      "name": "HELLFIRE",
+      "target": "ANTI-ARMOR",
+      "max range": "5.1 nm / 9.5 km",
+      "year": "1993",
+      "platform": "AH-64D",
+      "info": "Semi-Active Laser Homing (SALH)."
+    },
+    {
+      "type": "item",
+      "version": "L",
+      "style": "LASER/RADAR GUIDED",
+      "name": "HELLFIRE",
+      "target": "ANTI-ARMOR",
+      "max range": "5.1 nm / 9.5 km",
+      "year": "1995",
+      "platform": "AH-64D",
+      "info": "Radar guided fire and forget"
+    }
+  ],
+  "AGM-122": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "ANTI-RADIATION",
+      "name": "SIDEARM",
+      "target": "RADAR",
+      "max range": "9 nm / 16 km",
+      "year": "1986",
+      "platform": "AV-8B",
+      "info": "Based on the AIM-9C Sidewinder"
+    }
+  ],
+  "AGM-154": [
+    {
+      "type": "item",
+      "version": "A",
+      "style": "GLIDE BOMB",
+      "name": "JSOW",
+      "target": "SOFT TARGET",
+      "max range": "12 - 70 nm",
+      "year": "1998",
+      "platform": "F-16, F/A-18C",
+      "info": "GPS/INS guided. 145 bomb submunitions"
+    },
+    {
+      "type": "item",
+      "version": "C",
+      "style": "GLIDE BOMB",
+      "name": "JSOW",
+      "target": "HARD TARGET",
+      "max range": "22 - 130 km",
+      "year": "1998",
+      "platform": "F/A-18C",
+      "info": "GPS/INS guided"
+    }
+  ],
+  "AGR-20": [
+    {
+      "type": "item",
+      "version": "M151",
+      "style": "LASER HOMING",
+      "name": "APKWS",
+      "target": "SOFT TARGET",
+      "max range": "6 nm / 11 km",
+      "year": "2008",
+      "platform": "A10C-II, AV-8B",
+      "info": "High explosive 10 pounder"
+    }
+  ],
+  "BK-90": [
+    {
+      "type": "item",
+      "version": "MJ1",
+      "style": "GLIDING CLUSTER BOMB",
+      "name": "MJÖLNER",
+      "target": "SOFT TARGET",
+      "max range": "5.5 nm / 10 km",
+      "year": "1990",
+      "platform": "AJS37",
+      "info": "INS-guided bomb has 24 barrels and 72 submunitions. Code 921 for Long Area. Code 922 for Wide Area. Code 923 for Compact Area."
+    },
+    {
+      "type": "item",
+      "version": "MJ2",
+      "style": "GLIDING CLUSTER BOMB",
+      "name": "MJÖLNER",
+      "target": "ANTI-ARMOR",
+      "max range": "5.5 nm / 10 km",
+      "year": "1990",
+      "platform": "AJS37",
+      "info": "INS-guided bomb has 24 barrels and 72 submunitions. Code 921 for Long Area. Code 922 for Wide Area. Code 923 for Compact Area."
+    },
+    {
+      "type": "item",
+      "version": "MJ1+2",
+      "style": "GLIDING CLUSTER BOMB",
+      "name": "MJÖLNER",
+      "target": "SOFT TARGET & ANTI-ARMOR",
+      "max range": "5.5 nm / 10 km",
+      "year": "1990",
+      "platform": "AJS37",
+      "info": "INS-guided bomb has 24 barrels and 72 submunitions. Code 921 for Long Area. Code 922 for Wide Area. Code 923 for Compact Area."
+    }
+  ],
+  "C-701": [
+    {
+      "type": "item",
+      "version": "IR",
+      "style": "AIR TO SURFACE",
+      "name": "",
+      "target": "ANTI-ARMOR",
+      "max range": "8 nm / 15 km",
+      "year": "2004",
+      "platform": "JF-17",
+      "info": "Infrared homing guidance. Passive homing TV guidance. Similar to the AGM-65."
+    },
+    {
+      "type": "item",
+      "version": "T",
+      "style": "AIR TO SURFACE",
+      "name": "",
+      "target": "ANTI-ARMOR",
+      "max range": "8 nm / 15 km",
+      "year": "2004",
+      "platform": "JF-17",
+      "info": "Similar to the AGM-65."
+    }
+  ],
+  "C-802": [
+    {
+      "type": "item",
+      "version": "AK",
+      "style": "ANTI-SHIP",
+      "name": "SACCADE",
+      "target": "SHIP",
+      "max range": "97 nm / 180 km",
+      "year": "1998",
+      "platform": "JF-17",
+      "info": "Active radar homing."
+    },
+    {
+      "type": "item",
+      "version": "AKG",
+      "style": "AIR TO SURFACE",
+      "name": "SACCADE",
+      "target": "HARD TARGET",
+      "max range": "97 nm / 180 km",
+      "year": "1998",
+      "platform": "JF-17",
+      "info": "Infrared seeker. Man-In-The-Loop (MITL) control."
+    }
+  ],
+  "GB-6": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "GLIDE BOMB",
+      "name": "",
+      "target": "SOFT TARGET",
+      "max range": "42 nm / 77.8 km",
+      "year": "2006",
+      "platform": "JF-17",
+      "info": "GPS guided bomblets."
+    },
+    {
+      "type": "item",
+      "version": "HE",
+      "style": "GLIDE BOMB",
+      "name": "",
+      "target": "HARD TARGET",
+      "max range": "42 nm / 77.8 km",
+      "year": "2006",
+      "platform": "JF-17",
+      "info": "GPS guided high explosive warhead."
+    },
+    {
+      "type": "item",
+      "version": "SFW",
+      "style": "GLIDE BOMB",
+      "name": "",
+      "target": "ANTI-ARMOR",
+      "max range": "42 nm / 77.8 km",
+      "year": "2006",
+      "platform": "JF-17",
+      "info": "GPS guided smart bomblets."
+    }
+  ],
+  "HOT3": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "AIR TO SURFACE",
+      "name": "HOT",
+      "target": "ANTI-ARMOR",
+      "max range": "2.2 nm / 4 km",
+      "year": "1977",
+      "platform": "SA342 M",
+      "info": "High subsonic, optical, remote-guided, tube launched"
+    }
+  ],
+  "LD-10": [
+    {
+      "type": "item",
+      "version": "10",
+      "style": "ANTI-RADIATION",
+      "name": "THUNDERBOLT 12",
+      "target": "RADAR",
+      "max range": "32 nm / 59 km",
+      "year": "2012",
+      "platform": "JF-17",
+      "info": "20 kg warhead"
+    }
+  ],
+  "LS-6": [
+    {
+      "type": "item",
+      "version": "100",
+      "style": "GLIDE BOMB",
+      "name": "THUNDER STONE",
+      "target": "SOFT TARGET",
+      "max range": "50 nm / 92.6 km",
+      "year": "2006",
+      "platform": "JF-17",
+      "info": "Both laser and GPS guided. GPS Precision-guided munition"
+    },
+    {
+      "type": "item",
+      "version": "200",
+      "style": "GLIDE BOMB",
+      "name": "THUNDER STONE",
+      "target": "SOFT TARGET",
+      "max range": "50 nm / 92.6 km",
+      "year": "2006",
+      "platform": "JF-17",
+      "info": "GPS Precision-guided munition"
+    },
+    {
+      "type": "item",
+      "version": "500",
+      "style": "GLIDE BOMB",
+      "name": "THUNDER STONE",
+      "target": "HARD TARGET",
+      "max range": "50 nm / 92.6 km",
+      "year": "2006",
+      "platform": "JF-17",
+      "info": "GPS Precision-guided munition"
+    }
+  ],
+  "Kh-25": [
+    {
+      "type": "item",
+      "version": "ML",
+      "style": "AIR TO SURFACE",
+      "name": "KAREN",
+      "target": "ANTI-ARMOR",
+      "max range": "6 nm / 11 km",
+      "year": "1975",
+      "platform": "Ka-50, Su-25",
+      "info": "Semi-active laser guidance"
+    },
+    {
+      "type": "item",
+      "version": "MP",
+      "style": "AIR TO SURFACE",
+      "name": "KAREN",
+      "target": "RADAR",
+      "max range": "10 nm / 18 km",
+      "year": "1977",
+      "platform": "Su-25T",
+      "info": "AS-12 Kegler. Modular anti-radiation variant"
+    },
+    {
+      "type": "item",
+      "version": "MPU",
+      "style": "AIR TO SURFACE",
+      "name": "KAREN",
+      "target": "RADAR",
+      "max range": "16 nm / 30 km",
+      "year": "1979",
+      "platform": "Su-25T",
+      "info": "AS-12 Kegler. Updated version of the MP."
+    }
+  ],
+  "Kh-29": [
+    {
+      "type": "item",
+      "version": "L",
+      "style": "AIR TO SURFACE",
+      "name": "KEDGE",
+      "target": "HARD TARGET, SHIP",
+      "max range": "5 nm / 10 km",
+      "year": "1980",
+      "platform": "Su-25",
+      "info": "Semi-active laser guidance. Similar to the AGM-65."
+    },
+    {
+      "type": "item",
+      "version": "T",
+      "style": "AIR TO SURFACE",
+      "name": "KEDGE",
+      "target": "HARD TARGET, SHIP",
+      "max range": "8 nm / 15 km",
+      "year": "1980",
+      "platform": "Su-25T",
+      "info": "Passive homing TV guidance. Similar to the AGM-65."
+    }
+  ],
+  "Kh-58": [
+    {
+      "type": "item",
+      "version": "U",
+      "style": "ANTI-RADIATION",
+      "name": "KILTER",
+      "target": "RADAR",
+      "max range": "130 nm / 250 km",
+      "year": "1982",
+      "platform": "Su-25T",
+      "info": "Improved version with longer range and lock-on-after-launch"
+    }
+  ],
+  "Kh-66": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "BEAM RIDING",
+      "name": "KERRY",
+      "target": "HARD TARGET",
+      "max range": "5.5 nm / 10 km",
+      "year": "1968",
+      "platform": "MiG-21",
+      "info": "Heavy warhead and beam riding version of the K-8."
+    }
+  ],
+  "RB-04": [
+    {
+      "type": "item",
+      "version": "E",
+      "style": "ANTI-SHIP",
+      "name": "ROBOT 04",
+      "target": "SHIPS",
+      "max range": "17 nm / 32 km",
+      "year": "1975",
+      "platform": "AJS37",
+      "info": "Long-range fire-and-forget air-to-surface, anti-ship missile"
+    }
+  ],
+  "RB-05": [
+    {
+      "type": "item",
+      "version": "E",
+      "style": "GUIDED AIR TO SURFACE",
+      "name": "ROBOT 05",
+      "target": "HARD TARGETS",
+      "max range": "5 nm / 9 km",
+      "year": "1972",
+      "platform": "AJS37",
+      "info": "Tracking flare helps the pilot steer the missile towards the target."
+    }
+  ],
+  "RB-15": [
+    {
+      "type": "item",
+      "version": "F",
+      "style": "ANTI-SHIP",
+      "name": "ROBOT 15",
+      "target": "SHIPS",
+      "max range": "37 nm / 70 km",
+      "year": "1989",
+      "platform": "AJS37",
+      "info": "Multiple waypoint capable cruise missile."
+    }
+  ],
+  "RB-75": [
+    {
+      "type": "item",
+      "version": "A",
+      "style": "AIR TO SURFACE",
+      "name": "ROBOT 75",
+      "target": "ANTI-ARMOR",
+      "max range": "11.9 nm / 22 km",
+      "year": "1970",
+      "platform": "AJS37",
+      "info": "Electro-Optical TV. Equivalent to the AGM-65A. Shaped charge"
+    },
+    {
+      "type": "item",
+      "version": "B",
+      "style": "AIR TO SURFACE",
+      "name": "ROBOT 75",
+      "target": "ANTI-ARMOR",
+      "max range": "11.9 nm / 22 km",
+      "year": "1970",
+      "platform": "AJS37",
+      "info": "Electro-Optical TV. Equivalent to the AGM-65B. Magnified seeker. Shaped charge"
+    },
+    {
+      "type": "item",
+      "version": "T",
+      "style": "AIR TO SURFACE",
+      "name": "ROBOT 75",
+      "target": "LARGE TARGET TYPE",
+      "max range": "11.9 nm / 22 km",
+      "year": "1970",
+      "platform": "AJS37",
+      "info": "Electro-Optical TV. Equivalent to the AGM-65A. Blast Fragmentation"
+    }
+  ],
+  "S-25": [
+    {
+      "type": "item",
+      "version": "L",
+      "style": "LASER HOMING",
+      "name": "",
+      "target": "HARD TARGET",
+      "max range": "4 nm / 7 km",
+      "year": "1980",
+      "platform": "Su-25, Su-25T",
+      "info": "Limited range rocket with laser guidance"
+    }
+  ],
+  "SEA EAGLE": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "ANTI-SHIP",
+      "name": "SEA EAGLE",
+      "target": "SHIP",
+      "max range": "50-70 nm / 92-130 km",
+      "year": "1980",
+      "platform": "C-101CC",
+      "info": "BAE anti-ship missile."
+    }
+  ]
+}

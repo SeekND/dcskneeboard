@@ -1,8 +1,10 @@
 {
     "categories": [
-        "Brevity",
         "RWR Threats",
         "AA Ordnance",
-        "AG Ordnance"
+        "AGM Ordnance",
+        "AGR Ordnance",
+        "AGB Ordnance",
+        "Brevity"
     ]
 }

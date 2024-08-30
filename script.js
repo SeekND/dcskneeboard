@@ -722,26 +722,22 @@ function createReferenceTable(categoryData, categoryName) {
       table.appendChild(tbody);
 
     // Populate the table rows
-itemsData.forEach(item => {
-  const row = tbody.insertRow();
-  headers.forEach(header => {
-    const cell = row.insertCell();
+  itemsData.forEach(item => {
+    const row = tbody.insertRow();
+    headers.forEach(header => {
+      const cell = row.insertCell();
 
-    const contentWrapper = document.createElement('div');
-    contentWrapper.classList.add('cell-content');
-
-    if (header === 'image' && item[header]) { // Check if 'image' exists and has a value
-      const img = document.createElement('img');
-      img.src = `reference/${categoryName}/${item[header]}`;
-      img.alt = header; 
-      contentWrapper.appendChild(img);
-    } else {
-      contentWrapper.textContent = item[header] || "";
-    }
-
-    cell.appendChild(contentWrapper);
+      if (header === 'image' && item[header]) {
+        // Set the image as the background of the cell
+        cell.style.backgroundImage = `url('reference/${categoryName}/${item[header]}')`;
+        cell.style.backgroundSize = 'contain'; // or 'cover', depending on your preference
+        cell.style.backgroundRepeat = 'no-repeat';
+        cell.style.backgroundPosition = 'center'; // Adjust as needed
+      } else {
+        cell.textContent = item[header] || "";
+      }
+    });
   });
-});
 
     content.appendChild(table);
     collapsible.addEventListener('click', () => {

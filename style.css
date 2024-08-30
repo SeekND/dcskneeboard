@@ -210,16 +210,42 @@ border-radius: 0;
   font-weight: bold;             /* Make the text bold */
 }
 
+#reference table {
+  table-layout: fixed; /* Keep this to control column widths */
+  width: 100%; 
+}
+
+/* Set a fixed width for the image column */
+#reference table td:nth-child(2) { /* Assuming the image is in the second column */
+  width: 200px; /* Adjust as needed */
+}
+
+/* Allow other columns to auto-size */
+#reference table td:not(:nth-child(2)) { 
+  width: auto; 
+}
 
 #reference img {  /* Target all images within the #reference div */
-  max-width: 200px; 
-  height: auto;     /* Maintain aspect ratio */
+  //max-width: 200px; 
+  // height: auto;     /* Maintain aspect ratio */
+  // object-fit: contain; 
 }
 
-#reference table {
-  table-layout: fixed; /* Force equal column widths */
-  width: 100%;         /* Make the table take up full width */
+
+#reference .checklist-content td:nth-child(2) .cell-content { 
+  padding: 0;
+  margin: 0;
 }
+
+/* Set the image to take up the full width of its container */
+#reference .checklist-content td:nth-child(2) img {
+  width: 100%;
+  height: auto; 
+}
+
+
+
+
 
 #reference .checklist-content td > * { /* Target any direct child element within the cells */
     padding: 18px; /* Or adjust the padding value as needed */
@@ -421,7 +447,7 @@ li {
 table {
     width: 100%;
     border-collapse: collapse; 
-    margin-bottom: 20px; 
+    // margin-bottom: 20px; 
     // font-family: Arial, sans-serif;
     /* table-layout: fixed; */  /* Comment out or remove this line */
 }
@@ -447,7 +473,7 @@ img {
 /* Table Headings Styling */
 .tab-content h2 { /* style the secondary table headings  e.g. GENERAL, INFRARED*/
     text-align: center; /* Center the text */
-    padding: 10px 0; /* Add padding above and below the text */
+    //padding: 10px 0; /* Add padding above and below the text */
     border-bottom: 1px solid #ddd; /* Add a light border below the text */
 }
 

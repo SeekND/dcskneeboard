@@ -1,88 +1,148 @@
 {
-    "GENERAL": [
-  {
-    "Term": "ARIZONA",
-    "Definition": "NO HARM MISSILES REMAINING"
-  },
-  {
-    "Term": "BANDIT",
-    "Definition": "CONFIRMED ENEMY AIRCRAFT"
-  },
-  {
-    "Term": "BINGO FUEL",
-    "Definition": "MINIMUM FUEL REQUIRED TO RECOVER"
-  },
-  {
-    "Term": "BOGEY",
-    "Definition": "UNKNOWN RADAR CONTACT"
-  },
-  {
-    "Term": "BRAA",
-    "Definition": "BEARING/RANGE/ALTITUDE/ASPECT"
-  },
-  {
-    "Term": "BUDDY SPIKE (w/type & direction)",
-    "Definition": "FRIENDLY LOCKING ON TO YOU"
-  },
-  {
-    "Term": "BUG OUT (w/direction)",
-    "Definition": "DIRECTION OF INTENDED EGRESS"
-  },
-  {
-    "Term": "BULLSEYE",
-    "Definition": "ESTABLISHED REFERENCE POINT FOR CONTACTS"
-  },
-  {
-    "Term": "FOX 1",
-    "Definition": "LAUNCH OF SARH MISSILE"
-  },
-  {
-    "Term": "FOX 2",
-    "Definition": "LAUNCH OF IR MISSILE"
-  },
-  {
-    "Term": "FOX 3",
-    "Definition": "LAUNCH OF ARH MISSILE"
-  },
-  {
-    "Term": "GATE (w/direction)",
-    "Definition": "FLY IN SPECIFIC DIRECTION AT MAX POWER"
-  },
-  {
-    "Term": "JOKER FUEL",
-    "Definition": "AGREED FUEL STATE ABOVE BINGO"
-  },
-  {
-    "Term": "MAGNUM",
-    "Definition": "LAUNCH OF HARM MISSILES"
-  },
-  {
-    "Term": "MUD (w/type & direction)",
-    "Definition": "RWR GROUND THREAT DETECTED"
-  },
-  {
-    "Term": "NAILS (w/direction)",
-    "Definition": "RWR AIR THREAT DETECTED"
-  },
-  {
-    "Term": "NO JOY",
-    "Definition": "NO VISUAL CONTACT OF BOGIE/BANDIT"
-  },
-  {
-    "Term": "RAYGUN",
-    "Definition": "LOCKING UP SUSPECTED FRIENDLY TYPICALLY MEANT TO BE RESPONDED W/BUDDY SPIKE"
-  },
-  {
-    "Term": "RIFLE",
-    "Definition": "LAUNCH OF AGM"
-  },
-  {
-    "Term": "SPIKE (w/direction & type)",
-    "Definition": "RWR INDICATION OF AIR LAUNCH"
-  },
-  {
-    "Term": "WINCHESTER",
-    "Definition": "NO ORDNANCE REMAINING"
-  }
-    ]
+  "General": [
+    {
+      "type": "item",
+      "term": "ARIZONA",
+      "definition": "NO HARM MISSILES REMAINING"
+    },
+    {
+      "type": "item",
+      "term": "BANDIT",
+      "definition": "CONFIRMED ENEMY AIRCRAFT"
+    },
+    {
+      "type": "item",
+      "term": "BINGO FUEL",
+      "definition": "MINIMUM FUEL REQUIRED TO RECOVER"
+    },
+    {
+      "type": "item",
+      "term": "BOGEY",
+      "definition": "UNKNOWN RADAR CONTACT"
+    },
+    {
+      "type": "item",
+      "term": "BRAA",
+      "definition": "BEARING/RANGE/ALTITUDE/ASPECT"
+    },
+    {
+      "type": "item",
+      "term": "BUDDY SPIKE (w/type & direction)",
+      "definition": "FRIENDLY LOCKING ON TO YOU"
+    },
+    {
+      "type": "item",
+      "term": "BUG OUT (w/direction)",
+      "definition": "DIRECTION OF INTENDED EGRESS"
+    },
+    {
+      "type": "item",
+      "term": "BULLSEYE",
+      "definition": "ESTABLISHED REFERENCE POINT FOR CONTACTS"
+    },
+    {
+      "type": "item",
+      "term": "GATE (w/direction)",
+      "definition": "FLY IN SPECIFIC DIRECTION AT MAX POWER"
+    },
+    {
+      "type": "item",
+      "term": "JOKER FUEL",
+      "definition": "AGREED FUEL STATE ABOVE BINGO"
+    },
+    {
+      "type": "item",
+      "term": "MUD (w/type & direction)",
+      "definition": "RWR GROUND THREAT DETECTED"
+    },
+    {
+      "type": "item",
+      "term": "NAILS (w/direction)",
+      "definition": "RWR AIR THREAT DETECTED"
+    },
+    {
+      "type": "item",
+      "term": "NO JOY",
+      "definition": "NO VISUAL CONTACT OF BOGIE/BANDIT"
+    },
+    {
+      "type": "item",
+      "term": "RAYGUN",
+      "definition": "LOCKING UP SUSPECTED FRIENDLY TYPICALLY MEANT TO BE RESPONDED W/BUDDY SPIKE"
+    },
+    {
+      "type": "item",
+      "term": "SPIKE (w/direction & type)",
+      "definition": "RWR INDICATION OF AIR LAUNCH"
+    },
+    {
+      "type": "item",
+      "term": "WINCHESTER",
+      "definition": "NO ORDNANCE REMAINING"
+    },
+    {
+      "type": "item",
+      "term": "RTB",
+      "definition": "RETURN TO BASE"
+    }
+  ],
+  "Air to Air weapon release": [
+    {
+      "type": "item",
+      "term": "Fox One",
+      "definition": "Indicates launch of a semi-active radar-guided missile (such as the AIM-7 Sparrow)."
+    },
+    {
+      "type": "item",
+      "term": "Fox Two",
+      "definition": "Indicates launch of an infrared-guided missile (such as the AIM-9 Sidewinder)."
+    },
+    {
+      "type": "item",
+      "term": "Fox Three",
+      "definition": "Indicates launch of an active radar-guided missile (such as the AIM-120 AMRAAM)."
+    },
+    {
+      "type": "item",
+      "term": "Maddog",
+      "definition": "Indicates launch of a Fox Three missile without radar guidance from launch aircraft. The missile will rely on its own radar."
+    },
+    {
+      "type": "item",
+      "term": "Pitbull",
+      "definition": "Indicates that the Fox Three missile is at active range and no longer requires radar input from launch aircraft."
+    }
+  ],
+  "Air to Ground weapon release": [
+    {
+      "type": "item",
+      "term": "Bruiser",
+      "definition": "Indicates launch of an air to ship missile."
+    },
+    {
+      "type": "item",
+      "term": "Duck",
+      "definition": "Indicates launch of a tactical air-launched decoy (TALD)."
+    },
+    {
+      "type": "item",
+      "term": "Magnum",
+      "definition": "Indicates the release of an anti-radiation missile."
+    },
+    {
+      "type": "item",
+      "term": "Pickle",
+      "definition": "Indicates release of a bomb or munition."
+    },
+    {
+      "type": "item",
+      "term": "Pig",
+      "definition": "Indicates launch of a JSOW."
+    },
+    {
+      "type": "item",
+      "term": "Rifle",
+      "definition": "Indicates launch of an air to ground missile."
+    }
+  ]
 }

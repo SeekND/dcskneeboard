@@ -135,6 +135,23 @@ function loadChecklistTypes(aircraftId) {
     const checklistOptionsDiv = document.getElementById('checklist-options');
     checklistOptionsDiv.innerHTML = ''; 
 
+  // Create the search field with placeholder
+    const searchInput = document.createElement('input');
+    searchInput.type = 'text';
+    searchInput.id = 'checklist-search';
+    searchInput.placeholder = 'Search...'; // Set the placeholder text
+    checklistOptionsDiv.appendChild(searchInput);
+
+    // Add an event listener to the search input
+    searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();   
+
+        filterChecklist(searchTerm);
+    });
+
+  // Add a line break after the search input
+  checklistOptionsDiv.appendChild(document.createElement('br'));   
+
     fetch(`aircraft/${aircraftId}/checklist/checklist.json`)
         .then(response => response.json())
         .then(data => {
@@ -270,6 +287,7 @@ function loadChecklistType(type, aircraftId, button) {
     pdfContainer.style.display = 'none'; // Hide the PDF container
     checklistContentDiv.style.display = 'block'; // Show the checklist content div
     button.textContent = type.toUpperCase() + ( "[reset]");
+
             // Iterate over all categories in the checklistData object
             for (const categoryName in checklistData) {
                 const itemsData = checklistData[categoryName];
@@ -391,7 +409,50 @@ function toggleCategoryCheckmarks(collapsibleHeader, checkedState) {
     checkCategoryCompletion(collapsibleHeader);
 }
 
+function filterChecklist(searchTerm) {
+  const checklistContentDiv = document.getElementById("checklist-content");
+  const collapsibles = checklistContentDiv.querySelectorAll('.collapsible');
 
+  collapsibles.forEach(collapsible => {
+    const content = collapsible.nextElementSibling; 
+    const rows = content.querySelectorAll('tbody tr');
+
+    let categoryHasMatch = false; 
+
+    rows.forEach(row => {
+      // Iterate over cells (excluding the first cell which is the checkbox)
+      for (let i = 1; i < row.cells.length; i++) { 
+        const cell = row.cells[i];
+        const cellText = cell.textContent.toLowerCase();
+
+        if (cellText.includes(searchTerm)) {
+          categoryHasMatch = true;
+          cell.style.backgroundColor = 'darkgoldenrod';
+        } else {
+          cell.style.backgroundColor = ''; // Reset background color
+        }
+    	if (searchTerm === '') {
+      		cell.style.backgroundColor = ''; 
+    	}
+      }
+    });
+
+    // Highlight the category if it has a match, but don't expand it
+    if (categoryHasMatch) {
+      collapsible.style.display = 'block';
+      collapsible.style.backgroundColor = 'darkgoldenrod';
+    } else {
+      collapsible.style.display = 'block'; // Keep the category visible
+      collapsible.style.backgroundColor = ''; // Reset to default
+    }
+
+    // Keep the content collapsed (unless it was already expanded by the user)
+    // content.style.display = 'none'; 
+    if (searchTerm === '') {
+      collapsible.style.backgroundColor = ''; 
+    }
+  });
+}
 // END LOAD CHECKLIST ///////////////////////////////////////////////////
 
 
@@ -504,17 +565,34 @@ function loadEmergencyProceduresType(aircraftId) {
 
 function loadReferenceContent() {
   const referenceTab = document.getElementById("reference");
-  referenceTab.innerHTML = "";
+  referenceTab.innerHTML = ""; // Clear previous content
 
-  getReferenceCategories() // This returns a Promise
+  referenceTab.appendChild(document.createElement('br'));  
+
+  const searchInput = document.createElement('input');
+  searchInput.type = 'text';
+  searchInput.id = 'reference-search';
+  searchInput.placeholder = 'Search...'; // Set the placeholder text
+  referenceTab.appendChild(searchInput);
+
+  // Add an event listener to the search input
+  searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    filterReferenceTables(searchTerm);
+  });
+
+  referenceTab.appendChild(document.createElement('br'));  
+
+
+  getReferenceCategories()
     .then(categories => {
       if (Array.isArray(categories)) {
-        categories.forEach(category => { // Iterate only after the Promise resolves
+        categories.forEach(category => { 
           loadReferenceCategory(category);
         });
       } else {
         console.error("Error: getReferenceCategories did not return an array.");
-        // Handle the error gracefully, perhaps display a message to the user
+        // Handle the error gracefully
       }
     })
     .catch(error => console.error("Error fetching reference categories:", error));
@@ -539,24 +617,33 @@ function loadReferenceCategory(category) {
     .then(response => response.json())
     .then(categoryData => {
       // Create the collapsible header
+      // Create a container div for the collapsible and table
+      const categoryContainer = document.createElement('div');
+      categoryContainer.classList.add('category-container');
+
+      // Create the collapsible header
       const collapsible = document.createElement('div');
       collapsible.className = "collapsible";
       collapsible.textContent = category;
 
       const content = document.createElement('div');
-      content.className = "checklistcontent";
+      content.className = "checklist-content";
       content.style.display = "none";
 
       // Create the table dynamically based on the categoryData structure
-      const table = createReferenceTable(categoryData , category);
+      const table = createReferenceTable(categoryData, category);
 
       content.appendChild(table);
       collapsible.addEventListener('click', () => {
         content.style.display = (content.style.display === "none") ? "block" : "none";
       });
 
-      referenceTab.appendChild(collapsible);
-      referenceTab.appendChild(content);
+      // Append collapsible and content to the categoryContainer
+      categoryContainer.appendChild(collapsible);
+      categoryContainer.appendChild(content);
+
+      // Append the categoryContainer to the referenceTab
+      referenceTab.appendChild(categoryContainer);
     })
     .catch(error => console.error(`Error loading data for category ${category}:`, error));
 }
@@ -579,7 +666,8 @@ function createReferenceTable(categoryData, categoryName) {
 
     const content = document.createElement('div');
     content.className = "checklist-content";
-    content.style.display = "none";
+    content.style.display = "none"; // Start all categories (main and sub) collapsed
+
 
     // Check if it's a main category or a subcategory
     if (category === categoryName) {
@@ -596,7 +684,8 @@ function createReferenceTable(categoryData, categoryName) {
       collapsible.appendChild(indentedTitle);
       collapsible.style.backgroundColor = 'transparent';
       collapsible.classList.add('subcategory'); 
-      content.style.display = "block";
+      content.style.display = "none";
+      content.dataset.mainCategory = categoryName;
     }
 
 
@@ -633,26 +722,26 @@ function createReferenceTable(categoryData, categoryName) {
       table.appendChild(tbody);
 
     // Populate the table rows
-    itemsData.forEach(item => {
-      const row = tbody.insertRow();
-      headers.forEach(header => {
-        const cell = row.insertCell();
+itemsData.forEach(item => {
+  const row = tbody.insertRow();
+  headers.forEach(header => {
+    const cell = row.insertCell();
 
-        const contentWrapper = document.createElement('div');
-        contentWrapper.classList.add('cell-content');
+    const contentWrapper = document.createElement('div');
+    contentWrapper.classList.add('cell-content');
 
-        if (header === 'image') {
-          const img = document.createElement('img');
-          img.src = `reference/${categoryName}/${item[header]}`;
-          img.alt = header;
-          contentWrapper.appendChild(img);
-        } else {
-          contentWrapper.textContent = item[header] || "";
-        }
+    if (header === 'image' && item[header]) { // Check if 'image' exists and has a value
+      const img = document.createElement('img');
+      img.src = `reference/${categoryName}/${item[header]}`;
+      img.alt = header; 
+      contentWrapper.appendChild(img);
+    } else {
+      contentWrapper.textContent = item[header] || "";
+    }
 
-        cell.appendChild(contentWrapper);
-      });
-    });
+    cell.appendChild(contentWrapper);
+  });
+});
 
     content.appendChild(table);
     collapsible.addEventListener('click', () => {
@@ -666,6 +755,61 @@ function createReferenceTable(categoryData, categoryName) {
   return tableContainer;
 }
 
+function filterReferenceTables(searchTerm) {
+  const tables = document.querySelectorAll('#reference table');
+
+  tables.forEach(table => {
+    const rows = table.querySelectorAll('tbody tr');
+
+    let categoryHasMatch = false; 
+
+    rows.forEach(row => {
+      const cells = row.querySelectorAll('td'); // Get all cells in the row
+
+      let rowHasMatch = false; // Flag to track if any cell in the row has a match
+
+      cells.forEach(cell => {
+        const cellText = cell.textContent.toLowerCase();
+        if (cellText.includes(searchTerm)) {
+          cell.style.backgroundColor = 'darkgoldenrod'; 
+          rowHasMatch = true; 
+          categoryHasMatch = true; 
+        } else {
+          cell.style.backgroundColor = ''; 
+        }
+    	if (searchTerm === '') {
+      		cell.style.backgroundColor = ''; 
+    	}
+      });
+
+      // Show/hide the entire row based on whether any cell has a match
+      row.style.display = rowHasMatch ? 'table-row' : 'none'; 
+    });
+
+    const content = table.closest('.checklist-content');
+    const collapsibleHeader = content.previousElementSibling;
+
+    const isSubCategory = collapsibleHeader.classList.contains('subcategory');
+
+    if (categoryHasMatch) {
+      collapsibleHeader.style.display = 'block';
+      // content.style.display = 'block'; // Commented out as per your previous request
+
+      // If it's a subcategory, also highlight its main category
+      if (isSubCategory) {
+        const mainCategoryContainer = content.closest('.category-container');
+        // mainCategoryContainer.style.backgroundColor = 'darkgoldenrod';
+      }
+    } else if (isSubCategory) { 
+      collapsibleHeader.style.display = 'none';
+      // content.style.display = 'none';
+    } else {
+      // If it's a main category, reset its background color
+      // const mainCategoryContainer = collapsibleHeader.nextElementSibling;
+      // mainCategoryContainer.style.backgroundColor = ''; 
+    }
+  });
+}
 
 // END REFERENCE CATEGORY FETCH /////////////////////////////////
 

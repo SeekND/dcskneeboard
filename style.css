@@ -355,8 +355,12 @@ li {
     display: block; 
 }
 
+#reference .collapsible {
+  background-color: #777; /* Or any other color you prefer for the main categories */
+}
+
 .collapsible {
-    background-color: #444;
+    background-color: #777;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -366,6 +370,13 @@ li {
     outline: none;
     font-size: 15px;
     margin-bottom: 10px; /* Add spacing between checklists */
+}
+
+#checklist input[type="text"]#checklist-search,
+#reference input[type="text"]#reference-search {
+  display: block; /* Make them block-level elements to take up full width */
+  margin: 0 auto;  /* Center them horizontally */
+  width: 40%;      /* Adjust the width as needed */
 }
 
 .note-cell {

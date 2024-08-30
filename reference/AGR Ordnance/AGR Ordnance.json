@@ -1,0 +1,687 @@
+{
+  "ARF-8": [
+    {
+      "type": "item",
+      "version": "API",
+      "size": "1.9 in / 50 mm",
+      "target": "HARD TARGET",
+      "quantity": "LR-25",
+      "platform": "25",
+      "info": "MB-339"
+    },
+    {
+      "type": "item",
+      "version": "HEI",
+      "size": "1.9 in / 50 mm",
+      "target": "SOFT TARGET",
+      "quantity": "LR-25",
+      "platform": "25",
+      "info": "MB-339"
+    },
+    {
+      "type": "item",
+      "version": "TP-SM",
+      "size": "1.9 in / 50 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LR-25",
+      "platform": "25",
+      "info": "MB-339"
+    }
+  ],
+  "BRM": [
+    {
+      "type": "item",
+      "version": "1",
+      "size": "3.54 in / 90 mm",
+      "target": "HARD TARGET",
+      "quantity": "LAU-68",
+      "platform": "16",
+      "info": "JF-17"
+    }
+  ],
+  "FFAR": [
+    {
+      "type": "item",
+      "version": "M156",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-3",
+      "platform": "19",
+      "info": "A-4E, F-4E, F-5E, AV-8B"
+    },
+    {
+      "type": "item",
+      "version": "M156",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-68",
+      "platform": "7",
+      "info": "A-4E, F-5E"
+    },
+    {
+      "type": "item",
+      "version": "M257",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-3",
+      "platform": "19",
+      "info": "A-4E"
+    },
+    {
+      "type": "item",
+      "version": "M274",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-3",
+      "platform": "19",
+      "info": "A-4E"
+    },
+    {
+      "type": "item",
+      "version": "MK1",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "LAU-68",
+      "platform": "7",
+      "info": "A-4E, AV-8B"
+    },
+    {
+      "type": "item",
+      "version": "MK1",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "",
+      "platform": "",
+      "info": "A-4E, F-4E"
+    },
+    {
+      "type": "item",
+      "version": "MK5",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "LAU-3",
+      "platform": "19",
+      "info": "A-4E, AV-8B, F-4E, F-5E"
+    },
+    {
+      "type": "item",
+      "version": "MK5",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "LAU-68",
+      "platform": "7",
+      "info": "A-4E, AV-8B, F-4E"
+    }
+  ],
+  "HVAR": [
+    {
+      "type": "item",
+      "version": "",
+      "size": "5 in / 127 mm",
+      "target": "SOFT TARGET",
+      "quantity": "",
+      "platform": "2",
+      "info": "F-86F"
+    }
+  ],
+  "HYDRA": [
+    {
+      "type": "item",
+      "version": "M151",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "LAU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "M151",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "LAU-3/61",
+      "platform": "19",
+      "info": "AV-8B, F-16, F/A-18C, MB-339"
+    },
+    {
+      "type": "item",
+      "version": "M151",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII, AV-8B, C-101CC, F-5E, F/A-18C"
+    },
+    {
+      "type": "item",
+      "version": "M151",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "AH-64D, UH-1H"
+    },
+    {
+      "type": "item",
+      "version": "M151",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "M156",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-3/61",
+      "platform": "19",
+      "info": "AV-8B, F-16, MB-339"
+    },
+    {
+      "type": "item",
+      "version": "M156",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII, AV-8B, C-101CC, F-5E"
+    },
+    {
+      "type": "item",
+      "version": "M156",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "UH-1H"
+    },
+    {
+      "type": "item",
+      "version": "M156",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "M229",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "M229",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "AH-64D"
+    },
+    {
+      "type": "item",
+      "version": "M229",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "M257",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII, AV-8B, C-101CC, F-5E"
+    },
+    {
+      "type": "item",
+      "version": "M257",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "AH-64D, AV-8B"
+    },
+    {
+      "type": "item",
+      "version": "M257",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "M274",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII, AV-8B, C-101CC, F-5E"
+    },
+    {
+      "type": "item",
+      "version": "M274",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "AH-64D, AV-8B"
+    },
+    {
+      "type": "item",
+      "version": "M274",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "M282",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "AH-64D"
+    },
+    {
+      "type": "item",
+      "version": "M282",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "MK1",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII, F-5E"
+    },
+    {
+      "type": "item",
+      "version": "MK1",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "UH-1H"
+    },
+    {
+      "type": "item",
+      "version": "MK1",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "MK1",
+      "size": "2.75 in / 70 mm",
+      "target": "SOFT TARGET",
+      "quantity": "LAU-3/61",
+      "platform": "19",
+      "info": "AV-8B, F-16"
+    },
+    {
+      "type": "item",
+      "version": "MK5",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII, A-4E, AV-8B, F-5E, F/A-18C, JF-17"
+    },
+    {
+      "type": "item",
+      "version": "MK5",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "UH-1H"
+    },
+    {
+      "type": "item",
+      "version": "MK5",
+      "size": "2.75 in / 70 mm",
+      "target": "HARD TARGET",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "MK61",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-3/61",
+      "platform": "19",
+      "info": "AV-8B, F-16"
+    },
+    {
+      "type": "item",
+      "version": "MK61",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII, F-5E"
+    },
+    {
+      "type": "item",
+      "version": "MK61",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "XM158",
+      "platform": "7",
+      "info": "UH-1H"
+    },
+    {
+      "type": "item",
+      "version": "MK61",
+      "size": "2.75 in / 70 mm",
+      "target": "TARGET MARKING",
+      "quantity": "BRU-42",
+      "platform": "21",
+      "info": "A-10C, A-10CII"
+    },
+    {
+      "type": "item",
+      "version": "WTU-1/8",
+      "size": "2.75 in / 70 mm",
+      "target": "PRACTICE TARGET",
+      "quantity": "LAU-3/61",
+      "platform": "19",
+      "info": "AV-8B, F-16, MB-339"
+    },
+    {
+      "type": "item",
+      "version": "WTU-1/8",
+      "size": "2.75 in / 70 mm",
+      "target": "PRACTICE TARGET",
+      "quantity": "LAU-68/131",
+      "platform": "7",
+      "info": "A-10A, A-10C, A-10CII, AV-8B, F-5E"
+    }
+  ],
+  "M/70B": [
+    {
+      "type": "item",
+      "version": "HE",
+      "size": "5.3 in / 135 mm",
+      "target": "SOFT TARGET",
+      "quantity": "",
+      "platform": "",
+      "info": "AJS37"
+    },
+    {
+      "type": "item",
+      "version": "AP",
+      "size": "5.3 in / 135 mm",
+      "target": "HARD TARGET",
+      "quantity": "ARAK",
+      "platform": "6",
+      "info": "AJS37"
+    }
+  ],
+  "MATRA/SNEB": [
+    {
+      "type": "item",
+      "version": "155",
+      "size": "2.7 in / 68 mm",
+      "target": "SOFT TARGET",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "M-2000C, MB-339"
+    },
+    {
+      "type": "item",
+      "version": "250",
+      "size": "2.7 in / 68 mm",
+      "target": "TARGET MARKING",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "Mirage F1"
+    },
+    {
+      "type": "item",
+      "version": "251",
+      "size": "2.7 in / 68 mm",
+      "target": "SOFT TARGET",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "Mirage F1"
+    },
+    {
+      "type": "item",
+      "version": "252",
+      "size": "2.7 in / 68 mm",
+      "target": "PRACTICE TARGET",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "Mirage F1"
+    },
+    {
+      "type": "item",
+      "version": "253",
+      "size": "2.7 in / 68 mm",
+      "target": "HARD TARGET",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "Mirage F1"
+    },
+    {
+      "type": "item",
+      "version": "254",
+      "size": "2.7 in / 68 mm",
+      "target": "TARGET MARKING",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "Mirage F1"
+    },
+    {
+      "type": "item",
+      "version": "256",
+      "size": "2.7 in / 68 mm",
+      "target": "SOFT TARGET",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "Mirage F1"
+    },
+    {
+      "type": "item",
+      "version": "257",
+      "size": "2.7 in / 68 mm",
+      "target": "HARD TARGET",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "Mirage F1"
+    },
+    {
+      "type": "item",
+      "version": "259E",
+      "size": "2.7 in / 68 mm",
+      "target": "TARGET MARKING",
+      "quantity": "MATRA TYPE 155",
+      "platform": "18/36",
+      "info": "Mirage F1"
+    }
+  ],
+  "S-5": [
+    {
+      "type": "item",
+      "version": "KO",
+      "size": "2.2 in / 57 mm",
+      "target": "HARD TARGET",
+      "quantity": "UB-32A",
+      "platform": "32",
+      "info": "L-39C, Mi-24P, Su-25"
+    },
+    {
+      "type": "item",
+      "version": "M",
+      "size": "2.2 in / 57 mm",
+      "target": "SOFT TARGET",
+      "quantity": "UB-16UM",
+      "platform": "16",
+      "info": "Mi-24P, MiG-19P, MIG-21"
+    },
+    {
+      "type": "item",
+      "version": "M",
+      "size": "2.2 in / 57 mm",
+      "target": "SOFT TARGET",
+      "quantity": "UB-32UM",
+      "platform": "32",
+      "info": "Mi-24P, MiG-19P, MIG-21"
+    }
+  ],
+  "S-8": [
+    {
+      "type": "item",
+      "version": "KOM",
+      "size": "3.2 in / 80 mm",
+      "target": "HARD TARGET",
+      "quantity": "B-8MI",
+      "platform": "20",
+      "info": "J-11, MiG-29, Su-25, Su-27, Su-33, KA-50, M-8, M-24P, Su-27, Su-33"
+    },
+    {
+      "type": "item",
+      "version": "KOM",
+      "size": "3.2 in / 80 mm",
+      "target": "HARD TARGET",
+      "quantity": "B-8V20A",
+      "platform": "10",
+      "info": ""
+    },
+    {
+      "type": "item",
+      "version": "OFP2",
+      "size": "3.2 in / 80 mm",
+      "target": "SOFT TARGET",
+      "quantity": "B-8MI",
+      "platform": "20",
+      "info": "J-11, MiG-29, Su-25, Su-27, Su-33, KA-50, M-8, M-24P"
+    },
+    {
+      "type": "item",
+      "version": "OFP2",
+      "size": "3.2 in / 80 mm",
+      "target": "SOFT TARGET",
+      "quantity": "B-8V20A",
+      "platform": "10",
+      "info": "Su-27,Su-33"
+    },
+    {
+      "type": "item",
+      "version": "OM",
+      "size": "3.2 in / 80 mm",
+      "target": "TARGET MARKING",
+      "quantity": "B-8V20A",
+      "platform": "10",
+      "info": "KA-50, Mi-8, Mi-24P"
+    },
+    {
+      "type": "item",
+      "version": "TSM",
+      "size": "3.2 in / 80 mm",
+      "target": "TARGET MARKING",
+      "quantity": "B-8MI",
+      "platform": "20",
+      "info": "J-11, MIG-29, So-25, Su-27, Su-33, KA-50, MF-8, M-24P, Su-27.Su-33"
+    },
+    {
+      "type": "item",
+      "version": "TSM",
+      "size": "3.2 in / 80 mm",
+      "target": "TARGET MARKING",
+      "quantity": "B-8V20A",
+      "platform": "10",
+      "info": "KA-50, Mi-8, Mi-24P"
+    }
+  ],
+  "S-13": [
+    {
+      "type": "item",
+      "version": "OF",
+      "size": "4.8 in / 122 mm",
+      "target": "SOFT TARGET",
+      "quantity": "B-13L",
+      "platform": "5",
+      "info": "J-11, KA-50, Mi-24P, Su-25, Su-27, Su-33"
+    }
+  ],
+  "S-24": [
+    {
+      "type": "item",
+      "version": "A",
+      "size": "9.4 in / 240 mm",
+      "target": "SOFT TARGET",
+      "quantity": "",
+      "platform": "1",
+      "info": "Mi-24P, MIG-21, MiG-29, Su-25"
+    },
+    {
+      "type": "item",
+      "version": "B",
+      "size": "9.4 in / 240 mm",
+      "target": "SOFT TARGET",
+      "quantity": "",
+      "platform": "1",
+      "info": "Mi-24P, MIG-21, MiG-29, Su-25"
+    }
+  ],
+  "S-25": [
+    {
+      "type": "item",
+      "version": "OFM",
+      "size": "13.4 in / 340 mm",
+      "target": "HARD TARGET",
+      "quantity": "",
+      "platform": "1",
+      "info": "J-11, Su-25, Su-27, Su-33"
+    }
+  ],
+  "UG": [
+    {
+      "type": "item",
+      "version": "",
+      "size": "3.6 in / 90 mm",
+      "target": "HARD TARGET",
+      "quantity": "",
+      "platform": "1",
+      "info": "JF-17"
+    }
+  ],
+  "ZUNI": [
+    {
+      "type": "item",
+      "version": "MK71",
+      "size": "5 in / 127 mm",
+      "target": "SOFT TARGET",
+      "quantity": "LAU-10",
+      "platform": "4",
+      "info": "A-4E, AV-8B, F-14A/B, F/A-18C, MB-339"
+    }
+  ]
+}

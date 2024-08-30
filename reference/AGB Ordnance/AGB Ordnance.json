@@ -1,0 +1,803 @@
+{
+    "AN (Army Navy)": [
+        {
+            "type": "item",
+            "version": "M30A1",
+            "style": "FREE FALL",
+            "target": "",
+            "weight": "100 lbs / 45.4 kg",
+            "platform": "",
+            "info": ""
+        },
+        {
+            "type": "item",
+            "version": "M57",
+            "style": "FREE FALL",
+            "target": "SOFT TARGET",
+            "weight": "250 lbs / 113.4 kg",
+            "platform": "A-4E",
+            "info": "High-explosive."
+        },
+        {
+            "type": "item",
+            "version": "M64",
+            "style": "FREE FALL",
+            "target": "LT STRUCTURE",
+            "weight": "500 lbs / 227 kg",
+            "platform": "A-4E, F-86F",
+            "info": "High-explosive."
+        },
+        {
+            "type": "item",
+            "version": "M65",
+            "style": "FREE FALL",
+            "target": "SOFT TARGET",
+            "weight": "1000 lbs / 453.6 kg",
+            "platform": "A-4E",
+            "info": "High-explosive."
+        },
+        {
+            "type": "item",
+            "version": "M66A2",
+            "style": "FREE FALL",
+            "target": "HARD TARGET",
+            "weight": "2000 lbs / 907.2 kg",
+            "platform": "A-4E",
+            "info": "High-explosive."
+        },
+        {
+            "type": "item",
+            "version": "M81",
+            "style": "FREE FALL",
+            "target": "",
+            "weight": "260 lbs / 117.9 kg",
+            "platform": "A-4E",
+            "info": "Fragmentation bomb"
+        },
+        {
+            "type": "item",
+            "version": "M88",
+            "style": "FREE FALL",
+            "target": "SOFT TARGET",
+            "weight": "220 lbs / 100 kg",
+            "platform": "A-4E",
+            "info": "Fragmentation bomb"
+        }
+    ],
+    "BAT": [
+        {
+            "type": "item",
+            "version": "120",
+            "style": "ANTI-RUNWAY",
+            "target": "RUNWAY",
+            "weight": "120 lbs / 54.4 kg",
+            "platform": "MB-339",
+            "info": "Anti-runway bomb."
+        }
+    ],
+    "BETAB": [
+        {
+            "type": "item",
+            "version": "500",
+            "style": "FREE FALL",
+            "target": "TARGET",
+            "weight": "1,100 lbs / 477 kg",
+            "platform": "J-11, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": "Concrete piercing bomb."
+        },
+        {
+            "type": "item",
+            "version": "500ShP",
+            "style": "FREE FALL",
+            "target": "BUNKER/RUNWAY",
+            "weight": "1,100 lbs / 477 kg",
+            "platform": "J-11, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": "Concrete piercing bomb."
+        }
+    ],
+    "BDU": [
+        {
+            "type": "item",
+            "version": "33",
+            "style": "TRAINING",
+            "target": "TRAINING TARGET",
+            "weight": "25 lbs / 11.3 kg",
+            "platform": "A-10A, A-10C, A-10CII, AV-8B, C-101CC, F-4E, F-5E, F-14A/B, F-16",
+            "info": "Training smoke."
+        },
+        {
+            "type": "item",
+            "version": "45",
+            "style": "TRAINING",
+            "target": "TRAINING TARGET",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "F-4E, F-14A/B, F/A-18C",
+            "info": "Training smoke. Mk-82"
+        },
+        {
+            "type": "item",
+            "version": "45B",
+            "style": "TRAINING",
+            "target": "TRAINING TARGET",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "F-4E, F-14A/B, F/A-18C",
+            "info": "Training smoke. Mk-82."
+        },
+        {
+            "type": "item",
+            "version": "50HD",
+            "style": "TRAINING",
+            "target": "",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-10A, A-10C, A-10CII, F-4E, F-5E, F-15E",
+            "info": "Training smoke. Mk-82 AIR."
+        },
+        {
+            "type": "item",
+            "version": "50LD",
+            "style": "TRAINING",
+            "target": "TRAINING TARGET",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-10A, A-10C, A-10CII, F-4E, F-5E, F-15E",
+            "info": "Training smoke. Mk-82."
+        },
+        {
+            "type": "item",
+            "version": "50LGB",
+            "style": "TRAINING",
+            "target": "TRAINING TARGET",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-10C, A-10CII, F-5E, F-15E",
+            "info": "Training smoke. GBU-12."
+        }
+    ],
+    "BIN": [
+        {
+            "type": "item",
+            "version": "200",
+            "style": "INCENDIARY BOMB",
+            "target": "TARGET",
+            "weight": "441 lbs / 200 kg",
+            "platform": "C-101CC",
+            "info": "Spanish incendiary bomb."
+        }
+    ],
+    "BL755": [
+        {
+            "type": "item",
+            "version": "",
+            "style": "CLUSTER",
+            "target": "HARD TARGET",
+            "weight": "1,000 lbs / 453.6 kg",
+            "platform": "C-101CC, MB-339, MiG-21",
+            "info": "Multiple armored targets."
+        }
+    ],
+    "BLG / BELOUGA": [
+        {
+            "type": "item",
+            "version": "66",
+            "style": "CLUSTER",
+            "target": "SOFT TARGET",
+            "weight": "672.4 lb / 305 kg",
+            "platform": "C101CC, M-2000C, MB-339, Mirage F1",
+            "info": "High-drag HEAT."
+        }
+    ],
+    "BLU / DURANDAL": [
+        {
+            "type": "item",
+            "version": "107",
+            "style": "ANTI-RUNWAY",
+            "target": "RUNWAY",
+            "weight": "750 lbe / 340 kg",
+            "platform": "MB-339, Mirage F1, F-15E",
+            "info": "Parachute deployed anti-runway bomb."
+        }
+    ],
+    "BR": [
+        {
+            "type": "item",
+            "version": "250",
+            "style": "FREE FALL",
+            "target": "STRUCTURE LIGHT",
+            "weight": "551.2 lbs / 250 kg",
+            "platform": "C-101CC, Mirage F1",
+            "info": "Low-drag, high explosive."
+        },
+        {
+            "type": "item",
+            "version": "500",
+            "style": "FREE FALL",
+            "target": "STRUCTURE MEDIUM",
+            "weight": "1102.3 lbs / 500 kg",
+            "platform": "C-101CC, Mirage F1",
+            "info": "Low-drag, high explosive."
+        }
+    ],
+    "CBU": [
+        {
+            "type": "item",
+            "version": "52B",
+            "style": "CLUSTER",
+            "target": "SOFT TARGET",
+            "weight": "785 lbs / 356 kg",
+            "platform": "F-4E, F-5E",
+            "info": "High-explosive."
+        },
+        {
+            "type": "item",
+            "version": "87 CEM",
+            "style": "CLUSTER",
+            "target": "",
+            "weight": "950 lbs / 431 kg",
+            "platform": "A-10A, A-10C, A-10CII, F-4E, F-15E, F-16",
+            "info": ""
+        },
+        {
+            "type": "item",
+            "version": "97 SFW",
+            "style": "CLUSTER",
+            "target": "ANTI-ARMOR",
+            "weight": "1000 lbs / 453.6 kg",
+            "platform": "A-10A, A-10C, A-10CII, F-16",
+            "info": "HEAT"
+        },
+        {
+            "type": "item",
+            "version": "103",
+            "style": "CLUSTER",
+            "target": "SOFT TARGET",
+            "weight": "950 lbs / 431 kg",
+            "platform": "AV-8B, F/A-18C, JF-17",
+            "info": "INS-guided, wind-corrected CBU-87."
+        },
+        {
+            "type": "item",
+            "version": "103",
+            "style": "CLUSTER",
+            "target": "TARGET",
+            "weight": "222.3 kg",
+            "platform": "",
+            "info": ""
+        },
+        {
+            "type": "item",
+            "version": "105",
+            "style": "CLUSTER",
+            "target": "ANTI-ARMOR",
+            "weight": "1000 lbs / 453.6 kg",
+            "platform": "A-10C, A-10CII, F-16",
+            "info": "INS-guided, wind-corrected CBU-97."
+        }
+    ],
+    "FAB": [
+        {
+            "type": "item",
+            "version": "50",
+            "style": "FREE FALL",
+            "target": "SOFT TARGET",
+            "weight": "110.2 lbs / 50 kg",
+            "platform": "MiG-19P",
+            "info": ""
+        },
+        {
+            "type": "item",
+            "version": "100",
+            "style": "FREE FALL",
+            "target": "",
+            "weight": "220.5 lbs / 100 kg",
+            "platform": "J-11, L-39C, Mi-8, Mi-24P, MiG-19P, MiG-21, Su-25, Su-27",
+            "info": ""
+        },
+        {
+            "type": "item",
+            "version": "250",
+            "style": "FREE FALL",
+            "target": "LIGHT STRUCTURE",
+            "weight": "551.2 lbs / 250 kg",
+            "platform": "J-11, Ka-50, Mi-8, Mi-24P, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": "Low-drag, high explosive."
+        },
+        {
+            "type": "item",
+            "version": "250 M54",
+            "style": "FREE FALL",
+            "target": "",
+            "weight": "100 kg",
+            "platform": "MiG-21",
+            "info": ""
+        },
+        {
+            "type": "item",
+            "version": "500 M62",
+            "style": "FREE FALL",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "1102.3 lbs / 500 kg",
+            "platform": "J-11, Ka-50, Mi-8, Mi-24P, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": ""
+        }
+    ],
+    "GBU": [
+        {
+            "type": "item",
+            "version": "8 / 10",
+            "style": "GUIDED",
+            "target": "HARD STRUCTURE",
+            "weight": "2,000 lbs / 907.2 kg",
+            "platform": "A-10C, A-10CII, F-4E, F-14A/B, F-15E, F-16, F/A-18C, JF-17, Mirage F1",
+            "info": "Laser guided Mk-84."
+        },
+        {
+            "type": "item",
+            "version": "12",
+            "style": "GUIDED",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-10C, A-10CII, AV-8B, F-5E. F-14A/B, F-15E, F-16, F/A-18C, JF-17, M-2000C, Mirage F1",
+            "info": "Laser guided Mk-82."
+        },
+        {
+            "type": "item",
+            "version": "15",
+            "style": "GUIDED",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "1,000 lbs / 453.6 kg",
+            "platform": "F-4E",
+            "info": "Radio guided Mk-84."
+        },
+        {
+            "type": "item",
+            "version": "16",
+            "style": "GUIDED",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "1,000 lbs / 453.6 kg",
+            "platform": "AV-8B, F-14A/B, F/A-18C, JF-17, M-2000C, Mirage F1",
+            "info": "Laser guided Mk-83."
+        },
+        {
+            "type": "item",
+            "version": "24",
+            "style": "GUIDED",
+            "target": "HARD STRUCTURE",
+            "weight": "2,000 lbs / 907.2 kg",
+            "platform": "F/A-18C, M-2000C",
+            "info": "Laser guided Mk-84 with penetrator."
+        },
+        {
+            "type": "item",
+            "version": "31(V)1/B",
+            "style": "GUIDED",
+            "target": "HARD STRUCTURE",
+            "weight": "2,000 lbs / 907.2 kg",
+            "platform": "F/A-18C",
+            "info": "INS guided Mk-84."
+        },
+        {
+            "type": "item",
+            "version": "31(V)2/B",
+            "style": "GUIDED",
+            "target": "HARD STRUCTURE",
+            "weight": "2,000 lbs / 907.2 kg",
+            "platform": "A-10C, A-10CII, F-16, F/A-18C",
+            "info": "INS guided Mk-84."
+        },
+        {
+            "type": "item",
+            "version": "31(V)3/B",
+            "style": "GUIDED",
+            "target": "HARD STRUCTURE",
+            "weight": "2,000 lbs / 907.2 kg",
+            "platform": "A-10C, A-10CII, F-16, F/A-18C",
+            "info": "INS guided BLU-109 hardened penetration."
+        },
+        {
+            "type": "item",
+            "version": "31(V)4/B",
+            "style": "GUIDED",
+            "target": "HARD STRUCTURE",
+            "weight": "2,000 lbs / 907.2 kg",
+            "platform": "F/A-18C",
+            "info": "INS guided BLU-109 hardened penetration."
+        },
+        {
+            "type": "item",
+            "version": "32(V)2/B",
+            "style": "GUIDED",
+            "target": "HARD STRUCTURE",
+            "weight": "1,000 lbs / 453.6 kg",
+            "platform": "AV-8B, F/A-18C",
+            "info": "INS guided Mk-83."
+        },
+        {
+            "type": "item",
+            "version": "38",
+            "style": "GUIDED",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-10C, A-10CII, AV-8B, F-16, F/A-18C",
+            "info": "INS guided Mk-82."
+        },
+        {
+            "type": "item",
+            "version": "54",
+            "style": "GUIDED",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "",
+            "platform": "A-10C II, AV-8B",
+            "info": "INS guided Mk-82."
+        },
+        {
+            "type": "item",
+            "version": "54(V)1/B",
+            "style": "GUIDED",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "AV-8B",
+            "info": "Dual guidance Mk-82."
+        }
+    ],
+    "KAB": [
+        {
+            "type": "item",
+            "version": "500kr",
+            "style": "GUIDED",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "1,146.4 lbs / 520 kg",
+            "platform": "Su-25T",
+            "info": "TV guided."
+        }
+    ],
+    "KMGU": [
+        {
+            "type": "item",
+            "version": "A0-2.5RT",
+            "style": "MUNITION DISPENSER",
+            "target": "SOFT TARGET",
+            "weight": "96 x 5.5 lbs / 96 x 2.5 kg",
+            "platform": "J-11, Ka-50, Mi-24P, MiG-29, Su-25, Su-27, Su-33",
+            "info": "Fragmentation"
+        },
+        {
+            "type": "item",
+            "version": "PTAB-2.5KO",
+            "style": "MUNITION DISPENSER",
+            "target": "MEDIUM TARGET",
+            "weight": "96 x 2.5 kg",
+            "platform": "",
+            "info": "HEAT anti-tank"
+        }
+    ],
+    "LUU": [
+        {
+            "type": "item",
+            "version": "2",
+            "style": "ILLUMINATION FLARE",
+            "target": "TARGET MARKING",
+            "weight": "30 lbs / 13.6 kg",
+            "platform": "A-10A, A-10C, A-4E, AV-8B, F-5E, F-14A/B",
+            "info": "Illuminating targets."
+        }
+    ],
+    "LysB": [
+        {
+            "type": "item",
+            "version": "",
+            "style": "ILLUMINATION",
+            "target": "TARGET MARKING",
+            "weight": "176.4 lbs / 80 kg",
+            "platform": "AJS-37",
+            "info": "Illuminating targets."
+        }
+    ],
+    "M/71": [
+        {
+            "type": "item",
+            "version": "HD",
+            "style": "HIGH & LOW DRAG",
+            "target": "LIGHT STRUCTURE, STATIONARY VEHICLES",
+            "weight": "275.6 lbs / 125 kg",
+            "platform": "AJS-37",
+            "info": "High-explosive, high-drag."
+        },
+        {
+            "type": "item",
+            "version": "LD",
+            "style": "HIGH & LOW DRAG",
+            "target": "LIGHT STRUCTURE, STATIONARY VEHICLES",
+            "weight": "275.6 lbs / 125 kg",
+            "platform": "AJS-37",
+            "info": "High-explosive, Low-drag."
+        }
+    ],
+    "M117": [
+        {
+            "type": "item",
+            "version": "",
+            "style": "FREE FALL",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "750 lbs / 340 kg",
+            "platform": "F5E, F-86F",
+            "info": "High-explosive"
+        }
+    ],
+    "MK": [
+        {
+            "type": "item",
+            "version": "20",
+            "style": "HIGH & LOW DRAG",
+            "target": "ANTI-ARMOR",
+            "weight": "222.3 lbs / 400 kg",
+            "platform": "A-10A, A-4E, AV-8B, F-14A/B, F-15E, F/A-18C, JF-17",
+            "info": "Cluster Bomb."
+        },
+        {
+            "type": "item",
+            "version": "77 MOD 0",
+            "style": "HIGH & LOW DRAG",
+            "target": "SOFT TARGET",
+            "weight": "750 lbs / 340 kg",
+            "platform": "A-4E",
+            "info": "Incendiary napalm bomb."
+        },
+        {
+            "type": "item",
+            "version": "77 MOD 1",
+            "style": "HIGH & LOW DRAG",
+            "target": "SOFT TARGET",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-4E",
+            "info": ""
+        },
+        {
+            "type": "item",
+            "version": "81",
+            "style": "HIGH & LOW DRAG",
+            "target": "SOFT TARGET",
+            "weight": "250 lbs / 113.4 kg",
+            "platform": "A-4E, AV-8B, F-14A/B, MB-339",
+            "info": "High-explosive, low-drag"
+        },
+        {
+            "type": "item",
+            "version": "81 SE",
+            "style": "HIGH & LOW DRAG",
+            "target": "SOFT TARGET",
+            "weight": "250 lbs / 113.4 kg",
+            "platform": "A-4E",
+            "info": "Mk-81 with high-drag fin kit."
+        },
+        {
+            "type": "item",
+            "version": "81 LD",
+            "style": "HIGH & LOW DRAG",
+            "target": "SOFT TARGET",
+            "weight": "250 lbs / 113.4 kg",
+            "platform": "A-4E, AV-8B, F-14A/B",
+            "info": "High-explosive, low-drag"
+        },
+        {
+            "type": "item",
+            "version": "82",
+            "style": "HIGH & LOW DRAG",
+            "target": "LIGHT STRUCTURE",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-10A, A-10C, A-10CII, A-4E, AV-8B, C-101CC, F-5E, F-14A/B, F-15E, F-16, F/A-18C, JF-17, M-20000, MB-339, Mirage F1",
+            "info": "High-explosive, low-drag"
+        },
+        {
+            "type": "item",
+            "version": "82 SE",
+            "style": "HIGH & LOW DRAG",
+            "target": "LIGHT STRUCTURE",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-4E, AV-8B, F-5E, F-14A/B, F-15E, F-16, F/A-18C, JF-17. M-2000C, MB-339",
+            "info": "Mk-82 with high-drag fin kit."
+        },
+        {
+            "type": "item",
+            "version": "82 AIR",
+            "style": "HIGH & LOW DRAG",
+            "target": "LIGHT STRUCTURE",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "A-10A, A-10C, A-10CII, AV-8B, F-14A/B, F-15E, F-16, M-20000",
+            "info": "Mk-82 with high-drag ballute kit"
+        },
+        {
+            "type": "item",
+            "version": "82Y",
+            "style": "HIGH & LOW DRAG",
+            "target": "LIGHT STRUCTURE",
+            "weight": "500 lbs / 226.8 kg",
+            "platform": "F/A-18C",
+            "info": "Mk-82 with higher-drag ballute kit."
+        },
+        {
+            "type": "item",
+            "version": "83",
+            "style": "HIGH & LOW DRAG",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "1000 lbs / 453.6 kg",
+            "platform": "A-4E, AV-8B, F-5E, F-14A/B, F/A-18C, JF-17, MB-339",
+            "info": ""
+        },
+        {
+            "type": "item",
+            "version": "84",
+            "style": "HIGH & LOW DRAG",
+            "target": "HARD STRUCTURE",
+            "weight": "2000 lbs / 907.2 kg",
+            "platform": "A-10A, A-10C, A-10CII, A-4E, F-5E, F-15E, F-16, F/A-18C, JF-17",
+            "info": "High-explosive, low-drag."
+        },
+        {
+            "type": "item",
+            "version": "84 AIR GP",
+            "style": "HIGH & LOW DRAG",
+            "target": "HARD STRUCTURE",
+            "weight": "2000 lbs / 907.2 kg",
+            "platform": "F-15E",
+            "info": "High-explosive, high-drag."
+        },
+        {
+            "type": "item",
+            "version": "84 AIR TP",
+            "style": "HIGH & LOW DRAG",
+            "target": "TRAINING",
+            "weight": "2000 lbs / 907.2 kg",
+            "platform": "F-15E",
+            "info": "Training"
+        }
+    ],
+    "OFAB": [
+        {
+            "type": "item",
+            "version": "100",
+            "style": "FREE FALL",
+            "target": "SOFT TARGET",
+            "weight": "220.5 lbs / 100 kg",
+            "platform": "L-39",
+            "info": "General purpose high explosive"
+        }
+    ],
+    "P-50": [
+        {
+            "type": "item",
+            "version": "T",
+            "style": "TRAINING",
+            "target": "TRAINING TARGET",
+            "weight": "110.2 lbs / 50 kg",
+            "platform": "L-39",
+            "info": "Practice bomb."
+        }
+    ],
+    "RBK": [
+        {
+            "type": "item",
+            "version": "250",
+            "style": "CLUSTER",
+            "target": "MEDIUM TARGET",
+            "weight": "551.2 lbs / 250 kg",
+            "platform": "J-11, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": "High-drag."
+        },
+        {
+            "type": "item",
+            "version": "250 PTAB-1M",
+            "style": "CLUSTER",
+            "target": "SOFT TARGET",
+            "weight": "551.2 lbs / 250 kg",
+            "platform": "J-11, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": "High-drag. HEAT Anti-Tank"
+        },
+        {
+            "type": "item",
+            "version": "500 PTAB-2.5KO",
+            "style": "CLUSTER",
+            "target": "SOFT TARGET",
+            "weight": "551.2 lbs / 250 kg",
+            "platform": "J-11, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": "High-drag. Fragmentation"
+        },
+        {
+            "type": "item",
+            "version": "500 PTAB-10.5",
+            "style": "CLUSTER",
+            "target": "HEAVY TARGET",
+            "weight": "1,102.3 lbs / 500 kg",
+            "platform": "J-11, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": "High-drag. HEAT Anti-tank"
+        },
+        {
+            "type": "item",
+            "version": "500 OAB-2.5RT",
+            "style": "CLUSTER",
+            "target": "SOFT TARGET",
+            "weight": "1,102.3 lbs / 500 kg",
+            "platform": "J-11, MiG-21, MiG-29, Su-25, Su-27, Su-33",
+            "info": "High-drag. Fragmentation"
+        }
+    ],
+    "RN": [
+        {
+            "type": "item",
+            "version": "24",
+            "style": "NUCLEAR",
+            "target": "LARGE TARGET",
+            "weight": "1 kt",
+            "platform": "MiG-21",
+            "info": "Nuclear bomb."
+        },
+        {
+            "type": "item",
+            "version": "28",
+            "style": "NUCLEAR",
+            "target": "LARGE TARGET",
+            "weight": "10 kt",
+            "platform": "MiG-21",
+            "info": "Nuclear bomb."
+        }
+    ],
+    "SAB": [
+        {
+            "type": "item",
+            "version": "100",
+            "style": "ILLUMINATION",
+            "target": "TARGET MARKING",
+            "weight": "220.5 lbs / 100 kg",
+            "platform": "J-11, Mi-8, MiG-21, Su-25, Su-27, Su-33",
+            "info": "Illuminating targets."
+        }
+    ],
+    "SAMP": [
+        {
+            "type": "item",
+            "version": "125",
+            "style": "HIGH & LOW DRAG",
+            "target": "LIGHT STRUCTURE",
+            "weight": "275.6 lbs / 125 kg",
+            "platform": "Mirage F1",
+            "info": "GP Bomb in high or low drag"
+        },
+        {
+            "type": "item",
+            "version": "250",
+            "style": "HIGH & LOW DRAG",
+            "target": "",
+            "weight": "551.2 lbs / 250 kg",
+            "platform": "M-2000C, Mirage F1",
+            "info": "GP Bomb in high or low drag"
+        },
+        {
+            "type": "item",
+            "version": "400",
+            "style": "HIGH & LOW DRAG",
+            "target": "MEDIUM STRUCTURE",
+            "weight": "882 lbs / 400 kg",
+            "platform": "Mirage F1",
+            "info": "GP Bomb in high or low drag"
+        }
+    ],
+    "SUU": [
+        {
+            "type": "item",
+            "version": "25",
+            "style": "ILLUMINATION",
+            "target": "TARGET MARKING",
+            "weight": "110.2 lbs / 50 kg",
+            "platform": "F-4E",
+            "info": "Illuminating targets."
+        }
+    ],
+    "TYPE-200": [
+        {
+            "type": "item",
+            "version": "A",
+            "style": "ANTI-RUNWAY",
+            "target": "RUNWAY",
+            "weight": "750 lbs / 340 kg",
+            "platform": "JF-17",
+            "info": "Parachute deployed anti-runway bomb."
+        }
+    ]
+}

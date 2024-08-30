@@ -1,58 +1,612 @@
 {
-    "GENERAL": [
-        {
-            "Missile": "AIM-9B",
-            "Weight": "75 kg",
-            "Speed": "Ma 2",
-            "Guidance": "Infrared",
-            "Aspect": "Rear-Aspect",
-            "Range": "11 km",
-            "Warhead": "11 kg"
-        },
-        {
-            "Missile": "AIM-9L",
-            "Weight": "85 kg",
-            "Speed": "Ma 2",
-            "Guidance": "Infrared",
-            "Aspect": "All-Aspect",
-            "Range": "11 km",
-            "Warhead": "9.4 kg"
-        },
-        {
-            "Missile": "AIM-9M",
-            "Weight": "85.5 kg",
-            "Speed": "Ma 2.5",
-            "Guidance": "Infrared",
-            "Aspect": "All-Aspect",
-            "Range": "18 km",
-            "Warhead": "11 kg"
-        },
-        {
-            "Missile": "AIM-9P",
-            "Weight": "85.5 kg",
-            "Speed": "Ma 2",
-            "Guidance": "Infrared",
-            "Aspect": "Rear-Aspect",
-            "Range": "11 km",
-            "Warhead": "11 kg"
-        },
-        {
-            "Missile": "AIM-9P5",
-            "Weight": "85.5 kg",
-            "Speed": "Ma 2",
-            "Guidance": "Infrared",
-            "Aspect": "All-Aspect",
-            "Range": "11 km",
-            "Warhead": "11 kg"
-        },
-        {
-            "Missile": "AIM-9X",
-            "Weight": "85 kg",
-            "Speed": "Ma 2.5",
-            "Guidance": "Infrared with Imaging",
-            "Aspect": "HOBS",
-            "Range": "18 km",
-            "Warhead": "9.4 kg"
-        }
-    ]
+  "9M39": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "INFRARED",
+      "name": "IGLA",
+      "range": "SHORT",
+      "max range": "3.2 nm 6 km",
+      "aspect": "ALL",
+      "year": "1983",
+      "platform": "Black Shark 3",
+      "info": "More resistant to flares and jamming compared to earlier models."
+    }
+  ],
+  "9M220": [
+    {
+      "type": "item",
+      "version": "0",
+      "style": "RADIO GUIDED",
+      "name": "ATAKA",
+      "range": "SHORT",
+      "max range": "3.8 nm 7 km",
+      "aspect": "ALL",
+      "year": "1980",
+      "platform": "Mi-24P",
+      "info": "Anti-Air variation with a proximity fuse."
+    }
+  ],
+  "AIM-7": [
+    {
+      "type": "item",
+      "version": "E",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "SPARROW",
+      "range": "MEDIUM",
+      "max range": "24 nm 45 km",
+      "aspect": "ALL",
+      "year": "1970",
+      "platform": "F-4E, F-15C",
+      "info": "First model."
+    },
+    {
+      "type": "item",
+      "version": "F",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "SPARROW",
+      "range": "MEDIUM",
+      "max range": "38 nm 70 km",
+      "aspect": "ALL",
+      "year": "1976",
+      "platform": "",
+      "info": "Improved range."
+    },
+    {
+      "type": "item",
+      "version": "M",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "SPARROW",
+      "range": "MEDIUM",
+      "max range": "38 nm 70 km",
+      "aspect": "ALL",
+      "year": "1982",
+      "platform": "F-4E, F-14 A/B, F-15C, F-15E, F/A-18C",
+      "info": "Improved warhead."
+    },
+    {
+      "type": "item",
+      "version": "MH",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "SPARROW",
+      "range": "MEDIUM",
+      "max range": "38 nm 70 km",
+      "aspect": "ALL",
+      "year": "1985",
+      "platform": "",
+      "info": "Improved tracking and loft."
+    },
+    {
+      "type": "item",
+      "version": "P",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "SPARROW",
+      "range": "MEDIUM",
+      "max range": "38 nm 70 km",
+      "aspect": "ALL",
+      "year": "1987",
+      "platform": "F-14 A/B, F/A-18C",
+      "info": "Improved guidance."
+    }
+  ],
+  "AIM-9": [
+    {
+      "type": "item",
+      "version": "B",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "2.5 nm 4.6 km",
+      "aspect": "REAR",
+      "year": "1956",
+      "platform": "A-4E, F-4E, F-5E, F-86F, Mirage F1",
+      "info": "Early model."
+    },
+    {
+      "type": "item",
+      "version": "CAPTIVE M",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "N/A",
+      "aspect": "N/A",
+      "year": "1975",
+      "platform": "F-15E",
+      "info": "Inert version."
+    },
+    {
+      "type": "item",
+      "version": "J",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "LIMITED ALL",
+      "year": "1975",
+      "platform": "F-4E, Mirage F1, F-15E",
+      "info": "Improved over early model."
+    },
+    {
+      "type": "item",
+      "version": "JULI",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "ALL",
+      "year": "1980",
+      "platform": "",
+      "info": "Improved guidance over the J."
+    },
+    {
+      "type": "item",
+      "version": "L",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "ALL",
+      "year": "1977",
+      "platform": "A-10A, A-10C, A-10CII, AV-8B, F-4E, F-14 A/B, F-15C, F-15E, F-16, F/A-18C",
+      "info": "9G launch capable, CM resistant."
+    },
+    {
+      "type": "item",
+      "version": "M",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "ALL",
+      "year": "1982",
+      "platform": "A-10A, A-10C, A-10CII, AV-8B, C-101CC, F-4E, F-5E, F-14 A/B, F-15C, F-15E, F-16, F/A-18C",
+      "info": "Improved slightly over L."
+    },
+    {
+      "type": "item",
+      "version": "P",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "REAR",
+      "year": "",
+      "platform": "A-4E, A-10A, C-101CC, F-4E, F-5E, F-15C, F-15E, F-16, Mirage F1",
+      "info": "Improved over B."
+    },
+    {
+      "type": "item",
+      "version": "P3",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "LIMITED ALL",
+      "year": "1975",
+      "platform": "F-16, Mirage F1",
+      "info": "Improved over P."
+    },
+    {
+      "type": "item",
+      "version": "P5",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "ALL",
+      "year": "1975",
+      "platform": "A-4E, A-10A, F-5E, F-15C, F-16",
+      "info": "Improved over P3."
+    },
+    {
+      "type": "item",
+      "version": "X",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "20 nm 37 km",
+      "aspect": "ALL",
+      "year": "2003",
+      "platform": "F-16, F/A-18C",
+      "info": "High off boresight."
+    }
+  ],
+  "AIM-54": [
+    {
+      "type": "item",
+      "version": "A MK47",
+      "style": "ACTIVE RADAR",
+      "name": "PHOENIX",
+      "range": "LONG",
+      "max range": "120 nm 222.2 km",
+      "aspect": "ALL",
+      "year": "1974",
+      "platform": "F-14 A/B",
+      "info": "Earliest model"
+    },
+    {
+      "type": "item",
+      "version": "A MK60",
+      "style": "ACTIVE RADAR",
+      "name": "PHOENIX",
+      "range": "LONG",
+      "max range": "145 nm 268.5 km",
+      "aspect": "ALL",
+      "year": "1975",
+      "platform": "F-14 A/B",
+      "info": "High-thrust/long burn engine"
+    },
+    {
+      "type": "item",
+      "version": "C MK47",
+      "style": "ACTIVE RADAR",
+      "name": "PHOENIX",
+      "range": "LONG",
+      "max range": "130 nm 240.7 km",
+      "aspect": "ALL",
+      "year": "1986",
+      "platform": "F-14 A/B",
+      "info": "Smokeless engine, improved seeker"
+    }
+  ],
+  "AIM-120": [
+    {
+      "type": "item",
+      "version": "B",
+      "style": "ACTIVE RADAR",
+      "name": "AMRAAM",
+      "range": "MEDIUM",
+      "max range": "40 nm 75 km",
+      "aspect": "ALL",
+      "year": "1994",
+      "platform": "F-15C, F-15E, F-16, F/A-18C",
+      "info": "Improved variant over A."
+    },
+    {
+      "type": "item",
+      "version": "C-5",
+      "style": "ACTIVE RADAR",
+      "name": "AMRAAM",
+      "range": "MEDIUM",
+      "max range": "60 nm 111 km",
+      "aspect": "ALL",
+      "year": "1996",
+      "platform": "F-15C, F-15E, F-16, F/A-18C",
+      "info": "Smaller control surfaces over B."
+    }
+  ],
+  "MISTRAL": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "INFRARED",
+      "name": "MISTRAL",
+      "range": "SHORT",
+      "max range": "4 nm 7 km",
+      "aspect": "ALL",
+      "year": "1988",
+      "platform": "SA342 Mistral",
+      "info": "Laser proximity or impact triggered"
+    }
+  ],
+  "PL-5": [
+    {
+      "type": "item",
+      "version": "EII",
+      "style": "INFRARED",
+      "name": "THUNDERBOLT",
+      "range": "SHORT",
+      "max range": "10 nm 18 km",
+      "aspect": "ALL",
+      "year": "1994",
+      "platform": "JF-17",
+      "info": "Based on the AA-2 Atoll."
+    }
+  ],
+  "R-3R": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "AA-2 ADV-ATOLL",
+      "range": "SHORT",
+      "max range": "4.5 nm 8 km",
+      "aspect": "ALL",
+      "year": "1966",
+      "platform": "MiG-21",
+      "info": "Up to 2G manoeuvres."
+    }
+  ],
+  "R-3S": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "INFRARED",
+      "name": "AA-2 ATOLL",
+      "range": "SHORT",
+      "max range": "4 nm 7 km",
+      "aspect": "REAR",
+      "year": "1962",
+      "platform": "L-39C, MiG-19, MIG-21",
+      "info": "Slow lock, Up to 3G manoeuvres."
+    }
+  ],
+  "R-13": [
+    {
+      "type": "item",
+      "version": "M",
+      "style": "INFRARED",
+      "name": "AA-2 ADV-ATOLL",
+      "range": "SHORT",
+      "max range": "8.1 nm 15 km",
+      "aspect": "REAR",
+      "year": "1974",
+      "platform": "MIG-21",
+      "info": "Up to 7G manoeuvres."
+    },
+    {
+      "type": "item",
+      "version": "M1",
+      "style": "INFRARED",
+      "name": "AA-2 ADV-ATOLL",
+      "range": "SHORT",
+      "max range": "9.2 nm 17 km",
+      "aspect": "REAR",
+      "year": "1976",
+      "platform": "MIG-21",
+      "info": "Up to 8G manoeuvres."
+    }
+  ],
+  "R-27": [
+    {
+      "type": "item",
+      "version": "ER",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "AA-10 ALAMO",
+      "range": "MEDIUM",
+      "max range": "70 nm 130 km",
+      "aspect": "ALL",
+      "year": "1986",
+      "platform": "J-11, MIG-29, Su-27, Su-33",
+      "info": "Lock on after launch capability."
+    },
+    {
+      "type": "item",
+      "version": "R",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "AA-10 ALAMO",
+      "range": "MEDIUM",
+      "max range": "43 nm 80 km",
+      "aspect": "ALL",
+      "year": "1983",
+      "platform": "J-11, MIG-29, Su-27, Su-33",
+      "info": "Lock on after launch capability."
+    },
+    {
+      "type": "item",
+      "version": "ET",
+      "style": "INFRARED",
+      "name": "AA-10 ALAMO",
+      "range": "MEDIUM",
+      "max range": "65 nm 120 km",
+      "aspect": "ALL",
+      "year": "1983",
+      "platform": "J-11, MIG-29, Su-27, Su-33",
+      "info": "Lock on before launch."
+    },
+    {
+      "type": "item",
+      "version": "T",
+      "style": "INFRARED",
+      "name": "AA-10 ALAMO",
+      "range": "MEDIUM",
+      "max range": "38 nm 70 km",
+      "aspect": "ALL",
+      "year": "1986",
+      "platform": "J-11, MIG-29, Su-27, Su-33",
+      "info": "Lock on before launch."
+    }
+  ],
+  "R-55": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "BEAM RIDING",
+      "name": "AA-1 ALKALI",
+      "range": "SHORT",
+      "max range": "2.7 nm 5 km",
+      "aspect": "REAR",
+      "year": "1957",
+      "platform": "MIG-21",
+      "info": "Semi-active homing radar."
+    }
+  ],
+  "R-60": [
+    {
+      "type": "item",
+      "version": "M",
+      "style": "INFRARED",
+      "name": "AA-8 APHID",
+      "range": "SHORT",
+      "max range": "5.7 nm 10 km",
+      "aspect": "LIMITED ALL REAR",
+      "year": "1974 1978",
+      "platform": "L-39, Mi-24P, MiG-21, MiG-29, Su-25",
+      "info": "Up to 5G manoeuvres."
+    }
+  ],
+  "R-73": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "INFRARED",
+      "name": "AA-11 ARCHER",
+      "range": "SHORT",
+      "max range": "16 nm 30 km",
+      "aspect": "ALL",
+      "year": "1982",
+      "platform": "J-11, MiG-29, Su-25T, Su-27, Su-33",
+      "info": "High off boresight."
+    }
+  ],
+  "R-77": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "ACTIVE RADAR",
+      "name": "AA-12 ADDER",
+      "range": "MEDIUM",
+      "max range": "54 nm 100 km",
+      "aspect": "ALL",
+      "year": "1992",
+      "platform": "J-11, MiG-29",
+      "info": "Can be used against missiles."
+    }
+  ],
+  "R.530": [
+    {
+      "type": "item",
+      "version": "F",
+      "style": "SEMI-ACTIVE OR INFRARED",
+      "name": "MATRA",
+      "range": "SHORT",
+      "max range": "10.8 nm 20 km",
+      "aspect": "LIMITED FRONT",
+      "year": "1962",
+      "platform": "Mirage F1 (only 1 or 2 can be equipped)",
+      "info": "Semi active radar homing variant."
+    },
+    {
+      "type": "item",
+      "version": "F.IR",
+      "style": "SEMI-ACTIVE OR INFRARED",
+      "name": "MATRA",
+      "range": "SHORT",
+      "max range": "10.8 nm 20 km",
+      "aspect": "LIMITED FRONT",
+      "year": "1962",
+      "platform": "Mirage F1 (only 1 or 2 can be equipped)",
+      "info": "Infrared homing variant."
+    }
+  ],
+  "R.550": [
+    {
+      "type": "item",
+      "version": "1",
+      "style": "INFRARED",
+      "name": "MAGIC",
+      "range": "SHORT",
+      "max range": "8 nm 15 km",
+      "aspect": "LIMITED FRONT",
+      "year": "1972",
+      "platform": "Mirage F1",
+      "info": "Limited frontal engagement."
+    },
+    {
+      "type": "item",
+      "version": "2",
+      "style": "INFRARED",
+      "name": "MAGIC",
+      "range": "SHORT",
+      "max range": "8 nm 15 km",
+      "aspect": "ALL",
+      "year": "1986",
+      "platform": "C-101CC, M-2000C, Mirage F1",
+      "info": "Frontal engagement."
+    }
+  ],
+  "RB-24": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "2.5 nm 4.6 km",
+      "aspect": "REAR",
+      "year": "1956",
+      "platform": "",
+      "info": "Equivalent to the AIM-9B. Early model."
+    },
+    {
+      "type": "item",
+      "version": "J",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "LIMITED ALL",
+      "year": "1975",
+      "platform": "AJS-37",
+      "info": "Improved over early model. Equivalent to the AIM-9P."
+    }
+  ],
+  "RB-74": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "INFRARED",
+      "name": "SIDEWINDER",
+      "range": "SHORT",
+      "max range": "10 nm 18.5 km",
+      "aspect": "ALL",
+      "year": "1977",
+      "platform": "AJS-37",
+      "info": "Equivalent to the AIM-9L. 9G launch capable, CM resistant."
+    }
+  ],
+  "RS": [
+    {
+      "type": "item",
+      "version": "2US",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "AA-1 ALKALI",
+      "range": "SHORT",
+      "max range": "2.7 nm 5 km",
+      "aspect": "REAR",
+      "year": "1965",
+      "platform": "MiG-21",
+      "info": "Beam riding missile."
+    }
+  ],
+  "SD-10": [
+    {
+      "type": "item",
+      "version": "",
+      "style": "ACTIVE RADAR",
+      "name": "LIGHTNING",
+      "range": "MEDIUM",
+      "max range": "50 nm 100 km",
+      "aspect": "ALL",
+      "year": "2005",
+      "platform": "JF-17",
+      "info": "Comparable to the AIM-120."
+    }
+  ],
+  "SUPER 530": [
+    {
+      "type": "item",
+      "version": "F",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "",
+      "range": "MEDIUM",
+      "max range": "10 nm 18 km",
+      "aspect": "ALL",
+      "year": "1979",
+      "platform": "Mirage F1",
+      "info": "Comparable to the AIM-7."
+    },
+    {
+      "type": "item",
+      "version": "D",
+      "style": "SEMI-ACTIVE RADAR",
+      "name": "",
+      "range": "MEDIUM",
+      "max range": "20 nm 37 km",
+      "aspect": "ALL",
+      "year": "1988",
+      "platform": "M-2000C",
+      "info": "Comparable to the AIM-7."
+    }
+  ]
 }

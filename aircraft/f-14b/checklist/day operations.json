@@ -1,0 +1,1403 @@
+{
+  "pre-start": [
+    {
+      "type": "item",
+      "requirement": "Ground crew",
+      "action": "connect electrical power",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ground crew",
+      "action": "connect air supply",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once ground power is connected, the RIO can proceed with his own start-up procedure."
+    },
+    {
+      "type": "item",
+      "requirement": "ICS (Intercom Set) switch",
+      "action": "Set to HOT MIC",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Use the JESTER Contextual Menu by pressing “A” and selecting “STARTUP” (LCTRL+3) to request start-up. After a few seconds, your RIO will request a Comm Check to test the ICS (Intercom Set).8."
+    },
+    {
+      "type": "note",
+      "text": "Use the JESTER Contextual Menu again by pressing “A” and confirm that you heard him by selecting “LOUD AND CLEAR” (LCTRL+4)."
+    },
+    {
+      "type": "item",
+      "requirement": "Arm the pilot ejection seat",
+      "action": "Ejection Seat Arming Handle (DOWN)",
+      "location": "",
+      "locationText": "Keybind “LSHIFT+E”"
+    },
+    {
+      "type": "note",
+      "text": "Jester will automatically close the canopy for  you  once  your  ejection  seat  is  armed properly.  He  will  then  resume  running through his start-up checklist. If flying with a human  RIO,  the  RIO  can  close  the  canopy with “LCTRL+C”"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Oxygen Switch",
+      "action": "ON (FWD)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Emergency Wing Sweep Handle",
+      "action": "OVERSWEEP (AFT)",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "Pilot Engine Start": [
+    {
+      "type": "note",
+      "text": "Verify that Ground Power and Air Pressure Cart are connected"
+    },
+    {
+      "type": "item",
+      "requirement": "Set AIR SOURCE",
+      "action": "OFF",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set HYD TRANSFER Pump",
+      "action": "SHUTOFF",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Emergency Flight Hydraulics Switch",
+      "action": "AUTO (LOW)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Verify that L MASTER GEN and R MASTER GEN switches are set to NORM (FWD)"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Engine Crank switch",
+      "action": "R (RIGHT)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When right Engine N2 reaches 20% RPM",
+      "action": "Right Throttle to IDLE detent",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Igniters will kick in  and trigger an engine light off. EGT should rise within 5 to 15 sec."
+    },
+    {
+      "type": "note",
+      "text": "Verify  that  oil  pressure  rises  and  that  EGT  (Exhaust  Gas Temperature) does not exceed 890 deg C until engine stabilizes."
+    },
+    {
+      "type": "note",
+      "text": "Around 50 % RPM N2, Engine Cranking switch will spring back to the OFF position, starter will disengage and START VALVE caution will disappear"
+    },
+    {
+      "type": "note",
+      "text": "Wait  for  Right  Engine  RPM  to  stabilize  around  70  %  RPM  N2. Confirm that right generator is running by checking that the R GEN caution  is  extinguished. Engine should be stabilized at the following parameters: •RPM between 62 and 78 % •EGT around 500 deg C •Fuel Flow between 950 and 1400 lbs/hour (pph) •NOZ (Nozzle) position fully open at 100 % (5) •Oil Pressure between 25 and 35 PSI (15 psi minimum) •Flight Hydraulic Pressure – 3000 psi"
+    },
+    {
+      "type": "item",
+      "requirement": "Left Engine Crank switch",
+      "action": "L (LEFT)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Left Engine cranking will initiate and the START VALVE caution will appear. Engine N2 (High-Pressure Compressor Speed) will rise to approx. 20 % RPM.26."
+    },
+    {
+      "type": "item",
+      "requirement": "When Left Engine N2 reaches 20 % RPM",
+      "action": "Left Throttle to the IDLE detent",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Igniters will kick in and trigger an engine light off. EGT should rise within 5 to 15 sec."
+    },
+    {
+      "type": "note",
+      "text": "Verify  that  oil  pressure  rises  and  that  EGT  (Exhaust  Gas Temperature) does not exceed 890 deg C until engine stabilizes."
+    },
+    {
+      "type": "note",
+      "text": "Around 50 % RPM N2, Engine Cranking switch will spring back to the OFF position, starter will disengage and START VALVE caution will disappear"
+    },
+    {
+      "type": "note",
+      "text": "Wait for Left Engine RPM to stabilize around 70 % RPM N2. Confirm that left generator is running by checking that the L GEN caution is extinguished. Engine should be stabilized at the following parameters: •RPM between 62 and 78 % •EGT around 500 deg C •Fuel Flow between 950 and 1400 lbs/hour (pph) •NOZ (Nozzle) position fully open at 100 % (5) •Oil Pressure between 25 and 35 PSI (15 psi minimum) •Flight Hydraulic Pressure – 3000 ps"
+    },
+    {
+      "type": "item",
+      "requirement": "Set HYD TRANSFER PUMP",
+      "action": "NORM",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm that both the COMBINED HYDRAULIC PRESSURE and FLIGHT HYDRAULIC PRESSURE indications are equal to 3000 psi each.32. Confirm that no HYD PRESS caution is visible"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Air Source",
+      "action": "BOTH ENG",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ground crew",
+      "action": "Disconnect Electrical power",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ground crew",
+      "action": "Disconnect Air flow",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "Pilot Post-Start": [
+    {
+      "type": "note",
+      "text": "RIO starts INS alignment automatically"
+    },
+    {
+      "type": "item",
+      "requirement": "Switch VDI power",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Switch HUD power",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Switch HSD power",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set HSD Mode",
+      "action": "TID",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "J] Use Jester menu to select INS alignment precision; FIN": [
+    {
+      "type": "note",
+      "text": "INS FINE alignment takes about 8 minutes"
+    },
+    {
+      "type": "note",
+      "text": "•INS GO NOW: Shortest but least precise INS alignment •INS GO COARSE: Coarse alignment does not meet Alert Launch Criteria to use AIM-7 or AIM-54 •INS GO MIN WPN LAUNCH (Alert Launch Criteria): Alignment meets Alert Launch Criteria to use AIM-7 or AIM-54"
+    },
+    {
+      "type": "note",
+      "text": "[J] Jester enters Waypoint/Target coordinates automatically"
+    },
+    {
+      "type": "item",
+      "requirement": "Set GUN RATE switch",
+      "action": "As required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set SW COOL switch",
+      "action": "OFF",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set MSL PREP switch",
+      "action": "OFF",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Missile MODE/STP switch",
+      "action": "NORM",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set ANTI-SKID SPOILER BK switch",
+      "action": "OFF",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "ANTI-SKID SPOILER BK in BOTH at low speed can cause temporary brake loss during acceleration"
+    },
+    {
+      "type": "item",
+      "requirement": "Verify Emergency Wing Sweep Handle",
+      "action": "AFT",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Ensure Wing Sweep Angle",
+      "action": "68 degrees",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Turn AFCS SAS PITCH",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Turn AFCS SAS ROLL",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Turn AFCS SAS YAW",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set WING/EXT TRANS switch",
+      "action": "AUTO",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set UHF 1 Radio Function Selector",
+      "action": "BOTH",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set TACAN function selector",
+      "action": "T/R",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set ARA-63 ICLS Receiver Power switch",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Turn Radar Altitude knob",
+      "action": "One click clockwise",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "RADALT will display 6000 ft for 2-3 minutes during warmup"
+    },
+    {
+      "type": "item",
+      "requirement": "Erect standby attitude gyro",
+      "action": "2 minutes before takeoff",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Kneeboard",
+      "action": "Open",
+      "location": "",
+      "locationText": "Keybind “RSHIFT+K”"
+    }
+  ],
+  "J] Use kneeboard to request KY-28 encryption key change; If needed ; Key #1 for most mission": [
+    {
+      "type": "item",
+      "requirement": "Use kneeboard to find",
+      "action": "TACTICAL DATALINK SYSTEMS page",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "J] Use Jester menu to set Datalink Mode; TACTICAL DATALINK SYSTE": [],
+  "J] Use Jester menu to set Datalink Frequency; As require": [
+    {
+      "type": "item",
+      "requirement": "Kneeboard",
+      "action": "Close",
+      "location": "",
+      "locationText": "Keybind “RSHIFT+K”"
+    },
+    {
+      "type": "item",
+      "requirement": "Set lights",
+      "action": "As required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Start taxiing",
+      "action": "When ready",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "RIO INS ALIGNMENT (SHORE)": [
+    {
+      "type": "item",
+      "requirement": "Set ICS switch",
+      "action": "HOT MIC",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Before starting INS alignment, ensure ground power is connected"
+    },
+    {
+      "type": "item",
+      "requirement": "Communicate with pilot",
+      "action": "To confirm engines are started and bleed air is available",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "INS alignment requires WCS, which needs cooling air from ECS. This means: a) Both engines need to be running b) AIR SOURCE selector needs to be set to BOTH ENG in pilot's cockpit c) LIQUID COOLING switch needs to be set to FWD in RIO's cockpit"
+    },
+    {
+      "type": "item",
+      "requirement": "Set WCS Switch",
+      "action": "STANDBY",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Wait approx. 40 seconds for TID and DDD to power on"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Navigation Mode Selector",
+      "action": "GND ALIGN",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Kneeboard",
+      "action": "Open",
+      "location": "",
+      "locationText": "Keybind “RSHIFT+K”"
+    },
+    {
+      "type": "note",
+      "text": "GROUND SETTINGS page will display coordinates, elevation, and magnetic variation"
+    },
+    {
+      "type": "item",
+      "requirement": "Set CAP CATEGORY selector",
+      "action": "NAV",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Verify OWN AC Message Button",
+      "action": "Is selected",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "From GROUND SETTINGS page, coordinates are LAT/LON"
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "CLEAR button on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "« 1 » (LAT) button on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "« N+E » on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Type",
+      "action": "Current LAT on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm latitude coordinates on TID"
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "“ENTER” on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "« 6 » (LONG) button on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "« N+E » on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Type",
+      "action": "LON on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm longitude coordinates on TID"
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "“ENTER” on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "From GROUND SETTINGS page, altitude is in ft and magnetic variation is +1.7 deg"
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "« 4 » (ALT) button on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "« N+E » on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Type",
+      "action": "Altitude in FEET on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm altitude on TID"
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "“ENTER” on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "CAP Message Selector Button",
+      "location": "",
+      "locationText": "Next to « MAG VAR HDG » button"
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "« 8 » (HDG) button on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "« N+E » on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Type",
+      "action": "HEADING on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Confirm magnetic variation heading on TID"
+    },
+    {
+      "type": "item",
+      "requirement": "Press",
+      "action": "\"ENTER” on CAP keyboard",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Kneeboard",
+      "action": "Close",
+      "location": "",
+      "locationText": "Keybind “RSHIFT+K”"
+    },
+    {
+      "type": "note",
+      "text": "Monitor alignment progress INS alignment takes about 8 minutes to reach FULL FINE"
+    },
+    {
+      "type": "note",
+      "text": "Fine alignment is complete when INS Progress Caret turns into a diamond with a dot"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Navigation Mode Selector",
+      "action": "INS NAV MODE",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "The  alignment  will  be  much  quicker  if  you  have  an  Automatic  Stored Heading (ASH), which is an option set through the Mission Editor. You will recognize the  presence of a stored heading with the “ASH” indication on the TID or a green arrow next to the CAP Message Button “STORED HDG ALIGN”. You do not need to set up anything more than the usual alignment procedure to use the Stored Heading."
+    }
+  ],
+  "RIO INS ALIGNMENT (CARRIER)": [
+    {
+      "type": "item",
+      "requirement": "Set ICS switch",
+      "action": "HOT MIC",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Before starting INS alignment, ensure ground power is connected"
+    },
+    {
+      "type": "item",
+      "requirement": "Communicate with pilot",
+      "action": "To confirm engines are started and bleed air is available",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "INS alignment requires WCS, which needs cooling air from ECS. This means: a) Both engines need to be running  b) AIR SOURCE selector needs to be set to BOTH ENG in pilot's cockpit  c) LIQUID COOLING switch needs to be set to FWD in RIO's cockpit"
+    },
+    {
+      "type": "item",
+      "requirement": "Set WCS Switch",
+      "action": "STANDBY",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Wait approx. 40 seconds for TID and DDD to power on"
+    },
+    {
+      "type": "item",
+      "requirement": "Kneeboard",
+      "action": "Open",
+      "location": "",
+      "locationText": "Keybind “RSHIFT+K”"
+    },
+    {
+      "type": "item",
+      "requirement": "Use kneeboard to find",
+      "action": "TACTICAL DATALINK SYSTEMS page",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Datalink Power Switch",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Datalink Frequency",
+      "action": "320.90 MHz",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Kneeboard",
+      "action": "Close",
+      "location": "",
+      "locationText": "Keybind “RSHIFT+K”"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Datalink Mode switch",
+      "action": "CAINS/WAYPT",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Navigation Mode Selector",
+      "action": "CVA",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Monitor alignment progress. No need to input aircraft position coordinates for CVA alignment"
+    },
+    {
+      "type": "note",
+      "text": "CVA INS alignment takes about 9 minutes to reach FULL FINE"
+    },
+    {
+      "type": "note",
+      "text": "Fine alignment is complete when INS Progress Caret turns into a diamond with a dot"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Navigation Mode Selector",
+      "action": "INS NAV MODE",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "RIO POST-ALIGNMENT": [
+    {
+      "type": "item",
+      "requirement": "Set RIO Oxygen Switch",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "RIO ejection seat",
+      "action": "Arm",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "Close",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set V/UHF radio Function Selector",
+      "action": "T/R +G",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set TACAN function selector",
+      "action": "T/R",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Liquid Cooling Switch",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "This will start the AWG-9 radar cooling process"
+    },
+    {
+      "type": "item",
+      "requirement": "Erect standby attitude gyro",
+      "action": "2 minutes before takeoff",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set IR/TV Power switch",
+      "action": "STANDBY",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set AN/ALR-67 RWR Power switch",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "RWR will only activate once aircraft is in the air"
+    },
+    {
+      "type": "item",
+      "requirement": "Set AN/ALQ-126 DECM Jammer Mode Selector Switch",
+      "action": "STANDBY",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Kneeboard",
+      "action": "Open",
+      "location": "",
+      "locationText": "Keybind “RSHIFT+K”"
+    },
+    {
+      "type": "item",
+      "requirement": "Use kneeboard to find",
+      "action": "TACTICAL DATALINK SYSTEMS page",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Datalink Power Switch",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Datalink Mode Switch",
+      "action": "TAC",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Datalink Frequency",
+      "action": "309.20 MHz",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Not a mandatory step, but recommended"
+    },
+    {
+      "type": "item",
+      "requirement": "Kneeboard",
+      "action": "Close",
+      "location": "",
+      "locationText": "Keybind “RSHIFT+K”"
+    },
+    {
+      "type": "item",
+      "requirement": "Set IFF Mode 4 Power Switch",
+      "action": "ON",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set AN/ALE-39 PWR/Mode Switch",
+      "action": "AUTO(CHAFF)/MAN or MAN, as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Flare Mode Switch",
+      "action": "PILOT",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Allows pilot to deploy flares with DLC button"
+    },
+    {
+      "type": "item",
+      "requirement": "Set WCS Switch",
+      "action": "WCS XMT",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once the three-minute warm-up period for the radar is done and aircraft is in the air"
+    },
+    {
+      "type": "item",
+      "requirement": "Set IR/TV (TCS Power) Switch",
+      "action": "STBY",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Wait for a 2-minute warm-up period, then set to ON when aircraft is in the air"
+    },
+    {
+      "type": "note",
+      "text": "You should now be ready to taxi"
+    }
+  ],
+  "SHORE TAKEOFF": [
+    {
+      "type": "item",
+      "requirement": "Set ANTI-SKID SPOILER BK switch",
+      "action": "OFF",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "ANTI-SKID SPOILER BK in BOTH during low-speed taxi can cause temporary brake loss"
+    },
+    {
+      "type": "item",
+      "requirement": "Set HOOK BYPASS switch",
+      "action": "FIELD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check Nose Strut",
+      "action": "RETRACTED",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set HUD Display Mode",
+      "action": "TO",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Parking Brake Lever",
+      "action": "Release",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Taxi",
+      "action": "As required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Aircraft is steered using nosewheel steering (NWS) controlled with rudder pedals"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Emergency Wing Sweep Handle",
+      "action": "20 degrees",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER RESET button",
+      "action": "Press",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Use Wing Sweep AFT & FWD buttons",
+      "action": "To exercise wings",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Don't forget to press Master Reset before using Wing Sweep Thumb switch"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Wing Sweep Thumb Switch",
+      "action": "AUTO",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Wing Sweep Angle indicator should show 20 degrees"
+    },
+    {
+      "type": "item",
+      "requirement": "Set ANTI-SKID SPOILER BK switch",
+      "action": "BOTH",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Flaps",
+      "action": "Up",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set Takeoff Elevator Trim",
+      "action": "0 degrees",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Nosewheel Steering",
+      "action": "Disengage",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "NWS ENGA caution should extinguish"
+    },
+    {
+      "type": "item",
+      "requirement": "Throttle up",
+      "action": "MIL Power",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Full afterburner takeoff is prohibited with GE F110 engines"
+    },
+    {
+      "type": "item",
+      "requirement": "Slowly hold stick back",
+      "action": "When reaching approx. 130 kts",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Rotation should occur at approx. 140 kts"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Landing Gear lever",
+      "action": "UP",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Before reaching 250 kts"
+    },
+    {
+      "type": "item",
+      "requirement": "Engage afterburners",
+      "action": "As required once wheels are off the ground",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "CARRIER TAKEOFF": [
+    {
+      "type": "item",
+      "requirement": "Make sure INS Selector switch",
+      "action": "Was set to CVA for alignment",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "With CVA mode and Datalink Mode set to CAINS, alignment takes data from the carrier"
+    },
+    {
+      "type": "note",
+      "text": "Once alignment is finished, verify INS Selector switch is set back to INS NAV"
+    },
+    {
+      "type": "item",
+      "requirement": "Set ANTI-SKID SPOILER BK switch",
+      "action": "OFF",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set HOOK BYPASS switch",
+      "action": "CARRIER",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Check Nose Strut",
+      "action": "RETRACTED",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Set HUD Display Mode",
+      "action": "TO",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Parking Brake Lever",
+      "action": "Release",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Taxi",
+      "action": "As required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "In a carrier environment, taxi with wings fully swept back (OVERSWEEP) to minimize collision risk, verify way is clear to the catapult"
+    },
+    {
+      "type": "note",
+      "text": "Aircraft is steered using nosewheel steering (NWS) controlled with rudder pedals"
+    },
+    {
+      "type": "item",
+      "requirement": "Taxi",
+      "action": "To approach catapult from behind",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "If an aircraft is occupying the catapult, wait behind the JBD"
+    },
+    {
+      "type": "note",
+      "text": "If Taxi Director is not present, use “Ground Crew” menu to request a launch"
+    },
+    {
+      "type": "item",
+      "requirement": "Advance on retracted JBD",
+      "action": "When ready",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Follow Taxi Director's instructions"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Emergency Wing Sweep Handle",
+      "action": "20 degrees",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER RESET button",
+      "action": "Press",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Use Wing Sweep AFT & FWD buttons",
+      "action": "To exercise wings in their full range of motion",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Don't forget to press Master Reset before using Wing Sweep Thumb switch"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Wing Sweep Thumb Switch",
+      "action": "AUTO",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Wing Sweep Angle indicator should show 20 degrees"
+    },
+    {
+      "type": "item",
+      "requirement": "Flaps Lever",
+      "action": "Fully AFT",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Follow Taxi Director's instructions"
+    },
+    {
+      "type": "item",
+      "requirement": "Launch bar",
+      "action": "extend",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Once launch bar is deployed, Nosewheel Steering will automatically disconnect"
+    },
+    {
+      "type": "note",
+      "text": "Follow Taxi director commands"
+    },
+    {
+      "type": "item",
+      "requirement": "Throttle up",
+      "action": "hook launch bar into catapult shuttle",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Reduce power to idle",
+      "action": "When launch bar drops over shuttle",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "The Catapult crew will verify the launch bar and holdback bar"
+    },
+    {
+      "type": "note",
+      "text": "When checks are complete, the crew in the ICCS will apply tension to the catapult"
+    },
+    {
+      "type": "note",
+      "text": "The Final Checkers will inspect your aircraft"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Takeoff Elevator Trim",
+      "action": "2 to 3 degrees Nose Up",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "There is a Catapult Launch Trim Requirements chart in the F-14 NATOPS, but it's not useful in DCS without longitudinal CG location"
+    },
+    {
+      "type": "item",
+      "requirement": "Verify Speed Brakes",
+      "action": "Retracted",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Throttle up",
+      "action": "To MIL Power when Shooter gives “Engine Run Up” signal",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Full afterburner takeoff is prohibited with GE F110 engines"
+    },
+    {
+      "type": "note",
+      "text": "Perform control wipeout"
+    },
+    {
+      "type": "item",
+      "requirement": "Stick",
+      "action": "Full Forward",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Stick",
+      "action": "Full Aft",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Stick",
+      "action": "Full Left",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Stick",
+      "action": "Full Right",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Rudder",
+      "action": "Full Left",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Rudder",
+      "action": "Full Right",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Check engine instruments and monitor lights"
+    },
+    {
+      "type": "item",
+      "requirement": "Salute the Shooter",
+      "action": "For day operations",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Flash navigation lights",
+      "action": "For night operations",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "The Catapult Officer will make final checks and touch the deck"
+    },
+    {
+      "type": "note",
+      "text": "The Shooter will then extend his arm, giving the signal to fire the catapult"
+    },
+    {
+      "type": "note",
+      "text": "The aircraft will accelerate, reaching end speed in about two seconds"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Landing Gear lever",
+      "action": "UP",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Before reaching 250 kts"
+    },
+    {
+      "type": "item",
+      "requirement": "Set Flaps lever",
+      "action": "UP",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Before reaching 225 kts"
+    },
+    {
+      "type": "item",
+      "requirement": "Perform Clearing Turn",
+      "action": "20 degrees left and heading BRC",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Maintain 500 ft and 300 kts"
+    },
+    {
+      "type": "note",
+      "text": "After away from carrier about 7 nm, you are cleared to climb more than 500 ft"
+    }
+  ]
+}

@@ -5,14 +5,14 @@
       "requirement": "Set Ejection Seat Lever",
       "action": "DOWN & ARMED",
       "location": "",
-      "locationText": ""
+      "locationText": "Right left"
     },
     {
       "type": "item",
       "requirement": "Parking Brake Lever",
       "action": "ENGAGED",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -26,7 +26,7 @@
       "requirement": "Battery Switch",
       "action": "ON (Right Click)",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front"
     },
     {
       "type": "note",
@@ -51,7 +51,7 @@
       "requirement": "Parking brake",
       "action": "Set",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -65,7 +65,7 @@
       "requirement": "APU switch",
       "action": "ON (FWD)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front left"
     },
     {
       "type": "item",
@@ -83,7 +83,7 @@
       "requirement": "Right Engine  Crank  switch",
       "action": "R (RIGHT)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front left"
     },
     {
       "type": "item",
@@ -119,49 +119,49 @@
       "requirement": "Power Left and Right DDIs",
       "action": "DDI knob to DAY",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "item",
       "requirement": "AMPCD",
       "action": "ON by setting  Brightness knob to the right",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "item",
       "requirement": "Power Heads-Up Display",
       "action": "HUD brightness control lever right",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "item",
       "requirement": "Turn BLK LVL knob",
       "action": "Right",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "item",
       "requirement": "Set ALT switch",
       "action": "RDR",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "item",
       "requirement": "Set ATT switch",
-      "action": "AUTO26",
+      "action": "AUTO",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "item",
       "requirement": "Bleed Air Switch",
       "action": "360 degrees clockwise from NORMAL to NORMAL",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front"
     },
     {
       "type": "note",
@@ -179,14 +179,14 @@
       "requirement": "CANOPY",
       "action": "CLOSE",
       "location": "",
-      "locationText": ""
+      "locationText": "Right edge, under"
     },
     {
       "type": "item",
       "requirement": "INS Alignment switch",
       "action": "as required",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, middle"
     },
     {
       "type": "note",
@@ -216,7 +216,7 @@
       "requirement": "INS selector",
       "action": "Set to IFA (In-Flight Alignment) if a GPS is available otherwise NAV",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, middle"
     },
     {
       "type": "note",
@@ -259,7 +259,7 @@
       "requirement": "FCS RESET button",
       "action": "press to reset FCS faults. “X”s should disappear",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, top front"
     },
     {
       "type": "item",
@@ -270,17 +270,17 @@
     },
     {
       "type": "item",
-      "requirement": "Make sure cautions illuminate properly",
-      "action": "release the switch",
+      "requirement": "Test lights",
+      "action": "hold Lights Test switch. Release when done.",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front left"
     },
     {
       "type": "item",
       "requirement": "Left Engine Crank switch",
       "action": "L (LEFT)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front left"
     },
     {
       "type": "note",
@@ -290,8 +290,8 @@
       "type": "item",
       "requirement": "When Left Engine RPM reaches 25 %",
       "action": "Throttle to IDLE detent",
-      "location": "",
-      "locationText": ""
+      "location": "throttle.jpg",
+      "locationText": "Throttle"
     },
     {
       "type": "note",
@@ -317,35 +317,35 @@
       "requirement": "OBOGS (On-Board Oxygen Generating System) switch",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front left"
     },
     {
       "type": "item",
       "requirement": "HOOK BYPASS switch",
       "action": "FIELD or CARRIER as required.",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "FLAPS lever",
       "action": "HALF",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "ANTI-SKID switch",
       "action": "ON for ground airfield, OFF for carriers",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "RADAR switch",
       "action": "OPERATE.",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top low"
     },
     {
       "type": "note",
@@ -364,10 +364,10 @@
     },
     {
       "type": "item",
-      "requirement": "FCS BIT switch to ON (UP) position",
-      "action": "Press and hold “Y” key binding",
-      "location": "",
-      "locationText": ""
+      "requirement": "FCS BIT switch ",
+      "action": "ON (UP) position",
+      "location": "Right panel, middle",
+      "locationText": "Press and hold “Y” key binding"
     },
     {
       "type": "item",
@@ -397,7 +397,7 @@
     },
     {
       "type": "item",
-      "requirement": "On the AMPCD",
+      "requirement": "On the AMPCD (bottom MFD)",
       "action": "press the OSB next to the TIMEUFC",
       "location": "",
       "locationText": ""
@@ -414,14 +414,14 @@
       "requirement": "Set the aircraft trim for take off",
       "action": "Press the T/O TRIM button",
       "location": "",
-      "locationText": ""
+      "locationText": "Keybind required"
     },
     {
       "type": "item",
       "requirement": "Set PITOT HEAT switch",
       "action": "AUTO",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, middle"
     },
     {
       "type": "item",
@@ -456,14 +456,14 @@
       "requirement": "WINGS FOLD lever",
       "action": "SPREAD position.",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top middle"
     },
     {
       "type": "item",
       "requirement": "WINGS FOLD lever",
       "action": "Pushed in position",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top middle"
     },
     {
       "type": "note",
@@ -481,42 +481,42 @@
       "requirement": "Standby Attitude Indicator",
       "action": "Uncage",
       "location": "",
-      "locationText": ""
+      "locationText": "Central panel, middle left"
     },
     {
       "type": "item",
       "requirement": "BINGO FUEL",
       "action": "Set on the IFEI panel. (Usually 8000 lbs)",
       "location": "",
-      "locationText": ""
+      "locationText": "Central panel, low left"
     },
     {
       "type": "item",
       "requirement": "Power the Radar Warning Receiver (RWR)",
       "action": "Press the ALR-67 PWR button",
       "location": "",
-      "locationText": ""
+      "locationText": "Central panel, low"
     },
     {
       "type": "item",
       "requirement": "ECM selector",
       "action": "STBY",
       "location": "",
-      "locationText": ""
+      "locationText": "Central panel, low"
     },
     {
       "type": "item",
       "requirement": "DISPENSER switch",
       "action": "ON (middle)",
       "location": "",
-      "locationText": ""
+      "locationText": "Central panel, low"
     },
     {
       "type": "item",
       "requirement": "Power Up IFF",
       "action": "press the IFF Button, then holding the ON button on the UFC for a few seconds.",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "note",
@@ -527,7 +527,7 @@
       "requirement": "Power Up Link-16 Datalink system",
       "action": "pressing the D/L Button a first time to display the Link-4 datalink options, then press the D/L Button a second time to display the Link-16 datalink options. Then, hold the ON button on the UFC for a few seconds.",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "note",
@@ -538,7 +538,7 @@
       "requirement": "On UFC",
       "action": "set Link 16 desired Datalink Frequency by entering it on the scratchpad, then pressing « ENT ».",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "note",
@@ -549,7 +549,7 @@
       "requirement": "Adjust all volume knobs on the Audio Panel",
       "action": "as required.",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, rear"
     },
     {
       "type": "note",
@@ -567,42 +567,42 @@
       "requirement": "STROBE switch",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front"
     },
     {
       "type": "item",
       "requirement": "POSITION LIGHTS switch",
       "action": "BRT",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front"
     },
     {
       "type": "item",
       "requirement": "FORMATION LIGHTS",
       "action": "BRT",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front"
     },
     {
       "type": "item",
-      "requirement": "Turn on lights using the throttle Exterior Lights switch (“L”)",
-      "action": "as required",
+      "requirement": "Turn on lights  ",
+      "action": "throttle Exterior Lights switch",
       "location": "",
-      "locationText": ""
+      "locationText": "Keybind L"
     },
     {
       "type": "item",
       "requirement": "LANDING/TAXI light switch",
       "action": "ON (UP)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Parking Brake lever",
       "action": "disengage (PUSHED = DISENGAGED)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "note",
@@ -619,7 +619,7 @@
       "requirement": "Turn HMD on",
       "action": "HMD brightness knob to BRT (Bright).",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top high"
     },
     {
       "type": "item",
@@ -760,14 +760,14 @@
       "requirement": "Anti-Skid Switch",
       "action": "set to ON (UP Position)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Flaps",
       "action": "HALF (MIDDLE  position)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -781,7 +781,7 @@
       "requirement": "Launch  Bar",
       "action": "RETRACTED",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -802,7 +802,7 @@
       "requirement": "Parking Brake",
       "action": "released",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -860,21 +860,21 @@
       "requirement": "Once you have a positive climb",
       "action": "raise landing gear up before reaching 240 kts",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top middle"
     },
     {
       "type": "item",
       "requirement": "Flaps lever",
       "action": "AUTO",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "ALTITUDE Switch",
       "action": "BARO once reaching an altitude of 3000 ft to use Barometric Altitude as a reference for your HUD",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     }
   ],
   "CARRIER TAKEOFF": [
@@ -912,21 +912,21 @@
       "requirement": "Anti-Skid Switch",
       "action": "OFF (Down Position)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Launch Bar",
       "action": "RETRACT",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "HOOK BYPASS",
       "action": "CARRIER",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -940,7 +940,7 @@
       "requirement": "Flaps",
       "action": "HALF (MIDDLE position)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -983,7 +983,7 @@
     {
       "type": "item",
       "requirement": "When CAT Clear",
-      "action": "advance on the retracted JBD and follow  the  Taxi  Director’s hand signals to align the aircraft on the catapult track",
+      "action": "advance on the retracted JBD and follow the Taxi Director hand signals",
       "location": "",
       "locationText": ""
     },
@@ -992,14 +992,14 @@
       "requirement": "Taxi  Director",
       "action": "Unfold Wings",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Taxi  Director",
       "action": "Launch bar down",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -1024,7 +1024,7 @@
       "requirement": "Taxi  Director",
       "action": "Launch bar up",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "note",
@@ -1069,10 +1069,10 @@
     },
     {
       "type": "item",
-      "requirement": "Salute the Shooter",
-      "action": "Press  “LCTRL+LSHIFT+S”",
+      "requirement": "Shooter is ready",
+      "action": "Salute",
       "location": "",
-      "locationText": ""
+      "locationText": "Press LCTRL+LSHIFT+S"
     },
     {
       "type": "item",
@@ -1086,14 +1086,14 @@
       "requirement": "Before reaching 240 kts",
       "action": "Raise landing gear",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top middle"
     },
     {
       "type": "item",
       "requirement": "Flaps lever",
       "action": "AUTO",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
@@ -1121,7 +1121,7 @@
       "requirement": "ALTITUDE Switch",
       "action": "BARO once reaching an altitude of 3000 ft",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     }
   ],
   "Shore Landing VFR": [
@@ -1130,21 +1130,21 @@
       "requirement": "Anti-Skid Switch",
       "action": "ON (UP Position)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Landing Lights",
       "action": "ON2",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "ALTITUDE Switch",
       "action": "RDR to use your radar altimeter as a reference for your HUD",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "item",
@@ -1173,14 +1173,14 @@
       "requirement": "Landing Gear Lever",
       "action": "DOWN",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top middle"
     },
     {
       "type": "item",
       "requirement": "Flaps Lever",
       "action": "FULL (DOWN)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "note",
@@ -1239,35 +1239,35 @@
       "requirement": "Anti-Skid Switch",
       "action": "OFF (Down Position)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Hook Lever",
       "action": "DOWN",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Hook Bypass Switch",
       "action": "CARRIER",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Landing Lights",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "ALTITUDE Switch",
       "action": "RDR to use your radar altimeter as a reference for your HUD",
       "location": "",
-      "locationText": ""
+      "locationText": "UFC"
     },
     {
       "type": "item",
@@ -1300,14 +1300,14 @@
       "requirement": "Landing Gear Lever",
       "action": "DOWN",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top middle"
     },
     {
       "type": "item",
       "requirement": "Flaps Lever",
       "action": "FULL (DOWN)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "note",
@@ -1397,24 +1397,29 @@
     },
     {
       "type": "item",
-      "requirement": "Arrestor hook",
-      "action": "Raised",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
       "requirement": "Flaps",
       "action": "UP",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
+    {
+      "type": "item",
+      "requirement": "Arrestor hook",
+      "action": "Raised",
+      "location": "",
+      "locationText": "Right panel, front top low"
+    },
+
     {
       "type": "item",
       "requirement": "Wings",
       "action": "Folded",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top low"
+    },
+    {
+      "type": "note",
+      "text": "The WING FOLD lever needs to be pulled first (scroll mousewheel), then rotated left to FOLD (left click)."
     },
     {
       "type": "item",
@@ -1422,10 +1427,6 @@
       "action": "to the nearest parking area.",
       "location": "",
       "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "The WING FOLD lever needs to be pulled first (scroll mousewheel), then rotated left to FOLD (left click)."
     }
   ]
 }

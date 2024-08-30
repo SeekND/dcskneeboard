@@ -1359,15 +1359,8 @@
     },
     {
       "type": "item",
-      "requirement": "Salute the Shooter",
-      "action": "For day operations",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Flash navigation lights",
-      "action": "For night operations",
+      "requirement": "Salute the Shooter or Flash navigation lights",
+      "action": "Day operations or Night operations",
       "location": "",
       "locationText": ""
     },

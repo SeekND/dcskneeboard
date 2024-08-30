@@ -3,7 +3,7 @@
     {
       "type": "item",
       "rwr": "2",
-      "image": "",
+      "image": "dvina.png",
       "faction": "REDFOR",
       "name": "Dvina",
       "nato": "SA-2 Guideline",
@@ -29,7 +29,7 @@
     {
       "type": "item",
       "rwr": "5",
-      "image": "",
+      "image": "dubna.jpg",
       "faction": "REDFOR",
       "name": "Dubna",
       "nato": "SA-5 Gammon",
@@ -81,7 +81,7 @@
     {
       "type": "item",
       "rwr": "11",
-      "image": "",
+      "image": "buk.jpg",
       "faction": "REDFOR",
       "name": "Buk",
       "nato": "SA-11 Gadfly",
@@ -133,7 +133,7 @@
     {
       "type": "item",
       "rwr": "A",
-      "image": "",
+      "image": "gepard.jpg",
       "faction": "REDFOR",
       "name": "Gepard",
       "nato": "",
@@ -146,7 +146,7 @@
     {
       "type": "item",
       "rwr": "A",
-      "image": "",
+      "image": "vulcan.jpg",
       "faction": "REDFOR",
       "name": "Vulcan",
       "nato": "",
@@ -211,7 +211,7 @@
     {
       "type": "item",
       "rwr": "FF S",
-      "image": "",
+      "image": "danube.jpg",
       "faction": "REDFOR",
       "name": "Danube",
       "nato": "SA-3 Goa",
@@ -224,7 +224,7 @@
     {
       "type": "item",
       "rwr": "HK",
-      "image": "",
+      "image": "hawk.jpg",
       "faction": "BLUEFOR",
       "name": "Hawk",
       "nato": "",
@@ -302,7 +302,7 @@
     {
       "type": "item",
       "rwr": "TS",
-      "image": "",
+      "image": "s-200.jpg",
       "faction": "REDFOR",
       "name": "S-200",
       "nato": "SA-5 Gammon",
@@ -317,7 +317,7 @@
     {
       "type": "item",
       "rwr": "7",
-      "image": "",
+      "image": "hq-7",
       "faction": "REDFOR",
       "name": "HQ-7",
       "nato": "Red Banner",

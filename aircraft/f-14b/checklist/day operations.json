@@ -1,5 +1,5 @@
 {
-  "pre-start": [
+  "Pre-start": [
     {
       "type": "item",
       "requirement": "Ground crew",
@@ -218,9 +218,14 @@
       "action": "TID",
       "location": "",
       "locationText": ""
-    }
-  ],
-  "J] Use Jester menu to select INS alignment precision; FIN": [
+    },
+    {
+      "type": "item",
+      "requirement": "(J) Use Jester menu to select INS alignment precision",
+      "action": "FINE",
+      "location": "",
+      "locationText": ""
+    },
     {
       "type": "note",
       "text": "INS FINE alignment takes about 8 minutes"
@@ -231,7 +236,7 @@
     },
     {
       "type": "note",
-      "text": "[J] Jester enters Waypoint/Target coordinates automatically"
+      "text": "Jester enters Waypoint/Target coordinates automatically"
     },
     {
       "type": "item",
@@ -359,19 +364,35 @@
       "action": "Open",
       "location": "",
       "locationText": "Keybind “RSHIFT+K”"
-    }
-  ],
-  "J] Use kneeboard to request KY-28 encryption key change; If needed ; Key #1 for most mission": [
+    },
+    {
+      "type": "item",
+      "requirement": "(J) Use kneeboard to request KY-28 encryption key change",
+      "action": "If needed",
+      "location": "",
+      "locationText": "Key #1 for most missions"
+    },
     {
       "type": "item",
       "requirement": "Use kneeboard to find",
       "action": "TACTICAL DATALINK SYSTEMS page",
       "location": "",
       "locationText": ""
-    }
-  ],
-  "J] Use Jester menu to set Datalink Mode; TACTICAL DATALINK SYSTE": [],
-  "J] Use Jester menu to set Datalink Frequency; As require": [
+    },
+    {
+      "type": "item",
+      "requirement": "(J) Use Jester menu to set Datalink Mode",
+      "action": "TACTICAL DATALINK SYSTEM",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "(J) Use Jester menu to set Datalink Frequency",
+      "action": "As required",
+      "location": "",
+      "locationText": ""
+    },
     {
       "type": "item",
       "requirement": "Kneeboard",

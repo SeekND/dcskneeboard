@@ -3,16 +3,16 @@
     {
       "type": "item",
       "requirement": "Turn on the Battery",
-      "action": "Set to ON (midpanel)",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "action": "Set to ON",
+      "location": "",
+      "locationText": "Center panel"
     },
     {
       "type": "item",
       "requirement": "Open fuel valve",
-      "action": "Push down (midpanel)",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "action": "Push down",
+      "location": "",
+      "locationText": "Center panel"
     },
     {
       "type": "item",
@@ -26,14 +26,14 @@
       "requirement": "Starter buttom",
       "action": "Press and keep pressed",
       "location": "",
-      "locationText": ""
+      "locationText": "Keybind required"
     },
     {
       "type": "item",
       "requirement": "When N1 reaches 12 to 15%",
-      "action": "Turn throttle to idle (Default: Insert)",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "action": "Turn throttle to idle",
+      "location": "",
+      "locationText": "Default: Insert"
     },
     {
       "type": "note",
@@ -42,36 +42,36 @@
     {
       "type": "item",
       "requirement": "Enable Generator",
-      "action": "Set to ON (midpanel)",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "action": "Set to ON",
+      "location": "",
+      "locationText": "Center panel"
     },
     {
       "type": "item",
       "requirement": "Enable Inverter",
-      "action": "Set to ON (midpanel)",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "action": "Set to ON",
+      "location": "",
+      "locationText": "Center panel"
     },
     {
       "type": "item",
       "requirement": "Gyro to Magnetic",
-      "action": "Set to ON (midpanel)",
-      "location": "engine_startup.png",
-      "locationText": ""
+      "action": "Set to ON",
+      "location": "",
+      "locationText": "Center panel"
     },
     {
       "type": "item",
       "requirement": "Altimeter",
       "action": "Adjust",
-      "location": "engine_startup.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To increase N2",
       "action": "Increase Throttle step by step (Default: Page Up)",
-      "location": "engine_startup.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -87,7 +87,7 @@
       "type": "item",
       "requirement": "To stay cantered and avoid drifting",
       "action": "Apply left rudder",
-      "location": "hover.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -117,14 +117,14 @@
       "type": "item",
       "requirement": "engine and transmission gauges (pressure & temperature) are in the green.",
       "action": "Check",
-      "location": "take_off.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Flight instruments all set up properly.",
       "action": "Check",
-      "location": "take_off.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -135,14 +135,14 @@
       "type": "item",
       "requirement": "Move forward.",
       "action": "Push your nose down slightly",
-      "location": "take_off.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Push nose slightly forward to start gaining horizontal speed",
       "action": "No collective input should be required since you are already in a hover state.",
-      "location": "take_off.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -163,28 +163,28 @@
       "type": "item",
       "requirement": "Fly towards a reference point on the runway.",
       "action": "Start descent from 500 ft",
-      "location": "visual_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Use collective and cyclic input to maintain 80 kts for a descent rate between 300-500 ft/min",
       "action": "From 500 to 300 ft",
-      "location": "visual_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Use collective and cyclic input to maintain 60 kts for a descent rate between 300-500 ft/min",
       "action": "From 450 to 50 ft",
-      "location": "visual_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Reduce speed to 30 kts when you are 50 ft",
       "action": "Adjust collective to keep a straight trajectory towards your reference point while reducing airspeed.",
-      "location": "visual_landing.png",
+      "location": "",
       "locationText": ""
     },
     {

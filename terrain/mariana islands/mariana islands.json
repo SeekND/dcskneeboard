@@ -1,1 +1,116 @@
-[]
+{
+  "Default": [
+    {
+      "id": "6",
+      "airfield": "Andersen AFB",
+      "icao": "PGUA",
+      "arp": "N13°34'54\" E144°55'51\"",
+      "type": "",
+      "location": "Guam",
+      "elev. feet/meters": "606/185",
+      "twr": "126.20 / 250.10",
+      "tacan": "54X",
+      "rwy": "06L/24R, 06R/24L",
+      "ils": "109.30/109.35 , 110.10/110.15",
+      "image": "andersen.jpg"
+    },
+    {
+      "id": "4",
+      "airfield": "Antonio BWP",
+      "icao": "PGUM",
+      "arp": "N13°29'05\" E144°47'48\"",
+      "type": "",
+      "location": "Guam",
+      "elev. feet/meters": "255/78",
+      "twr": "118.10 / 340.20",
+      "tacan": "105X",
+      "rwy": "06L/24R, 06R/24L",
+      "ils": "110.30 , 110.90",
+      "image": "antonio.jpg"
+    },
+    {
+      "id": "8",
+      "airfield": "North West Field",
+      "icao": "",
+      "arp": "N13°37'30\" E144°51'29\"",
+      "type": "",
+      "location": "Guam",
+      "elev. feet/meters": "522/160",
+      "twr": "",
+      "tacan": "",
+      "rwy": "06/24",
+      "ils": "",
+      "image": "northwestfield.jpg"
+    },
+    {
+      "id": "5",
+      "airfield": "Olf Orote",
+      "icao": "",
+      "arp": "N13°26'17\" E144°38'31\"",
+      "type": "",
+      "location": "Guam",
+      "elev. feet/meters": "94/29",
+      "twr": "",
+      "tacan": "",
+      "rwy": "07/25",
+      "ils": "",
+      "image": "orote.jpg"
+    },
+    {
+      "id": "7",
+      "airfield": "Pagan Airstrip",
+      "icao": "",
+      "arp": "N18°07'23\" E145°45'46\"",
+      "type": "",
+      "location": "Northern Mariana Islands",
+      "elev. feet/meters": "49/15",
+      "twr": "",
+      "tacan": "",
+      "rwy": "11/29",
+      "ils": "",
+      "image": ""
+    },
+    {
+      "id": "1",
+      "airfield": "Rota",
+      "icao": "PGRO",
+      "arp": "N14°10'27\" E145°14'27\"",
+      "type": "",
+      "location": "Northern Mariana Islands",
+      "elev. feet/meters": "569/173",
+      "twr": "123.60 / 250.00",
+      "tacan": "332",
+      "rwy": "09/27",
+      "ils": "",
+      "image": ""
+    },
+    {
+      "id": "2",
+      "airfield": "Saipan",
+      "icao": "PGSN",
+      "arp": "N15°07'08\" E145°43'44\"",
+      "type": "",
+      "location": "Northern Mariana Islands",
+      "elev. feet/meters": "213/65",
+      "twr": "125.70 / 256.90",
+      "tacan": "312",
+      "rwy": "06/24",
+      "ils": "109.90",
+      "image": "saipan.jpg"
+    },
+    {
+      "id": "3",
+      "airfield": "Tinian",
+      "icao": "PGWT",
+      "arp": "N14°59'57\" E145°37'09\"",
+      "type": "",
+      "location": "Northern Mariana Islands",
+      "elev. feet/meters": "284/87",
+      "twr": "123.65 / 250.05",
+      "tacan": "",
+      "rwy": "08/26",
+      "ils": "",
+      "image": "tinian.jpg"
+    }
+  ]
+}

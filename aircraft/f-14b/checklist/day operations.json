@@ -2,6 +2,13 @@
   "PRE-START": [
     {
       "type": "item",
+      "requirement": "Parking brake",
+      "action": "ON (pulled)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
       "requirement": "Ground crew",
       "action": "connect electrical power",
       "location": "",
@@ -23,22 +30,28 @@
       "requirement": "ICS (Intercom Set) switch",
       "action": "Set to HOT MIC",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, rear left"
     },
     {
-      "type": "note",
-      "text": "Use the JESTER Contextual Menu by pressing “A” and selecting “STARTUP” (LCTRL+3) to request start-up. After a few seconds, your RIO will request a Comm Check to test the ICS (Intercom Set).8."
+      "type": "item",
+      "requirement": "(J) Contextual Menu",
+      "action": "STARTUP",
+      "location": "",
+      "locationText": "keybind “A” followed by (LCTRL+3)"
     },
     {
-      "type": "note",
-      "text": "Use the JESTER Contextual Menu again by pressing “A” and confirm that you heard him by selecting “LOUD AND CLEAR” (LCTRL+4)."
+      "type": "item",
+      "requirement": "(J) Contextual Menu",
+      "action": "Confirm comms quen requested “LOUD AND CLEAR”",
+      "location": "",
+      "locationText": "keybind “A” followed by (LCTRL+3)"
     },
     {
       "type": "item",
       "requirement": "Arm the pilot ejection seat",
       "action": "Ejection Seat Arming Handle (DOWN)",
       "location": "",
-      "locationText": "Keybind “LSHIFT+E”"
+      "locationText": "Head, Rear or “LSHIFT+E”"
     },
     {
       "type": "note",
@@ -49,14 +62,14 @@
       "requirement": "Set Oxygen Switch",
       "action": "ON (FWD)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, rear"
     },
     {
       "type": "item",
       "requirement": "Set Emergency Wing Sweep Handle",
       "action": "OVERSWEEP (AFT)",
       "location": "",
-      "locationText": ""
+      "locationText": "Throttle quadrant"
     }
   ],
   "PILOT ENGINE START": [
@@ -69,21 +82,21 @@
       "requirement": "Set AIR SOURCE",
       "action": "OFF",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, rear"
     },
     {
       "type": "item",
       "requirement": "Set HYD TRANSFER Pump",
       "action": "SHUTOFF",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, rear"
     },
     {
       "type": "item",
       "requirement": "Set Emergency Flight Hydraulics Switch",
       "action": "AUTO (LOW)",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, middle"
     },
     {
       "type": "note",
@@ -94,14 +107,14 @@
       "requirement": "Set Engine Crank switch",
       "action": "R (RIGHT)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front left"
     },
     {
       "type": "item",
       "requirement": "When right Engine N2 reaches 20% RPM",
       "action": "Right Throttle to IDLE detent",
       "location": "",
-      "locationText": ""
+      "locationText": "Throttle"
     },
     {
       "type": "note",
@@ -124,7 +137,7 @@
       "requirement": "Left Engine Crank switch",
       "action": "L (LEFT)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front left"
     },
     {
       "type": "note",
@@ -135,7 +148,7 @@
       "requirement": "When Left Engine N2 reaches 20 % RPM",
       "action": "Left Throttle to the IDLE detent",
       "location": "",
-      "locationText": ""
+      "locationText": "Throttle"
     },
     {
       "type": "note",
@@ -158,7 +171,7 @@
       "requirement": "Set HYD TRANSFER PUMP",
       "action": "NORM",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, rear left"
     },
     {
       "type": "note",
@@ -169,7 +182,7 @@
       "requirement": "Set Air Source",
       "action": "BOTH ENG",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, middle"
     },
     {
       "type": "item",
@@ -196,28 +209,28 @@
       "requirement": "Switch VDI power",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Switch HUD power",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Switch HSD power",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Set HSD Mode",
       "action": "TID",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top low"
     },
     {
       "type": "item",
@@ -243,35 +256,35 @@
       "requirement": "Set GUN RATE switch",
       "action": "As required",
       "location": "",
-      "locationText": ""
+      "locationText": "Center panel, middle top"
     },
     {
       "type": "item",
       "requirement": "Set SW COOL switch",
       "action": "OFF",
       "location": "",
-      "locationText": ""
+      "locationText": "Center panel, middle top"
     },
     {
       "type": "item",
       "requirement": "Set MSL PREP switch",
       "action": "OFF",
       "location": "",
-      "locationText": ""
+      "locationText": "Center panel, middle top"
     },
     {
       "type": "item",
       "requirement": "Set Missile MODE/STP switch",
       "action": "NORM",
       "location": "",
-      "locationText": ""
+      "locationText": "middle top"
     },
     {
       "type": "item",
       "requirement": "Set ANTI-SKID SPOILER BK switch",
       "action": "OFF",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "note",
@@ -282,63 +295,63 @@
       "requirement": "Verify Emergency Wing Sweep Handle",
       "action": "AFT",
       "location": "",
-      "locationText": ""
+      "locationText": "Throttle quadrant"
     },
     {
       "type": "item",
       "requirement": "Ensure Wing Sweep Angle",
       "action": "68 degrees",
       "location": "",
-      "locationText": ""
+      "locationText": "Throttle quadrant"
     },
     {
       "type": "item",
       "requirement": "Turn AFCS SAS PITCH",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, middle"
     },
     {
       "type": "item",
       "requirement": "Turn AFCS SAS ROLL",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, middle"
     },
     {
       "type": "item",
       "requirement": "Turn AFCS SAS YAW",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, middle"
     },
     {
       "type": "item",
       "requirement": "Set WING/EXT TRANS switch",
       "action": "AUTO",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "item",
       "requirement": "Set UHF 1 Radio Function Selector",
       "action": "BOTH",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, middle"
     },
     {
       "type": "item",
       "requirement": "Set TACAN function selector",
       "action": "T/R",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, rear"
     },
     {
       "type": "item",
       "requirement": "Set ARA-63 ICLS Receiver Power switch",
       "action": "ON",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, middle right"
     },
     {
       "type": "item",
@@ -356,7 +369,7 @@
       "requirement": "Erect standby attitude gyro",
       "action": "2 minutes before takeoff",
       "location": "",
-      "locationText": ""
+      "locationText": "Center panel, right"
     },
     {
       "type": "item",
@@ -404,6 +417,20 @@
       "type": "item",
       "requirement": "Set lights",
       "action": "As required",
+      "location": "",
+      "locationText": "Right panel, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Ground crew",
+      "action": "Remove wheel chocks",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Parking brake",
+      "action": "OFF (pushed)",
       "location": "",
       "locationText": ""
     },
@@ -944,7 +971,7 @@
       "requirement": "Set ANTI-SKID SPOILER BK switch",
       "action": "OFF",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top low"
     },
     {
       "type": "note",
@@ -955,21 +982,21 @@
       "requirement": "Set HOOK BYPASS switch",
       "action": "FIELD",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, middle"
     },
     {
       "type": "item",
       "requirement": "Check Nose Strut",
-      "action": "RETRACTED",
+      "action": "RETRACTED (OFF)",
       "location": "",
-      "locationText": ""
+      "locationText": "Left panel, front top middle"
     },
     {
       "type": "item",
       "requirement": "Set HUD Display Mode",
       "action": "TO",
       "location": "",
-      "locationText": ""
+      "locationText": "Right panel, front top middle"
     },
     {
       "type": "item",
@@ -992,7 +1019,7 @@
     {
       "type": "item",
       "requirement": "Set Emergency Wing Sweep Handle",
-      "action": "20 degrees",
+      "action": "20 degrees and push in",
       "location": "",
       "locationText": ""
     },

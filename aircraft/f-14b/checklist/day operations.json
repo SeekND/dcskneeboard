@@ -1,5 +1,5 @@
 {
-  "Pre-start": [
+  "PRE-START": [
     {
       "type": "item",
       "requirement": "Ground crew",
@@ -59,7 +59,7 @@
       "locationText": ""
     }
   ],
-  "Pilot Engine Start": [
+  "PILOT ENGINE START": [
     {
       "type": "note",
       "text": "Verify that Ground Power and Air Pressure Cart are connected"
@@ -186,7 +186,7 @@
       "locationText": ""
     }
   ],
-  "Pilot Post-Start": [
+  "PILOT POST-START": [
     {
       "type": "note",
       "text": "RIO starts INS alignment automatically"

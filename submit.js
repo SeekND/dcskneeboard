@@ -267,7 +267,7 @@ function addItemCustom(newItemDiv = null) {
 
     // Create input fields for custom item types (initially hidden)
     itemTypes.forEach(itemType => {
-        createInputField(itemDiv, itemType, `${itemType.toLowerCase()}Input`, true);
+        createInputField(itemDiv, itemType, `${itemType}Input`, true);
     });
 
     const noteLabel = document.createElement('label');
@@ -586,9 +586,9 @@ function generateChecklistJSON(theType) {
                     itemData.type = "item";
                 }
                 itemTypes.forEach(itemType => {
-                    const inputId = `${itemType.toLowerCase()}Input`;
+                    const inputId = `${itemType}Input`;
                     const inputValue = itemInput.querySelector(`input[id="${inputId}"]`).value;
-                    itemData[itemType.toUpperCase()] = inputValue;
+                    itemData[itemType] = inputValue;
                 });
                 customItems.push(itemData); // Add item to customItems array
             } else if (type === 'note') {

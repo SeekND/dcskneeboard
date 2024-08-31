@@ -532,7 +532,7 @@ function generateChecklistJSON(theType) {
 	            if (parts.length >= itemTypes.length) {
 	                    // If no category, directly assign itemTypes to parts
 	                itemTypes.forEach((itemType, index) => {
-	                   itemData[itemType.toLowerCase()] = parts[index].trim();
+	                   itemData[itemType] = parts[index].trim();
 	                });
 					const categoryKey = hasCategory ? currentCategory : "Default";
 					if (hasCategory) {
@@ -588,7 +588,7 @@ function generateChecklistJSON(theType) {
                 itemTypes.forEach(itemType => {
                     const inputId = `${itemType.toLowerCase()}Input`;
                     const inputValue = itemInput.querySelector(`input[id="${inputId}"]`).value;
-                    itemData[itemType.toLowerCase()] = inputValue;
+                    itemData[itemType.toUpperCase()] = inputValue;
                 });
                 customItems.push(itemData); // Add item to customItems array
             } else if (type === 'note') {

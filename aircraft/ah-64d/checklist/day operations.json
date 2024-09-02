@@ -1,0 +1,292 @@
+{
+  "PRE-START": [
+    {
+      "type": "item",
+      "requirement": "primary lights",
+      "action": "full brightness",
+      "location": "",
+      "locationText": "left panel, rear"
+    },
+    {
+      "type": "item",
+      "requirement": "Ignition switch",
+      "action": "battery",
+      "location": "",
+      "locationText": "left panel, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "APU cover",
+      "action": "up",
+      "location": "",
+      "locationText": "left panel, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "APU button",
+      "action": "press",
+      "location": "",
+      "locationText": "left panel, middle"
+    },
+    {
+      "type": "note",
+      "text": "APU button should now have the light on and instruments will start lighting up"
+    },
+    {
+      "type": "item",
+      "requirement": "Canopy",
+      "action": "close",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "SAI",
+      "action": "uncage",
+      "location": "",
+      "locationText": "center panel, left"
+    },
+    {
+      "type": "item",
+      "requirement": "Parking break",
+      "action": "set",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Anti-collision lights",
+      "action": "on",
+      "location": "",
+      "locationText": "left panel, rear"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "TSD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "in TSD menu, press UTIL",
+      "location": "",
+      "locationText": "PB T6"
+    },
+    {
+      "type": "note",
+      "text": "Wait until position confidence has turned green"
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "FLT",
+      "location": "",
+      "locationText": "PB T2"
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "SET",
+      "location": "",
+      "locationText": "PB B6"
+    },
+    {
+      "type": "note",
+      "text": "Use LOW/HIGH ( PB T1 / PB T3) to set your low altitude warnings using keyboard"
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "WPN",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "in WPN menu select BORESIGHT followed by IHADSS",
+      "location": "",
+      "locationText": "PB L5 , PB L4"
+    },
+    {
+      "type": "item",
+      "requirement": "On left mfd",
+      "action": "move cursor to B/S NOW",
+      "location": "",
+      "locationText": "CYCLIC"
+    },
+    {
+      "type": "item",
+      "requirement": "enable monocle",
+      "action": "if not active yet",
+      "location": "",
+      "locationText": "keybind i"
+    },
+    {
+      "type": "note",
+      "text": "You will need to align your head with the boresight visual"
+    },
+    {
+      "type": "item",
+      "requirement": "Cursor button",
+      "action": "depress",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "This will save your BORESIGHT alignment"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "TSD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "in TSD menu, press SHOW",
+      "location": "",
+      "locationText": "PB T3"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "enable CPG CURSOR",
+      "location": "",
+      "locationText": "PB L5"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "change to ATK phase",
+      "location": "",
+      "locationText": "PB B2"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "enable CURRENT ROUTE",
+      "location": "",
+      "locationText": "PB L2"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "A/C",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "ENGINE START": [
+    {
+      "type": "item",
+      "requirement": "Engine 1 switch",
+      "action": "press start",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When left engine N2 gets to 20%",
+      "action": "Set left engine power to Idle",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Engine 2 switch",
+      "action": "press start",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When right engine N2 gets to 20%",
+      "action": "Set right engine power to Idle",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Both engine power",
+      "action": "move slowly to FLY notch",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "APU button",
+      "action": "press to turn off",
+      "location": "",
+      "locationText": "left panel, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "APU cover",
+      "action": "down",
+      "location": "",
+      "locationText": "left panel, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "WCA",
+      "location": "",
+      "locationText": "PB B6"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "in WCA screen, click reset",
+      "location": "",
+      "locationText": "PB B4"
+    },
+    {
+      "type": "item",
+      "requirement": "Position confidence on the green",
+      "action": "Confirm",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "CMWS",
+      "action": "Arm",
+      "location": "",
+      "locationText": "Center panel, right"
+    },
+    {
+      "type": "item",
+      "requirement": "CMWS",
+      "action": "CMWS",
+      "location": "",
+      "locationText": "Center panel, right"
+    },
+    {
+      "type": "item",
+      "requirement": "CMWS",
+      "action": "Bypass",
+      "location": "",
+      "locationText": "Center panel, right"
+    },
+    {
+      "type": "item",
+      "requirement": "Parking break",
+      "action": "release",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Taxi",
+      "action": "as required",
+      "location": "",
+      "locationText": ""
+    }
+  ]
+}

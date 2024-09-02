@@ -1,0 +1,70 @@
+{
+  "NAVIGATION": [
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select POINT",
+      "location": "",
+      "locationText": "PB B6"
+    },
+    {
+      "type": "note",
+      "text": "PB L1 will show currently selected WP. You can easily delete the current selected WP by pressing DEL (PB L4)"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select POINT(?)",
+      "location": "",
+      "locationText": "PB L1"
+    },
+    {
+      "type": "item",
+      "requirement": "On keyboard",
+      "action": "Select intended WP",
+      "location": "",
+      "locationText": "Type W0x"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select EDIT or ADD as required",
+      "location": "",
+      "locationText": "PB L2/L3"
+    },
+    {
+      "type": "item",
+      "requirement": "On keyboard",
+      "action": "Assign code",
+      "location": "",
+      "locationText": "eg LZ"
+    },
+    {
+      "type": "item",
+      "requirement": "On keyboard",
+      "action": "enter",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You can see current available WP list by pressing COORD (PB T5) followed by WPTHZ (PB T1)"
+    },
+    {
+      "type": "note",
+      "text": "You can review WP information in the same page selecting the WP right row (PB R1-6)"
+    },
+    {
+      "type": "note",
+      "text": "You can set the WP as aquisition by pressing in the same page selecting the WP left row (PB L1-6). Aquisition wil be shown on PB R6 in main page"
+    },
+    {
+      "type": "note",
+      "text": "You can review abbreviation codes by pressing POINT (PB B6) followed by ABR (PB T4)"
+    },
+    {
+      "type": "note",
+      "text": "You can also slew over already existing WP directly in the map using the cyclic cursor"
+    }
+  ]
+}

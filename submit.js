@@ -9,7 +9,6 @@ function showCategory(category) {
 
 
 
-
 // AIRFIELDS --------------------------------------
 
 function showLargeDataEntryAirfields() {
@@ -406,6 +405,9 @@ document.getElementById('data-entry-form').addEventListener('submit', function(e
     jsonOutput.value = JSON.stringify(jsonData, null, 2);
 });
 
+
+// data generation ------------------------------------------------------------------
+
 // Function to generate JSON for checklists
 function generateChecklistJSON(theType) {
     const checklistData = {};
@@ -682,6 +684,41 @@ function generateChecklistJSON(theType) {
 
     return checklistData;
 }
+
+// END OF DATA GENERATION -----------------------------------------------------------------
+
+
+
+
+function invertData() {
+    const jsonOutput = document.getElementById('json-output');
+    const jsonData = JSON.parse(jsonOutput.value); 
+
+    const largeDataTextarea = document.getElementById('large-data-textarea');
+    const largeDataText = largeDataTextarea.value.trim();
+
+
+    let invertedData = "";
+
+    for (const category in jsonData) {
+        if (jsonData.hasOwnProperty(category)) {
+            invertedData += `[${category}]\n`; 
+            jsonData[category].forEach(item => {
+                if (item.type === 'item') {
+                    invertedData += `${item.requirement};${item.action};${item.locationText};${item.location}\n`;
+                } else if (item.type === 'note') {
+                    invertedData += `NOTE: ${item.text}\n`;
+                }
+            });
+            invertedData += '\n'; 
+        }
+    }
+
+    // Decide where to put the inverted data (replace existing textarea or a new one)
+    largeDataTextarea.value = invertedData; // PLACES DATA ON SOURCE LOCATION
+}
+
+
 
 function copyToClipboard() {
     const jsonOutput = document.getElementById('json-output');

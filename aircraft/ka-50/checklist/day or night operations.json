@@ -6,7 +6,7 @@
     },
     {
       "type": "note",
-      "text": "Contact ground crew to re-arm and refuel as required by the mission. Via the ground crew interface, you can also select either the HMS (Helmet Mounted Sight) or NVG (Night Vision Goggles) loadout by pressing « \\ », then pressing F8 (Ground Crew), and either F1 (HMS) or F2 (NVG)."
+      "text": "Contact ground crew to re-arm and refuel and change to either the HMS (Helmet Mounted Sight) or NVG (Night Vision Goggles) loadout."
     },
     {
       "type": "note",
@@ -16,15 +16,15 @@
       "type": "item",
       "requirement": "Side door",
       "action": "CLOSE",
-      "location": "before_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set Battery switches 1 & 2",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "note",
@@ -34,64 +34,64 @@
       "type": "item",
       "requirement": "Set Inverter switch",
       "action": "AUTO (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set Intercom switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set R-828 VHF-1 Radio Power switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set R-800 VHF-2 Radio Power switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set DL (Datalink) Power switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set VHF-TLK switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set SA-TLF switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set Fuel Quantity switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set EKRAN-HYDRO switch",
       "action": "ON (DOWN)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, rear"
     },
     {
       "type": "note",
@@ -109,50 +109,50 @@
       "type": "item",
       "requirement": "PVI-800 NAV MODE selector",
       "action": "Set to OPER",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front"
     },
     {
       "type": "item",
       "requirement": "Set INU (Inertial Navigation Unit) switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, rear"
     },
     {
       "type": "item",
       "requirement": "Set INU (Inertial Navigation Unit) Heat Switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, rear"
     },
     {
       "type": "item",
       "requirement": "Set PVI-800 NAV SYSTEM switch",
       "action": "ON",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, middle up"
     },
     {
       "type": "item",
       "requirement": "Set SAI (Standby Attitude Indicator) switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, middle up"
     },
     {
       "type": "item",
       "requirement": "Turn it the warning OFF",
       "action": "Press Master Caution light",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center console, left"
     },
     {
       "type": "item",
       "requirement": "Set ABRIS (AMMS, Advanced Moving Map System) Power switch",
       "action": "ON (UP)",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center console"
     },
     {
       "type": "note",
@@ -162,14 +162,14 @@
       "type": "item",
       "requirement": "Set K-041 Targeting System switch",
       "action": "ON (FWD)",
-      "location": "before_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set HMS (Helmet-Mounted system) switch",
       "action": "ON (FWD)",
-      "location": "before_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -200,7 +200,7 @@
       "type": "item",
       "requirement": "Set Fire Extinguisher switch",
       "action": "OPER",
-      "location": "before_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -211,8 +211,8 @@
       "type": "item",
       "requirement": "Arm Ejecting System Power switches",
       "action": "UP",
-      "location": "before_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, middle up high"
     },
     {
       "type": "note",
@@ -224,29 +224,29 @@
       "type": "item",
       "requirement": "Disengage rotor brake",
       "action": "DOWN position",
-      "location": "apu_start.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Throttle Quadrant"
     },
     {
       "type": "item",
       "requirement": "Set throttle to AUTO",
       "action": "(UP, just prior to lifting the metal guard).",
-      "location": "apu_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set Forward and Aft fuel pumps",
       "action": "ON (UP)",
-      "location": "apu_start.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "item",
       "requirement": "Set Left (Fwd), right (Aft) and APU fuel tank shutoff valves",
       "action": "OPEN (UP)",
-      "location": "apu_start.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, middle up"
     },
     {
       "type": "note",
@@ -256,8 +256,8 @@
       "type": "item",
       "requirement": "Set Left and Right EEG (Electronic Engine Governor) switches",
       "action": "ON (UP)",
-      "location": "apu_start.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, middle up"
     },
     {
       "type": "note",
@@ -267,21 +267,21 @@
       "type": "item",
       "requirement": "Startup/Crank/False Start switch",
       "action": "START",
-      "location": "apu_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Turbo Gear/APU/Left Engine/Right Engine switch",
       "action": "set to APU (cantered position)",
-      "location": "apu_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To start APU (Auxiliary Power Unit).",
       "action": "Press START button for 2-3 sec",
-      "location": "apu_start.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -314,21 +314,21 @@
       "type": "item",
       "requirement": "Turbo Gear/APU/Left Engine/Right Engine switch",
       "action": "set to LEFT engine",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To start LEFT engine.",
       "action": "Press START button for 2-3 sec. START VLV light indicates the start valve is open.",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "When Left Engine’s Gas Generator Speed reaches 20 % RPM",
       "action": "open LEFT engine shutoff valve (left red lever UP)",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -351,21 +351,21 @@
       "type": "item",
       "requirement": "Set TurboGear/APU/Left Engine/Right Engine switch",
       "action": "set to RIGHT engine.",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To start RIGHT engine.",
       "action": "Press START button for 2-3 sec. START VLV light indicates the start valve is open.",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "When Right Engine’s Gas Generator Speed reaches 20 %RPM",
       "action": "open RIGHT engine shutoff valve (right red lever UP)",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -384,21 +384,21 @@
       "type": "item",
       "requirement": "When Right Engine’s Gas Generator Speed stabilizes over 60 % RPM",
       "action": "set Turbo Gear/APU/Left Engine/Right Engine switch to central position",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "When both engines are at IDLE power or above",
       "action": "Press APU SHUTOFF button",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set APU fuel tank shutoff valve",
       "action": "CLOSED (DOWN)",
-      "location": "engine_start.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -411,8 +411,8 @@
       "type": "item",
       "requirement": "Set LEFT and RIGHT AC Generators",
       "action": "ON (UP).",
-      "location": "after_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front up"
     },
     {
       "type": "note",
@@ -422,22 +422,22 @@
       "type": "item",
       "requirement": "Set IFF (Identify-Friend-or-Foe) switch",
       "action": "ON (UP)",
-      "location": "after_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, middle up"
     },
     {
       "type": "item",
       "requirement": "Uncage Standby ADI (Attitude Director Indicator)",
       "action": "caging knob.",
-      "location": "after_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set Engine Dust Protection system switch",
       "action": "ON (DOWN)",
-      "location": "after_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Center console, high"
     },
     {
       "type": "note",
@@ -447,63 +447,63 @@
       "type": "item",
       "requirement": "Set UV-26 Countermeasures power switch",
       "action": "ON (UP)",
-      "location": "after_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, rear"
     },
     {
       "type": "item",
       "requirement": "Set L-140 Laser Warning Receiver power switch",
       "action": "ON (UP)",
-      "location": "after_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, rear"
     },
     {
       "type": "item",
       "requirement": "Set PVI-800 Operating Mode Selector",
       "action": "As Desired (COM)",
-      "location": "after_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front"
     },
     {
       "type": "item",
       "requirement": "Set Navigation Datalink Power switch",
       "action": "ON (FWD)",
-      "location": "after_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front"
     },
     {
       "type": "item",
       "requirement": "Set PVI-800 Datalink Identification Number (ID)",
       "action": "1.",
-      "location": "after_start-up.png",
-      "locationText": ""
+      "location": "",
+      "locationText": "Right console, front"
     },
     {
       "type": "item",
       "requirement": "BANK (K), PITCH (T) and HDG HOLD/YAW (H) stability augmentation channels",
       "action": "Engage",
-      "location": "after_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "On the ABRIS",
       "action": "Select NAV page",
-      "location": "after_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Set Interior and Exterior Light Switches",
       "action": "As desired",
-      "location": "after_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Access the ODS (Onboard Defence System) Page on the ABRIS",
       "action": "press the button next to NAV/ARC/HSI repeatedly until you access the ODS page.",
-      "location": "after_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -530,7 +530,7 @@
       "type": "item",
       "requirement": "Select countermeasure operation mode",
       "action": "ODS (Onboard Defence System) switch.",
-      "location": "after_start-up.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -547,35 +547,35 @@
       "type": "item",
       "requirement": "Release parking brake",
       "action": "tap the Wheel Brake lever.",
-      "location": "taxi.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To start moving",
       "action": "Gently tilt the cyclic forward while increasing the pitch of the main rotors with the collective.",
-      "location": "taxi.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Once the aircraft is moving",
       "action": "bring the collective back down.",
-      "location": "taxi.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Steer the helicopter on the ground",
       "action": "anti-torque pedals in the direction of turn.",
-      "location": "taxi.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Keep taxi speed below 20 km/h",
       "action": "inputs to the cyclic and the wheel brakes.",
-      "location": "taxi.png",
+      "location": "",
       "locationText": ""
     }
   ],
@@ -592,28 +592,28 @@
       "type": "item",
       "requirement": "To stay cantered and avoid drifting",
       "action": "Centre anti-torque pedals",
-      "location": "hover.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To remain straight and level",
       "action": "Use cyclic (slightly forward input).",
-      "location": "hover.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To initiate a hover.",
       "action": "Raise collective very gently",
-      "location": "hover.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Your stick can be trimmed to a hover position.",
       "action": "Hold the “FORCE TRIM” button (on your cyclic).",
-      "location": "hover.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -638,14 +638,14 @@
       "type": "item",
       "requirement": "Settle the helicopter into a 5-10 meters hover",
       "action": "Increase the collective and compensate with the cyclic.",
-      "location": "takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "To start gaining horizontal speed",
       "action": "Push nose slightly forward",
-      "location": "takeoff.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -662,7 +662,7 @@
       "type": "item",
       "requirement": "Fly towards a reference point on the runway.",
       "action": "Start descent from 400 m.",
-      "location": "visual_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
@@ -673,21 +673,21 @@
       "type": "item",
       "requirement": "Prepare for landing",
       "action": "Turn on the Dust Protection switch.",
-      "location": "visual_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "You should reach your reference point in a 10m hover",
       "action": "Use your cyclic to come to a full stop",
-      "location": "visual_landing.png",
+      "location": "",
       "locationText": ""
     },
     {
       "type": "item",
       "requirement": "Once you have come to a full stop in a 10m hover",
       "action": "deploy landing gear and then you can slowly reduce collective to safely land on the ground",
-      "location": "visual_landing.png",
+      "location": "",
       "locationText": ""
     }
   ]

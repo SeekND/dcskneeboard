@@ -1,70 +1,251 @@
 {
-  "NAVIGATION": [
+  "NAVIGATION WP CREATION AND EDIT": [
     {
       "type": "item",
       "requirement": "On right mdf",
-      "action": "Select POINT",
+      "action": "Press TSD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "PB L1 will show currently selected WP, PB R6 will show the current acquisition WP"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select the Phase type (ATK or NAV)",
+      "location": "",
+      "locationText": "PB B2"
+    },
+    {
+      "type": "note",
+      "text": "NAV will create NAV points, ATK will create TARGET points"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Review abbreviation codes with POINT followed by ABR",
+      "location": "",
+      "locationText": "PB B6 , PB T4"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "To add, edit or delete a WP, press POINT",
       "location": "",
       "locationText": "PB B6"
     },
     {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select EDIT, ADD or DEL as required",
+      "location": "",
+      "locationText": "PB L2/L3/L4"
+    },
+    {
       "type": "note",
-      "text": "PB L1 will show currently selected WP. You can easily delete the current selected WP by pressing DEL (PB L4)"
+      "text": "You can also slew over existing or new WP in the right MFD map using the cyclic cursor and select an existing or new WP location by pressing ADD or EDIT followed by cursor enter"
+    },
+    {
+      "type": "note",
+      "text": "To move cursor across screens move to edge of screen and double tab screen direction intended"
     },
     {
       "type": "item",
       "requirement": "On right mdf",
-      "action": "Select POINT(?)",
+      "action": "When adding or Editing a WP, select IDENT(?)",
       "location": "",
       "locationText": "PB L1"
     },
     {
       "type": "item",
       "requirement": "On keyboard",
-      "action": "Select intended WP",
+      "action": "Select intended WP or leave empty for next WP in sequence followed by ENT",
       "location": "",
-      "locationText": "Type W0x"
-    },
-    {
-      "type": "item",
-      "requirement": "On right mdf",
-      "action": "Select EDIT or ADD as required",
-      "location": "",
-      "locationText": "PB L2/L3"
+      "locationText": "eg: W01 (or leave blank)"
     },
     {
       "type": "item",
       "requirement": "On keyboard",
-      "action": "Assign code",
+      "action": "In FREE text assign code followed by ENT",
       "location": "",
       "locationText": "eg LZ"
     },
     {
       "type": "item",
       "requirement": "On keyboard",
-      "action": "enter",
+      "action": "Enter desired WP followed by ENT",
+      "location": "",
+      "locationText": "current data is current location"
+    },
+    {
+      "type": "item",
+      "requirement": "On keyboard",
+      "action": "Enter altitude in feet followed by ENT",
+      "location": "",
+      "locationText": "current data is current location"
+    },
+    {
+      "type": "note",
+      "text": "You can review WP information by pressing COORD (PB T5) followed by WPTHZ (PB T1) and selecting the WP right row (PB R1-6)"
+    },
+    {
+      "type": "note",
+      "text": "You can set the WP as acquisition in the same page by selecting the WP left row (PB L1-6). Acquisition will be shown on PB R6 in TSD"
+    }
+  ],
+  "NAVIGATION ROUTE CREATION AND EDIT": [
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press TSD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select the NAV Phase type",
+      "location": "",
+      "locationText": "PB B2"
+    },
+    {
+      "type": "note",
+      "text": "If you don't have any WP created you will need to do that first"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press RTE",
+      "location": "",
+      "locationText": "PB B5"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select EDIT or ADD as required",
+      "location": "",
+      "locationText": "L2/L3"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Slew over existing WP with cyclic cursor and select WP with cursor enter",
       "location": "",
       "locationText": ""
     },
     {
       "type": "note",
-      "text": "You can see current available WP list by pressing COORD (PB T5) followed by WPTHZ (PB T1)"
+      "text": "To move cursor across screens move to edge of screen and double tab screen direction intended"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press PB R4",
+      "location": "",
+      "locationText": "Will always show last WP added"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press ADD/EDIT to end",
+      "location": "",
+      "locationText": "PB L2 / PB L4"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select any waypoint as required",
+      "location": "",
+      "locationText": "PB R1-6"
     },
     {
       "type": "note",
-      "text": "You can review WP information in the same page selecting the WP right row (PB R1-6)"
+      "text": "You can review WP information by pressing COORD (PB T5) followed by WPTHZ (PB T1) and selecting the WP right row (PB R1-6)"
     },
     {
       "type": "note",
-      "text": "You can set the WP as aquisition by pressing in the same page selecting the WP left row (PB L1-6). Aquisition wil be shown on PB R6 in main page"
+      "text": "You can set the WP as acquisition in the same page by selecting the WP left row (PB L1-6). Acquisition will be shown on PB R6 in TSD"
+    }
+  ],
+  "NAVIGATION ROUTE GO DIRECT": [
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press TSD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select the NAV Phase type",
+      "location": "",
+      "locationText": "PB B2"
     },
     {
       "type": "note",
-      "text": "You can review abbreviation codes by pressing POINT (PB B6) followed by ABR (PB T4)"
+      "text": "If you don't have any WP created you will need to do that first"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press RTE",
+      "location": "",
+      "locationText": "PB B5"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select DIR",
+      "location": "",
+      "locationText": "PB L4"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Slew over existing WP with cyclic cursor and select WP with cursor enter",
+      "location": "",
+      "locationText": ""
     },
     {
       "type": "note",
-      "text": "You can also slew over already existing WP directly in the map using the cyclic cursor"
+      "text": "To move cursor across screens move to edge of screen and double tab screen direction intended"
+    }
+  ],
+  "NAVIGATION FLYBY WP": [
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press TSD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Select the Phase type (ATK or NAV)",
+      "location": "",
+      "locationText": "PB B2"
+    },
+    {
+      "type": "note",
+      "text": "NAV will create NAV points, ATK will create TARGET points"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press STO",
+      "location": "",
+      "locationText": "PB L5"
+    },
+    {
+      "type": "item",
+      "requirement": "On right mdf",
+      "action": "Press NOW",
+      "location": "",
+      "locationText": "PB L1"
     }
   ]
 }

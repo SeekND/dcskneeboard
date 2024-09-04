@@ -4,8 +4,8 @@
       "type": "item",
       "requirement": "On right mdf",
       "action": "Press TSD",
-      "location": "",
-      "locationText": ""
+      "location": "mfd.jpg",
+      "locationText": "MFD"
     },
     {
       "type": "note",
@@ -93,6 +93,10 @@
     {
       "type": "note",
       "text": "You can set the WP as acquisition in the same page by selecting the WP left row (PB L1-6). Acquisition will be shown on PB R6 in TSD"
+    },
+    {
+      "type": "note",
+      "text": "You can quickly add a TARGET by slewing the cursor over a WP, selecting ADD (PB L2) followed by TG (PB L6) and confirm waypoint with cursor enter."
     }
   ],
   "NAVIGATION ROUTE CREATION AND EDIT": [
@@ -100,8 +104,8 @@
       "type": "item",
       "requirement": "On right mdf",
       "action": "Press TSD",
-      "location": "",
-      "locationText": ""
+      "location": "mfd.jpg",
+      "locationText": "MFD"
     },
     {
       "type": "item",
@@ -180,7 +184,7 @@
     {
       "type": "item",
       "requirement": "On right mdf",
-      "action": "Select the NAV Phase type",
+      "action": "Select the Phase type (ATK or NAV)",
       "location": "",
       "locationText": "PB B2"
     },
@@ -219,19 +223,8 @@
       "type": "item",
       "requirement": "On right mdf",
       "action": "Press TSD",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "On right mdf",
-      "action": "Select the Phase type (ATK or NAV)",
-      "location": "",
-      "locationText": "PB B2"
-    },
-    {
-      "type": "note",
-      "text": "NAV will create NAV points, ATK will create TARGET points"
+      "location": "mfd.jpg",
+      "locationText": "MFD"
     },
     {
       "type": "item",
@@ -246,6 +239,466 @@
       "action": "Press NOW",
       "location": "",
       "locationText": "PB L1"
+    }
+  ],
+  "NAVIGATION GEORGE AI PILOT": [
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "Menu",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You can direct George AI via RTE, DIR and select TARGET or WP via cursor slew and cursor enter"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "set mode",
+      "location": "",
+      "locationText": "short press GAI left"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "set ground speed",
+      "location": "",
+      "locationText": "short press GAI up/down"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "set heading",
+      "location": "",
+      "locationText": "long press press GAI left/right"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "set altitude",
+      "location": "",
+      "locationText": "long press press GAI up/down"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "perform request",
+      "location": "",
+      "locationText": "short press GAI right"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "Maintain required heading, speed and altitude during flight",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "ARMAMENT GEORGE AI CP/G": [
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "Menu",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "set weapon",
+      "location": "",
+      "locationText": "short press GAI left"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "set weapon options",
+      "location": "",
+      "locationText": "short press GAI right"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "look at my location",
+      "location": "",
+      "locationText": "short press GAI up"
+    },
+    {
+      "type": "note",
+      "text": "If there are several assets George finds you will have a menu to select which one you wish to target with GAI up/down"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "Once target selected, store it",
+      "location": "",
+      "locationText": "short press GAI right"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "VID followed by TADS (PBR1) and TADS (PBT6)",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You should now be looking at what George is seeing"
+    },
+    {
+      "type": "item",
+      "requirement": "George AI",
+      "action": "Consent fire, long press GAI  up",
+      "location": "",
+      "locationText": "GAI green"
+    }
+  ],
+  "ARMAMENT PILOT GUNS": [
+    {
+      "type": "item",
+      "requirement": "Toggle SAFE/ARM",
+      "action": "ARM",
+      "location": "",
+      "locationText": "Center panel, left"
+    },
+    {
+      "type": "item",
+      "requirement": "WAS",
+      "action": "UP",
+      "location": "collective.png",
+      "locationText": "collective Weapon Action Switch"
+    },
+    {
+      "type": "note",
+      "text": "Pilot is unable to use the laser but can use change from manual mode to auto to use the ship altimeter radar and where the pilot is looking at to automatically calibrate the weapon"
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "Press WPN",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On left MFD",
+      "action": "press MANRNG (default 1500)",
+      "location": "",
+      "locationText": "PB B6"
+    },
+    {
+      "type": "item",
+      "requirement": "On keyboard",
+      "action": "on MAN RNG press A then Enter",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "Your HMD will now display the range of where you are looking at"
+    },
+    {
+      "type": "item",
+      "requirement": "When in range (<1500m)",
+      "action": "Trigger",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "ARMAMENT PILOT ROCKETS": [
+    {
+      "type": "item",
+      "requirement": "Toggle SAFE/ARM",
+      "action": "ARM",
+      "location": "",
+      "locationText": "Center panel, left"
+    },
+    {
+      "type": "item",
+      "requirement": "WAS",
+      "action": "LEFT",
+      "location": "collective.png",
+      "locationText": "collective Weapon Action Switch"
+    },
+    {
+      "type": "item",
+      "requirement": "Select quantity",
+      "action": "as required",
+      "location": "",
+      "locationText": "PB R1 followed by quantity R1-6"
+    },
+    {
+      "type": "note",
+      "text": "Left MFD should display weapon info."
+    },
+    {
+      "type": "item",
+      "requirement": "Left MFD",
+      "action": "COORD followed by TARGET to set acquisition source",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You will have to setup a TARGET using TSD if you didn't previously"
+    },
+    {
+      "type": "item",
+      "requirement": "Right MFD",
+      "action": "set Phase to ATK",
+      "location": "",
+      "locationText": "PB B2"
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "Set low altitude warning with AC",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "Press SET",
+      "location": "",
+      "locationText": "PB B6"
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "Press LO>",
+      "location": "",
+      "locationText": "PB T3"
+    },
+    {
+      "type": "item",
+      "requirement": "On keyboard",
+      "action": "enter desired altitude followed by ENT",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "TSD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "When in range (<1500m)",
+      "action": "Trigger",
+      "location": "",
+      "locationText": ""
+    }
+  ],
+  "ARMAMENT CP/G GUNS": [
+    {
+      "type": "item",
+      "requirement": "Toggle SAFE/ARM",
+      "action": "ARM",
+      "location": "",
+      "locationText": "Center panel, left"
+    },
+    {
+      "type": "item",
+      "requirement": "TEDAC WAS",
+      "action": "UP",
+      "location": "tedac.png",
+      "locationText": "left grip Weapon Action Switch"
+    },
+    {
+      "type": "note",
+      "text": "Left MFD should display weapon info."
+    },
+    {
+      "type": "item",
+      "requirement": "Left MFD",
+      "action": "set rounds as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right MFD",
+      "action": "set Phase to ATK",
+      "location": "",
+      "locationText": "PB B2"
+    },
+    {
+      "type": "note",
+      "text": "If you don't have any TARGET points added, ensure you add them now via POINT."
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "set acquisition point with COORDS followed by T point as required",
+      "location": "",
+      "locationText": "PB T5 followed by PB L1-6"
+    },
+    {
+      "type": "item",
+      "requirement": "On right MFD",
+      "action": "Slew TEDAC to T01",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "Select TADS",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "Slave",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "note",
+      "text": "This will shift the tads view to the target area"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "Unslave",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "Use zoom function",
+      "location": "",
+      "locationText": "left grip"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "manual tracker to find target",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "item",
+      "requirement": "When in range (<1500m)",
+      "action": "2nd Detent Trigger",
+      "location": "",
+      "locationText": "left grip"
+    }
+  ],
+  "CP/G LASER HELLFIRES": [
+    {
+      "type": "item",
+      "requirement": "Toggle SAFE/ARM",
+      "action": "ARM",
+      "location": "",
+      "locationText": "Center panel, left"
+    },
+    {
+      "type": "item",
+      "requirement": "Configure targets in TSD",
+      "action": "as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Right MFD",
+      "action": "set Phase to ATK",
+      "location": "",
+      "locationText": "PB B2"
+    },
+    {
+      "type": "item",
+      "requirement": "TEDAC WAS",
+      "action": "RIGHT",
+      "location": "tedac.png",
+      "locationText": "left grip Weapon Action Switch"
+    },
+    {
+      "type": "note",
+      "text": "Left MFD should display weapon info."
+    },
+    {
+      "type": "item",
+      "requirement": "Left MFD",
+      "action": "Configure parameters as required",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "For HIGH TRAJ, launch missile first then laser target 4 seconds after release"
+    },
+    {
+      "type": "item",
+      "requirement": "Right MFD",
+      "action": "Select target with TSD",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "You can do this quickly by selecting COORD (PB T5) followed by the target (PB L1-6)"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "Select TADS",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "Slave",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "note",
+      "text": "This will shift the tads view to the target area"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "Unslave",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "Use zoom function",
+      "location": "",
+      "locationText": "left grip"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "manual tracker to find target",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "item",
+      "requirement": "On TEDAC",
+      "action": "press and hold laser",
+      "location": "",
+      "locationText": "right grip"
+    },
+    {
+      "type": "item",
+      "requirement": "When in range (<5000m)",
+      "action": "2nd Detent Trigger",
+      "location": "",
+      "locationText": "left grip"
     }
   ]
 }

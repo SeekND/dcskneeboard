@@ -2,7 +2,7 @@
   "PRE-START": [
     {
       "type": "item",
-      "requirement": "primary lights",
+      "requirement": "Primary lights",
       "action": "full brightness",
       "location": "",
       "locationText": "left panel, rear"
@@ -64,14 +64,14 @@
       "type": "item",
       "requirement": "On right mdf",
       "action": "TSD",
-      "location": "",
-      "locationText": ""
+      "location": "mfd.jpg",
+      "locationText": "TSD Button"
     },
     {
       "type": "item",
       "requirement": "On right mdf",
       "action": "in TSD menu, press UTIL",
-      "location": "",
+      "location": "mfd.jpg",
       "locationText": "PB T6"
     },
     {
@@ -83,14 +83,14 @@
       "requirement": "On left mfd",
       "action": "FLT",
       "location": "",
-      "locationText": "PB T2"
+      "locationText": ""
     },
     {
       "type": "item",
       "requirement": "On left mfd",
       "action": "SET",
       "location": "",
-      "locationText": "PB B6"
+      "locationText": ""
     },
     {
       "type": "note",
@@ -100,21 +100,21 @@
       "type": "item",
       "requirement": "On left mfd",
       "action": "WPN",
-      "location": "",
-      "locationText": ""
+      "location": "mfd.jpg",
+      "locationText": "WPN Button"
     },
     {
       "type": "item",
       "requirement": "On left mfd",
       "action": "in WPN menu select BORESIGHT followed by IHADSS",
-      "location": "",
+      "location": "mfd.jpg",
       "locationText": "PB L5 , PB L4"
     },
     {
       "type": "item",
       "requirement": "On left mfd",
       "action": "move cursor to B/S NOW",
-      "location": "",
+      "location": "cyclic.png",
       "locationText": "CYCLIC"
     },
     {
@@ -132,8 +132,8 @@
       "type": "item",
       "requirement": "Cursor button",
       "action": "depress",
-      "location": "",
-      "locationText": ""
+      "location": "collective.png",
+      "locationText": "COLLECTIVE"
     },
     {
       "type": "note",
@@ -143,43 +143,43 @@
       "type": "item",
       "requirement": "On left MFD",
       "action": "TSD",
-      "location": "",
-      "locationText": ""
+      "location": "mfd.jpg",
+      "locationText": "TSD Button"
     },
     {
       "type": "item",
       "requirement": "On left MFD",
       "action": "in TSD menu, press SHOW",
-      "location": "",
+      "location": "mfd.jpg",
       "locationText": "PB T3"
     },
     {
       "type": "item",
       "requirement": "On left MFD",
       "action": "enable CPG CURSOR",
-      "location": "",
+      "location": "mfd.jpg",
       "locationText": "PB L5"
     },
     {
       "type": "item",
       "requirement": "On left MFD",
       "action": "change to ATK phase",
-      "location": "",
+      "location": "mfd.jpg",
       "locationText": "PB B2"
     },
     {
       "type": "item",
       "requirement": "On left MFD",
       "action": "enable CURRENT ROUTE",
-      "location": "",
+      "location": "mfd.jpg",
       "locationText": "PB L2"
     },
     {
       "type": "item",
       "requirement": "On left MFD",
       "action": "A/C",
-      "location": "",
-      "locationText": ""
+      "location": "mfd.jpg",
+      "locationText": "A/C Button"
     }
   ],
   "ENGINE START": [
@@ -195,7 +195,7 @@
       "requirement": "When left engine N2 gets to 20%",
       "action": "Set left engine power to Idle",
       "location": "",
-      "locationText": ""
+      "locationText": "Left Engine Lever"
     },
     {
       "type": "item",
@@ -209,14 +209,14 @@
       "requirement": "When right engine N2 gets to 20%",
       "action": "Set right engine power to Idle",
       "location": "",
-      "locationText": ""
+      "locationText": "Right Engine Lever"
     },
     {
       "type": "item",
       "requirement": "Both engine power",
       "action": "move slowly to FLY notch",
       "location": "",
-      "locationText": ""
+      "locationText": "Both Engine Lever"
     },
     {
       "type": "item",
@@ -236,14 +236,14 @@
       "type": "item",
       "requirement": "On left MFD",
       "action": "WCA",
-      "location": "",
+      "location": "mfd.jpg",
       "locationText": "PB B6"
     },
     {
       "type": "item",
       "requirement": "On left MFD",
       "action": "in WCA screen, click reset",
-      "location": "",
+      "location": "mfd.jpg",
       "locationText": "PB B4"
     },
     {

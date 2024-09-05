@@ -367,7 +367,7 @@
       "requirement": "FCS BIT switch ",
       "action": "ON (UP) position",
       "location": "Right panel, middle",
-      "locationText": "Press and hold “Y” key binding"
+      "locationText": ""
     },
     {
       "type": "item",
@@ -586,9 +586,16 @@
     {
       "type": "item",
       "requirement": "Turn on lights  ",
-      "action": "throttle Exterior Lights switch",
+      "action": "Throttle Exterior Lights switch",
       "location": "",
       "locationText": "Keybind L"
+    },
+    {
+      "type": "item",
+      "requirement": "Wipe controls",
+      "action": "move Pitch, roll and Rudder",
+      "location": "stick.jpg",
+      "locationText": "Stick"
     },
     {
       "type": "item",

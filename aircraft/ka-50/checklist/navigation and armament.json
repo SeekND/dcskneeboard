@@ -1,0 +1,305 @@
+{
+  "ARMAMENT LASER GUIDED MISSILES": [
+    {
+      "type": "item",
+      "requirement": "Weapon switch",
+      "action": "ON",
+      "location": "",
+      "locationText": "Right console, middle up"
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER ARM",
+      "action": "ON",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Laser",
+      "action": "ON",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "note",
+      "text": "All weapons have maximum and minimum engagement range. 9A4172 Laser guided missiles have maximum range of 8000m and minimum of 800m. Minimum altitude of 10m in hover and 50m in flight"
+    },
+    {
+      "type": "item",
+      "requirement": "Outter weapons hat",
+      "action": "Select",
+      "location": "collective.jpg",
+      "locationText": "Collective"
+    },
+    {
+      "type": "item",
+      "requirement": "Ground moving target",
+      "action": "Select",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Desired burst length",
+      "action": "Select",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Auto turn to target",
+      "action": "Select",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "HMS",
+      "action": "ON",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "CAGE",
+      "action": "Hold and look towards target",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "FOV NARROW/WIDE",
+      "action": "as required",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "Grow/Enlarge box on target",
+      "action": "target should fit in box",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "note",
+      "text": "C should appear under target to confirm recognition"
+    },
+    {
+      "type": "item",
+      "requirement": "Lock",
+      "action": "Press until TA on target",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "Weapon release",
+      "action": "press and hold",
+      "location": "cyclic.jpg",
+      "locationText": "cyclic"
+    }
+  ],
+  "ARMAMENT ROCKETS": [
+    {
+      "type": "item",
+      "requirement": "Weapon switch",
+      "action": "ON",
+      "location": "",
+      "locationText": "Right console, middle up"
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER ARM",
+      "action": "ON",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "note",
+      "text": "All weapons have maximum and minimum engagement range. S8 unguided rockets have maximum range of 2000m and minimum of 1000m. Minimum altitude is 30m, maximum is 4000m."
+    },
+    {
+      "type": "item",
+      "requirement": "Inner weapons hat",
+      "action": "Select",
+      "location": "collective.jpg",
+      "locationText": "Collective"
+    },
+    {
+      "type": "item",
+      "requirement": "Ground moving target",
+      "action": "Select",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Desired burst length",
+      "action": "Select",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Auto turn to target",
+      "action": "Select",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "HMS",
+      "action": "ON",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "CAGE",
+      "action": "Hold and look towards target",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "FOV NARROW/WIDE",
+      "action": "as required",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "note",
+      "text": "C should appear under target to confirm recognition"
+    },
+    {
+      "type": "item",
+      "requirement": "Aim aircraft reticule",
+      "action": "towards target",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Weapon release",
+      "action": "press and hold",
+      "location": "cyclic.jpg",
+      "locationText": "cyclic"
+    }
+  ],
+  "ARMAMENT GUNS": [
+    {
+      "type": "item",
+      "requirement": "Weapon switch",
+      "action": "ON",
+      "location": "",
+      "locationText": "Right console, middle up"
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER ARM",
+      "action": "ON",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Laser",
+      "action": "ON",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "note",
+      "text": "All weapons have maximum and minimum engagement range. S8 unguided rockets have maximum range of 2000m and minimum of 1000m. Minimum altitude is 30m, maximum is 4000m."
+    },
+    {
+      "type": "item",
+      "requirement": "Ground moving target",
+      "action": "Select",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Desired burst length",
+      "action": "Select",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "AP/HE rounds",
+      "action": "Select",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "LOW/HIGH Rate of fire",
+      "action": "Select",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Auto turn to target",
+      "action": "Select",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "HMS",
+      "action": "ON",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "CAGE",
+      "action": "Hold and look towards target",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "FOV NARROW/WIDE",
+      "action": "as required",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "note",
+      "text": "C should appear under target to confirm recognition"
+    },
+    {
+      "type": "item",
+      "requirement": "Lock",
+      "action": "Press until TA on target",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "Gun",
+      "action": "Select",
+      "location": "cyclic.jpg",
+      "locationText": "cyclic"
+    },
+    {
+      "type": "item",
+      "requirement": "Trigger",
+      "action": "Uncage",
+      "location": "cyclic.jpg",
+      "locationText": "cyclic"
+    },
+    {
+      "type": "item",
+      "requirement": "Trigger",
+      "action": "press and hold",
+      "location": "cyclic.jpg",
+      "locationText": "cyclic"
+    }
+  ]
+}

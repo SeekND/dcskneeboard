@@ -1,679 +1,679 @@
 {
-  "BEFORE START-UP": [
-    {
-      "type": "item",
-      "requirement": "Canopy",
-      "action": "Open",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Ground crew",
-      "action": "electrical power",
-      "location": "",
-      "locationText": ""
-    }
-  ],
-  "START-UP": [
-    {
-      "type": "item",
-      "requirement": "Engine start",
-      "action": "Press",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Once RPM at 10%",
-      "action": "notch throttle to IGN position",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Once RPM at 20%",
-      "action": "notch throttle to Idle position",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Once RPM stabilizes near 60%",
-      "action": "Ground crew to remove electrical power",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Oxygen",
-      "action": "ON",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Canopy",
-      "action": "Closed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "AFCS Flight computer",
-      "action": "STBY",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Stability augmentation",
-      "action": "ON",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Radar",
-      "action": "STBY",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Drop tanks",
-      "action": "As needed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Spoiler",
-      "action": "ARMED",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Chaff",
-      "action": "As needed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Gunsight",
-      "action": "As needed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "RWR",
-      "action": "As needed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "BDHI",
-      "action": "Set to NAV computer or TACAN as needed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Radar altimeter",
-      "action": "As needed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Weapon settings",
-      "action": "As needed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "NAV computer",
-      "action": "Land or Sea",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Lights",
-      "action": "As needed",
-      "location": "",
-      "locationText": ""
-    },
-  ],
-  "AN/ASN 41": [
-    {
-      "type": "item",
-      "requirement": "Set AN/ANS-41 DNS waypoint selector",
-      "action": "STBY and wait 5 mins",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Set magnetic var",
-      "action": "as required",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "6°E for Caucuses, 12°E for NTTR, 8°E for Normandy, 1.6° E for Persian Gulf"
-    },
-    {
-      "type": "item",
-      "requirement": "Wind speed and direction",
-      "action": "SET",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Will be set automatically if using with AN/APN-153 radar"
-    }
-  ],
-  "AN/APN-153": [
-    {
-      "type": "item",
-      "requirement": "AN/APN-153 Doppler Radar",
-      "action": "Set to TEST and wait 5 min.",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "DO NOT DO before power on"
-    },
-    {
-      "type": "note",
-      "text": "After warm up time memory light should extinguish and groundspeed dial should read 121 ± 5 kts, drift angle should read 0 ± 2 degrees"
-    },
-    {
-      "type": "item",
-      "requirement": "AN/APN-153 Doppler Radar",
-      "action": "Turn to STBY",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Prior to takeoff",
-      "action": "set selector switch knob to ON-LAND or ON-SEA as appropriate",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Approximately 30 seconds after aircraft has reached 150 kts and 40 ft of altitude, the memory light should extinguish"
-    },
-    {
-      "type": "note",
-      "text": "After cruise altitude is attained ground speed and drift should read within ± 50 kts and ± 10 degrees respectively for known conditions of flight"
-    }
-  ],
-  "AN/APG-53A": [
-    {
-      "type": "item",
-      "requirement": "Mode Selector Switch",
-      "action": "STBY and allow 3 mins for warm up",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Mode Selector Switch",
-      "action": "SRCH",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Gain Control Knob",
-      "action": "Turn Clockwise until targets appear",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Position Range Switch",
-      "action": "SHORT",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Confirm flag indicates 20 miles"
-    },
-    {
-      "type": "item",
-      "requirement": "Mode Selector Switch",
-      "action": "T/C",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Confirm flag indicates 10 miles, tilt control should zero."
-    },
-    {
-      "type": "item",
-      "requirement": "Gain Control Knob",
-      "action": "Turn clockwise until targets appear to be 5 degrees in vertical dimension",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Detail Knob",
-      "action": "Turn clockwise until targets are reduced to 1 degree in vertical dimension.",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Observe terrain clearance line on scope."
-    },
-    {
-      "type": "item",
-      "requirement": "Position Range selector switch Turn",
-      "action": "LONG",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Confirm terrain clearance line moves to the left and slightly up"
-    },
-    {
-      "type": "item",
-      "requirement": "Position Mode Selector Switch",
-      "action": "A/G",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Confirm horizontal line sweeps from top to near bottom"
-    },
-    {
-      "type": "item",
-      "requirement": "Position Mode Selector Switch",
-      "action": "OFF",
-      "location": "",
-      "locationText": ""
-    }
-  ],
-  "TAKE OFF": [
-    {
-      "type": "item",
-      "requirement": "Trim Aileron",
-      "action": "Stick Centered Tab Faired ± 1/5in",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Trim Rudder",
-      "action": "0 degrees",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Trim Elevator",
-      "action": "(field) 8 Degrees Up",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Harness",
-      "action": "Set",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Canopy",
-      "action": "Closed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Flaps",
-      "action": "Set at ½",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Speedbrakes",
-      "action": "Closed",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Armament",
-      "action": "All Switches off",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Emergency selector switch",
-      "action": "appropriate setting",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Spoilers",
-      "action": "As desired",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "If ARMED, closed - power above 70%"
-    },
-    {
-      "type": "item",
-      "requirement": "As engine accelerates through 90%",
-      "action": "release brakes to avoid skidding tyres.",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "On rough runways nose-wheel bounce may occur, forward stick pressure should be used to counter this."
-    },
-    {
-      "type": "item",
-      "requirement": "Acceleration",
-      "action": "within acceptable limits and engine accelerates smoothly",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Lift nose-wheel",
-      "action": "123 KIAS",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Take off",
-      "action": "133 KIAS",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Gear up",
-      "action": "40ft",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Flaps up",
-      "action": "170 KIAS at safe altitude",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Once climb speed reached",
-      "action": "spoilers off.",
-      "location": "",
-      "locationText": ""
-    }
-  ],
-  "FIELD LANDING": [
-    {
-      "type": "item",
-      "requirement": "Armament",
-      "action": "All switches off",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Emergency selector switch",
-      "action": "appropriate setting",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Spoilers",
-      "action": "Off",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Harness",
-      "action": "Set",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Hook",
-      "action": "Up (field landing)",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Wheels",
-      "action": "Down",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Flaps",
-      "action": "Full",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Brakes",
-      "action": "Pump before landing",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Gentle pressure upon landing to avoid skid."
-    },
-    {
-      "type": "item",
-      "requirement": "After break",
-      "action": "Extend speedbrakes and retard throttle to 70%",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Speedbrakes will remain extended throughout approach and landing"
-    },
-    {
-      "type": "item",
-      "requirement": "As aircraft decelerates to 225 KIAS or lower",
-      "action": "lower landing gear and extend flaps full",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "As aircraft decelerates to 170 KIAS or lower",
-      "action": "adjust power to maintain desired airspeed.",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Crosscheck airspeed",
-      "action": "with AOA indexer indication",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "At gross weight of 14,000 lbs, recommended approach speed is approx. 125 KIAS at abeam position. Optimum AOA indication is 17 ½ units. For each 1000 lbs increase over 14,000, optimum approach speed increases approximately 5 KIAS."
-    },
-    {
-      "type": "item",
-      "requirement": "Power",
-      "action": "IDLE",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Flaps",
-      "action": "as required by conditions",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Apply full forward stick",
-      "action": "as necessary to maintain wings level",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Apply rudder",
-      "action": "as necessary to maintain control",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Use brakes",
-      "action": "as necessary",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "As rudder becomes ineffective",
-      "action": "used brakes for directional control",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Landing roll may be reduced by shutting down engine upon touchdown"
-    }
-  ],
-  "CARRIER LANDING": [
-    {
-      "type": "item",
-      "requirement": "Minimum Straight in of 3 miles on starboard side",
-      "action": "parallel to Base Recovery Course at 800 ft and 250 KIAS.",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Break should occur past bow"
-    },
-    {
-      "type": "item",
-      "requirement": "Speedbrakes",
-      "action": "out at break",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "Speedbrakes may not be desirable at heavy weights"
-    },
-    {
-      "type": "item",
-      "requirement": "At 225 KIAS or lower",
-      "action": "landing gear down and flaps full",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "After break",
-      "action": "Descend to 600 ft",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Maintain optimum AOA airspeed",
-      "action": "at 1-¼ miles abeam",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Bank",
-      "action": "at approx 22 degrees",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "On turn-in",
-      "action": "Maintain optimum AOA/Airspeed and 600ft altitude",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Intercept glide slope",
-      "action": "Descend towards landing",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "Upon touchdown",
-      "action": "advance the throttle to MILITARY and retract the speedbrakes",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "item",
-      "requirement": "After arrestment is assured",
-      "action": "retard the throttle to IDLE and raise the hook and flaps.",
-      "location": "",
-      "locationText": ""
-    },
-    {
-      "type": "note",
-      "text": "The aircraft should be allowed to roll back a short distance after arrestment to permit the hook to disengage from the pendant."
-    },
-    {
-      "type": "item",
-      "requirement": "On carrier",
-      "action": "Hold brakes",
-      "location": "",
-      "locationText": ""
-    }
-  ]
+    "BEFORE START-UP": [
+        {
+            "type": "item",
+            "requirement": "Canopy",
+            "action": "Open",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Ground crew",
+            "action": "electrical power",
+            "location": "",
+            "locationText": ""
+        }
+    ],
+    "START-UP": [
+        {
+            "type": "item",
+            "requirement": "Engine start",
+            "action": "Press",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Once RPM at 10%",
+            "action": "notch throttle to IGN position",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Once RPM at 20%",
+            "action": "notch throttle to Idle position",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Once RPM stabilizes near 60%",
+            "action": "Ground crew to remove electrical power",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Oxygen",
+            "action": "ON",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Canopy",
+            "action": "Closed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "AFCS Flight computer",
+            "action": "STBY",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Stability augmentation",
+            "action": "ON",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Radar",
+            "action": "STBY",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Drop tanks",
+            "action": "As needed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Spoiler",
+            "action": "ARMED",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Chaff",
+            "action": "As needed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Gunsight",
+            "action": "As needed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "RWR",
+            "action": "As needed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "BDHI",
+            "action": "Set to NAV computer or TACAN as needed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Radar altimeter",
+            "action": "As needed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Weapon settings",
+            "action": "As needed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "NAV computer",
+            "action": "Land or Sea",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Lights",
+            "action": "As needed",
+            "location": "",
+            "locationText": ""
+        }
+    ],
+    "AN/ASN 41": [
+        {
+            "type": "item",
+            "requirement": "Set AN/ANS-41 DNS waypoint selector",
+            "action": "STBY and wait 5 mins",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Set magnetic var",
+            "action": "as required",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "6°E for Caucuses, 12°E for NTTR, 8°E for Normandy, 1.6° E for Persian Gulf"
+        },
+        {
+            "type": "item",
+            "requirement": "Wind speed and direction",
+            "action": "SET",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Will be set automatically if using with AN/APN-153 radar"
+        }
+    ],
+    "AN/APN-153": [
+        {
+            "type": "item",
+            "requirement": "AN/APN-153 Doppler Radar",
+            "action": "Set to TEST and wait 5 min.",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "DO NOT DO before power on"
+        },
+        {
+            "type": "note",
+            "text": "After warm up time memory light should extinguish and groundspeed dial should read 121 ± 5 kts, drift angle should read 0 ± 2 degrees"
+        },
+        {
+            "type": "item",
+            "requirement": "AN/APN-153 Doppler Radar",
+            "action": "Turn to STBY",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Prior to takeoff",
+            "action": "set selector switch knob to ON-LAND or ON-SEA as appropriate",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Approximately 30 seconds after aircraft has reached 150 kts and 40 ft of altitude, the memory light should extinguish"
+        },
+        {
+            "type": "note",
+            "text": "After cruise altitude is attained ground speed and drift should read within ± 50 kts and ± 10 degrees respectively for known conditions of flight"
+        }
+    ],
+    "AN/APG-53A": [
+        {
+            "type": "item",
+            "requirement": "Mode Selector Switch",
+            "action": "STBY and allow 3 mins for warm up",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Mode Selector Switch",
+            "action": "SRCH",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Gain Control Knob",
+            "action": "Turn Clockwise until targets appear",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Position Range Switch",
+            "action": "SHORT",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Confirm flag indicates 20 miles"
+        },
+        {
+            "type": "item",
+            "requirement": "Mode Selector Switch",
+            "action": "T/C",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Confirm flag indicates 10 miles, tilt control should zero."
+        },
+        {
+            "type": "item",
+            "requirement": "Gain Control Knob",
+            "action": "Turn clockwise until targets appear to be 5 degrees in vertical dimension",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Detail Knob",
+            "action": "Turn clockwise until targets are reduced to 1 degree in vertical dimension.",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Observe terrain clearance line on scope."
+        },
+        {
+            "type": "item",
+            "requirement": "Position Range selector switch Turn",
+            "action": "LONG",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Confirm terrain clearance line moves to the left and slightly up"
+        },
+        {
+            "type": "item",
+            "requirement": "Position Mode Selector Switch",
+            "action": "A/G",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Confirm horizontal line sweeps from top to near bottom"
+        },
+        {
+            "type": "item",
+            "requirement": "Position Mode Selector Switch",
+            "action": "OFF",
+            "location": "",
+            "locationText": ""
+        }
+    ],
+    "TAKE OFF": [
+        {
+            "type": "item",
+            "requirement": "Trim Aileron",
+            "action": "Stick Centered Tab Faired ± 1/5in",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Trim Rudder",
+            "action": "0 degrees",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Trim Elevator",
+            "action": "(field) 8 Degrees Up",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Harness",
+            "action": "Set",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Canopy",
+            "action": "Closed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Flaps",
+            "action": "Set at ½",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Speedbrakes",
+            "action": "Closed",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Armament",
+            "action": "All Switches off",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Emergency selector switch",
+            "action": "appropriate setting",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Spoilers",
+            "action": "As desired",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "If ARMED, closed - power above 70%"
+        },
+        {
+            "type": "item",
+            "requirement": "As engine accelerates through 90%",
+            "action": "release brakes to avoid skidding tyres.",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "On rough runways nose-wheel bounce may occur, forward stick pressure should be used to counter this."
+        },
+        {
+            "type": "item",
+            "requirement": "Acceleration",
+            "action": "within acceptable limits and engine accelerates smoothly",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Lift nose-wheel",
+            "action": "123 KIAS",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Take off",
+            "action": "133 KIAS",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Gear up",
+            "action": "40ft",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Flaps up",
+            "action": "170 KIAS at safe altitude",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Once climb speed reached",
+            "action": "spoilers off.",
+            "location": "",
+            "locationText": ""
+        }
+    ],
+    "FIELD LANDING": [
+        {
+            "type": "item",
+            "requirement": "Armament",
+            "action": "All switches off",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Emergency selector switch",
+            "action": "appropriate setting",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Spoilers",
+            "action": "Off",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Harness",
+            "action": "Set",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Hook",
+            "action": "Up (field landing)",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Wheels",
+            "action": "Down",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Flaps",
+            "action": "Full",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Brakes",
+            "action": "Pump before landing",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Gentle pressure upon landing to avoid skid."
+        },
+        {
+            "type": "item",
+            "requirement": "After break",
+            "action": "Extend speedbrakes and retard throttle to 70%",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Speedbrakes will remain extended throughout approach and landing"
+        },
+        {
+            "type": "item",
+            "requirement": "As aircraft decelerates to 225 KIAS or lower",
+            "action": "lower landing gear and extend flaps full",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "As aircraft decelerates to 170 KIAS or lower",
+            "action": "adjust power to maintain desired airspeed.",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Crosscheck airspeed",
+            "action": "with AOA indexer indication",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "At gross weight of 14,000 lbs, recommended approach speed is approx. 125 KIAS at abeam position. Optimum AOA indication is 17 ½ units. For each 1000 lbs increase over 14,000, optimum approach speed increases approximately 5 KIAS."
+        },
+        {
+            "type": "item",
+            "requirement": "Power",
+            "action": "IDLE",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Flaps",
+            "action": "as required by conditions",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Apply full forward stick",
+            "action": "as necessary to maintain wings level",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Apply rudder",
+            "action": "as necessary to maintain control",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Use brakes",
+            "action": "as necessary",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "As rudder becomes ineffective",
+            "action": "used brakes for directional control",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Landing roll may be reduced by shutting down engine upon touchdown"
+        }
+    ],
+    "CARRIER LANDING": [
+        {
+            "type": "item",
+            "requirement": "Minimum Straight in of 3 miles on starboard side",
+            "action": "parallel to Base Recovery Course at 800 ft and 250 KIAS.",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Break should occur past bow"
+        },
+        {
+            "type": "item",
+            "requirement": "Speedbrakes",
+            "action": "out at break",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "Speedbrakes may not be desirable at heavy weights"
+        },
+        {
+            "type": "item",
+            "requirement": "At 225 KIAS or lower",
+            "action": "landing gear down and flaps full",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "After break",
+            "action": "Descend to 600 ft",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Maintain optimum AOA airspeed",
+            "action": "at 1-¼ miles abeam",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Bank",
+            "action": "at approx 22 degrees",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "On turn-in",
+            "action": "Maintain optimum AOA/Airspeed and 600ft altitude",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Intercept glide slope",
+            "action": "Descend towards landing",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "Upon touchdown",
+            "action": "advance the throttle to MILITARY and retract the speedbrakes",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "item",
+            "requirement": "After arrestment is assured",
+            "action": "retard the throttle to IDLE and raise the hook and flaps.",
+            "location": "",
+            "locationText": ""
+        },
+        {
+            "type": "note",
+            "text": "The aircraft should be allowed to roll back a short distance after arrestment to permit the hook to disengage from the pendant."
+        },
+        {
+            "type": "item",
+            "requirement": "On carrier",
+            "action": "Hold brakes",
+            "location": "",
+            "locationText": ""
+        }
+    ]
 }

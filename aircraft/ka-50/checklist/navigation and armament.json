@@ -1,8 +1,167 @@
 {
+  "NAVIGATION ROUTE CREATION": [
+    {
+      "type": "item",
+      "requirement": "On ABBRIS",
+      "action": "Select PLAN",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "IF any route is currently set you can clear it by pressing SELECT then UNLOAD with the right knob"
+    },
+    {
+      "type": "item",
+      "requirement": "On ABBRIS",
+      "action": "Select DRAW",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To move up and down",
+      "action": "rotate rocker",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "To move left and right",
+      "action": "press rocker then rotate rocker",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "item",
+      "requirement": "Use SCALE+/SCALE-",
+      "action": "as required",
+      "location": "",
+      "locationText": "PB3/4"
+    },
+    {
+      "type": "item",
+      "requirement": "To add WP",
+      "action": "Press ADD",
+      "location": "",
+      "locationText": "PB1"
+    },
+    {
+      "type": "item",
+      "requirement": "To finish WP",
+      "action": "Press ENTER",
+      "location": "",
+      "locationText": "PB1"
+    },
+    {
+      "type": "item",
+      "requirement": "To add new WPs",
+      "action": "Press EDIT followed by INSERT",
+      "location": "",
+      "locationText": "PB1 twice"
+    },
+    {
+      "type": "item",
+      "requirement": "Once complete",
+      "action": "Press PLAN followed by ACTIV",
+      "location": "",
+      "locationText": "PB5 twice"
+    }
+  ],
+  "NAVIGATION AP ROUTE": [
+    {
+      "type": "item",
+      "requirement": "On PVI-800",
+      "action": "Set to OPER",
+      "location": "",
+      "locationText": "Right console, front"
+    },
+    {
+      "type": "item",
+      "requirement": "On PVI-800",
+      "action": "Press WPT",
+      "location": "",
+      "locationText": "Right console, front"
+    },
+    {
+      "type": "item",
+      "requirement": "On PVI-800",
+      "action": "Press the desired WPN nr",
+      "location": "",
+      "locationText": "Right console, front"
+    },
+    {
+      "type": "item",
+      "requirement": "DH/DTA Switch",
+      "action": "Autol",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Set prefered heading select DH/DT",
+      "action": "As required",
+      "location": "",
+      "locationText": "Right console, front"
+    },
+    {
+      "type": "note",
+      "text": "DH will make your aircraft turn to your steerpoint, DT will make your aircraft intercept the course back and stabilize on it"
+    },
+    {
+      "type": "item",
+      "requirement": "ABBRIS",
+      "action": "Set to NAV followed by MAP",
+      "location": "",
+      "locationText": "PB5 then PB2"
+    },
+    {
+      "type": "item",
+      "requirement": "ABBRIS",
+      "action": "Scale as required",
+      "location": "",
+      "locationText": "PB3/PB4"
+    },
+    {
+      "type": "item",
+      "requirement": "INU Heading data switch",
+      "action": "Set to Directional Gryo",
+      "location": "",
+      "locationText": "Right console, middle up"
+    },
+    {
+      "type": "item",
+      "requirement": "Flight clock",
+      "action": "Start",
+      "location": "",
+      "locationText": "Center console, left"
+    },
+    {
+      "type": "item",
+      "requirement": "Set AP",
+      "action": "Route",
+      "location": "cyclic.jpg",
+      "locationText": "Cyclic"
+    },
+    {
+      "type": "item",
+      "requirement": "To stabilize",
+      "action": "AP mode to BAR",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "To stabilize altitude",
+      "action": "press AP ALT",
+      "location": "",
+      "locationText": "Center console, middle"
+    }
+  ],
   "ARMAMENT LASER GUIDED MISSILES": [
     {
       "type": "item",
-      "requirement": "Weapon switch",
+      "requirement": "Weapon power switch",
       "action": "ON",
       "location": "",
       "locationText": "Right console, middle up"
@@ -103,7 +262,7 @@
   "ARMAMENT ROCKETS": [
     {
       "type": "item",
-      "requirement": "Weapon switch",
+      "requirement": "Weapon power switch",
       "action": "ON",
       "location": "",
       "locationText": "Right console, middle up"
@@ -190,7 +349,7 @@
   "ARMAMENT GUNS": [
     {
       "type": "item",
-      "requirement": "Weapon switch",
+      "requirement": "Weapon power switch",
       "action": "ON",
       "location": "",
       "locationText": "Right console, middle up"
@@ -300,6 +459,72 @@
       "action": "press and hold",
       "location": "cyclic.jpg",
       "locationText": "cyclic"
+    }
+  ],
+  "ARMAMENT A-A": [
+    {
+      "type": "item",
+      "requirement": "Weapon Power switch",
+      "action": "ON",
+      "location": "",
+      "locationText": "Right console, middle up"
+    },
+    {
+      "type": "item",
+      "requirement": "MASTER ARM",
+      "action": "ON",
+      "location": "",
+      "locationText": "Center console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "AA weapons hat",
+      "action": "Select",
+      "location": "collective.jpg",
+      "locationText": "collective"
+    },
+    {
+      "type": "item",
+      "requirement": "AA target",
+      "action": "Select",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "AA target FF",
+      "action": "Select if the aircraft is facing you",
+      "location": "",
+      "locationText": "Left console, middle"
+    },
+    {
+      "type": "item",
+      "requirement": "Release Weapons",
+      "action": "Press once",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "AA Weapons need to be switched on with Weapons release once, then they have a 60 second countdown on HUD until they become inert."
+    },
+    {
+      "type": "item",
+      "requirement": "Aim towards target",
+      "action": "Use rudder to stabilize shot",
+      "location": "",
+      "locationText": ""
+    },
+    {
+      "type": "note",
+      "text": "When on target and in range circle in HUD will increase and tone will be audible"
+    },
+    {
+      "type": "item",
+      "requirement": "Release Weapons",
+      "action": "Press and hold",
+      "location": "",
+      "locationText": ""
     }
   ]
 }
